@@ -18,12 +18,58 @@ const MAP_URL = "https://sportsrecruits.com/athletic-scholarships/womens-volleyb
 // const PARSEDINFO = "parsedinfo_working.json"
 // const INSTRUMENTINFO = "instrumentinfo_working.json"
 
-type MapState struct {
+type State struct {
 	name     string
 	pageLink string
 }
 
-func parseForStates(ctx *context.Context, states *[]MapState) {
+type College struct {
+	name       string
+	state      string
+	city       string
+	level      string
+	avatarLink string
+	pageLink   string
+}
+
+func dumpStates(states *[]State) {
+	for _, state := range *states {
+		fmt.Println("")
+		fmt.Println("name:     " + state.name)
+		fmt.Println("pageLink: " + state.pageLink)
+	}
+	fmt.Println(len(*states))
+}
+
+func dumpColleges(colleges *[]College) {
+	for _, college := range *colleges {
+		fmt.Println("")
+		fmt.Println("name:       " + college.name)
+		fmt.Println("state:      " + college.state)
+		fmt.Println("city:       " + college.city)
+		fmt.Println("avatarLink: " + college.avatarLink)
+		fmt.Println("pageLink:   " + college.pageLink)
+	}
+	fmt.Println(len(*colleges))
+}
+
+func testStatesContinue(i int) bool {
+	//DEBUG - limit products
+	//return !(i == 1 || i == 2)
+	//return i > 40
+	return i > 0
+	//return false
+}
+
+func testCollegesContinue(i int) bool {
+	//DEBUG - limit products
+	//return !(i == 1 || i == 2)
+	//return i > 40
+	return i > 0
+	//return false
+}
+
+func parseForStates(ctx *context.Context, states *[]State) {
 	var err error
 	err = chromedp.Run(*ctx,
 		chromedp.Navigate(MAP_URL),
@@ -36,7 +82,6 @@ func parseForStates(ctx *context.Context, states *[]MapState) {
 		fmt.Println(err)
 	}
 
-	fmt.Println("parse state link...")
 	var stateLinkNodes []*cdp.Node
 	err = chromedp.Run(*ctx,
 		chromedp.Nodes(`.states li`, &stateLinkNodes, chromedp.ByQueryAll),
@@ -46,28 +91,92 @@ func parseForStates(ctx *context.Context, states *[]MapState) {
 		//DEBUG:
 		fmt.Println(err)
 	}
-
-	// for i, n := range stateLinkNodes {
-	// 	var ok bool
-	// 	data := Category{}
-	// 	err := chromedp.Run(*ctx,
-	// 		chromedp.Text(`p a`, &data.name, chromedp.ByQuery, chromedp.FromNode(n)),
-	// 		chromedp.AttributeValue(`p a`, "href", &data.pageLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
-	// 	)
-	// 	if err != nil {
-	// 		// ignore error
-	// 		//DEBUG:
-	// 		fmt.Println(err)
-	// 	}
-	// 	data.pageLink = BASE_URL + data.pageLink
-
-	// 	//DEBUG:
-	// 	fmt.Println(i, ":\t", data.name, " ", data.pageLink)
-	// 	*categories = append(*categories, data)
-	// }
 	//DEBUG:
-	fmt.Println(len(stateLinkNodes))
+	//fmt.Println(len(stateLinkNodes))
+
+	for _, n := range stateLinkNodes {
+		var ok bool
+		data := State{}
+		err := chromedp.Run(*ctx,
+			chromedp.Text(`a`, &data.name, chromedp.ByQuery, chromedp.FromNode(n)),
+			chromedp.AttributeValue(`a`, "href", &data.pageLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
+		)
+		if err != nil {
+			// ignore error
+			//DEBUG:
+			fmt.Println(err)
+		}
+		//data.pageLink = BASE_URL + data.pageLink
+
+		//DEBUG:
+		//fmt.Println(i, ":\t", data.name, " ", data.pageLink)
+		*states = append(*states, data)
+	}
 }
+
+func parseForColleges(ctx *context.Context, colleges *[]College, state State) {
+	var err error
+	err = chromedp.Run(*ctx,
+		chromedp.Navigate(state.pageLink),
+		chromedp.Sleep(5*time.Second),
+		//DEBUG: chromedp.Sleep(400*time.Second),
+	)
+	if err != nil {
+		// ignore error
+		//DEBUG:
+		fmt.Println(err)
+	}
+
+	var collegeLinkNodes []*cdp.Node
+	err = chromedp.Run(*ctx,
+		chromedp.Nodes(`.data-table a`, &collegeLinkNodes, chromedp.ByQueryAll),
+	)
+	if err != nil {
+		// ignore error
+		//DEBUG:
+		fmt.Println(err)
+	}
+	//DEBUG:
+	fmt.Println(len(collegeLinkNodes))
+
+	for i, n := range collegeLinkNodes {
+		//var ok bool
+		data := College{}
+		data.state = state.name
+		fmt.Println(n.Attributes)
+
+		if testCollegesContinue(i) {
+			continue
+		}
+
+		err := chromedp.Run(*ctx,
+
+			//#main > div.wrapper_row > section:nth-child(4) > div > div > a:nth-child(2) > div.col-xs-12.col-sm-5 > div > p
+			//#main > div.wrapper_row > section:nth-child(4) > div > div > a:nth-child(2) > div.col-xs-12.col-sm-4 > p
+			//#main > div.wrapper_row > section:nth-child(4) > div > div > a:nth-child(2) > div.col-xs-12.col-sm-3 > p
+			chromedp.Text(`.col-sm-5`, &data.name, chromedp.ByQuery, chromedp.FromNode(n)),
+			chromedp.Text(`.col-sm-4`, &data.city, chromedp.ByQuery, chromedp.FromNode(n)),
+			chromedp.Text(`.col-sm-2`, &data.level, chromedp.ByQuery, chromedp.FromNode(n)),
+			//chromedp.AttributeValue(`a`, "href", &data.pageLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
+			// chromedp.AttributeValue(`.avatar img`, "src", &data.pageLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
+		)
+		if err != nil {
+			// ignore error
+			//DEBUG:
+			fmt.Println(err)
+		}
+		//data.pageLink = BASE_URL + data.pageLink
+
+		//DEBUG:
+		fmt.Println(i, ":\t", data.name, " ", data.pageLink)
+		*colleges = append(*colleges, data)
+	}
+	//DEBUG:
+	//fmt.Println(len(stateLinkNodes))
+
+}
+
+//#main > div.wrapper_row > section:nth-child(4) > div > div > a:nth-child(2)
 
 // type Product struct {
 // 	description string
@@ -125,14 +234,6 @@ func parseForStates(ctx *context.Context, states *[]MapState) {
 // 	}
 // 	//DEBUG:
 // 	fmt.Println(len(categoryNodes))
-// }
-
-// func testContunue(i int) bool {
-// 	//DEBUG - limit products
-// 	//return !(i == 1 || i == 2)
-// 	//return i > 40
-// 	//return i > 0
-// 	return false
 // }
 
 // func parseForProductPages(ctx *context.Context, categories *[]Category) {
@@ -412,9 +513,22 @@ func main() {
 	ctx, cancel = chromedp.NewContext(ctx)
 	defer cancel()
 
-	fmt.Println("open sports recruit volleyball map...")
-	var states []MapState
+	fmt.Println("parse map...")
+	var states []State
 	parseForStates(&ctx, &states)
+
+	fmt.Println("parse states...")
+	var colleges []College
+	for i, state := range states {
+		if testStatesContinue(i) {
+			continue
+		}
+
+		fmt.Println("parse colleges...")
+		parseForColleges(&ctx, &colleges, state)
+	}
+
+	//dumpColleges(&colleges)
 
 	// fmt.Println("parse product pages...")
 	// parseForProductPages(&ctx, &categories)
