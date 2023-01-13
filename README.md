@@ -16,6 +16,15 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 - [x] gather state links
 - [x] add pacing mechanism
 - [x] add config file
+
+- [ ] test dump_states
+- [ ] test dump_colleges
+- [ ] test parse_map
+- [ ] test parse_states
+- [ ] test export_colleges
+- [ ] test import_colleges txt
+- [ ] test import_colleges json
+
 - [ ] export/import colleges list to separate processes
 - [ ] output csv/tab table
 - [ ] determine fields to output
