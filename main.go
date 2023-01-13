@@ -5,38 +5,49 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"math/rand"
+	"os"
 	"time"
 
 	"github.com/chromedp/cdproto/cdp"
 	"github.com/chromedp/chromedp"
+	"golang.org/x/exp/slices"
 )
+
+type Configuration struct {
+	StatesList []string `json:"stateslist"`
+}
+
+var appConfig Configuration
 
 const MAP_URL = "https://sportsrecruits.com/athletic-scholarships/womens-volleyball"
 
-// const BASE_URL = "https://www.keysight.com"
-// const PARSEDINFO = "parsedinfo_working.json"
-// const INSTRUMENTINFO = "instrumentinfo_working.json"
+const NAV_TIME_MAX_STATE = 3
+const NAV_TIME_MAX_COLLEGE = 3
 
 type State struct {
-	name     string
-	pageLink string
+	name      string
+	stateLink string
 }
 
 type College struct {
-	name       string
-	state      string
-	city       string
-	level      string
-	avatarLink string
-	pageLink   string
+	name  string
+	state string
+	city  string
+	level string
+	// avatarLink  string
+	collegeLink string
+	stateLink   string
 }
 
 func dumpStates(states *[]State) {
 	for _, state := range *states {
 		fmt.Println("")
 		fmt.Println("name:     " + state.name)
-		fmt.Println("pageLink: " + state.pageLink)
+		fmt.Println("pageLink: " + state.stateLink)
 	}
 	fmt.Println(len(*states))
 }
@@ -47,33 +58,104 @@ func dumpColleges(colleges *[]College) {
 		fmt.Println("name:       " + college.name)
 		fmt.Println("state:      " + college.state)
 		fmt.Println("city:       " + college.city)
-		fmt.Println("avatarLink: " + college.avatarLink)
-		fmt.Println("pageLink:   " + college.pageLink)
+		fmt.Println("level:      " + college.level)
+		// fmt.Println("avatarLink: " + college.avatarLink)
+		fmt.Println("pageLink:   " + college.collegeLink)
 	}
 	fmt.Println(len(*colleges))
 }
 
-func testStatesContinue(i int) bool {
-	//DEBUG - limit products
-	//return !(i == 1 || i == 2)
-	//return i > 40
-	return i > 0
-	//return false
+func exportColleges(colleges *[]College, fileNmae string) {
 }
 
-func testCollegesContinue(i int) bool {
+func importColleges(colleges *[]College, fileNmae string) {
+}
+
+var STATE_NAMES = [51]string{
+	"Alabama",
+	"Alaska",
+	"Arizona",
+	"Arkansas",
+	"California",
+	"Colorado",
+	"Connecticut",
+	"Delaware",
+	"Florida",
+	"Georgia",
+	"Hawaii",
+	"Idaho",
+	"Illinois",
+	"Indiana",
+	"Iowa",
+	"Kansas",
+	"Kentucky",
+	"Louisiana",
+	"Maine",
+	"Maryland",
+	"Massachusetts",
+	"Michigan",
+	"Minnesota",
+	"Mississippi",
+	"Missouri",
+	"Montana",
+	"Nebraska",
+	"Nevada",
+	"New Hampshire",
+	"New Jersey",
+	"New Mexico",
+	"New York",
+	"North Carolina",
+	"North Dakota",
+	"Ohio",
+	"Oklahoma",
+	"Oregon",
+	"Pennsylvania",
+	"Rhode Island",
+	"South Carolina",
+	"South Dakota",
+	"Tennessee",
+	"Texas",
+	"Utah",
+	"Vermont",
+	"Virginia",
+	"Washington",
+	"West Virginia",
+	"Wisconsin",
+	"Wyoming",
+	"District of Columbia",
+}
+
+func testStatesSkip(i int) bool {
+	if slices.Contains(appConfig.StatesList, "All") {
+		return false
+	}
+	if slices.Contains(appConfig.StatesList, "all") {
+		return false
+	}
+	name := STATE_NAMES[i]
+	if slices.Contains(appConfig.StatesList, name) {
+		return false
+	}
+	return true
+}
+
+func testCollegesSkip(i int) bool {
 	//DEBUG - limit products
 	//return !(i == 1 || i == 2)
 	//return i > 40
-	return i > 0
-	//return false
+	//return i > 10
+	return false
 }
 
 func parseForStates(ctx *context.Context, states *[]State) {
 	var err error
+	n := rand.Intn(NAV_TIME_MAX_STATE)
+	random_delay := time.Duration(n) * time.Second
+
 	err = chromedp.Run(*ctx,
 		chromedp.Navigate(MAP_URL),
 		chromedp.Sleep(1*time.Second),
+		chromedp.Sleep(random_delay),
 		//DEBUG: chromedp.Sleep(400*time.Second),
 	)
 	if err != nil {
@@ -99,7 +181,7 @@ func parseForStates(ctx *context.Context, states *[]State) {
 		data := State{}
 		err := chromedp.Run(*ctx,
 			chromedp.Text(`a`, &data.name, chromedp.ByQuery, chromedp.FromNode(n)),
-			chromedp.AttributeValue(`a`, "href", &data.pageLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
+			chromedp.AttributeValue(`a`, "href", &data.stateLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
 		)
 		if err != nil {
 			// ignore error
@@ -116,9 +198,13 @@ func parseForStates(ctx *context.Context, states *[]State) {
 
 func parseForColleges(ctx *context.Context, colleges *[]College, state State) {
 	var err error
+	n := rand.Intn(NAV_TIME_MAX_COLLEGE)
+	random_delay := time.Duration(n) * time.Second
+
 	err = chromedp.Run(*ctx,
-		chromedp.Navigate(state.pageLink),
-		chromedp.Sleep(5*time.Second),
+		chromedp.Navigate(state.stateLink),
+		chromedp.Sleep(2*time.Second),
+		chromedp.Sleep(random_delay),
 		//DEBUG: chromedp.Sleep(400*time.Second),
 	)
 	if err != nil {
@@ -137,28 +223,25 @@ func parseForColleges(ctx *context.Context, colleges *[]College, state State) {
 		fmt.Println(err)
 	}
 	//DEBUG:
+	fmt.Println(state.name)
 	fmt.Println(len(collegeLinkNodes))
 
 	for i, n := range collegeLinkNodes {
 		//var ok bool
 		data := College{}
 		data.state = state.name
-		fmt.Println(n.Attributes)
+		data.stateLink = state.stateLink
+		data.collegeLink = n.Attributes[3]
 
-		if testCollegesContinue(i) {
+		if testCollegesSkip(i) {
 			continue
 		}
 
 		err := chromedp.Run(*ctx,
-
-			//#main > div.wrapper_row > section:nth-child(4) > div > div > a:nth-child(2) > div.col-xs-12.col-sm-5 > div > p
-			//#main > div.wrapper_row > section:nth-child(4) > div > div > a:nth-child(2) > div.col-xs-12.col-sm-4 > p
-			//#main > div.wrapper_row > section:nth-child(4) > div > div > a:nth-child(2) > div.col-xs-12.col-sm-3 > p
-			chromedp.Text(`.col-sm-5`, &data.name, chromedp.ByQuery, chromedp.FromNode(n)),
-			chromedp.Text(`.col-sm-4`, &data.city, chromedp.ByQuery, chromedp.FromNode(n)),
-			chromedp.Text(`.col-sm-2`, &data.level, chromedp.ByQuery, chromedp.FromNode(n)),
-			//chromedp.AttributeValue(`a`, "href", &data.pageLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
-			// chromedp.AttributeValue(`.avatar img`, "src", &data.pageLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
+			chromedp.Text(`.col-sm-5 p`, &data.name, chromedp.ByQuery, chromedp.FromNode(n)),
+			chromedp.Text(`.col-sm-4 p`, &data.city, chromedp.ByQuery, chromedp.FromNode(n)),
+			chromedp.Text(`.col-sm-3 p`, &data.level, chromedp.ByQuery, chromedp.FromNode(n)),
+			//chromedp.AttributeValue(`.avatar img`, "src", &data.avatarLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
 		)
 		if err != nil {
 			// ignore error
@@ -168,7 +251,7 @@ func parseForColleges(ctx *context.Context, colleges *[]College, state State) {
 		//data.pageLink = BASE_URL + data.pageLink
 
 		//DEBUG:
-		fmt.Println(i, ":\t", data.name, " ", data.pageLink)
+		//fmt.Println(i, ":\t", data.name, " ", data.pageLink)
 		*colleges = append(*colleges, data)
 	}
 	//DEBUG:
@@ -506,7 +589,22 @@ func main() {
 		chromedp.DisableGPU,
 		chromedp.Flag("headless", false),
 	)
-	//var infoElements []InfoElement
+
+	confFile, err := os.Open("config.json")
+	if err != nil {
+		panic(err)
+	}
+	defer confFile.Close()
+	conf, err := ioutil.ReadAll(confFile)
+	if err != nil {
+		panic(err)
+	}
+	err = json.Unmarshal(conf, &appConfig)
+	if err != nil {
+		panic(err)
+	}
+	//DEBUG
+	//fmt.Printf("%+v", appConfig)
 
 	ctx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
 	defer cancel()
@@ -520,7 +618,7 @@ func main() {
 	fmt.Println("parse states...")
 	var colleges []College
 	for i, state := range states {
-		if testStatesContinue(i) {
+		if testStatesSkip(i) {
 			continue
 		}
 
@@ -528,7 +626,7 @@ func main() {
 		parseForColleges(&ctx, &colleges, state)
 	}
 
-	//dumpColleges(&colleges)
+	dumpColleges(&colleges)
 
 	// fmt.Println("parse product pages...")
 	// parseForProductPages(&ctx, &categories)

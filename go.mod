@@ -14,5 +14,6 @@ require (
 	github.com/gobwas/ws v1.1.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
-	golang.org/x/sys v0.0.0-20201207223542-d4d67f95c62d // indirect
+	golang.org/x/exp v0.0.0-20230111222715-75897c7a292a // indirect
+	golang.org/x/sys v0.1.0 // indirect
 )

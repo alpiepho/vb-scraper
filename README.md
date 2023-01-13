@@ -12,10 +12,11 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 
 ## TODO
 
-- [ ] start and open first page
-- [ ] gather state links
-- [ ] add pacing mechanism
-- [ ] add config file
+- [x] start and open first page
+- [x] gather state links
+- [x] add pacing mechanism
+- [x] add config file
+- [ ] export/import colleges list to separate processes
 - [ ] output csv/tab table
 - [ ] determine fields to output
 - [ ] tbd
