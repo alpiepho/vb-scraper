@@ -21,8 +21,10 @@ import (
 type Configuration struct {
 	StatesList []string `json:"stateslist"`
 	// flags
+	OpenChromedp   bool `json:"open_chromedp"`
 	ParseMap       bool `json:"parse_map"`
 	ParseStates    bool `json:"parse_states"`
+	ParseColleges  bool `json:"parse_colleges"`
 	ExportColleges bool `json:"export_colleges"`
 	ImportColleges bool `json:"import_colleges"`
 	// files
@@ -243,9 +245,6 @@ func parseForColleges(ctx *context.Context, colleges *[]College, state State) {
 }
 
 func dumpStates(states *[]State) {
-	if !appConfig.DumpStates {
-		return
-	}
 	for _, state := range *states {
 		fmt.Println("")
 		fmt.Println("name:     " + state.name)
@@ -255,9 +254,6 @@ func dumpStates(states *[]State) {
 }
 
 func dumpColleges(colleges *[]College) {
-	if !appConfig.DumpColleges {
-		return
-	}
 	for _, college := range *colleges {
 		fmt.Println("")
 		fmt.Println("name:       " + college.Name)
@@ -270,7 +266,7 @@ func dumpColleges(colleges *[]College) {
 }
 
 func exportColleges(colleges *[]College) {
-	if !appConfig.ExportColleges || len(appConfig.ExportCollegesFile) == 0 {
+	if len(appConfig.ExportCollegesFile) == 0 {
 		return
 	}
 	fileName := appConfig.ExportCollegesFile
@@ -299,7 +295,7 @@ func exportColleges(colleges *[]College) {
 }
 
 func importColleges(colleges *[]College) {
-	if !appConfig.ImportColleges || len(appConfig.ImportCollegesFile) == 0 {
+	if len(appConfig.ImportCollegesFile) == 0 {
 		return
 	}
 	fileName := appConfig.ImportCollegesFile
@@ -317,40 +313,8 @@ func importColleges(colleges *[]College) {
 		if err != nil {
 			panic(err)
 		}
-	} else {
-		lines := strings.Split(string(data), "\n")
-		for _, line := range lines {
-			var college College
-			line := strings.TrimSpace(line)
-			if len(line) == 0 {
-				continue
-			}
-			value := strings.Split(line, ":")[1]
-			value = strings.TrimSpace(value)
-
-			if strings.Contains(line, "name:") {
-				college = College{}
-				college.Name = value
-			}
-			if strings.Contains(line, "state:") {
-				college := College{}
-				college.State = value
-			}
-			if strings.Contains(line, "city:") {
-				college := College{}
-				college.City = value
-			}
-			if strings.Contains(line, "level:") {
-				college := College{}
-				college.Level = value
-			}
-			if strings.Contains(line, "pageLink:") {
-				college := College{}
-				college.CollegeLink = value
-				*colleges = append(*colleges, college)
-			}
-		}
 	}
+	fmt.Println(len(*colleges))
 }
 
 func main() {
@@ -378,31 +342,48 @@ func main() {
 	//fmt.Printf("%+v", appConfig)
 
 	ctx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
-	defer cancel()
-	ctx, cancel = chromedp.NewContext(ctx)
-	defer cancel()
-
-	fmt.Println("parse map...")
-	var states []State
-	parseForStates(&ctx, &states)
-
-	fmt.Println("parse states...")
-	var colleges []College
-	for i, state := range states {
-		if testStatesSkip(i) {
-			continue
-		}
-
-		fmt.Println("parse colleges...")
-		parseForColleges(&ctx, &colleges, state)
+	if appConfig.OpenChromedp {
+		defer cancel()
+		ctx, cancel = chromedp.NewContext(ctx)
+		defer cancel()
 	}
 
-	dumpStates(&states)
-	dumpColleges(&colleges)
-	exportColleges(&colleges)
-	importColleges(&colleges)
+	var states []State
+	if appConfig.ParseMap {
+		fmt.Println("parse map...")
+		parseForStates(&ctx, &states)
+	}
 
-	cancel()
+	var colleges []College
+	if appConfig.ParseStates {
+		fmt.Println("parse states...")
+		for i, state := range states {
+			if testStatesSkip(i) {
+				continue
+			}
+			if appConfig.ParseColleges {
+				fmt.Println("parse colleges...")
+				parseForColleges(&ctx, &colleges, state)
+			}
+		}
+	}
+
+	if appConfig.DumpStates {
+		dumpStates(&states)
+	}
+	if appConfig.DumpColleges {
+		dumpColleges(&colleges)
+	}
+	if appConfig.ExportColleges {
+		dumpColleges(&colleges)
+	}
+	if appConfig.ImportColleges {
+		importColleges(&colleges)
+	}
+
+	if appConfig.OpenChromedp {
+		cancel()
+	}
 
 	fmt.Println("done.")
 }

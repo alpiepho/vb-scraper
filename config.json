@@ -1,11 +1,13 @@
 {
     "stateslist" : ["All"],
-    "parse_map" : true,
-    "parse_states": true,
-    "export_colleges": true,
+    "open_chromedp" : false,
+    "parse_map" : false,
+    "parse_states": false,
+    "parse_colleges": false,
+    "export_colleges": false,
     "export_colleges_file": "allcolleges.json",
-    "import_colleges" : false,
-    "import_colleges_file": "allcolleges.txt",
+    "import_colleges" : true,
+    "import_colleges_file": "allcolleges.json",
 
     "dump_states" : false,
     "dump_colleges" : false

@@ -64,7 +64,7 @@ Kip@VarsityAthlete.com
 
 ## Possible Template
 
-From: ${PLAYER_EMAIL}
+From: PLAYER_EMAIL
 Date: June 13, 2022 at 5:57:19 PM MDT
 To: doug_walters@pba.edu
 Cc: "kip varsityathlete.com" <kip@varsityathlete.com>
@@ -72,7 +72,7 @@ Subject: ${PLAYER_SUBJECT_LINE}
 
 
 Dear Coach ${TEAM_COACH_NAME},
-Congratulations on a winning season and getting 7th seed in the NCAA Tournament! My name is ${PLAYER_NAME} and I am the ${PLAYER_POSITION} and team captain for my 15 National team that is headed to AAU Nationals (Premier Div.) and then USAV Nationals (National Div.). As I look at schools, Palm Beach Atlantic University is a great fit as I have family in Florida, am familiar with the area and it has my top majors Management and Business Administration.
+${TEAM_INTRO_SENTENCE} My name is PLAYER_NAME and I am the PLAYER_POSITION and team captain for my 15 National team that is headed to AAU Nationals (Premier Div.) and then USAV Nationals (National Div.). As I look at schools, ${TEAM_NAME} is a great fit ${TEAM_FIT_REASON} and it has my top major PLAYER_MAJOR.
 Everyone says they are a competitor, but here is what I am doing to improve myself -
 
 1. I play 6-7 days a week - (6-10 hours of club practice and 1-3 hours of privates with International Player Sonia Newcomb)
@@ -82,7 +82,7 @@ Everyone says they are a competitor, but here is what I am doing to improve myse
 5. I work with a sports specialized mental toughness coach to help elevate my mental game
 
 Here is some information about myself for you to review to see if I meet your initial criteria.
-(For future updates please look at my profile on https://www.varsityathlete.com/JaneDavis)
+(For future updates please look at my profile on https://www.varsityathlete.com/PLAYER_SITE)
 I am working on a highlight video from this season which will be done when I get the footage from these last two tournaments. I will send a follow up email with the link when it is ready. 
 
 Academics Graduation Year: 2025
@@ -122,6 +122,12 @@ Kip@VarsityAthlete.com
 ## Other Team Details to Gather
 
 ### Gathered
+
+TEAM_NAME
+TEAM_COACH_NAME
+TEAM_INTRO_SENTENCE - probably can't gather, maybe record?  highlights from coach?
+TEAM_FIT_REASON - probably can't gather
+TEAM_MASOT
 
 - school name
 - state
