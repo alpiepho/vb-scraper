@@ -17,13 +17,32 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 - [x] add pacing mechanism
 - [x] add config file
 
-- [ ] test dump_states
-- [ ] test dump_colleges
-- [ ] test parse_map
-- [ ] test parse_states
-- [ ] test export_colleges
-- [ ] test import_colleges txt
-- [ ] test import_colleges json
+- [x] test dump_states
+- [x] test dump_colleges
+- [x] test parse_map
+- [x] test parse_states
+- [x] test export_colleges
+- [-] test import_colleges txt
+- [x] test import_colleges json
+
+- [ ] parse college details page
+    - [ ] conference
+    - [ ] academic selectivity
+    - [ ] enroollment (remove comma)
+    - [ ] Private/Public
+    - [ ] coaches names (might be dated, check google -> volleybll roster)
+    - [ ] student-to-faculty ratio
+    - [ ] student-to-faculty ratio
+    - [ ] calendar system
+    - [ ] graduation rate
+    - [ ] retention rate
+    - [ ] enrollment by gender
+    - [ ] on-campus housing
+    - [ ] Admissions..
+    - [ ] Cost...
+    - [ ] Major...
+
+
 
 - [ ] export/import colleges list to separate processes
 - [ ] output csv/tab table
