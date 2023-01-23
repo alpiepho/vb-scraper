@@ -1,0 +1,67 @@
+From: kayleepiepho@gmail.com
+To: ${TEAM_COACH_EMAIL}
+Cc: "kip varsityathlete.com" <kip@varsityathlete.com>
+Subject: Kaylee Piepho - S/RS - 2025 - Math - 3.9 GPA
+
+
+Dear Coach ${TEAM_COACH_NAME},
+${TEAM_INTRO_SENTENCE} My name is Kaylee Piepho and I am the Setter for my 16 National team. 
+We will be attending 3 USAV Qualifiers (Spokane, Chicago, Reno), the AAU Nationals in Orlando,
+and hopefully USAV Nationals in Chicago.
+
+As I look at schools, ${TEAM_NAME} is a great fit ${TEAM_FIT_REASON} and it has my top major PLAYER_MAJOR.
+Everyone says they are a competitor, but here is what I am doing to improve myself -
+
+1. I play 5-6 days a week - (6-10 hours of club practice and 1-3 hours of privates lessons)
+2. Lifting weights 4x a week
+3. I am working with a medical nutritionist to keep my body in optimal health
+4. I play beach volleyball for Aspire Beach club 4-8 hrs a week during the summer to increase speed and strength
+5. I work with a sports specialized mental toughness coach to help elevate my mental game
+
+Here is some information about myself for you to review to see if I meet your initial criteria.
+(For future updates please look at my profile on https://www.varsityathlete.com/kayleepiepho)
+I am working on a highlight video from this season which will be done when I get the footage from these last two tournaments. I will send a follow up email with the link when it is ready. 
+
+Academics Graduation Year: 2025
+High School: Fossil Ridge Highschool (5A) Fort Collins, Colorado
+GPA: 3.9
+PSAT: 1270/1440 (720/720 math)
+Years of Club Volleyball: 6
+Club: Rocky Elite Volleyball
+Team: 16 National
+Position: Setter
+Height: 5’9”
+Weight: 140lb
+Block Jump: 9’1” (2022)
+Approach Jump: 9’2” (2022)
+Hand: Right
+
+Upcoming Tournaments
+2023 Pacific Northwest Girls National Qualifier (Week One) - March 25-27, 2023, Spokane, WA
+2023 Windy City Girls Qualifier April 7-9, 2023, Chicago, IL
+2023 Far Western Girls Qualifier, April 22-24 and April 28-30, 2023, Reno, NV
+2023 50th Annual AAU Nationals, June 26-29, 2023, Orlando FL
+
+Thank you so much for your time in reading my email and I hope to see you at one my tournaments. 
+Given the NCAA guidelines I have copied talent evaluator, Kip Tani, from Varsity Athlete as he is 
+happy to answer any questions you have about me.  I would love it if you could please add me 
+to your upcoming camp and clinic email list so that I may try and attend.
+
+Go ${TEAM_MASOT}!
+
+Thank you,
+
+
+
+
+Kaylee Piepho
+kayleepiepho@gmail.com
+Kip Tani - Varsity Athlete 970-222-7628
+Kip@VarsityAthlete.com
+
+# TEAM_COACH_EMAIL
+# TEAM_COACH_NAME
+# TEAM_INTRO_SENTENCE
+# TEAM_NAME
+# TEAM_FIT_REASON
+# TEAM_MASOT

@@ -1,6 +1,9 @@
 {
-    "stateslist" : ["All"],
-    "open_chromedp" : false,
+    "stateslist" : [
+        "# list of specific states or All, start with # to disable that line",
+        "All"
+    ],
+    "open_chromedp" : true,
     "parse_map" : false,
     "parse_states": false,
     "parse_colleges": false,
@@ -9,6 +12,15 @@
     "import_colleges" : true,
     "import_colleges_file": "allcolleges.json",
 
+    "parse_college_pages": true,
+    "collegelist" : [
+        "# list of specific colleges or All, start with # to disable that line",
+        "Flagler College",
+        "Nova Southeastern University"
+    ],
+    "export_college_details": true,
+    "export_college_details_file": "college_details.json",
+   
     "dump_states" : false,
     "dump_colleges" : false
 }
