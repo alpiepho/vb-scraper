@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"math/rand"
+	"net/url"
 	"os"
 	"strings"
 	"time"
@@ -60,12 +61,14 @@ type College struct {
 }
 
 type CollegeDetail struct {
-	Name        string `json:"name"`
-	State       string `json:"state"`
-	City        string `json:"city"`
-	Level       string `json:"level"`
-	CollegeLink string `json:"college_link"`
-	StateLink   string `json:"state_link"`
+	Name          string `json:"name"`
+	State         string `json:"state"`
+	City          string `json:"city"`
+	Level         string `json:"level"`
+	CollegeLink   string `json:"college_link"`
+	StateLink     string `json:"state_link"`
+	GoogleLink    string `json:"google_link"`
+	WikipediaLink string `json:"wikipedia_link"`
 
 	Conference          string `json:"conference"`
 	AcademicSelectivity string `json:"academic_selectivity"`
@@ -86,32 +89,33 @@ type CollegeDetail struct {
 	RetentionRate      string `json:"retention_rate"`
 	OnCampusHousing    string `json:"on_campus_housing"`
 
-	// AcceptanceRate                    string `json:"acceptance_rate"`
-	// TotalAppicants                    string `json:"total_applicants"`
-	// SatStudentsSubmitting             string `json:"sat_students_submitting"`
-	// SatSReadingRange                  string `json:"sat_reading_range"`
-	// SatMathRange                      string `json:"sat_math_range"`
-	// SatWritingRange                   string `json:"sat_writing_range"`
-	// ActStudentsSubmitting             string `json:"act_students_submitting"`
-	// ActSReadingRange                  string `json:"act_reading_range"`
-	// ActMathRange                      string `json:"act_math_range"`
-	// ActWritingRange                   string `json:"act_writing_range"`
-	// RequirementsOpenAdmissionPolicy   string `json:"requirements_open_admission_policy"`
-	// RequirementsApplicationFee        string `json:"requirements_application_fee"`
-	// RequirementsRecommendations       string `json:"requirements_recomedations"`
-	// RequirementsSecondarySchoolRecord string `json:"requirements_secondary_school_record"`
-	// RequirementsSecondarySchoolRank   string `json:"requirements_secondary_school_rank"`
-	// RequirementsSecondarySchoolGpa    string `json:"requirements_secondary_school_gpa"`
+	AcceptanceRate                    string `json:"acceptance_rate"`
+	TotalAppicants                    string `json:"total_applicants"`
+	SatStudentsSubmitting             string `json:"sat_students_submitting"`
+	SatSReadingRange                  string `json:"sat_reading_range"`
+	SatMathRange                      string `json:"sat_math_range"`
+	SatWritingRange                   string `json:"sat_writing_range"`
+	ActStudentsSubmitting             string `json:"act_students_submitting"`
+	ActComposite                      string `json:"act_composite"`
+	ActEnglish                        string `json:"act_english"`
+	ActMath                           string `json:"act_math"`
+	ActWriting                        string `json:"act_writing"`
+	RequirementsOpenAdmissionPolicy   string `json:"requirements_open_admission_policy"`
+	RequirementsApplicationFee        string `json:"requirements_application_fee"`
+	RequirementsRecommendations       string `json:"requirements_recomedations"`
+	RequirementsSecondarySchoolRecord string `json:"requirements_secondary_school_record"`
+	RequirementsSecondarySchoolRank   string `json:"requirements_secondary_school_rank"`
+	RequirementsSecondarySchoolGpa    string `json:"requirements_secondary_school_gpa"`
 
-	// CostInStateTotal         string `json:"cost_in_state_total"`
-	// CostInStateTuition       string `json:"cost_in_state_tuition"`
-	// CostInStateFee           string `json:"cost_in_state_fee"`
-	// CostInStateOnCampusRoom  string `json:"cost_in_state_on_campus_room"`
-	// CostOutStateTotal        string `json:"cost_out_state_total"`
-	// CostOutStateTuition      string `json:"cost_out_state_tuition"`
-	// CostOutStateFee          string `json:"cost_out_state_fee"`
-	// CostOutStateOnCampusRoom string `json:"cost_out_state_on_campus_room"`
-	// CostPercentUndergradAid  string `json:"cost_percent_undergrad_aid"`
+	CostInStateTotal         string `json:"cost_in_state_total"`
+	CostInStateTuition       string `json:"cost_in_state_tuition"`
+	CostInStateFee           string `json:"cost_in_state_fee"`
+	CostInStateOnCampusRoom  string `json:"cost_in_state_on_campus_room"`
+	CostOutStateTotal        string `json:"cost_out_state_total"`
+	CostOutStateTuition      string `json:"cost_out_state_tuition"`
+	CostOutStateFee          string `json:"cost_out_state_fee"`
+	CostOutStateOnCampusRoom string `json:"cost_out_state_on_campus_room"`
+	CostPercentUndergradAid  string `json:"cost_percent_undergrad_aid"`
 
 	// Majors []string `json:"majors"`
 }
@@ -391,13 +395,11 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	data.Level = college.Level
 	data.CollegeLink = college.CollegeLink
 	data.StateLink = college.StateLink
-	data.Conference = ""
-	data.AcademicSelectivity = ""
-	data.UndergradEnrollment = ""
-	data.ControlAffiliation = ""
-	data.Overview = ""
-	data.HeadCoach = ""
-	data.AssistantCoach = ""
+	temp := data.Name
+	data.GoogleLink = "https://www.google.com/search?q=" + url.QueryEscape(temp)
+	temp = strings.ReplaceAll(temp, " ", "_")
+	temp = strings.ReplaceAll(temp, "&", "%26")
+	data.WikipediaLink = "https://en.wikipedia.org/wiki/" + temp
 
 	err = chromedp.Run(*ctx,
 		chromedp.Navigate(college.CollegeLink),
@@ -420,6 +422,35 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 		chromedp.Text(`#school-section > div > div:nth-child(1) > div:nth-child(2) > p`, &data.CalendarSystem, chromedp.ByQuery),
 		chromedp.Text(`#school-section > div > div:nth-child(2) > div:nth-child(2) > p`, &data.RetentionRate, chromedp.ByQuery),
 		chromedp.Text(`#school-section > div > div:nth-child(3) > div:nth-child(2) > p`, &data.OnCampusHousing, chromedp.ByQuery),
+
+		chromedp.Text(`#admissions-section > div > div:nth-child(1) > div:nth-child(1) > p`, &data.AcceptanceRate, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(1) > div:nth-child(2) > p`, &data.TotalAppicants, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(5) > div > p`, &data.SatStudentsSubmitting, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(6) > div:nth-child(1) > p`, &data.SatSReadingRange, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(6) > div:nth-child(2) > p`, &data.SatMathRange, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(6) > div:nth-child(3) > p`, &data.SatWritingRange, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(8) > div > p`, &data.ActStudentsSubmitting, chromedp.ByQuery),
+
+		chromedp.Text(`#admissions-section > div > div:nth-child(9) > div:nth-child(1) > p`, &data.ActComposite, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(9) > div:nth-child(2) > p`, &data.ActEnglish, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(9) > div:nth-child(3) > p`, &data.ActMath, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(9) > div:nth-child(4) > p`, &data.ActWriting, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(12) > div:nth-child(1) > p`, &data.RequirementsOpenAdmissionPolicy, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(12) > div:nth-child(2) > p`, &data.RequirementsApplicationFee, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(12) > div:nth-child(3) > p`, &data.RequirementsRecommendations, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(13) > div:nth-child(1) > p`, &data.RequirementsSecondarySchoolRecord, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(13) > div:nth-child(3) > p`, &data.RequirementsSecondarySchoolRank, chromedp.ByQuery),
+		chromedp.Text(`#admissions-section > div > div:nth-child(13) > div:nth-child(2) > p`, &data.RequirementsSecondarySchoolGpa, chromedp.ByQuery),
+
+		chromedp.Text(`#cost-section > div > div:nth-child(3) > div:nth-child(1) > p`, &data.CostInStateTotal, chromedp.ByQuery),
+		chromedp.Text(`#cost-section > div > div:nth-child(3) > div:nth-child(2) > p`, &data.CostInStateTuition, chromedp.ByQuery),
+		chromedp.Text(`#cost-section > div > div:nth-child(3) > div:nth-child(3) > p`, &data.CostInStateFee, chromedp.ByQuery),
+		chromedp.Text(`#cost-section > div > div:nth-child(3) > div:nth-child(4) > p`, &data.CostInStateOnCampusRoom, chromedp.ByQuery),
+		chromedp.Text(`#cost-section > div > div:nth-child(6) > div:nth-child(1) > p`, &data.CostOutStateTotal, chromedp.ByQuery),
+		chromedp.Text(`#cost-section > div > div:nth-child(6) > div:nth-child(2) > p`, &data.CostOutStateTuition, chromedp.ByQuery),
+		chromedp.Text(`#cost-section > div > div:nth-child(6) > div:nth-child(3) > p`, &data.CostOutStateFee, chromedp.ByQuery),
+		chromedp.Text(`#cost-section > div > div:nth-child(6) > div:nth-child(4) > p`, &data.CostOutStateOnCampusRoom, chromedp.ByQuery),
+		chromedp.Text(`#cost-section > div > div:nth-child(9) > div > p`, &data.CostPercentUndergradAid, chromedp.ByQuery),
 	)
 	if err != nil {
 		// ignore error

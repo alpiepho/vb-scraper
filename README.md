@@ -37,9 +37,13 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
     - [x] retention rate
     - [x] enrollment by gender
     - [x] on-campus housing
-    - [ ] Admissions..
-    - [ ] Cost...
+    - [x] Admissions..
+    - [x] Cost...
     - [ ] Major...
+- [ ] other stuff
+    - [x] google link
+    - [x] wikipedia link
+    - [ ] lat/long
 
 
 
