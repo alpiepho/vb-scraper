@@ -26,18 +26,17 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 - [x] test import_colleges json
 
 - [ ] parse college details page
-    - [ ] conference
-    - [ ] academic selectivity
-    - [ ] enroollment (remove comma)
-    - [ ] Private/Public
-    - [ ] coaches names (might be dated, check google -> volleybll roster)
-    - [ ] student-to-faculty ratio
-    - [ ] student-to-faculty ratio
-    - [ ] calendar system
-    - [ ] graduation rate
-    - [ ] retention rate
-    - [ ] enrollment by gender
-    - [ ] on-campus housing
+    - [x] conference
+    - [x] academic selectivity
+    - [x] enrollment (remove comma)
+    - [x] Private/Public
+    - [x] coaches names (might be dated, check google -> volleybll roster)
+    - [x] student-to-faculty ratio
+    - [x] calendar system
+    - [x] graduation rate
+    - [x] retention rate
+    - [x] enrollment by gender
+    - [x] on-campus housing
     - [ ] Admissions..
     - [ ] Cost...
     - [ ] Major...
@@ -51,6 +50,7 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 
 - [ ] build as web server
 - [ ] generate html output
+- [ ] build map (scrape site to get lat/long)
 - [ ] more tbd
 
 
@@ -75,3 +75,7 @@ or to gather all the output:
 
 ## REFERENCE
 
+- https://www.google.com/search?q=create+google+map+with+markers&rlz=1CDGOYI_enUS729US729&oq=create+google+map+&aqs=chrome.1.69i57j0i512l5.14447j0j7&hl=en-US&sourceid=chrome-mobile&ie=UTF-8
+- https://www.google.com/maps/about/mymaps/
+- https://developers.google.com/maps/documentation/javascript/examples/marker-simple
+- https://www.latlong.net/
