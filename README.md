@@ -83,4 +83,5 @@ or to gather all the output:
 - https://www.google.com/search?q=create+google+map+with+markers&rlz=1CDGOYI_enUS729US729&oq=create+google+map+&aqs=chrome.1.69i57j0i512l5.14447j0j7&hl=en-US&sourceid=chrome-mobile&ie=UTF-8
 - https://www.google.com/maps/about/mymaps/
 - https://developers.google.com/maps/documentation/javascript/examples/marker-simple
-- https://www.latlong.net/
+- https://developers.google.com/maps/documentation/javascript/reference/marker
+- https://pkg.go.dev/github.com/chromedp/chromedp@v0.8.0#Text

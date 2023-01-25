@@ -15,20 +15,20 @@
     "parse_college_pages": true,
     "collegelist" : [
         "# list of specific colleges or All, start with # to disable that line",
-        "Flagler College",
+        "#Flagler College",
         "Nova Southeastern University",
-        "# University of Montana",
-        "# Arizona State University",
-        "# University of Central Florida",
-        "# University of North Texas",
-        "# Coastal Carolina University",
-        "# University of Tampa",
-        "# TBA",
-        "# All"
+        "University of Montana",
+        "Arizona State University",
+        "University of Central Florida",
+        "University of North Texas",
+        "Coastal Carolina University",
+        "University of Tampa",
+        "#TBA",
+        "#All"
     ],
-    "parse_lat_long" : false,
+    "parse_lat_long" : true,
     "export_college_details": true,
-    "export_college_details_file": "college_details.json",
+    "export_college_details_file": "college_details_16.json",
    
     "dump_states" : false,
     "dump_colleges" : false
