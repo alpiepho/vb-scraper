@@ -63,14 +63,18 @@ type College struct {
 }
 
 type CollegeDetail struct {
-	Name          string `json:"name"`
-	State         string `json:"state"`
-	City          string `json:"city"`
-	Level         string `json:"level"`
-	CollegeLink   string `json:"college_link"`
-	StateLink     string `json:"state_link"`
-	GoogleLink    string `json:"google_link"`
-	WikipediaLink string `json:"wikipedia_link"`
+	Name               string `json:"name"`
+	State              string `json:"state"`
+	City               string `json:"city"`
+	Level              string `json:"level"`
+	CollegeLink        string `json:"college_link"`
+	StateLink          string `json:"state_link"`
+	GoogleLink         string `json:"google_link"`
+	GoogleMascotLink   string `json:"google_mascot_link"`
+	GoogleRosterLink   string `json:"google_roster_link"`
+	GoogleCoachesLink  string `json:"google_coaches_link"`
+	GoogleScheduleLink string `json:"google_schedule_link"`
+	WikipediaLink      string `json:"wikipedia_link"`
 
 	Conference          string `json:"conference"`
 	AcademicSelectivity string `json:"academic_selectivity"`
@@ -119,9 +123,10 @@ type CollegeDetail struct {
 	CostOutStateOnCampusRoom string `json:"cost_out_state_on_campus_room"`
 	CostPercentUndergradAid  string `json:"cost_percent_undergrad_aid"`
 
-	// Majors []string `json:"majors"`
+	Majors []string `json:"majors"`
 
 	LatitudeLongitude string `json:"latitude_logitude"`
+	Mascot            string `json:"mascot"`
 }
 
 var STATE_NAMES = [51]string{
@@ -401,10 +406,15 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	data.StateLink = college.StateLink
 	temp := data.Name
 	data.GoogleLink = "https://www.google.com/search?q=" + url.QueryEscape(temp)
+	data.GoogleMascotLink = "https://www.google.com/search?q=" + url.QueryEscape(temp+" mascot")
+	data.GoogleRosterLink = "https://www.google.com/search?q=" + url.QueryEscape(temp+" volleyball roster")
+	data.GoogleCoachesLink = "https://www.google.com/search?q=" + url.QueryEscape(temp+" volleyball coaches")
+	data.GoogleScheduleLink = "https://www.google.com/search?q=" + url.QueryEscape(temp+" volleyball schedule")
 	temp = strings.ReplaceAll(temp, " ", "_")
 	temp = strings.ReplaceAll(temp, "&", "%26")
 	data.WikipediaLink = "https://en.wikipedia.org/wiki/" + temp
 
+	var majorNodes []*cdp.Node
 	err = chromedp.Run(*ctx,
 		chromedp.Navigate(college.CollegeLink),
 		chromedp.Sleep(2*time.Second),
@@ -455,12 +465,19 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 		chromedp.Text(`#cost-section > div > div:nth-child(6) > div:nth-child(3) > p`, &data.CostOutStateFee, chromedp.ByQuery),
 		chromedp.Text(`#cost-section > div > div:nth-child(6) > div:nth-child(4) > p`, &data.CostOutStateOnCampusRoom, chromedp.ByQuery),
 		chromedp.Text(`#cost-section > div > div:nth-child(9) > div > p`, &data.CostPercentUndergradAid, chromedp.ByQuery),
+		chromedp.Nodes(`p.major`, &majorNodes, chromedp.ByQueryAll),
 	)
 	if err != nil {
 		// ignore error
 		//DEBUG:
 		fmt.Println(err)
 	}
+
+	for _, n := range majorNodes {
+		value := n.Children[0].NodeValue
+		data.Majors = append(data.Majors, value)
+	}
+
 	data.UndergradEnrollment = strings.ReplaceAll(data.UndergradEnrollment, ",", "")
 	data.HeadCoach = strings.ReplaceAll(data.HeadCoach, "\nSend Message", "")
 	data.AssistantCoach = strings.ReplaceAll(data.AssistantCoach, "\nSend Message", "")

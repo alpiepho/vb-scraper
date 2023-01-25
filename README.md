@@ -39,18 +39,19 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
     - [x] on-campus housing
     - [x] Admissions..
     - [x] Cost...
-    - [ ] Major...
+    - [x] Major...
 - [ ] other stuff
     - [x] google link
     - [x] wikipedia link
     - [ ] lat/long
+    - [ ] mascot
+    - [ ] volleyball link
 
 
 
 - [ ] export/import colleges list to separate processes
 - [ ] output csv/tab table
 - [ ] determine fields to output
-- [ ] tbd
 
 - [ ] build as web server
 - [ ] generate html output

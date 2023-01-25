@@ -16,7 +16,15 @@
     "collegelist" : [
         "# list of specific colleges or All, start with # to disable that line",
         "Flagler College",
-        "Nova Southeastern University"
+        "Nova Southeastern University",
+        "# University of Montana",
+        "# Arizona State University",
+        "# University of Central Florida",
+        "# University of North Texas",
+        "# Coastal Carolina University",
+        "# University of Tampa",
+        "# TBA",
+        "# All"
     ],
     "parse_lat_long" : false,
     "export_college_details": true,
