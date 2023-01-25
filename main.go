@@ -33,6 +33,7 @@ type Configuration struct {
 	ParseCollegePages        bool     `json:"parse_college_pages"`
 	ExportCollegeDetails     bool     `json:"export_college_details"`
 	ExportCollegeDetailsFile string   `json:"export_college_details_file"`
+	ParseLatitudeLogitude    bool     `json:"parse_lat_long"`
 
 	//DEBUG
 	DumpStates   bool `json:"dump_states"`
@@ -42,6 +43,7 @@ type Configuration struct {
 var appConfig Configuration
 
 const MAP_URL = "https://sportsrecruits.com/athletic-scholarships/womens-volleyball"
+const LATLONG_URL = "https://www.findlatitudeandlongitude.com"
 
 const NAV_TIME_MAX_STATE = 3
 const NAV_TIME_MAX_COLLEGE = 3
@@ -118,6 +120,8 @@ type CollegeDetail struct {
 	CostPercentUndergradAid  string `json:"cost_percent_undergrad_aid"`
 
 	// Majors []string `json:"majors"`
+
+	LatitudeLongitude string `json:"latitude_logitude"`
 }
 
 var STATE_NAMES = [51]string{
@@ -464,6 +468,32 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	*details = append(*details, data)
 }
 
+func parseLatitudeLogitude(ctx *context.Context, details *[]CollegeDetail, index int) {
+	var err error
+	n := rand.Intn(NAV_TIME_MAX_COLLEGE)
+	random_delay := time.Duration(n) * time.Second
+
+	name := (*details)[index].Name
+	location := ""
+
+	err = chromedp.Run(*ctx,
+		chromedp.Navigate(LATLONG_URL),
+		chromedp.Sleep(5*time.Second),
+		chromedp.Sleep(random_delay),
+		chromedp.SendKeys(`#search_box > input.address`, name+", US", chromedp.ByID),
+		chromedp.Sleep(1*time.Second),
+		chromedp.Click(`#search_box > input.big_button`),
+		chromedp.Sleep(10*time.Second),
+		chromedp.Text(`#search_results > span`, &location, chromedp.ByQuery),
+	)
+	if err != nil {
+		// ignore error
+		//DEBUG:
+		fmt.Println(err)
+	}
+	(*details)[index].LatitudeLongitude = location
+}
+
 func exportCollegeDetails(details *[]CollegeDetail) {
 	if len(appConfig.ExportCollegeDetailsFile) == 0 {
 		return
@@ -554,7 +584,11 @@ func main() {
 			}
 			parseForCollegePages(&ctx, &details, &college)
 		}
-
+		if appConfig.ParseLatitudeLogitude {
+			for i, _ := range details {
+				parseLatitudeLogitude(&ctx, &details, i)
+			}
+		}
 	}
 	if appConfig.ExportCollegeDetails {
 		exportCollegeDetails(&details)

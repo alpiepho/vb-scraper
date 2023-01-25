@@ -18,6 +18,7 @@
         "Flagler College",
         "Nova Southeastern University"
     ],
+    "parse_lat_long" : false,
     "export_college_details": true,
     "export_college_details_file": "college_details.json",
    

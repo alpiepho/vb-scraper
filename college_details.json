@@ -46,7 +46,8 @@
     "cost_out_state_tuition": "$16,180",
     "cost_out_state_fee": "Not Reported",
     "cost_out_state_on_campus_room": "Not Reported",
-    "cost_percent_undergrad_aid": "85%"
+    "cost_percent_undergrad_aid": "85%",
+    "latitude_logitude": "Output Location:\n1508, South Flagler Avenue, Flagler Beach, Flagler County, Florida, 32136, USA\n\n\nOutput Latitude, Longitude:\n29.466667°, -81.125739°\nlinks to this location\ncorrection for this location"
   },
   {
     "name": "Nova Southeastern University",
@@ -95,6 +96,7 @@
     "cost_out_state_tuition": "$24,750",
     "cost_out_state_fee": "$650",
     "cost_out_state_on_campus_room": "Not Reported",
-    "cost_percent_undergrad_aid": "98%"
+    "cost_percent_undergrad_aid": "98%",
+    "latitude_logitude": "Output Location:\nNova Southeastern University, Davie, Davie, Broward County, Florida, 33328, USA\n\n\nOutput Latitude, Longitude:\n26.080089°, -80.248546°\nlinks to this location\ncorrection for this location"
   }
 ]
