@@ -35,6 +35,12 @@ type Configuration struct {
 	ExportCollegeDetailsFile string   `json:"export_college_details_file"`
 	ParseLatitudeLogitude    bool     `json:"parse_lat_long"`
 
+	ImportCollegeDetails     bool   `json:"import_college_details"`
+	ImportCollegeDetailsFile string `json:"import_college_details_file"`
+
+	ExportCollegeDetailsText     bool   `json:"export_college_details_text"`
+	ExportCollegeDetailsTextFile string `json:"export_college_details_text_file"`
+
 	//DEBUG
 	DumpStates   bool `json:"dump_states"`
 	DumpColleges bool `json:"dump_colleges"`
@@ -529,6 +535,59 @@ func exportCollegeDetails(details *[]CollegeDetail) {
 	file.WriteString(string(b))
 }
 
+func importCollegeDetails(details *[]CollegeDetail) {
+	if len(appConfig.ImportCollegeDetailsFile) == 0 {
+		return
+	}
+	fileName := appConfig.ImportCollegeDetailsFile
+	file, err := os.Open(fileName)
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+	data, err := ioutil.ReadAll(file)
+	if err != nil {
+		panic(err)
+	}
+	if strings.Contains(fileName, ".json") {
+		err = json.Unmarshal(data, &details)
+		if err != nil {
+			panic(err)
+		}
+	}
+	fmt.Println(len(*details))
+}
+
+func exportCollegeDetailsText(details *[]CollegeDetail) {
+	if len(appConfig.ExportCollegeDetailsTextFile) == 0 {
+		return
+	}
+	fileName := appConfig.ExportCollegeDetailsTextFile
+	file, err := os.Create(fileName)
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+	b, err := json.MarshalIndent(*details, "", "  ")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	msg := string(b)
+	msg = strings.ReplaceAll(msg, "    \"", "")
+	msg = strings.ReplaceAll(msg, "name\":", " - ")
+	msg = strings.ReplaceAll(msg, "\",", "")
+	msg = strings.ReplaceAll(msg, "\"", "")
+	msg = strings.ReplaceAll(msg, "[", "")
+	msg = strings.ReplaceAll(msg, "],", "")
+	msg = strings.ReplaceAll(msg, "]", "")
+	msg = strings.ReplaceAll(msg, "{", "")
+	msg = strings.ReplaceAll(msg, "},", "")
+	msg = strings.ReplaceAll(msg, "}", "")
+
+	file.WriteString(msg)
+}
+
 func main() {
 	//headless := flag.Bool("headless", false, "a bool")
 
@@ -610,6 +669,13 @@ func main() {
 	}
 	if appConfig.ExportCollegeDetails {
 		exportCollegeDetails(&details)
+	}
+
+	if appConfig.ImportColleges {
+		importCollegeDetails(&details)
+	}
+	if appConfig.ExportCollegeDetailsText {
+		exportCollegeDetailsText(&details)
 	}
 
 	if appConfig.OpenChromedp {

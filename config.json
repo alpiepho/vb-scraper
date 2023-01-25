@@ -23,13 +23,22 @@
         "University of North Texas",
         "Coastal Carolina University",
         "University of Tampa",
+        "Northern Arizona University",
         "#TBA",
         "#All"
     ],
+
     "parse_lat_long" : true,
+
     "export_college_details": true,
     "export_college_details_file": "college_details_16.json",
-   
+
+    "import_college_details": false,
+    "import_college_details_file": "college_details_16.json",
+
+    "export_college_details_text": true,
+    "export_college_details_text_file": "college_details_16.text",
+
     "dump_states" : false,
     "dump_colleges" : false
 }
