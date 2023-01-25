@@ -421,6 +421,7 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	data.WikipediaLink = "https://en.wikipedia.org/wiki/" + temp
 
 	var majorNodes []*cdp.Node
+
 	err = chromedp.Run(*ctx,
 		chromedp.Navigate(college.CollegeLink),
 		chromedp.Sleep(2*time.Second),
@@ -434,8 +435,25 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 		chromedp.Click(`.toggle-content`),
 		chromedp.Sleep(1*time.Second),
 		chromedp.Text(`.read-more-container`, &data.Overview, chromedp.ByQuery, chromedp.AtLeast(0)),
+	)
+	if err != nil {
+		// ignore error
+		//DEBUG:
+		fmt.Println(err)
+	}
+
+	// found schools with only 1 coach listed, seperate Run so remaining fields are parsed
+	err = chromedp.Run(*ctx,
 		chromedp.Text(`#athletics-section > div > div:nth-child(6) > div:nth-child(1) > p`, &data.HeadCoach, chromedp.ByQuery, chromedp.AtLeast(0)),
 		chromedp.Text(`#athletics-section > div > div:nth-child(6) > div:nth-child(2) > p`, &data.AssistantCoach, chromedp.ByQuery, chromedp.AtLeast(0)),
+	)
+	if err != nil {
+		// ignore error
+		//DEBUG:
+		fmt.Println(err)
+	}
+
+	err = chromedp.Run(*ctx,
 		chromedp.Text(`#school-section > div > div:nth-child(1) > div:nth-child(1) > p`, &data.StudentRatio, chromedp.ByQuery, chromedp.AtLeast(0)),
 		chromedp.Text(`#school-section > div > div:nth-child(2) > div:nth-child(1) > p`, &data.GraduationRate, chromedp.ByQuery, chromedp.AtLeast(0)),
 		chromedp.Text(`#school-section > div > div:nth-child(3) > div:nth-child(1) > p`, &data.EnrollmentByGender, chromedp.ByQuery, chromedp.AtLeast(0)),
@@ -575,7 +593,7 @@ func exportCollegeDetailsText(details *[]CollegeDetail) {
 	}
 	msg := string(b)
 	msg = strings.ReplaceAll(msg, "    \"", "")
-	msg = strings.ReplaceAll(msg, "name\":", " - ")
+	//msg = strings.ReplaceAll(msg, "name\":", " - ")
 	msg = strings.ReplaceAll(msg, "\",", "")
 	msg = strings.ReplaceAll(msg, "\"", "")
 	msg = strings.ReplaceAll(msg, "[", "")
@@ -584,6 +602,7 @@ func exportCollegeDetailsText(details *[]CollegeDetail) {
 	msg = strings.ReplaceAll(msg, "{", "")
 	msg = strings.ReplaceAll(msg, "},", "")
 	msg = strings.ReplaceAll(msg, "}", "")
+	msg = strings.ReplaceAll(msg, "null,", "")
 
 	file.WriteString(msg)
 }

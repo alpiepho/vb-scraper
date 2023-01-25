@@ -1,6 +1,6 @@
 
   
- -  Arizona State University
+name: Arizona State University
 state: Arizona
 city: Tempe
 level: NCAA DI
@@ -17,46 +17,137 @@ academic_selectivity: More Selective
 undergrad_enrollment: 41828
 control_affilication: Public
 overview: This is the Arizona State University (Arizona) Volleyball scholarship and program information page. Here you can explore important information about Arizona State University Volleyball. This information is very valuable for all high school student-athletes to understand as they start the recruiting process. Arizona State University is located in Tempe, AZ and the Volleyball program competes in the Pac-12 Conference conference.\n\nArizona State University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.\n\nIf you are interested in getting recruited by Arizona State University Volleyball, you should get to know more about the school, what academic programs are offered, and important members of the coaching staff - these are the people you need to connect with. Getting familiar with the Volleyball program is an important first step in the recruiting process.\n\nHow to get recruited by Arizona State University Volleyball\n\nMost college Volleyball coaches don’t respond to unsolicited emails. It’s important you build a relationship with the coaching staff. This is one of the ways SportsRecruits can help. You can certainly start by filling out the Arizona State University Volleyball’s recruiting questionnaire and getting on their list, but that’s only the start. To get actively recruited, a college coach needs to see you compete, which is why it’s important to have an online athletic recruiting profile. High school student-athletes have a discoverability problem. And discoverability is the key to college exposure and recruitment. Just having a recruiting profile doesn’t guarantee you will get recruited. You need your profile to showcase all of your academic and athletic achievements, and be able to instantly connect to college coaches who are interested. If you can’t quickly find and message any college coach you want, then you’re not solving your biggest problem in getting recruited for Volleyball. Make it as easy as possible for the Arizona State University Volleyball coaching staff to learn about you as an athlete, and be able to start a conversation with you. 100% of college coaches and programs are on the SportsRecruits platform. If you are interested in getting recruited by Arizona State University ’s Volleyball program, start your free recruiting profile with SportsRecruits today.\n\nHide Content
-head_coach_ -  Preslie Anderson
-assistant_coach_ -  
-student_ratio: 
-garduation_rate: 
-enrollment_by_gender: 
-calendar_system: 
-retention_rate: 
-on_campus_housing: 
-acceptance_rate: 
-total_applicants: 
-sat_students_submitting: 
-sat_reading_range: 
-sat_math_range: 
-sat_writing_range: 
-act_students_submitting: 
-act_composite: 
-act_english: 
-act_math: 
-act_writing: 
-requirements_open_admission_policy: 
-requirements_application_fee: 
-requirements_recomedations: 
-requirements_secondary_school_record: 
-requirements_secondary_school_rank: 
-requirements_secondary_school_gpa: 
-cost_in_state_total: 
-cost_in_state_tuition: 
-cost_in_state_fee: 
-cost_in_state_on_campus_room: 
-cost_out_state_total: 
-cost_out_state_tuition: 
-cost_out_state_fee: 
-cost_out_state_on_campus_room: 
-cost_percent_undergrad_aid: 
-majors: null,
-latitude_logitude: 
+head_coach_name: Preslie Anderson
+assistant_coach_name: 
+student_ratio: 23-1
+garduation_rate: 66%
+enrollment_by_gender: 57% Male / 43% Female
+calendar_system: Semester
+retention_rate: 86%
+on_campus_housing: Yes
+acceptance_rate: 83%
+total_applicants: 25,380
+sat_students_submitting: 55%
+sat_reading_range: 510-630
+sat_math_range: 520-640
+sat_writing_range: Not Reported
+act_students_submitting: 57%
+act_composite: 23-28
+act_english: 21-29
+act_math: 23-28
+act_writing: Not Reported
+requirements_open_admission_policy: No
+requirements_application_fee: $50
+requirements_recomedations: Neither required nor recommended
+requirements_secondary_school_record: Required
+requirements_secondary_school_rank: Recommended
+requirements_secondary_school_gpa: Recommended
+cost_in_state_total: $26,263
+cost_in_state_tuition: $9,484
+cost_in_state_fee: $518
+cost_in_state_on_campus_room: Not Reported
+cost_out_state_total: $42,363
+cost_out_state_tuition: $23,136
+cost_out_state_fee: $518
+cost_out_state_on_campus_room: Not Reported
+cost_percent_undergrad_aid: 91%
+majors: 
+  Architecture
+  City/Urban, Community and Regional Planning
+  Landscape Architecture
+  English Language and Literature, General
+  Visual and Performing Arts, General
+  Digital Arts
+  Dance, General
+  Industrial and Product Design
+  Interior Design
+  Graphic Design
+  Design and Applied Arts, Other
+  Drama and Dramatics/Theatre Arts, General
+  Film/Video and Photographic Arts, Other
+  Art/Art Studies, General
+  Music, General
+  Music Performance, General
+  Music Theory and Composition
+  East Asian Languages, Literatures, and Linguistics, General
+  Russian Language and Literature
+  German Language and Literature
+  French Language and Literature
+  Italian Language and Literature
+  Spanish Language and Literature
+  Foreign Languages, Literatures, and Linguistics, Other
+  Philosophy
+  Religion/Religious Studies
+  Jewish/Judaic Studies
+  Business Administration and Management, General
+  Purchasing, Procurement/Acquisitions and Contracts Management
+  Accounting
+  Entrepreneurship/Entrepreneurial Studies
+  Finance, General
+  Management Science
+  Actuarial Science
+  Marketing/Marketing Management, General
+  Construction Management
+  Business, Management, Marketing, and Related Support Services, Other
+  Communication Sciences and Disorders, General
+  Music Therapy/Therapist
+  Asian Studies/Civilization
+  African-American/Black Studies
+  American Indian/Native American Studies
+  Hispanic-American, Puerto Rican, and Mexican-American/Chicano Studies
+  Asian-American Studies
+  Women's Studies
+  International/Global Studies
+  Multi-/Interdisciplinary Studies, Other
+  Family Resource Management Studies, General
+  Legal Studies, General
+  Environmental Studies
+  Aerospace, Aeronautical and Astronautical/Space Engineering
+  Bioengineering and Biomedical Engineering
+  Chemical Engineering
+  Civil Engineering, General
+  Computer Engineering, General
+  Electrical and Electronics Engineering
+  Materials Engineering
+  Mechanical Engineering
+  Construction Engineering
+  Industrial Engineering
+  Biology/Biological Sciences, General
+  Biochemistry
+  Biophysics
+  Molecular Biology
+  Microbiology, General
+  Physical Sciences
+  Chemistry, General
+  Geology/Earth Science, General
+  Physics, General
+  Computer and Information Sciences, General
+  Informatics
+  Computer Science
+  Engineering/Industrial Management
+  Mathematics, General
+  Computational Mathematics
+  Applied Mathematics, Other
+  Speech Communication and Rhetoric
+  Psychology, General
+  History, General
+  Special Education and Teaching, General
+  Elementary Education and Teaching
+  Secondary Education and Teaching
+  Early Childhood Education and Teaching
+  Music Teacher Education
+  Education, Other
+  Anthropology
+  Economics, General
+  Geography
+  Political Science and Government, General
+  Sociology
+    
+latitude_logitude: Output Location:\nArizona State University, 1800, I Street Northwest, Golden Triangle, Washington, District of Columbia, 20006, USA\n\n\nOutput Latitude, Longitude:\n38.901173°, -77.041952°\nlinks to this location\ncorrection for this location
 mascot: 
   
   
- -  Northern Arizona University
+name: Northern Arizona University
 state: Arizona
 city: Flagstaff
 level: NCAA DI
@@ -73,8 +164,8 @@ academic_selectivity: Selective
 undergrad_enrollment: 25115
 control_affilication: Public
 overview: This is the Northern Arizona University (Arizona) Volleyball scholarship and program information page. Here you can explore important information about Northern Arizona University Volleyball. This information is very valuable for all high school student-athletes to understand as they start the recruiting process. Northern Arizona University is located in Flagstaff, AZ and the Volleyball program competes in the Big Sky Conference conference.\n\nNorthern Arizona University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.\n\nIf you are interested in getting recruited by Northern Arizona University Volleyball, you should get to know more about the school, what academic programs are offered, and important members of the coaching staff - these are the people you need to connect with. Getting familiar with the Volleyball program is an important first step in the recruiting process.\n\nHow to get recruited by Northern Arizona University Volleyball\n\nMost college Volleyball coaches don’t respond to unsolicited emails. It’s important you build a relationship with the coaching staff. This is one of the ways SportsRecruits can help. You can certainly start by filling out the Northern Arizona University Volleyball’s recruiting questionnaire and getting on their list, but that’s only the start. To get actively recruited, a college coach needs to see you compete, which is why it’s important to have an online athletic recruiting profile. High school student-athletes have a discoverability problem. And discoverability is the key to college exposure and recruitment. Just having a recruiting profile doesn’t guarantee you will get recruited. You need your profile to showcase all of your academic and athletic achievements, and be able to instantly connect to college coaches who are interested. If you can’t quickly find and message any college coach you want, then you’re not solving your biggest problem in getting recruited for Volleyball. The Head Coach of Northern Arizona University Volleyball is Ken Murphy - make it as easy as possible for them to learn about you as an athlete, and be able to start a conversation with you. 100% of college coaches and programs are on the SportsRecruits platform. If you are interested in getting recruited by Northern Arizona University ’s Volleyball program, start your free recruiting profile with SportsRecruits today.\n\nHide Content
-head_coach_ -  Ken Murphy
-assistant_coach_ -  Rachel Dunlap
+head_coach_name: Ken Murphy
+assistant_coach_name: Rachel Dunlap
 student_ratio: 18-1
 garduation_rate: 52%
 enrollment_by_gender: 41% Male / 59% Female
@@ -221,7 +312,7 @@ latitude_logitude: Output Location:\nNorthern Arizona University, East Ellery Av
 mascot: 
   
   
- -  Nova Southeastern University
+name: Nova Southeastern University
 state: Florida
 city: Fort Lauderdale
 level: NCAA DII
@@ -238,8 +329,8 @@ academic_selectivity: More Selective
 undergrad_enrollment: 4641
 control_affilication: Private not-for-profit (no religious affiliation)
 overview: This is the Nova Southeastern University (Florida) Volleyball scholarship and program information page. Here you can explore important information about Nova Southeastern University Volleyball. This information is very valuable for all high school student-athletes to understand as they start the recruiting process. Nova Southeastern University is located in Fort Lauderdale, FL and the Volleyball program competes in the Sunshine State Conference (SSC) conference.\n\nNova Southeastern University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.\n\nIf you are interested in getting recruited by Nova Southeastern University Volleyball, you should get to know more about the school, what academic programs are offered, and important members of the coaching staff - these are the people you need to connect with. Getting familiar with the Volleyball program is an important first step in the recruiting process.\n\nHow to get recruited by Nova Southeastern University Volleyball\n\nMost college Volleyball coaches don’t respond to unsolicited emails. It’s important you build a relationship with the coaching staff. This is one of the ways SportsRecruits can help. You can certainly start by filling out the Nova Southeastern University Volleyball’s recruiting questionnaire and getting on their list, but that’s only the start. To get actively recruited, a college coach needs to see you compete, which is why it’s important to have an online athletic recruiting profile. High school student-athletes have a discoverability problem. And discoverability is the key to college exposure and recruitment. Just having a recruiting profile doesn’t guarantee you will get recruited. You need your profile to showcase all of your academic and athletic achievements, and be able to instantly connect to college coaches who are interested. If you can’t quickly find and message any college coach you want, then you’re not solving your biggest problem in getting recruited for Volleyball. The Head Coach of Nova Southeastern University Volleyball is Kacie Ehinger - make it as easy as possible for them to learn about you as an athlete, and be able to start a conversation with you. 100% of college coaches and programs are on the SportsRecruits platform. If you are interested in getting recruited by Nova Southeastern University ’s Volleyball program, start your free recruiting profile with SportsRecruits today.\n\nHide Content
-head_coach_ -  Kacie Ehinger
-assistant_coach_ -  Matt Geer
+head_coach_name: Kacie Ehinger
+assistant_coach_name: Matt Geer
 student_ratio: 16-1
 garduation_rate: 44%
 enrollment_by_gender: 30% Male / 70% Female
@@ -328,7 +419,7 @@ latitude_logitude: Output Location:\nNova Southeastern University, Davie, Davie,
 mascot: 
   
   
- -  University of Central Florida
+name: University of Central Florida
 state: Florida
 city: Orlando
 level: NCAA DI
@@ -345,8 +436,8 @@ academic_selectivity: More Selective
 undergrad_enrollment: 54662
 control_affilication: Public
 overview: This is the University Of Central Florida (Florida) Volleyball scholarship and program information page. Here you can explore important information about University Of Central Florida Volleyball. This information is very valuable for all high school student-athletes to understand as they start the recruiting process. University Of Central Florida is located in Orlando, FL and the Volleyball program competes in the American Athletic Conference conference.\n\nUniversity Of Central Florida does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.\n\nIf you are interested in getting recruited by University Of Central Florida Volleyball, you should get to know more about the school, what academic programs are offered, and important members of the coaching staff - these are the people you need to connect with. Getting familiar with the Volleyball program is an important first step in the recruiting process.\n\nHow to get recruited by University Of Central Florida Volleyball\n\nMost college Volleyball coaches don’t respond to unsolicited emails. It’s important you build a relationship with the coaching staff. This is one of the ways SportsRecruits can help. You can certainly start by filling out the University Of Central Florida Volleyball’s recruiting questionnaire and getting on their list, but that’s only the start. To get actively recruited, a college coach needs to see you compete, which is why it’s important to have an online athletic recruiting profile. High school student-athletes have a discoverability problem. And discoverability is the key to college exposure and recruitment. Just having a recruiting profile doesn’t guarantee you will get recruited. You need your profile to showcase all of your academic and athletic achievements, and be able to instantly connect to college coaches who are interested. If you can’t quickly find and message any college coach you want, then you’re not solving your biggest problem in getting recruited for Volleyball. Make it as easy as possible for the University Of Central Florida Volleyball coaching staff to learn about you as an athlete, and be able to start a conversation with you. 100% of college coaches and programs are on the SportsRecruits platform. If you are interested in getting recruited by University Of Central Florida ’s Volleyball program, start your free recruiting profile with SportsRecruits today.\n\nHide Content
-head_coach_ -  Jenny Maurer
-assistant_coach_ -  Brian Doyon
+head_coach_name: Jenny Maurer
+assistant_coach_name: Brian Doyon
 student_ratio: 30-1
 garduation_rate: 70%
 enrollment_by_gender: 45% Male / 55% Female
@@ -469,7 +560,7 @@ latitude_logitude: Output Location:\nUniversity of Central Florida, 4000, Centra
 mascot: 
   
   
- -  University of Tampa
+name: University of Tampa
 state: Florida
 city: Tampa
 level: NCAA DII
@@ -486,8 +577,8 @@ academic_selectivity: Selective
 undergrad_enrollment: 7079
 control_affilication: Private not-for-profit (no religious affiliation)
 overview: This is the University Of Tampa (Florida) Volleyball scholarship and program information page. Here you can explore important information about University Of Tampa Volleyball. This information is very valuable for all high school student-athletes to understand as they start the recruiting process. University Of Tampa is located in Tampa, FL and the Volleyball program competes in the Sunshine State Conference (SSC) conference.\n\nUniversity Of Tampa does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.\n\nIf you are interested in getting recruited by University Of Tampa Volleyball, you should get to know more about the school, what academic programs are offered, and important members of the coaching staff - these are the people you need to connect with. Getting familiar with the Volleyball program is an important first step in the recruiting process.\n\nHow to get recruited by University Of Tampa Volleyball\n\nMost college Volleyball coaches don’t respond to unsolicited emails. It’s important you build a relationship with the coaching staff. This is one of the ways SportsRecruits can help. You can certainly start by filling out the University Of Tampa Volleyball’s recruiting questionnaire and getting on their list, but that’s only the start. To get actively recruited, a college coach needs to see you compete, which is why it’s important to have an online athletic recruiting profile. High school student-athletes have a discoverability problem. And discoverability is the key to college exposure and recruitment. Just having a recruiting profile doesn’t guarantee you will get recruited. You need your profile to showcase all of your academic and athletic achievements, and be able to instantly connect to college coaches who are interested. If you can’t quickly find and message any college coach you want, then you’re not solving your biggest problem in getting recruited for Volleyball. The Head Coach of University Of Tampa Volleyball is Chris Catanach - make it as easy as possible for them to learn about you as an athlete, and be able to start a conversation with you. 100% of college coaches and programs are on the SportsRecruits platform. If you are interested in getting recruited by University Of Tampa’s Volleyball program, start your free recruiting profile with SportsRecruits today.\n\nHide Content
-head_coach_ -  Chris Catanach
-assistant_coach_ -  Brian Imperiale
+head_coach_name: Chris Catanach
+assistant_coach_name: Brian Imperiale
 student_ratio: 17-1
 garduation_rate: 55%
 enrollment_by_gender: 42% Male / 58% Female
@@ -578,7 +669,7 @@ latitude_logitude: Output Location:\nUniversity of Tampa, 401, Kennedy Boulevard
 mascot: 
   
   
- -  University of Montana
+name: University of Montana
 state: Montana
 city: Missoula
 level: NCAA DI
@@ -595,8 +686,8 @@ academic_selectivity: Selective
 undergrad_enrollment: 10777
 control_affilication: Public
 overview: This is the University Of Montana (Montana) Volleyball scholarship and program information page. Here you can explore important information about University Of Montana Volleyball. This information is very valuable for all high school student-athletes to understand as they start the recruiting process. University Of Montana is located in Missoula, MT and the Volleyball program competes in the Big Sky Conference conference.\n\nUniversity Of Montana does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.\n\nIf you are interested in getting recruited by University Of Montana Volleyball, you should get to know more about the school, what academic programs are offered, and important members of the coaching staff - these are the people you need to connect with. Getting familiar with the Volleyball program is an important first step in the recruiting process.\n\nHow to get recruited by University Of Montana Volleyball\n\nMost college Volleyball coaches don’t respond to unsolicited emails. It’s important you build a relationship with the coaching staff. This is one of the ways SportsRecruits can help. You can certainly start by filling out the University Of Montana Volleyball’s recruiting questionnaire and getting on their list, but that’s only the start. To get actively recruited, a college coach needs to see you compete, which is why it’s important to have an online athletic recruiting profile. High school student-athletes have a discoverability problem. And discoverability is the key to college exposure and recruitment. Just having a recruiting profile doesn’t guarantee you will get recruited. You need your profile to showcase all of your academic and athletic achievements, and be able to instantly connect to college coaches who are interested. If you can’t quickly find and message any college coach you want, then you’re not solving your biggest problem in getting recruited for Volleyball. The Head Coach of University Of Montana Volleyball is Allison Lawrence - make it as easy as possible for them to learn about you as an athlete, and be able to start a conversation with you. 100% of college coaches and programs are on the SportsRecruits platform. If you are interested in getting recruited by University Of Montana ’s Volleyball program, start your free recruiting profile with SportsRecruits today.\n\nHide Content
-head_coach_ -  Allison Lawrence
-assistant_coach_ -  Dana Hallisey
+head_coach_name: Allison Lawrence
+assistant_coach_name: Dana Hallisey
 student_ratio: 17-1
 garduation_rate: 44%
 enrollment_by_gender: 46% Male / 54% Female
@@ -710,7 +801,7 @@ latitude_logitude: Output Location:\nUniversity of Montana, Mansfield Avenue, Un
 mascot: 
   
   
- -  Coastal Carolina University
+name: Coastal Carolina University
 state: South Carolina
 city: Conway
 level: NCAA DI
@@ -727,8 +818,8 @@ academic_selectivity: Selective
 undergrad_enrollment: 9615
 control_affilication: Public
 overview: This is the Coastal Carolina University (South Carolina) Volleyball scholarship and program information page. Here you can explore important information about Coastal Carolina University Volleyball. This information is very valuable for all high school student-athletes to understand as they start the recruiting process. Coastal Carolina University is located in Conway, SC and the Volleyball program competes in the Sun Belt Conference conference.\n\n Read More
-head_coach_ -  Joszef Forman
-assistant_coach_ -  Chad Sutton
+head_coach_name: Joszef Forman
+assistant_coach_name: Chad Sutton
 student_ratio: 18-1
 garduation_rate: 43%
 enrollment_by_gender: 47% Male / 53% Female
@@ -810,7 +901,7 @@ latitude_logitude: Output Location:\nREEDS Jewelers - Coastal Grand Mall, 2000, 
 mascot: 
   
   
- -  University of North Texas
+name: University of North Texas
 state: Texas
 city: Denton
 level: NCAA DI
@@ -827,8 +918,8 @@ academic_selectivity: Selective
 undergrad_enrollment: 30533
 control_affilication: Public
 overview: This is the University Of North Texas (Texas) Volleyball scholarship and program information page. Here you can explore important information about University Of North Texas Volleyball. This information is very valuable for all high school student-athletes to understand as they start the recruiting process. University Of North Texas is located in Denton, TX and the Volleyball program competes in the Conference USA conference.\n\nUniversity Of North Texas does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.\n\nIf you are interested in getting recruited by University Of North Texas Volleyball, you should get to know more about the school, what academic programs are offered, and important members of the coaching staff - these are the people you need to connect with. Getting familiar with the Volleyball program is an important first step in the recruiting process.\n\nHow to get recruited by University Of North Texas Volleyball\n\nMost college Volleyball coaches don’t respond to unsolicited emails. It’s important you build a relationship with the coaching staff. This is one of the ways SportsRecruits can help. You can certainly start by filling out the University Of North Texas Volleyball’s recruiting questionnaire and getting on their list, but that’s only the start. To get actively recruited, a college coach needs to see you compete, which is why it’s important to have an online athletic recruiting profile. High school student-athletes have a discoverability problem. And discoverability is the key to college exposure and recruitment. Just having a recruiting profile doesn’t guarantee you will get recruited. You need your profile to showcase all of your academic and athletic achievements, and be able to instantly connect to college coaches who are interested. If you can’t quickly find and message any college coach you want, then you’re not solving your biggest problem in getting recruited for Volleyball. The Head Coach of University Of North Texas Volleyball is Kristee Porter - make it as easy as possible for them to learn about you as an athlete, and be able to start a conversation with you. 100% of college coaches and programs are on the SportsRecruits platform. If you are interested in getting recruited by University Of North Texas ’s Volleyball program, start your free recruiting profile with SportsRecruits today.\n\nHide Content
-head_coach_ -  Kristee Porter
-assistant_coach_ -  Daniel Salinas
+head_coach_name: Kristee Porter
+assistant_coach_name: Daniel Salinas
 student_ratio: 25-1
 garduation_rate: 52%
 enrollment_by_gender: 48% Male / 52% Female
@@ -949,6 +1040,6 @@ majors:
   History, General
   Aeronautics/Aviation/Aerospace Science and Technology, General
     
-latitude_logitude: 
+latitude_logitude: Output Location:\nUNIVERSITY OF NORTH TEXAS\n\nOutput Latitude, Longitude:\n33.207488°, -97.152586°\nlinks to this location\ncorrection for this location,
 mascot: 
   

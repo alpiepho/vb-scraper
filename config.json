@@ -28,7 +28,7 @@
         "#All"
     ],
 
-    "parse_lat_long" : true,
+    "parse_lat_long" : false,
 
     "export_college_details": true,
     "export_college_details_file": "college_details_16.json",
