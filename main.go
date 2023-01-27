@@ -11,6 +11,7 @@ import (
 	"math/rand"
 	"net/url"
 	"os"
+	"regexp"
 	"strings"
 	"time"
 
@@ -40,6 +41,9 @@ type Configuration struct {
 
 	ExportCollegeDetailsText     bool   `json:"export_college_details_text"`
 	ExportCollegeDetailsTextFile string `json:"export_college_details_text_file"`
+
+	ExportCollegeDetailsHtml     bool   `json:"export_college_details_html"`
+	ExportCollegeDetailsHtmlFile string `json:"export_college_details_html_file"`
 
 	//DEBUG
 	DumpStates   bool `json:"dump_states"`
@@ -498,8 +502,10 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	}
 
 	for _, n := range majorNodes {
-		value := n.Children[0].NodeValue
-		data.Majors = append(data.Majors, value)
+		value := strings.TrimSpace(n.Children[0].NodeValue)
+		if len(value) > 0 {
+			data.Majors = append(data.Majors, value)
+		}
 	}
 
 	data.UndergradEnrollment = strings.ReplaceAll(data.UndergradEnrollment, ",", "")
@@ -607,6 +613,87 @@ func exportCollegeDetailsText(details *[]CollegeDetail) {
 	file.WriteString(msg)
 }
 
+func exportCollegeDetailsHtml(details *[]CollegeDetail) {
+	if len(appConfig.ExportCollegeDetailsHtmlFile) == 0 {
+		return
+	}
+	fileName := appConfig.ExportCollegeDetailsHtmlFile
+	file, err := os.Create(fileName)
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+	b, err := json.MarshalIndent(*details, "", "  ")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	msg := string(b)
+	msg = strings.ReplaceAll(msg, "    \"", "")
+	//msg = strings.ReplaceAll(msg, "name\":", " - ")
+	msg = strings.ReplaceAll(msg, "\",", "")
+	msg = strings.ReplaceAll(msg, "\"", "")
+	msg = strings.ReplaceAll(msg, "[", "")
+	msg = strings.ReplaceAll(msg, "],", "")
+	msg = strings.ReplaceAll(msg, "]", "")
+	msg = strings.ReplaceAll(msg, "{", "")
+	msg = strings.ReplaceAll(msg, "},", "")
+	msg = strings.ReplaceAll(msg, "}", "")
+	msg = strings.ReplaceAll(msg, "null,", "")
+	lines := strings.Split(msg, "\n")
+
+	msg2 := ""
+	msg2 += "<html>\n"
+	msg2 += "  <head>\n"
+	msg2 += "    <style>\n"
+	msg2 += "      ul {\n"
+	msg2 += "        list-style: none;\n"
+	msg2 += "      }\n"
+	msg2 += "    </style>\n"
+	msg2 += "  </head>\n"
+
+	msg2 += "  <body>\n"
+	msg2 += "    <ul>\n"
+
+	indent := ""
+	for _, line := range lines {
+		line = strings.TrimSpace(line)
+		if len(line) == 0 {
+			continue
+		}
+		if strings.HasPrefix(line, "name:") {
+			msg2 += "    </ul>\n"
+			msg2 += "    <ul>\n"
+			indent = ""
+		}
+		parts := strings.Split(line, ":")
+		label := parts[0]
+		rest := strings.Join(parts[1:], ":")
+		if strings.Contains(line, "_link:") {
+			// <a href="aaa" target="_blank">aaa</a>
+			msg2 += "<li><b>" + label + ":</b><a href=\"" + rest + "\" target=\"_blank\">" + rest + "</a></li>\n"
+		} else if strings.Contains(line, ":") {
+			if strings.Contains(line, "overview:") {
+				// TODO : why does this not work
+				re := regexp.MustCompile(`\r?\n`)
+				rest = re.ReplaceAllString(rest, "<br>")
+				fmt.Println(rest)
+			}
+			msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
+		} else {
+			msg2 += "<li>" + indent + line + "</li>\n"
+		}
+		if strings.Contains(line, "majors:") {
+			indent = "&nbsp;&nbsp;&nbsp;&nbsp;"
+		}
+	}
+	msg2 += "    </ul>\n"
+	msg2 += "  </body>\n"
+	msg2 += "</html>\n"
+
+	file.WriteString(msg2)
+}
+
 func main() {
 	//headless := flag.Bool("headless", false, "a bool")
 
@@ -690,11 +777,14 @@ func main() {
 		exportCollegeDetails(&details)
 	}
 
-	if appConfig.ImportColleges {
+	if appConfig.ImportCollegeDetails {
 		importCollegeDetails(&details)
 	}
 	if appConfig.ExportCollegeDetailsText {
 		exportCollegeDetailsText(&details)
+	}
+	if appConfig.ExportCollegeDetailsHtml {
+		exportCollegeDetailsHtml(&details)
 	}
 
 	if appConfig.OpenChromedp {

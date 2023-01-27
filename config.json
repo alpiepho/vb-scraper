@@ -3,16 +3,16 @@
         "# list of specific states or All, start with # to disable that line",
         "All"
     ],
-    "open_chromedp" : true,
+    "open_chromedp" : false,
     "parse_map" : false,
     "parse_states": false,
     "parse_colleges": false,
     "export_colleges": false,
     "export_colleges_file": "allcolleges.json",
-    "import_colleges" : true,
+    "import_colleges" : false,
     "import_colleges_file": "allcolleges.json",
 
-    "parse_college_pages": true,
+    "parse_college_pages": false,
     "collegelist" : [
         "# list of specific colleges or All, start with # to disable that line",
         "#Flagler College",
@@ -30,14 +30,17 @@
 
     "parse_lat_long" : false,
 
-    "export_college_details": true,
+    "export_college_details": false,
     "export_college_details_file": "college_details_16.json",
 
-    "import_college_details": false,
+    "import_college_details": true,
     "import_college_details_file": "college_details_16.json",
 
     "export_college_details_text": true,
     "export_college_details_text_file": "college_details_16.text",
+
+    "export_college_details_html": true,
+    "export_college_details_html_file": "college_details_16.html",
 
     "dump_states" : false,
     "dump_colleges" : false
