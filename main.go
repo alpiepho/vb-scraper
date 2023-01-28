@@ -31,17 +31,18 @@ type Configuration struct {
 	ImportColleges     bool   `json:"import_colleges"`
 	ImportCollegesFile string `json:"import_colleges_file"`
 
-	ParseCollegePages        bool     `json:"parse_college_pages"`
-	CollegeList              []string `json:"collegelist"`
-	LevelList                []string `json:"levellist"`
-	ExportCollegeDetails     bool     `json:"export_college_details"`
-	ExportCollegeDetailsFile string   `json:"export_college_details_file"`
+	ParseCollegePages bool     `json:"parse_college_pages"`
+	CollegeList       []string `json:"collegelist"`
+	LevelList         []string `json:"levellist"`
+
+	ImportCollegeDetails     bool   `json:"import_college_details"`
+	ImportCollegeDetailsFile string `json:"import_college_details_file"`
 
 	ParseLatitudeLogitude bool     `json:"parse_lat_long"`
 	LatitudeLogitudeList  []string `json:"lat_long_list"`
 
-	ImportCollegeDetails     bool   `json:"import_college_details"`
-	ImportCollegeDetailsFile string `json:"import_college_details_file"`
+	ExportCollegeDetails     bool   `json:"export_college_details"`
+	ExportCollegeDetailsFile string `json:"export_college_details_file"`
 
 	ExportCollegeDetailsText     bool   `json:"export_college_details_text"`
 	ExportCollegeDetailsTextFile string `json:"export_college_details_text_file"`
@@ -861,10 +862,6 @@ func main() {
 			parseForCollegePages(&ctx, &details, &college)
 		}
 	}
-	if appConfig.ExportCollegeDetails {
-		fmt.Println("export college details...")
-		exportCollegeDetails(&details)
-	}
 
 	if appConfig.ImportCollegeDetails {
 		fmt.Println("import college details...")
@@ -877,6 +874,11 @@ func main() {
 		for i, _ := range details {
 			parseLatitudeLogitude(&ctx, &details, i)
 		}
+	}
+
+	if appConfig.ExportCollegeDetails {
+		fmt.Println("export college details...")
+		exportCollegeDetails(&details)
 	}
 
 	if appConfig.ExportCollegeDetailsText {
