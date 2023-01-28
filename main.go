@@ -11,7 +11,6 @@ import (
 	"math/rand"
 	"net/url"
 	"os"
-	"regexp"
 	"strings"
 	"time"
 
@@ -653,17 +652,52 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "  </head>\n"
 
 	msg2 += "  <body>\n"
+	msg2 += "    <a id=\"top\"></a>\n"
 	msg2 += "    <ul>\n"
 
+	// // prev next top bottom
+	// msg2 += "    "
+	// msg2 += "<li>"
+	// msg2 += "<a href=\"#bottom\">prev</a>"
+	// msg2 += "&nbsp;&nbsp;"
+	// msg2 += "<a href=\"#name1\">next</a>"
+	// msg2 += "&nbsp;&nbsp;"
+	// msg2 += "<a href=\"#top\">top</a>"
+	// msg2 += "&nbsp;&nbsp;"
+	// msg2 += "<a href=\"#bottom\">bottom</a>"
+	// msg2 += "</li>\n"
+
 	indent := ""
+	count := 0
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
 		if len(line) == 0 {
 			continue
 		}
 		if strings.HasPrefix(line, "name:") {
-			msg2 += "    </ul>\n"
+			count += 1
+			if count > 1 {
+				// close previous list
+				msg2 += "    </ul>\n"
+			}
+			// set anchor for this list
+			anchorStr := fmt.Sprintf("name%d", count)
+			msg2 += "    <a id=\"" + anchorStr + "\"></a>\n"
 			msg2 += "    <ul>\n"
+
+			// prev next top bottom
+			msg2 += "    "
+			msg2 += "<br><li>"
+			prevStr := fmt.Sprintf("#name%d", count-1)
+			nextStr := fmt.Sprintf("#name%d", count+1)
+			msg2 += "<a href=\"" + prevStr + "\">prev</a>" // may go to 0 and not work
+			msg2 += "&nbsp;&nbsp;"
+			msg2 += "<a href=\"" + nextStr + "\">next</a>" // may go last list and not work
+			msg2 += "&nbsp;&nbsp;"
+			msg2 += "<a href=\"#top\">top</a>"
+			msg2 += "&nbsp;&nbsp;"
+			msg2 += "<a href=\"#bottom\">bottom</a>"
+			msg2 += "</li>\n"
 			indent = ""
 		}
 		parts := strings.Split(line, ":")
@@ -674,10 +708,19 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			msg2 += "<li><b>" + label + ":</b><a href=\"" + rest + "\" target=\"_blank\">" + rest + "</a></li>\n"
 		} else if strings.Contains(line, ":") {
 			if strings.Contains(line, "overview:") {
-				// TODO : why does this not work
-				re := regexp.MustCompile(`\r?\n`)
-				rest = re.ReplaceAllString(rest, "<br>")
-				fmt.Println(rest)
+				// replace line breaks with <br>
+				rest = strings.ReplaceAll(rest, "\\n", "<br>")
+				rest = strings.ReplaceAll(rest, "<br><br>", "<br>")
+				rest = strings.ReplaceAll(rest, "Hide Content", "")
+				// only 2nd paragraph is useful
+				parts := strings.Split(rest, "<br>")
+				rest = parts[1]
+
+			}
+			if strings.Contains(line, "latitude_logitude:") {
+				parts := strings.Split(rest, "\\n")
+				rest = parts[5]
+				rest = strings.ReplaceAll(rest, "\u00B0", "")
 			}
 			msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
 		} else {
@@ -687,6 +730,21 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			indent = "&nbsp;&nbsp;&nbsp;&nbsp;"
 		}
 	}
+	msg2 += "    <a id=\"bottom\"></a>\n"
+
+	// prev next top bottom
+	msg2 += "    "
+	msg2 += "<br><li>"
+	prevStr := fmt.Sprintf("#name%d", count-1)
+	msg2 += "<a href=\"" + prevStr + "\">prev</a>"
+	msg2 += "&nbsp;&nbsp;"
+	msg2 += "<a href=\"#top\">next</a>"
+	msg2 += "&nbsp;&nbsp;"
+	msg2 += "<a href=\"#top\">top</a>"
+	msg2 += "&nbsp;&nbsp;"
+	msg2 += "<a href=\"#bottom\">bottom</a>"
+	msg2 += "</li>\n"
+
 	msg2 += "    </ul>\n"
 	msg2 += "  </body>\n"
 	msg2 += "</html>\n"
