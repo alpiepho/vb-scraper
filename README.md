@@ -45,16 +45,18 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
     - [x] wikipedia link
     - [x] lat/long
     - [ ] mascot
-    - [ ] volleyball link
-- [ ] export details as text
-- [ ] export details as html
+    - [x] volleyball link
+- [x] export details as text
+- [x] export details as html
 - [ ] export details as csv
-- [ ] filter while scraping details
+
+- [x] filter while scraping details
 - [ ] filter after import details
 - [ ] filter details based on
-    - state
+    - [x] state
+    - [x] college name
     - city
-    - level
+    - [x] level
     - conference
     - academic_selectivity
     - undergrad_enrollment

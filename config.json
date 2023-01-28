@@ -1,19 +1,21 @@
 {
+    "open_chromedp" : true,
+    "parse_map" : false,
+    "parse_states": false,
     "stateslist" : [
+        "# filter for state/college list (limited web, completed):",
         "# list of specific states or All, start with # to disable that line",
         "All"
     ],
-    "open_chromedp" : false,
-    "parse_map" : false,
-    "parse_states": false,
     "parse_colleges": false,
     "export_colleges": false,
     "export_colleges_file": "allcolleges.json",
-    "import_colleges" : false,
+    "import_colleges" : true,
     "import_colleges_file": "allcolleges.json",
 
-    "parse_college_pages": false,
+    "parse_college_pages": true,
     "collegelist" : [
+        "# filter for college details from state/college list (more web, more time, specific):",
         "# list of specific colleges or All, start with # to disable that line",
         "#Flagler College",
         "Nova Southeastern University",
@@ -27,13 +29,27 @@
         "#TBA",
         "#All"
     ],
+    "levellist" : [
+        "# filter for college details from state/college list (more web, more time, specific):",
+        "# list of specific level or All, start with # to disable that line",
+        "#NCAA DI",
+        "NCAA DII",
+        "#NCAA DIII",
+        "#NCAA DIII",
+        "#NAIA",
+        "#NJCAA",
+        "#All"
+    ],
 
     "parse_lat_long" : false,
+    "lat_long_list" : [
+        "# placeholder, not used, parse_lat_long is long time each so can be run after import"
+    ],
 
-    "export_college_details": false,
+    "export_college_details": true,
     "export_college_details_file": "college_details_16.json",
 
-    "import_college_details": true,
+    "import_college_details": false,
     "import_college_details_file": "college_details_16.json",
 
     "export_college_details_text": true,

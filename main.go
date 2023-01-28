@@ -20,20 +20,25 @@ import (
 )
 
 type Configuration struct {
-	StatesList               []string `json:"stateslist"`
-	OpenChromedp             bool     `json:"open_chromedp"`
-	ParseMap                 bool     `json:"parse_map"`
-	ParseStates              bool     `json:"parse_states"`
-	ParseColleges            bool     `json:"parse_colleges"`
-	ExportColleges           bool     `json:"export_colleges"`
-	ExportCollegesFile       string   `json:"export_colleges_file"`
-	ImportColleges           bool     `json:"import_colleges"`
-	ImportCollegesFile       string   `json:"import_colleges_file"`
-	CollegeList              []string `json:"collegelist"`
+	OpenChromedp  bool     `json:"open_chromedp"`
+	ParseMap      bool     `json:"parse_map"`
+	ParseStates   bool     `json:"parse_states"`
+	StatesList    []string `json:"stateslist"`
+	ParseColleges bool     `json:"parse_colleges"`
+
+	ExportColleges     bool   `json:"export_colleges"`
+	ExportCollegesFile string `json:"export_colleges_file"`
+	ImportColleges     bool   `json:"import_colleges"`
+	ImportCollegesFile string `json:"import_colleges_file"`
+
 	ParseCollegePages        bool     `json:"parse_college_pages"`
+	CollegeList              []string `json:"collegelist"`
+	LevelList                []string `json:"levellist"`
 	ExportCollegeDetails     bool     `json:"export_college_details"`
 	ExportCollegeDetailsFile string   `json:"export_college_details_file"`
-	ParseLatitudeLogitude    bool     `json:"parse_lat_long"`
+
+	ParseLatitudeLogitude bool     `json:"parse_lat_long"`
+	LatitudeLogitudeList  []string `json:"lat_long_list"`
 
 	ImportCollegeDetails     bool   `json:"import_college_details"`
 	ImportCollegeDetailsFile string `json:"import_college_details_file"`
@@ -192,14 +197,13 @@ var STATE_NAMES = [51]string{
 	"District of Columbia",
 }
 
-func testStatesSkip(i int) bool {
+func testStatesSkip(name string) bool {
 	if slices.Contains(appConfig.StatesList, "All") {
 		return false
 	}
 	if slices.Contains(appConfig.StatesList, "all") {
 		return false
 	}
-	name := STATE_NAMES[i]
 	if slices.Contains(appConfig.StatesList, name) {
 		return false
 	}
@@ -396,6 +400,19 @@ func testCollegeSkip(name string) bool {
 		return false
 	}
 	if slices.Contains(appConfig.CollegeList, name) {
+		return false
+	}
+	return true
+}
+
+func testLevelSkip(name string) bool {
+	if slices.Contains(appConfig.LevelList, "All") {
+		return false
+	}
+	if slices.Contains(appConfig.LevelList, "all") {
+		return false
+	}
+	if slices.Contains(appConfig.LevelList, name) {
 		return false
 	}
 	return true
@@ -675,6 +692,7 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			continue
 		}
 		if strings.HasPrefix(line, "name:") {
+			fmt.Println(line)
 			count += 1
 			if count > 1 {
 				// close previous list
@@ -714,13 +732,16 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 				rest = strings.ReplaceAll(rest, "Hide Content", "")
 				// only 2nd paragraph is useful
 				parts := strings.Split(rest, "<br>")
-				rest = parts[1]
-
+				if len(parts) > 1 {
+					rest = parts[1]
+				}
 			}
 			if strings.Contains(line, "latitude_logitude:") {
 				parts := strings.Split(rest, "\\n")
-				rest = parts[5]
-				rest = strings.ReplaceAll(rest, "\u00B0", "")
+				if len(parts) > 5 {
+					rest = parts[5]
+					rest = strings.ReplaceAll(rest, "\u00B0", "")
+				}
 			}
 			msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
 		} else {
@@ -760,6 +781,7 @@ func main() {
 		chromedp.Flag("headless", false),
 	)
 
+	fmt.Println("open config...")
 	confFile, err := os.Open("config.json")
 	if err != nil {
 		panic(err)
@@ -769,6 +791,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	fmt.Println("unmarshal config...")
 	err = json.Unmarshal(conf, &appConfig)
 	if err != nil {
 		panic(err)
@@ -778,6 +801,7 @@ func main() {
 
 	ctx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
 	if appConfig.OpenChromedp {
+		fmt.Println("open chromedp...")
 		defer cancel()
 		ctx, cancel = chromedp.NewContext(ctx)
 		defer cancel()
@@ -793,7 +817,8 @@ func main() {
 	if appConfig.ParseStates {
 		fmt.Println("parse states...")
 		for i, state := range states {
-			if testStatesSkip(i) {
+			name := STATE_NAMES[i]
+			if testStatesSkip(name) {
 				continue
 			}
 			if appConfig.ParseColleges {
@@ -804,48 +829,67 @@ func main() {
 	}
 
 	if appConfig.DumpStates {
+		fmt.Println("dump states...")
 		dumpStates(&states)
 	}
 	if appConfig.DumpColleges {
+		fmt.Println("dump colleges...")
 		dumpColleges(&colleges)
 	}
 	if appConfig.ExportColleges {
+		fmt.Println("export colleges...")
 		exportColleges(&colleges)
 	}
 	if appConfig.ImportColleges {
+		fmt.Println("import colleges...")
 		importColleges(&colleges)
 	}
 	var details []CollegeDetail
 	if appConfig.ParseCollegePages {
 		fmt.Println("parse college details...")
 		for _, college := range colleges {
+			if testStatesSkip(college.State) {
+				continue
+			}
 			if testCollegeSkip(college.Name) {
+				continue
+			}
+			if testLevelSkip(college.Level) {
 				continue
 			}
 			fmt.Println("details: " + college.Name + "...")
 			parseForCollegePages(&ctx, &details, &college)
 		}
-		if appConfig.ParseLatitudeLogitude {
-			for i, _ := range details {
-				parseLatitudeLogitude(&ctx, &details, i)
-			}
-		}
 	}
 	if appConfig.ExportCollegeDetails {
+		fmt.Println("export college details...")
 		exportCollegeDetails(&details)
 	}
 
 	if appConfig.ImportCollegeDetails {
+		fmt.Println("import college details...")
 		importCollegeDetails(&details)
 	}
+
+	// add seperate step for lat/long after import details
+	if appConfig.ParseLatitudeLogitude {
+		fmt.Println("parse latitiude longitude...")
+		for i, _ := range details {
+			parseLatitudeLogitude(&ctx, &details, i)
+		}
+	}
+
 	if appConfig.ExportCollegeDetailsText {
+		fmt.Println("export college details text...")
 		exportCollegeDetailsText(&details)
 	}
 	if appConfig.ExportCollegeDetailsHtml {
+		fmt.Println("export college details html...")
 		exportCollegeDetailsHtml(&details)
 	}
 
 	if appConfig.OpenChromedp {
+		fmt.Println("close chromedp...")
 		cancel()
 	}
 
