@@ -555,6 +555,13 @@ func parseLatitudeLogitude(ctx *context.Context, details *[]CollegeDetail, index
 		//DEBUG:
 		fmt.Println(err)
 	}
+	if len(location) > 0 {
+		parts := strings.Split(location, "\n")
+		if len(parts) > 5 {
+			location = parts[5]
+			location = strings.ReplaceAll(location, "\u00B0", "")
+		}
+	}
 	(*details)[index].LatitudeLongitude = location
 }
 
@@ -737,13 +744,13 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 					rest = parts[1]
 				}
 			}
-			if strings.Contains(line, "latitude_logitude:") {
-				parts := strings.Split(rest, "\\n")
-				if len(parts) > 5 {
-					rest = parts[5]
-					rest = strings.ReplaceAll(rest, "\u00B0", "")
-				}
-			}
+			// if strings.Contains(line, "latitude_logitude:") {
+			// 	parts := strings.Split(rest, "\\n")
+			// 	if len(parts) > 5 {
+			// 		rest = parts[5]
+			// 		rest = strings.ReplaceAll(rest, "\u00B0", "")
+			// 	}
+			// }
 			msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
 		} else {
 			msg2 += "<li>" + indent + line + "</li>\n"
