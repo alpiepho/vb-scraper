@@ -101,6 +101,7 @@
         "Pittsburg State University",
         "Washburn University of Topeka",
         "University at Albany",
+        "Lehigh University",
         "# All"
     ],
     "levellist" : [
@@ -118,7 +119,7 @@
     "import_college_details": true,
     "import_college_details_file": "college_details_16.json",
 
-    "parse_lat_long" : true,
+    "parse_lat_long" : false,
     "lat_long_list" : [
         "# placeholder, not used, parse_lat_long is long time each so can be run after import"
     ],
