@@ -510,7 +510,7 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 		chromedp.Text(`#cost-section > div > div:nth-child(6) > div:nth-child(3) > p`, &data.CostOutStateFee, chromedp.ByQuery, chromedp.AtLeast(0)),
 		chromedp.Text(`#cost-section > div > div:nth-child(6) > div:nth-child(4) > p`, &data.CostOutStateOnCampusRoom, chromedp.ByQuery, chromedp.AtLeast(0)),
 		chromedp.Text(`#cost-section > div > div:nth-child(9) > div > p`, &data.CostPercentUndergradAid, chromedp.ByQuery, chromedp.AtLeast(0)),
-		chromedp.Nodes(`p.major`, &majorNodes, chromedp.ByQueryAll),
+		chromedp.Nodes(`p.major`, &majorNodes, chromedp.ByQueryAll, chromedp.AtLeast(0)),
 	)
 	if err != nil {
 		// ignore error
@@ -790,7 +790,7 @@ func main() {
 	)
 
 	fmt.Println("open config...")
-	confFile, err := os.Open("config.json")
+	confFile, err := os.Open("config_kip.json")
 	if err != nil {
 		panic(err)
 	}
