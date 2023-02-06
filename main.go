@@ -19,6 +19,12 @@ import (
 	"golang.org/x/exp/slices"
 )
 
+// const CONFIG_FILE = "config.json"
+const CONFIG_FILE = "config_all.json"
+
+// const CONFIG_FILE = "config_16.json"
+// const CONFIG_FILE = "config_kip.json"
+
 type Configuration struct {
 	OpenChromedp  bool     `json:"open_chromedp"`
 	ParseMap      bool     `json:"parse_map"`
@@ -66,6 +72,7 @@ const NAV_TIME_MAX_COLLEGE = 3
 type State struct {
 	name      string
 	stateLink string
+	logoLink  string
 }
 
 type College struct {
@@ -75,6 +82,7 @@ type College struct {
 	Level       string `json:"level"`
 	CollegeLink string `json:"college_link"`
 	StateLink   string `json:"state_link"`
+	LogoLink    string `json:"logo_link"`
 }
 
 type CollegeDetail struct {
@@ -84,6 +92,7 @@ type CollegeDetail struct {
 	Level              string `json:"level"`
 	CollegeLink        string `json:"college_link"`
 	StateLink          string `json:"state_link"`
+	LogoLink           string `json:"logo_link"`
 	GoogleLink         string `json:"google_link"`
 	GoogleMascotLink   string `json:"google_mascot_link"`
 	GoogleRosterLink   string `json:"google_roster_link"`
@@ -300,7 +309,7 @@ func parseForColleges(ctx *context.Context, colleges *[]College, state State) {
 	fmt.Println(len(collegeLinkNodes))
 
 	for i, n := range collegeLinkNodes {
-		//var ok bool
+		var ok bool
 		data := College{}
 		data.State = state.name
 		data.StateLink = state.stateLink
@@ -314,7 +323,7 @@ func parseForColleges(ctx *context.Context, colleges *[]College, state State) {
 			chromedp.Text(`.col-sm-5 p`, &data.Name, chromedp.ByQuery, chromedp.FromNode(n)),
 			chromedp.Text(`.col-sm-4 p`, &data.City, chromedp.ByQuery, chromedp.FromNode(n)),
 			chromedp.Text(`.col-sm-3 p`, &data.Level, chromedp.ByQuery, chromedp.FromNode(n)),
-			//chromedp.AttributeValue(`.avatar img`, "src", &data.avatarLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
+			chromedp.AttributeValue(`.avatar img`, "src", &data.LogoLink, &ok, chromedp.NodeVisible, chromedp.ByQuery, chromedp.AtLeast(0), chromedp.FromNode(n)),
 		)
 		if err != nil {
 			// ignore error
@@ -431,6 +440,7 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	data.Level = college.Level
 	data.CollegeLink = college.CollegeLink
 	data.StateLink = college.StateLink
+	data.LogoLink = college.LogoLink
 	temp := data.Name
 	data.GoogleLink = "https://www.google.com/search?q=" + url.QueryEscape(temp)
 	data.GoogleMascotLink = "https://www.google.com/search?q=" + url.QueryEscape(temp+" mascot")
@@ -442,6 +452,8 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	data.WikipediaLink = "https://en.wikipedia.org/wiki/" + temp
 
 	var majorNodes []*cdp.Node
+
+	// <img class="profile-photo-college" src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/25_arizona_state_university.png" alt="">
 
 	err = chromedp.Run(*ctx,
 		chromedp.Navigate(college.CollegeLink),
@@ -722,18 +734,26 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			msg2 += "    <a id=\"" + anchorStr + "\"></a>\n"
 			msg2 += "    <ul>\n"
 
-			// add iframe
+			// add logo
 			name := strings.Replace(line, "name:", "", -1)
 			name = strings.TrimSpace(name)
 			detail := detailFromName(details, name)
-			frameStr := fmt.Sprintf("frame%d", count)
-			msg2 += "    <iframe id=\"" + frameStr + "\"\n"
-			msg2 += "    title=\"" + detail.Name + "\"\n"
-			msg2 += "    loading=\"lazy\"\n"
-			msg2 += "    width=\"100%\"\n"
-			msg2 += "    height=\"400\"\n"
-			msg2 += "    src=\"" + detail.CollegeLink + "\">\n"
-			msg2 += "    </iframe>\n"
+			msg2 += "    <img src=\"" + detail.LogoLink + "\"\n"
+			msg2 += "    <img alt=\"" + detail.Name + "\"\n"
+			msg2 += "    >\n"
+
+			// add iframe (WARNING: page uses alot of processor keeping up with iframes)
+			// name := strings.Replace(line, "name:", "", -1)
+			// name = strings.TrimSpace(name)
+			// detail := detailFromName(details, name)
+			// frameStr := fmt.Sprintf("frame%d", count)
+			// msg2 += "    <iframe id=\"" + frameStr + "\"\n"
+			// msg2 += "    title=\"" + detail.Name + "\"\n"
+			// msg2 += "    loading=\"lazy\"\n"
+			// msg2 += "    width=\"100%\"\n"
+			// msg2 += "    height=\"400\"\n"
+			// msg2 += "    src=\"" + detail.CollegeLink + "\">\n"
+			// msg2 += "    </iframe>\n"
 
 			// prev next top bottom
 			msg2 += "    "
@@ -815,7 +835,7 @@ func main() {
 	)
 
 	fmt.Println("open config...")
-	confFile, err := os.Open("config_kip.json")
+	confFile, err := os.Open(CONFIG_FILE)
 	if err != nil {
 		panic(err)
 	}
