@@ -637,6 +637,16 @@ func exportCollegeDetailsText(details *[]CollegeDetail) {
 	file.WriteString(msg)
 }
 
+func detailFromName(details *[]CollegeDetail, name string) CollegeDetail {
+	result := CollegeDetail{}
+	for _, detail := range *details {
+		if name == detail.Name {
+			result = detail
+		}
+	}
+	return result
+}
+
 func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	if len(appConfig.ExportCollegeDetailsHtmlFile) == 0 {
 		return
@@ -706,14 +716,29 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 				// close previous list
 				msg2 += "    </ul>\n"
 			}
+
 			// set anchor for this list
 			anchorStr := fmt.Sprintf("name%d", count)
 			msg2 += "    <a id=\"" + anchorStr + "\"></a>\n"
 			msg2 += "    <ul>\n"
 
+			// add iframe
+			name := strings.Replace(line, "name:", "", -1)
+			name = strings.TrimSpace(name)
+			detail := detailFromName(details, name)
+			frameStr := fmt.Sprintf("frame%d", count)
+			msg2 += "    <iframe id=\"" + frameStr + "\"\n"
+			msg2 += "    title=\"" + detail.Name + "\"\n"
+			msg2 += "    loading=\"lazy\"\n"
+			msg2 += "    width=\"100%\"\n"
+			msg2 += "    height=\"400\"\n"
+			msg2 += "    src=\"" + detail.CollegeLink + "\">\n"
+			msg2 += "    </iframe>\n"
+
 			// prev next top bottom
 			msg2 += "    "
-			msg2 += "<br><li>"
+			msg2 += "<br>"
+			msg2 += "<li>"
 			prevStr := fmt.Sprintf("#name%d", count-1)
 			nextStr := fmt.Sprintf("#name%d", count+1)
 			msg2 += "<a href=\"" + prevStr + "\">prev</a>" // may go to 0 and not work
