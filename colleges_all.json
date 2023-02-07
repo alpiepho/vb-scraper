@@ -16458,7 +16458,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming/casper_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "42.828239, -106.328359"
   },
   {
     "name": "Central Wyoming College",
@@ -16467,7 +16468,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming/central_wyoming_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "43.030221, -108.426605"
   },
   {
     "name": "Eastern Wyoming College",
@@ -16476,7 +16478,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming/eastern_wyoming_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486173_eastern_wyoming_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486173_eastern_wyoming_college.png",
+    "latitude_logitude": "42.079921, -104.191053"
   },
   {
     "name": "Laramie County Community College",
@@ -16485,7 +16488,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming/laramie_county_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486174_laramie_county_community_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486174_laramie_county_community_college.png",
+    "latitude_logitude": ""
   },
   {
     "name": "Northwest College",
@@ -16494,7 +16498,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming/northwest_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1729_northwest_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1729_northwest_college.png",
+    "latitude_logitude": "45.489422, -122.805455"
   },
   {
     "name": "University of Wyoming",
@@ -16503,7 +16508,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming/university_ofyoming",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1095_university_of_wyoming.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1095_university_of_wyoming.png",
+    "latitude_logitude": "41.314226, -105.564323"
   },
   {
     "name": "Western Wyoming Community College",
@@ -16512,7 +16518,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming/western_wyoming_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wyoming",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486174_western_wyoming_community_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486174_western_wyoming_community_college.png",
+    "latitude_logitude": "41.591078, -109.236532"
   },
   {
     "name": "American University",
