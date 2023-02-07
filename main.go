@@ -20,9 +20,10 @@ import (
 )
 
 // const CONFIG_FILE = "config.json"
-const CONFIG_FILE = "config_all.json"
+// const CONFIG_FILE = "config_all.json"
 
-// const CONFIG_FILE = "config_16.json"
+const CONFIG_FILE = "config_16.json"
+
 // const CONFIG_FILE = "config_kip.json"
 
 type Configuration struct {
@@ -72,7 +73,6 @@ const NAV_TIME_MAX_COLLEGE = 3
 type State struct {
 	name      string
 	stateLink string
-	logoLink  string
 }
 
 type College struct {
@@ -694,6 +694,9 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "    <style>\n"
 	msg2 += "      ul {\n"
 	msg2 += "        list-style: none;\n"
+	msg2 += "      }\n"
+	msg2 += "      img {\n"
+	msg2 += "        width: 300px;\n"
 	msg2 += "      }\n"
 	msg2 += "    </style>\n"
 	msg2 += "  </head>\n"

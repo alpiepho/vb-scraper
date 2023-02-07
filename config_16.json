@@ -60,11 +60,11 @@
     ],
     "parse_colleges": false,
     "export_colleges": false,
-    "export_colleges_file": "allcolleges.json",
-    "import_colleges" : false,
-    "import_colleges_file": "allcolleges.json",
+    "export_colleges_file": "colleges_all.json",
+    "import_colleges" : true,
+    "import_colleges_file": "colleges_all.json",
 
-    "parse_college_pages": false,
+    "parse_college_pages": true,
     "collegelist" : [
         "# filter for college details from state/college list (more web, more time, specific):",
         "# list of specific colleges or All, start with # to disable that line",
@@ -116,7 +116,7 @@
         "All"
     ],
 
-    "import_college_details": true,
+    "import_college_details": false,
     "import_college_details_file": "college_details_16.json",
 
     "parse_lat_long" : false,

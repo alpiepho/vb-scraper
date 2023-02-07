@@ -6,6 +6,7 @@ city: Tempe
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/arizona/arizona_state_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/arizona
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/25_arizona_state_university.png
 google_link: https://www.google.com/search?q=Arizona+State+University
 google_mascot_link: https://www.google.com/search?q=Arizona+State+University+mascot
 google_roster_link: https://www.google.com/search?q=Arizona+State+University+volleyball+roster
@@ -143,7 +144,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 38.901173, -77.041952
+latitude_logitude: 
 mascot: 
   
   
@@ -153,6 +154,7 @@ city: Phoenix
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/arizona/grand_canyon_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/arizona
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/176_grand_canyon_university.png
 google_link: https://www.google.com/search?q=Grand+Canyon+University
 google_mascot_link: https://www.google.com/search?q=Grand+Canyon+University+mascot
 google_roster_link: https://www.google.com/search?q=Grand+Canyon+University+volleyball+roster
@@ -237,7 +239,7 @@ majors:
   Music Teacher Education
   Drama and Dance Teacher Education
     
-latitude_logitude: 36.069637, -111.875153
+latitude_logitude: 
 mascot: 
   
   
@@ -247,6 +249,7 @@ city: Flagstaff
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/arizona/northern_arizona_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/arizona
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/876_northern_arizona_university.png
 google_link: https://www.google.com/search?q=Northern+Arizona+University
 google_mascot_link: https://www.google.com/search?q=Northern+Arizona+University+mascot
 google_roster_link: https://www.google.com/search?q=Northern+Arizona+University+volleyball+roster
@@ -293,116 +296,116 @@ cost_out_state_fee: $867
 cost_out_state_on_campus_room: Not Reported
 cost_percent_undergrad_aid: 83%
 majors: 
-  Foreign Languages and Literatures, General
-  French Language and Literature
-  Spanish Language and Literature
   Philosophy
-  English Language and Literature, General
+  Photography
   Design and Visual Communications, General
   Interior Design
   Drama and Dramatics/Theatre Arts, General
-  Photography
-  Art/Art Studies, General
-  Fine/Studio Arts, General
-  Art History, Criticism and Conservation
-  Painting
-  Sculpture
-  Printmaking
-  Ceramic Arts and Ceramics
-  Metal and Jewelry Arts
-  Music, General
-  Music Performance, General
   Voice and Opera
-  Business Administration and Management, General
-  Logistics, Materials, and Supply Chain Management
-  Accounting
-  Business/Managerial Economics
-  Finance, General
-  Hospitality Administration/Management, General
-  Management Information Systems, General
-  Marketing/Marketing Management, General
+  Music Performance, General
+  Music, General
+  Metal and Jewelry Arts
+  Ceramic Arts and Ceramics
+  Printmaking
+  Sculpture
+  Painting
+  Art History, Criticism and Conservation
+  Fine/Studio Arts, General
+  Art/Art Studies, General
+  French Language and Literature
+  Spanish Language and Literature
+  Foreign Languages and Literatures, General
+  English Language and Literature, General
   Fashion Merchandising
   Construction Management
+  Hospitality Administration/Management, General
+  Management Information Systems, General
+  Business/Managerial Economics
+  Marketing/Marketing Management, General
+  Finance, General
+  Accounting
+  Logistics, Materials, and Supply Chain Management
+  Business Administration and Management, General
   Dental Hygiene/Hygienist
-  Health/Health Care Administration/Management
-  Athletic Training/Trainer
-  Public Health, General
   Registered Nursing/Registered Nurse
-  American Indian/Native American Studies
-  Women's Studies
-  Multi-/Interdisciplinary Studies, General
+  Public Health, General
+  Athletic Training/Trainer
+  Health/Health Care Administration/Management
   Cultural Studies/Critical Theory and Analysis
-  Liberal Arts and Sciences/Liberal Studies
-  General Studies
-  Humanities/Humanistic Studies
+  Multi-/Interdisciplinary Studies, General
+  Women's Studies
+  American Indian/Native American Studies
   Parks, Recreation and Leisure Studies
   Kinesiology and Exercise Science
+  Humanities/Humanistic Studies
+  Liberal Arts and Sciences/Liberal Studies
+  General Studies
   Pre-Law Studies
   Public Administration
   Social Work
+  Science Technologies/Technicians, Other
+  Mathematics, General
+  Environmental/Environmental Health Engineering
+  Mechanical Engineering
+  Electrical and Electronics Engineering
+  Civil Engineering, General
   Environmental Studies
   Environmental Science
   Forest Sciences and Biology
-  Civil Engineering, General
-  Electrical and Electronics Engineering
-  Environmental/Environmental Health Engineering
-  Mechanical Engineering
-  Mathematics, General
-  Science Technologies/Technicians, Other
-  Computer Systems Analysis/Analyst
-  Computer Science
-  Biology/Biological Sciences, General
-  Biomedical Sciences, General
-  Microbiology, General
+  Astronomy
+  Paleontology
+  Geophysics and Seismology
+  Hydrology and Water Resources Science
+  Geology/Earth Science, General
+  Physical Sciences, Other
+  Physics, General
+  Chemistry, General
   Zoology/Animal Biology
   Environmental Biology
-  Astronomy
-  Chemistry, General
-  Geology/Earth Science, General
-  Geophysics and Seismology
-  Paleontology
-  Hydrology and Water Resources Science
-  Physics, General
-  Physical Sciences, Other
-  Speech Communication and Rhetoric
-  Journalism
-  Radio and Television
-  Public Relations/Image Management
-  Advertising
-  Public Relations, Advertising, and Applied Communication, Other
-  Communication, Journalism, and Related Programs, Other
-  Psychology, General
+  Microbiology, General
+  Biomedical Sciences, General
+  Biology/Biological Sciences, General
+  Computer Systems Analysis/Analyst
+  Computer Science
   History, General
-  Special Education and Teaching, General
-  Elementary Education and Teaching
-  Early Childhood Education and Teaching
-  Art Teacher Education
-  English/Language Arts Teacher Education
-  Health Teacher Education
+  Criminology
+  International Relations and Affairs
+  Geographic Information Science and Cartography
+  Geography
+  Social Sciences, Other
+  Anthropology
+  Sociology
+  Political Science and Government, General
+  Physics Teacher Education
+  German Language Teacher Education
+  French Language Teacher Education
   Technology Teacher Education/Industrial Arts Teacher Education
-  Mathematics Teacher Education
-  Music Teacher Education
-  Physical Education Teaching and Coaching
-  Science Teacher Education/General Science Teacher Education
-  Technical Teacher Education
-  Biology Teacher Education
+  Art Teacher Education
+  Spanish Language Teacher Education
+  History Teacher Education
   Chemistry Teacher Education
   Drama and Dance Teacher Education
-  French Language Teacher Education
-  German Language Teacher Education
-  History Teacher Education
-  Physics Teacher Education
-  Spanish Language Teacher Education
-  Anthropology
-  Criminology
-  Geography
-  Geographic Information Science and Cartography
-  International Relations and Affairs
-  Political Science and Government, General
-  Sociology
-  Social Sciences, Other
+  Biology Teacher Education
+  Science Teacher Education/General Science Teacher Education
+  Mathematics Teacher Education
+  English/Language Arts Teacher Education
+  Technical Teacher Education
+  Music Teacher Education
+  Health Teacher Education
+  Physical Education Teaching and Coaching
+  Early Childhood Education and Teaching
+  Elementary Education and Teaching
+  Special Education and Teaching, General
+  Communication, Journalism, and Related Programs, Other
+  Public Relations, Advertising, and Applied Communication, Other
+  Advertising
+  Public Relations/Image Management
+  Radio and Television
+  Journalism
+  Speech Communication and Rhetoric
+  Psychology, General
     
-latitude_logitude: 35.183443, -111.655
+latitude_logitude: 
 mascot: 
   
   
@@ -412,6 +415,7 @@ city: Melbourne
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida/florida_institute_of_technology
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida
+logo_link: https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/156_Florida_Institute_of_Technology.png?timestamp=1645032898
 google_link: https://www.google.com/search?q=Florida+Institute+of+Technology
 google_mascot_link: https://www.google.com/search?q=Florida+Institute+of+Technology+mascot
 google_roster_link: https://www.google.com/search?q=Florida+Institute+of+Technology+volleyball+roster
@@ -507,7 +511,7 @@ majors:
   Aeronautics/Aviation/Aerospace Science and Technology, General
   Aviation/Airway Management and Operations
     
-latitude_logitude: 28.556077, 77.208709
+latitude_logitude: 
 mascot: 
   
   
@@ -517,6 +521,7 @@ city: Jacksonville
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida/jacksonville_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/212_jacksonville_university.png
 google_link: https://www.google.com/search?q=Jacksonville+University
 google_mascot_link: https://www.google.com/search?q=Jacksonville+University+mascot
 google_roster_link: https://www.google.com/search?q=Jacksonville+University+volleyball+roster
@@ -622,7 +627,7 @@ majors:
   Airline/Commercial/Professional Pilot and Flight Crew
   Aviation/Airway Management and Operations
     
-latitude_logitude: 30.353723, -81.607306
+latitude_logitude: 
 mascot: 
   
   
@@ -632,6 +637,7 @@ city: Boca Raton
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida/lynn_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida
+logo_link: https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/257_Lynn_University.png?timestamp=1670255566
 google_link: https://www.google.com/search?q=Lynn+University
 google_mascot_link: https://www.google.com/search?q=Lynn+University+mascot
 google_roster_link: https://www.google.com/search?q=Lynn+University+volleyball+roster
@@ -711,7 +717,7 @@ majors:
   American Government and Politics (United States
   Aviation/Airway Management and Operations
     
-latitude_logitude: 52.7548, 0.39383
+latitude_logitude: 
 mascot: 
   
   
@@ -721,6 +727,7 @@ city: Fort Lauderdale
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida/nova_southeastern_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/888_nova_southeastern_university.png
 google_link: https://www.google.com/search?q=Nova+Southeastern+University
 google_mascot_link: https://www.google.com/search?q=Nova+Southeastern+University+mascot
 google_roster_link: https://www.google.com/search?q=Nova+Southeastern+University+volleyball+roster
@@ -818,7 +825,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 26.080089, -80.248546
+latitude_logitude: 
 mascot: 
   
   
@@ -828,6 +835,7 @@ city: Orlando
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida/university_of_central_florida
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida
+logo_link: https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/490_university_of_central_florida.png
 google_link: https://www.google.com/search?q=University+of+Central+Florida
 google_mascot_link: https://www.google.com/search?q=University+of+Central+Florida+mascot
 google_roster_link: https://www.google.com/search?q=University+of+Central+Florida+volleyball+roster
@@ -959,7 +967,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 28.598998, -81.197125
+latitude_logitude: 
 mascot: 
   
   
@@ -969,6 +977,7 @@ city: Tampa
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida/university_of_tampa
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/florida
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/542_university_of_tampa.png
 google_link: https://www.google.com/search?q=University+of+Tampa
 google_mascot_link: https://www.google.com/search?q=University+of+Tampa+mascot
 google_roster_link: https://www.google.com/search?q=University+of+Tampa+volleyball+roster
@@ -1068,7 +1077,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 27.947399, -82.464856
+latitude_logitude: 
 mascot: 
   
   
@@ -1078,6 +1087,7 @@ city: Augusta
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/georgia/augusta_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/georgia
+logo_link: 
 google_link: https://www.google.com/search?q=Augusta+University
 google_mascot_link: https://www.google.com/search?q=Augusta+University+mascot
 google_roster_link: https://www.google.com/search?q=Augusta+University+volleyball+roster
@@ -1165,7 +1175,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: -32.510972, 137.812247
+latitude_logitude: 
 mascot: 
   
   
@@ -1175,6 +1185,7 @@ city: Pittsburg
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/kansas/pittsburg_state_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/kansas
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/904_pittsburg_state_university.png
 google_link: https://www.google.com/search?q=Pittsburg+State+University
 google_mascot_link: https://www.google.com/search?q=Pittsburg+State+University+mascot
 google_roster_link: https://www.google.com/search?q=Pittsburg+State+University+volleyball+roster
@@ -1275,7 +1286,7 @@ majors:
   Electrical/Electronics Equipment Installation and Repair, General
   Automobile/Automotive Mechanics Technology/Technician
     
-latitude_logitude: 34.686607, -95.75244
+latitude_logitude: 
 mascot: 
   
   
@@ -1285,6 +1296,7 @@ city: Topeka
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/kansas/washburn_university_of_topeka
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/kansas
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1105_washburn_university_of_topeka.png
 google_link: https://www.google.com/search?q=Washburn+University+of+Topeka
 google_mascot_link: https://www.google.com/search?q=Washburn+University+of+Topeka+mascot
 google_roster_link: https://www.google.com/search?q=Washburn+University+of+Topeka+volleyball+roster
@@ -1403,7 +1415,7 @@ majors:
   Food Preparation/Professional Cooking/Kitchen Assistant
   Mechanic and Repair Technologies/Technicians, Other
     
-latitude_logitude: 39.082431, -95.6669
+latitude_logitude: 
 mascot: 
   
   
@@ -1413,6 +1425,7 @@ city: Baltimore
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/maryland/morgan_state_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/maryland
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/857_morgan_state_university.png
 google_link: https://www.google.com/search?q=Morgan+State+University
 google_mascot_link: https://www.google.com/search?q=Morgan+State+University+mascot
 google_roster_link: https://www.google.com/search?q=Morgan+State+University+volleyball+roster
@@ -1507,7 +1520,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 39.344666, -76.583609
+latitude_logitude: 
 mascot: 
   
   
@@ -1517,6 +1530,7 @@ city: Missoula
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/montana/university_ofontana
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/montana
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/516_university_of_montana.png
 google_link: https://www.google.com/search?q=University+of+Montana
 google_mascot_link: https://www.google.com/search?q=University+of+Montana+mascot
 google_roster_link: https://www.google.com/search?q=University+of+Montana+volleyball+roster
@@ -1639,7 +1653,7 @@ majors:
   Carpentry/Carpenter
   Welding Technology/Welder
     
-latitude_logitude: 46.85461, -113.965524
+latitude_logitude: 
 mascot: 
   
   
@@ -1649,6 +1663,7 @@ city: Albany
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/new-york/university_at_albany
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/new-york
+logo_link: https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/482_University_at_Albany.png?timestamp=1634936984
 google_link: https://www.google.com/search?q=University+at+Albany
 google_mascot_link: https://www.google.com/search?q=University+at+Albany+mascot
 google_roster_link: https://www.google.com/search?q=University+at+Albany+volleyball+roster
@@ -1740,7 +1755,7 @@ majors:
   Psychology, General
   History, General
     
-latitude_logitude: 42.684359, -73.825834
+latitude_logitude: 
 mascot: 
   
   
@@ -1750,6 +1765,7 @@ city: Buffalo
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/new-york/university_at_buffalo
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/new-york
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/987_suny_buffalo.png
 google_link: https://www.google.com/search?q=University+at+Buffalo
 google_mascot_link: https://www.google.com/search?q=University+at+Buffalo+mascot
 google_roster_link: https://www.google.com/search?q=University+at+Buffalo+volleyball+roster
@@ -1868,7 +1884,7 @@ majors:
   Psychology, General
   History, General
     
-latitude_logitude: 43.00075, -78.788714
+latitude_logitude: 
 mascot: 
   
   
@@ -1878,6 +1894,7 @@ city: Buies Creek
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina/campbell_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/69_campbell_university.png
 google_link: https://www.google.com/search?q=Campbell+University
 google_mascot_link: https://www.google.com/search?q=Campbell+University+mascot
 google_roster_link: https://www.google.com/search?q=Campbell+University+volleyball+roster
@@ -1992,7 +2009,7 @@ majors:
   Economics, General
   Political Science and Government, General
     
-latitude_logitude: 35.408071, -78.739247
+latitude_logitude: 
 mascot: 
   
   
@@ -2002,6 +2019,7 @@ city: Davidson
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina/davidson_college
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/122_davidson_college.png
 google_link: https://www.google.com/search?q=Davidson+College
 google_mascot_link: https://www.google.com/search?q=Davidson+College+mascot
 google_roster_link: https://www.google.com/search?q=Davidson+College+volleyball+roster
@@ -2076,7 +2094,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 35.503219, -80.83393
+latitude_logitude: 
 mascot: 
   
   
@@ -2086,6 +2104,7 @@ city: Greenville
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina/east_carolina_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/722_east_carolina_university.png
 google_link: https://www.google.com/search?q=East+Carolina+University
 google_mascot_link: https://www.google.com/search?q=East+Carolina+University+mascot
 google_roster_link: https://www.google.com/search?q=East+Carolina+University+volleyball+roster
@@ -2227,6 +2246,7 @@ city: Elon
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina/elon_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/145_elon_university.png
 google_link: https://www.google.com/search?q=Elon+University
 google_mascot_link: https://www.google.com/search?q=Elon+University+mascot
 google_roster_link: https://www.google.com/search?q=Elon+University+volleyball+roster
@@ -2345,7 +2365,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 36.107187, -79.501321
+latitude_logitude: 
 mascot: 
   
   
@@ -2355,6 +2375,7 @@ city: Winston-Salem
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina/wake_forest_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/north-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/563_wake_forest_university.png
 google_link: https://www.google.com/search?q=Wake+Forest+University
 google_mascot_link: https://www.google.com/search?q=Wake+Forest+University+mascot
 google_roster_link: https://www.google.com/search?q=Wake+Forest+University+volleyball+roster
@@ -2444,7 +2465,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 36.001517, -78.524473
+latitude_logitude: 
 mascot: 
   
   
@@ -2454,6 +2475,7 @@ city: Bethlehem
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/pennsylvania/lehigh_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/pennsylvania
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/239_lehigh_university.png
 google_link: https://www.google.com/search?q=Lehigh+University
 google_mascot_link: https://www.google.com/search?q=Lehigh+University+mascot
 google_roster_link: https://www.google.com/search?q=Lehigh+University+volleyball+roster
@@ -2566,7 +2588,7 @@ majors:
   Psychology, General
   History, General
     
-latitude_logitude: 40.63063, -75.48195
+latitude_logitude: 
 mascot: 
   
   
@@ -2576,6 +2598,7 @@ city: Anderson
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina/anderson_university_sc
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/621_Anderson_University_(SC).png
 google_link: https://www.google.com/search?q=Anderson+University+%28SC%29
 google_mascot_link: https://www.google.com/search?q=Anderson+University+%28SC%29+mascot
 google_roster_link: https://www.google.com/search?q=Anderson+University+%28SC%29+volleyball+roster
@@ -2687,7 +2710,7 @@ majors:
   Teacher Education and Professional Development, Specific Subject Areas, Other
   History, General
     
-latitude_logitude: 34.514789, -82.638747
+latitude_logitude: 
 mascot: 
   
   
@@ -2697,6 +2720,7 @@ city: Charleston
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina/charleston_southern_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/685_charleston_southern_university.png
 google_link: https://www.google.com/search?q=Charleston+Southern+University
 google_mascot_link: https://www.google.com/search?q=Charleston+Southern+University+mascot
 google_roster_link: https://www.google.com/search?q=Charleston+Southern+University+volleyball+roster
@@ -2794,7 +2818,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 32.982074, -80.07231
+latitude_logitude: 
 mascot: 
   
   
@@ -2804,6 +2828,7 @@ city: Conway
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina/coastal_carolina_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/93_coastal_carolina_university.png
 google_link: https://www.google.com/search?q=Coastal+Carolina+University
 google_mascot_link: https://www.google.com/search?q=Coastal+Carolina+University+mascot
 google_roster_link: https://www.google.com/search?q=Coastal+Carolina+University+volleyball+roster
@@ -2894,7 +2919,7 @@ majors:
   Political Science and Government, General
   Sociology
     
-latitude_logitude: 33.702129, -78.923482
+latitude_logitude: 
 mascot: 
   
   
@@ -2904,6 +2929,7 @@ city: Hartsville
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina/coker_college
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/94_coker_college.png
 google_link: https://www.google.com/search?q=Coker+University
 google_mascot_link: https://www.google.com/search?q=Coker+University+mascot
 google_roster_link: https://www.google.com/search?q=Coker+University+volleyball+roster
@@ -2992,7 +3018,7 @@ majors:
   Criminology
   Sociology
     
-latitude_logitude: 6.453056, 3.395833
+latitude_logitude: 
 mascot: 
   
   
@@ -3002,6 +3028,7 @@ city: Due West
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina/erskine_college
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/150_erskine_college.png
 google_link: https://www.google.com/search?q=Erskine+College
 google_mascot_link: https://www.google.com/search?q=Erskine+College+mascot
 google_roster_link: https://www.google.com/search?q=Erskine+College+volleyball+roster
@@ -3070,7 +3097,7 @@ majors:
   Psychology, General
   History, General
     
-latitude_logitude: -32.561441, 115.708083
+latitude_logitude: 
 mascot: 
   
   
@@ -3080,6 +3107,7 @@ city: Greenwood
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina/lander_university
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/804_lander_university.png
 google_link: https://www.google.com/search?q=Lander+University
 google_mascot_link: https://www.google.com/search?q=Lander+University+mascot
 google_roster_link: https://www.google.com/search?q=Lander+University+volleyball+roster
@@ -3151,7 +3179,7 @@ majors:
   Psychology, General
   History, General
     
-latitude_logitude: 42.819547, -108.727032
+latitude_logitude: 
 mascot: 
   
   
@@ -3161,6 +3189,7 @@ city: Gaffney
 level: NCAA DII
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina/limestone_college
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/south-carolina
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/242_limestone_college.png
 google_link: https://www.google.com/search?q=Limestone+University
 google_mascot_link: https://www.google.com/search?q=Limestone+University+mascot
 google_roster_link: https://www.google.com/search?q=Limestone+University+volleyball+roster
@@ -3243,7 +3272,7 @@ majors:
   Physical Education Teaching and Coaching
   History, General
     
-latitude_logitude: 38.044405, -84.499857
+latitude_logitude: 
 mascot: 
   
   
@@ -3253,6 +3282,7 @@ city: Denton
 level: NCAA DI
 college_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/texas/university_of_north_texas
 state_link: https://sportsrecruits.com/athletic-scholarships/womens-volleyball/texas
+logo_link: https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/523_university_of_north_texas.png
 google_link: https://www.google.com/search?q=University+of+North+Texas
 google_mascot_link: https://www.google.com/search?q=University+of+North+Texas+mascot
 google_roster_link: https://www.google.com/search?q=University+of+North+Texas+volleyball+roster
