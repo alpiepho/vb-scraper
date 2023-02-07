@@ -3,7 +3,7 @@
     "name": "Alabama A\u0026M University",
     "state": "Alabama",
     "city": "Huntsville",
-    "level": "NCAA DI",
+    "level": "NCAA DI",U
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/alabama/alabama_aandm_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/alabama",
     "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/615_alabama_a_m_university.png"
@@ -15063,7 +15063,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/brigham_young_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/56_brigham_young_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/56_brigham_young_university.png",
+    "latitude_logitude": "41.490656, -112.012659"
   },
   {
     "name": "Salt Lake Community College",
@@ -15072,7 +15073,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/salt_lake_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/485973_salt_lake_community_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/485973_salt_lake_community_college.png",
+    "latitude_logitude": "40.77847, -111.98781"
   },
   {
     "name": "Snow College",
@@ -15081,7 +15083,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/snow_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2204_snow_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2204_snow_college.png",
+    "latitude_logitude": "54.877212, -100.034771"
   },
   {
     "name": "Southern Utah University",
@@ -15090,7 +15093,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/southern_utah_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/946_southern_utah_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/946_southern_utah_university.png",
+    "latitude_logitude": "37.675299, -113.073184"
   },
   {
     "name": "University of Utah",
@@ -15099,7 +15103,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/university_of_utah",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/546_university_of_utah.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/546_university_of_utah.png",
+    "latitude_logitude": "40.762814, -111.836872"
   },
   {
     "name": "Utah State University",
@@ -15108,7 +15113,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/utah_state_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1097_utah_state_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1097_utah_state_university.png",
+    "latitude_logitude": ""
   },
   {
     "name": "Utah State University Eastern",
@@ -15117,7 +15123,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/utah_state_university_eastern",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/489376_Utah_State_University_Eastern.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/489376_Utah_State_University_Eastern.png",
+    "latitude_logitude": "39.609325, -110.803008"
   },
   {
     "name": "Utah Tech University",
@@ -15126,7 +15133,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/utah_tech_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/716_Dixie_State_University_of_Utah.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/716_Dixie_State_University_of_Utah.png",
+    "latitude_logitude": "51.411066, 5.457721"
   },
   {
     "name": "Utah Valley University",
@@ -15135,7 +15143,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/utah_valley_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1098_utah_valley_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1098_utah_valley_university.png",
+    "latitude_logitude": "40.279411, -111.717887"
   },
   {
     "name": "Weber State University",
@@ -15144,7 +15153,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/weber_state_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1109_weber_state_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1109_weber_state_university.png",
+    "latitude_logitude": "41.188723, -111.945604"
   },
   {
     "name": "Westminster College (UT)",
@@ -15153,7 +15163,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/westminster_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/581_westminster_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/581_westminster_college.png",
+    "latitude_logitude": "51.500984, -0.123737"
   },
   {
     "name": "Castleton University",
@@ -15162,7 +15173,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont/castleton_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/74_castleton_state_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/74_castleton_state_college.png",
+    "latitude_logitude": "38.598373, -78.123321"
   },
   {
     "name": "Middlebury College",
@@ -15171,7 +15183,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont/middlebury_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/281_middlebury_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/281_middlebury_college.png",
+    "latitude_logitude": "44.01091, -73.180809"
   },
   {
     "name": "Northern Vermont University - Johnson",
@@ -15180,7 +15193,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont/johnson_state_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/218_johnson_state_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/218_johnson_state_college.png",
+    "latitude_logitude": "44.640111, -72.671633"
   },
   {
     "name": "Northern Vermont University - Lyndon",
@@ -15189,7 +15203,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont/lyndon_state_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/256_lyndon_state_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/256_lyndon_state_college.png",
+    "latitude_logitude": "44.535187, -72.024834"
   },
   {
     "name": "Norwich University",
@@ -15198,7 +15213,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont/norwich_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/320_norwich_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/320_norwich_university.png",
+    "latitude_logitude": "40.843961, -73.53746"
   },
   {
     "name": "Saint Michael's College",
@@ -15207,7 +15223,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont/saintichaels_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/387_saint_michaels_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/387_saint_michaels_college.png",
+    "latitude_logitude": "47.980093, -98.845837"
   },
   {
     "name": "Vermont Technical College",
@@ -15216,7 +15233,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont/vermont_technical_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/vermont",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": ""
   },
   {
     "name": "Averett University",
@@ -15225,7 +15243,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/averett_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/633_averett_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/633_averett_university.png",
+    "latitude_logitude": "36.579115, -79.414658"
   },
   {
     "name": "Bluefield College",
@@ -15234,7 +15253,8 @@
     "level": "NAIA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/bluefield_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1730_bluefield_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1730_bluefield_college.png",
+    "latitude_logitude": "37.245104, -81.248002"
   },
   {
     "name": "Bridgewater College (VA)",
@@ -15243,7 +15263,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/bridgewater_college_va",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/54_bridgewater_college_va.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/54_bridgewater_college_va.png",
+    "latitude_logitude": "40.58582, -74.619357"
   },
   {
     "name": "Bryant \u0026 Stratton College-Hampton",
@@ -15252,7 +15273,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/488602_Bryant_\u0026_Stratton_College-Hampton.png?timestamp=1626449547"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/488602_Bryant_\u0026_Stratton_College-Hampton.png?timestamp=1626449547",
+    "latitude_logitude": "51.586352, -1.74774"
   },
   {
     "name": "Bryant \u0026 Stratton College-Virginia Beach",
@@ -15261,7 +15283,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/bryant_and_stratton_college_virginia_beach",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/485996_Bryant_\u0026_Stratton_College-Virginia_Beach.png?timestamp=1626449520"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/485996_Bryant_\u0026_Stratton_College-Virginia_Beach.png?timestamp=1626449520",
+    "latitude_logitude": "51.586352, -1.74774"
   },
   {
     "name": "Christendom College",
@@ -15270,7 +15293,8 @@
     "level": "USCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/christendom_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/christendom_college_17905.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/christendom_college_17905.png",
+    "latitude_logitude": "38.950544, -78.147017"
   },
   {
     "name": "Christopher Newport University",
@@ -15279,7 +15303,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/christopher_newport_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/88_christopher_newport_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/88_christopher_newport_university.png",
+    "latitude_logitude": "37.06372, -76.495571"
   },
   {
     "name": "College of William and Mary",
@@ -15288,7 +15313,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/college_ofilliam_and_mary",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/105_College_of_William_and_Mary.png?timestamp=1652369533"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/105_College_of_William_and_Mary.png?timestamp=1652369533",
+    "latitude_logitude": "37.269085, -76.722737"
   },
   {
     "name": "Eastern Mennonite University",
@@ -15297,7 +15323,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/easternennonite_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/728_eastern_mennonite_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/728_eastern_mennonite_university.png",
+    "latitude_logitude": "38.471917, -78.87931"
   },
   {
     "name": "Emory and Henry College",
@@ -15306,7 +15333,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/emory_and_henry_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/736_emory_and_henry_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/736_emory_and_henry_college.png",
+    "latitude_logitude": "36.027198, -84.223104"
   },
   {
     "name": "Ferrum College",
@@ -15315,7 +15343,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/ferrum_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/153_ferrum_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/153_ferrum_college.png",
+    "latitude_logitude": "36.97299, -80.09714"
   },
   {
     "name": "George Mason University",
@@ -15324,7 +15353,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/george_mason_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/168_george_mason_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/168_george_mason_university.png",
+    "latitude_logitude": "38.834, -77.30854"
   },
   {
     "name": "Hampton University",
@@ -15333,7 +15363,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/hampton_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/769_hampton_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/769_hampton_university.png",
+    "latitude_logitude": "37.02101, -76.338626"
   },
   {
     "name": "Hollins University",
@@ -15342,7 +15373,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/hollins_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/196_hollins_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/196_hollins_university.png",
+    "latitude_logitude": "37.357368, -79.94366"
   },
   {
     "name": "James Madison University",
@@ -15351,7 +15383,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/jamesadison_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/213_james_madison_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/213_james_madison_university.png",
+    "latitude_logitude": "40.883272, -73.158141"
   },
   {
     "name": "Liberty University",
@@ -15360,7 +15393,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/liberty_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/241_liberty_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/241_liberty_university.png",
+    "latitude_logitude": "40.70387, -74.013854"
   },
   {
     "name": "Mary Baldwin University",
@@ -15369,7 +15403,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/mary_baldwin_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/831_mary_baldwin_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/831_mary_baldwin_college.png",
+    "latitude_logitude": "40.656728, -73.607028"
   },
   {
     "name": "Marymount University (VA)",
@@ -15378,7 +15413,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/marymount_university_va",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/264_Marymount_University_(VA).png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/264_Marymount_University_(VA).png",
+    "latitude_logitude": "1.341583, 103.840027"
   },
   {
     "name": "New River Community College",
@@ -15387,7 +15423,8 @@
     "level": "Club",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/new_river_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": ""
   },
   {
     "name": "Norfolk State University",
@@ -15396,7 +15433,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/norfolk_state_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/871_norfolk_state_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/871_norfolk_state_university.png",
+    "latitude_logitude": "36.848222, -76.262964"
   },
   {
     "name": "Northern Virginia Community College",
@@ -15405,7 +15443,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/northern_virginia_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/318_northern_virgina_community_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/318_northern_virgina_community_college.png",
+    "latitude_logitude": "38.833905, -77.23635"
   },
   {
     "name": "Old Dominion University",
@@ -15414,7 +15453,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/old_dominion_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/331_old_dominion_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/331_old_dominion_university.png",
+    "latitude_logitude": "36.88627, -76.309725"
   },
   {
     "name": "Patrick Henry Community College",
@@ -15423,7 +15463,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/patrick_henry_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486016_patrick_henry_community_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486016_patrick_henry_community_college.png",
+    "latitude_logitude": "33.50195, -84.22369"
   },
   {
     "name": "Radford University",
@@ -15432,7 +15473,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/radford_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/910_radford_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/910_radford_university.png",
+    "latitude_logitude": "37.137024, -80.549961"
   },
   {
     "name": "Randolph College",
@@ -15441,7 +15483,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/randolph_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/359_randolph_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/359_Randolph_College.png?timestamp=1675712871",
+    "latitude_logitude": "43.938104, -72.602772"
   },
   {
     "name": "Randolph-Macon College",
@@ -15450,7 +15493,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/randolphmacon_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/360_randolph_macon_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/360_randolph_macon_college.png",
+    "latitude_logitude": "43.938104, -72.602772"
   },
   {
     "name": "Regent University",
@@ -15459,7 +15503,8 @@
     "level": "NCCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "36.799321, -76.1944"
   },
   {
     "name": "Richard Bland College of William \u0026 Mary",
@@ -15468,7 +15513,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/richard_bland_college_of_william_and_mary",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486024_richard_bland_college_of_the_college_of_william_and_mary.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486024_richard_bland_college_of_the_college_of_william_and_mary.png",
+    "latitude_logitude": "53.631291, -2.69265"
   },
   {
     "name": "Roanoke College",
@@ -15477,7 +15523,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/roanoke_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/369_roanoke_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/369_roanoke_college.png",
+    "latitude_logitude": "36.454485, -77.657588"
   },
   {
     "name": "Shenandoah University",
@@ -15486,7 +15533,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/shenandoah_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/398_shenandoah_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/398_shenandoah_university.png",
+    "latitude_logitude": "30.408044, -91.019648"
   },
   {
     "name": "Southern Virginia University",
@@ -15495,7 +15543,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/southern_virginia_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/414_Southern_Virginia_University.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/414_Southern_Virginia_University.png",
+    "latitude_logitude": "37.741417, -79.341397"
   },
   {
     "name": "Southwest Virginia Community College",
@@ -15504,7 +15553,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/southwest_virginia_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "37.00626, -81.796982"
   },
   {
     "name": "University of Lynchburg",
@@ -15513,7 +15563,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/university_of_lynchburg",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/255_University_of_Lynchburg.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/255_University_of_Lynchburg.png",
+    "latitude_logitude": "37.398979, -79.18414"
   },
   {
     "name": "University of Mary Washington",
@@ -15522,7 +15573,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/university_ofary_washington",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/506_university_of_mary_washington.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/506_university_of_mary_washington.png",
+    "latitude_logitude": "38.300791, -77.473426"
   },
   {
     "name": "University of Virginia",
@@ -15531,7 +15583,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/university_of_virginia",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/548_university_of_virginia.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/548_university_of_virginia.png",
+    "latitude_logitude": "38.041058, -78.5055"
   },
   {
     "name": "University of Virginia - College at Wise",
@@ -15540,7 +15593,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/university_of_virginia__college_atise",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/978_university_of_virginia_college_at_wise.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/978_university_of_virginia_college_at_wise.png",
+    "latitude_logitude": "36.971723, -82.557808"
   },
   {
     "name": "Virginia Commonwealth University",
@@ -15549,7 +15603,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/virginia_commonwealth_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1101_virginia_commonwealth_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1101_virginia_commonwealth_university.png",
+    "latitude_logitude": "37.540401, -77.43057"
   },
   {
     "name": "Virginia Polytechnic Institute \u0026 State University",
@@ -15558,7 +15613,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/virginia_polytechnic_institute_and_state_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/559_virginia_polytechnic_institute___state_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/559_virginia_polytechnic_institute___state_university.png",
+    "latitude_logitude": "35.170167, -120.740667"
   },
   {
     "name": "Virginia State University",
@@ -15567,7 +15623,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/virginia_state_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1102_virginia_state_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1102_virginia_state_university.png",
+    "latitude_logitude": "37.23834, -77.419504"
   },
   {
     "name": "Virginia Union University",
@@ -15576,7 +15633,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/virginia_union_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1103_virginia_union_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1103_virginia_union_university.png",
+    "latitude_logitude": "37.56176, -77.45106"
   },
   {
     "name": "Virginia Wesleyan University",
@@ -15585,7 +15643,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/virginia_wesleyan_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/560_Virginia_Wesleyan_University.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/560_Virginia_Wesleyan_University.png",
+    "latitude_logitude": "41.807708, -71.419343"
   },
   {
     "name": "Washington and Lee University",
@@ -15594,7 +15653,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia/washington_and_lee_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/566_washington_and_lee_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/566_washington_and_lee_university.png",
+    "latitude_logitude": ""
   },
   {
     "name": "Bellevue College",
@@ -15603,7 +15663,8 @@
     "level": "Club",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/bellevue_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2195_bellevue_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2195_bellevue_college.png",
+    "latitude_logitude": "47.585122, -122.14696"
   },
   {
     "name": "Big Bend Community College",
@@ -15612,7 +15673,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/big_bend_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486051_Big_Bend_Community_College.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486051_Big_Bend_Community_College.png",
+    "latitude_logitude": "45.283978, -111.401116"
   },
   {
     "name": "Central Washington University",
@@ -15621,7 +15683,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/centralashington_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/682_central_washington_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/682_central_washington_university.png",
+    "latitude_logitude": ""
   },
   {
     "name": "Centralia College",
@@ -15630,7 +15693,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/centralia_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "46.715338, -122.960754"
   },
   {
     "name": "Clark College",
@@ -15639,7 +15703,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/clark_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2172_clark_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2172_clark_college.png",
+    "latitude_logitude": "33.74834, -84.41195"
   },
   {
     "name": "Columbia Basin College",
@@ -15648,7 +15713,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/columbia_basin_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "38.883797, -77.039995"
   },
   {
     "name": "Eastern Washington University",
@@ -15657,7 +15723,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/easternashington_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/732_eastern_washington_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/732_eastern_washington_university.png",
+    "latitude_logitude": "47.491497, -117.585939"
   },
   {
     "name": "Edmonds College",
@@ -15666,7 +15733,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/edmonds_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1808_Edmonds_College.png?timestamp=1644424108"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1808_Edmonds_College.png?timestamp=1644424108",
+    "latitude_logitude": "47.791333, -122.366118"
   },
   {
     "name": "Everett Community College",
@@ -15675,7 +15743,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/everett_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486061_Everett_Community_College.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486061_Everett_Community_College.png",
+    "latitude_logitude": "42.411279, -71.067165"
   },
   {
     "name": "Evergreen State College",
@@ -15684,7 +15753,8 @@
     "level": "NAIA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/evergreen_state_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1755_evergreen_state_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1755_evergreen_state_college.png",
+    "latitude_logitude": "48.2218, -114.267412"
   },
   {
     "name": "Gonzaga University",
@@ -15693,7 +15763,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/gonzaga_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/763_gonzaga_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/763_gonzaga_university.png",
+    "latitude_logitude": "18.261152, 121.997004"
   },
   {
     "name": "Grays Harbor College",
@@ -15702,7 +15773,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/grays_harbor_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "51.476379, 0.321905"
   },
   {
     "name": "Green River Community College",
@@ -15711,7 +15783,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/green_river_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486066_Green_River_Community_College.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486066_Green_River_Community_College.png",
+    "latitude_logitude": "47.313971, -122.178071"
   },
   {
     "name": "Highline Community College",
@@ -15720,7 +15793,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/highline_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "47.388612, -122.296787"
   },
   {
     "name": "Lower Columbia College",
@@ -15729,7 +15803,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/lower_columbia_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486078_Lower_Columbia_College.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486078_Lower_Columbia_College.png",
+    "latitude_logitude": "46.142391, -122.938378"
   },
   {
     "name": "Northwest University",
@@ -15738,7 +15813,8 @@
     "level": "NAIA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/northwest_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1761_northwest_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1761_northwest_university.png",
+    "latitude_logitude": "47.657756, -122.19171"
   },
   {
     "name": "Olympic College",
@@ -15747,7 +15823,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/olympic_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "51.079963, -114.21475"
   },
   {
     "name": "Pacific Lutheran University",
@@ -15756,7 +15833,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/pacific_lutheran_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/897_pacific_lutheran_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/897_pacific_lutheran_university.png",
+    "latitude_logitude": "47.143757, -122.444389"
   },
   {
     "name": "Pierce College at Puyallup",
@@ -15765,7 +15843,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/pierce_college_at_puyallup",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "47.157, -122.2733"
   },
   {
     "name": "Saint Martin's University",
@@ -15774,7 +15853,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/st_martins_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/957_Saint_Martin's_University.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/957_Saint_Martin's_University.png",
+    "latitude_logitude": "47.043433, -122.81344"
   },
   {
     "name": "Seattle Pacific University",
@@ -15783,7 +15863,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/seattle_pacific_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/930_seattle_pacific_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/930_seattle_pacific_university.png",
+    "latitude_logitude": "47.648868, -122.361966"
   },
   {
     "name": "Seattle University",
@@ -15792,7 +15873,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/seattle_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/931_seattle_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/931_seattle_university.png",
+    "latitude_logitude": "47.609504, -122.318798"
   },
   {
     "name": "Shoreline Community College",
@@ -15801,7 +15883,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/shoreline_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "47.748975, -122.359885"
   },
   {
     "name": "Skagit Valley College",
@@ -15810,7 +15893,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/skagit_valley_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1954_skagit_valley_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1954_skagit_valley_college.png",
+    "latitude_logitude": "48.419266, -122.324126"
   },
   {
     "name": "South Puget Sound Community College",
@@ -15819,7 +15903,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": ""
   },
   {
     "name": "Spokane Community College",
@@ -15828,7 +15913,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/spokane_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "47.674733, -117.359223"
   },
   {
     "name": "Spokane Falls Community College",
@@ -15837,7 +15923,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/spokane_falls_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "47.674733, -117.359223"
   },
   {
     "name": "Tacoma Community College",
@@ -15846,7 +15933,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/tacoma_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "47.253081, -122.444075"
   },
   {
     "name": "University of Puget Sound",
@@ -15855,7 +15943,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/university_of_puget_sound",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/530_university_of_puget_sound.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/530_university_of_puget_sound.png",
+    "latitude_logitude": "43.955815, 6.895258"
   },
   {
     "name": "University of Washington",
@@ -15864,7 +15953,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/university_of_washington",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/549_university_of_washington.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/549_university_of_washington.png",
+    "latitude_logitude": "47.654347, -122.308061"
   },
   {
     "name": "Walla Walla Community College",
@@ -15873,7 +15963,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/walla_walla_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "46.080605, -118.27953"
   },
   {
     "name": "Walla Walla University",
@@ -15882,7 +15973,8 @@
     "level": "NAIA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/wallaalla_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1930_walla_walla_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1930_walla_walla_university.png",
+    "latitude_logitude": "46.080605, -118.27953"
   },
   {
     "name": "Washington State University",
@@ -15891,7 +15983,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/washington_state_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1106_washington_state_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1106_washington_state_university.png",
+    "latitude_logitude": ""
   },
   {
     "name": "Wenatchee Valley College",
@@ -15900,7 +15993,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/wenatchee_valley_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "47.305004, -120.39165"
   },
   {
     "name": "Western Washington University",
@@ -15909,7 +16003,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/westernashington_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1121_western_washington_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1121_western_washington_university.png",
+    "latitude_logitude": ""
   },
   {
     "name": "Whatcom Community College",
@@ -15918,7 +16013,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/whatcom_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486100_Whatcom_Community_College.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486100_Whatcom_Community_College.png",
+    "latitude_logitude": "48.796581, -122.496182"
   },
   {
     "name": "Whitman College",
@@ -15927,7 +16023,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/whitman_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1124_whitman_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1124_whitman_college.png",
+    "latitude_logitude": "46.041468, -118.460929"
   },
   {
     "name": "Whitworth University",
@@ -15936,7 +16033,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/whitworth_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1125_whitworth_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1125_whitworth_university.png",
+    "latitude_logitude": "47.754349, -117.417923"
   },
   {
     "name": "Yakima Valley Community College",
@@ -15945,7 +16043,8 @@
     "level": "NWAC",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/yakima_valley_community_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "46.602661, -120.507375"
   },
   {
     "name": "Alderson Broaddus University",
@@ -15954,7 +16053,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/aldersonbroaddus_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/13_alderson_broaddus_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/13_alderson_broaddus_college.png",
+    "latitude_logitude": "39.157334, -80.049737"
   },
   {
     "name": "Bethany College (WV)",
@@ -15963,7 +16063,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/bethany_college_wv",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/45_bethany_college_wv.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/45_bethany_college_wv.png",
+    "latitude_logitude": "45.565909, -122.832996"
   },
   {
     "name": "Bluefield State University",
@@ -15972,7 +16073,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/bluefield_state_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/647_bluefield_state_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/647_bluefield_state_college.png",
+    "latitude_logitude": "37.245104, -81.248002"
   },
   {
     "name": "Concord University",
@@ -15981,7 +16083,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/concord_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/700_concord_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/700_concord_university.png",
+    "latitude_logitude": "35.37027, -80.716389"
   },
   {
     "name": "Davis and Elkins College",
@@ -15990,7 +16093,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/davis_and_elkins_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/713_davis_and_elkins_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/713_davis_and_elkins_college.png",
+    "latitude_logitude": "38.912459, -79.849118"
   },
   {
     "name": "Fairmont State University",
@@ -15999,7 +16103,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/fairmont_state_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/741_fairmont_state_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/741_fairmont_state_university.png",
+    "latitude_logitude": "43.636226, -94.449007"
   },
   {
     "name": "Glenville State College",
@@ -16008,7 +16113,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/glenville_state_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/761_glenville_state_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/761_glenville_state_college.png",
+    "latitude_logitude": "39.757068, -76.815127"
   },
   {
     "name": "Marshall University",
@@ -16017,7 +16123,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/marshall_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/830_marshall_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/830_marshall_university.png",
+    "latitude_logitude": "38.423626, -82.427402"
   },
   {
     "name": "Ohio Valley University",
@@ -16026,7 +16133,8 @@
     "level": "NAIA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/ohio_valley_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/329_ohio_valley_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/329_ohio_valley_university.png",
+    "latitude_logitude": "39.311557, -81.537086"
   },
   {
     "name": "Potomac State College of West Virginia University",
@@ -16035,7 +16143,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/potomac_state_college_of_west_virginia_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486121_potpmac_state_college_of_west_virginia_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486121_potpmac_state_college_of_west_virginia_university.png",
+    "latitude_logitude": "39.008668, -77.234655"
   },
   {
     "name": "Salem University",
@@ -16044,7 +16153,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/salem_international_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1820_salem_international_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1820_salem_international_university.png",
+    "latitude_logitude": "39.288891, -80.571942"
   },
   {
     "name": "Shepherd University",
@@ -16053,7 +16163,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/shepherd_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/399_shepherd_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/399_shepherd_university.png",
+    "latitude_logitude": "39.436475, -77.809736"
   },
   {
     "name": "University of Charleston (WV)",
@@ -16062,7 +16173,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/university_of_charlestonv",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1005_university_of_charleston_wv.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1005_university_of_charleston_wv.png",
+    "latitude_logitude": "32.982074, -80.07231"
   },
   {
     "name": "West Liberty University",
@@ -16071,7 +16183,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/west_liberty_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1111_west_liberty_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1111_west_liberty_university.png",
+    "latitude_logitude": ""
   },
   {
     "name": "West Virginia State University",
@@ -16080,7 +16193,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/west_virginia_state_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1113_west_virginia_state_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1113_west_virginia_state_university.png",
+    "latitude_logitude": ""
   },
   {
     "name": "West Virginia University",
@@ -16089,7 +16203,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/west_virginia_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1114_west_virginia_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1114_west_virginia_university.png",
+    "latitude_logitude": ""
   },
   {
     "name": "West Virginia University Institute of Technology",
@@ -16098,7 +16213,8 @@
     "level": "NAIA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/west_virginia_university_institute_of_technology",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1892_west_virginia_university_institute_of_technology.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1892_west_virginia_university_institute_of_technology.png",
+    "latitude_logitude": ""
   },
   {
     "name": "West Virginia Wesleyan College",
@@ -16107,7 +16223,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/west_virginiaesleyan_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/576_west_virginia_wesleyan_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/576_west_virginia_wesleyan_college.png",
+    "latitude_logitude": ""
   },
   {
     "name": "Wheeling University",
@@ -16116,7 +16233,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia/wheeling_jesuit_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/west-virginia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/584_wheeling_jesuit_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/584_wheeling_jesuit_university.png",
+    "latitude_logitude": "40.114184, -80.701716"
   },
   {
     "name": "Alverno College",
@@ -16125,7 +16243,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/alverno_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/619_alverno_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/619_alverno_college.png",
+    "latitude_logitude": "42.983753, -87.965482"
   },
   {
     "name": "Beloit College",
@@ -16134,7 +16253,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/beloit_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/41_beloit_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/41_beloit_college.png",
+    "latitude_logitude": "42.542092, -89.228525"
   },
   {
     "name": "Bryant \u0026 Stratton College-Wauwatosa",
@@ -16143,7 +16263,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/bryant_and_stratton_college-wauwatosa",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/bryant_stratton_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/bryant_stratton_college.png",
+    "latitude_logitude": "51.586352, -1.74774"
   },
   {
     "name": "Cardinal Stritch University",
@@ -16152,7 +16273,8 @@
     "level": "NAIA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/cardinal_stritch_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1723_cardinal_stritch_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1723_cardinal_stritch_university.png",
+    "latitude_logitude": "43.140143, -87.909768"
   },
   {
     "name": "Carroll University (WI)",
@@ -16161,7 +16283,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/carroll_universityi",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/675_carroll_university_wi.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/675_carroll_university_wi.png",
+    "latitude_logitude": "43.003953, -88.229264"
   },
   {
     "name": "Carthage College",
@@ -16170,7 +16293,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/carthage_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/73_carthage_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/73_carthage_college.png",
+    "latitude_logitude": "42.622801, -87.822291"
   },
   {
     "name": "Concordia University (WI)",
@@ -16179,7 +16303,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/concordia_university_wi",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/113_concordia_university_wi.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/113_concordia_university_wi.png",
+    "latitude_logitude": "45.569673, -122.637034"
   },
   {
     "name": "Edgewood College",
@@ -16188,7 +16313,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/edgewood_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/734_edgewood_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/734_edgewood_college.png",
+    "latitude_logitude": "38.263977, -84.679064"
   },
   {
     "name": "Lakeland University (WI)",
@@ -16197,7 +16323,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/lakeland_collegei",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/802_lakeland_college_wi.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/802_lakeland_college_wi.png",
+    "latitude_logitude": "43.840555, -87.889037"
   },
   {
     "name": "Lawrence University",
@@ -16206,7 +16333,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/lawrence_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/806_lawrence_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/806_lawrence_university.png",
+    "latitude_logitude": "44.260751, -88.398907"
   },
   {
     "name": "Madison College",
@@ -16215,7 +16343,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/madison_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "43.037719, -89.395586"
   },
   {
     "name": "Maranatha Baptist University",
@@ -16224,7 +16353,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/maranatha_baptist_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/827_maranatha_baptist_bible_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/827_maranatha_baptist_bible_college.png",
+    "latitude_logitude": "43.197528, -88.742213"
   },
   {
     "name": "Marian University (WI)",
@@ -16233,7 +16363,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/marian_universityi",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/828_marian_university_wi.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/828_marian_university_wi.png",
+    "latitude_logitude": "-21.148642, 148.934296"
   },
   {
     "name": "Marquette University",
@@ -16242,7 +16373,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/marquette_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/262_marquette_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/262_marquette_university.png",
+    "latitude_logitude": "46.548898, -87.439397"
   },
   {
     "name": "Milwaukee Area Technical College",
@@ -16251,7 +16383,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/milwaukee_area_technical_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486149_milwaukee_area_technical_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486149_milwaukee_area_technical_college.png",
+    "latitude_logitude": "43.111732, -87.928454"
   },
   {
     "name": "Milwaukee School of Engineering",
@@ -16260,7 +16393,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/milwaukee_school_of_engineering",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/285_milwaukee_school_of_engineering.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/285_milwaukee_school_of_engineering.png",
+    "latitude_logitude": "43.045766, -87.907936"
   },
   {
     "name": "Mount Mary College",
@@ -16269,7 +16403,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/mount_mary_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/859_mount_mary_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/859_mount_mary_college.png",
+    "latitude_logitude": "43.072522, -88.031452"
   },
   {
     "name": "Northland College",
@@ -16278,7 +16413,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/northland_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/881_Northland_College.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/881_Northland_College.png",
+    "latitude_logitude": "-41.28346, 174.75724"
   },
   {
     "name": "Ripon College",
@@ -16287,7 +16423,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/ripon_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/913_ripon_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/913_ripon_college.png",
+    "latitude_logitude": "43.841024, -88.853939"
   },
   {
     "name": "St. Norbert College",
@@ -16296,7 +16433,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/st_norbert_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/959_st_norbert_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/959_st_norbert_college.png",
+    "latitude_logitude": "50.84479, 4.31486"
   },
   {
     "name": "University of Wisconsin Colleges",
@@ -16305,7 +16443,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": ""
+    "logo_link": "",
+    "latitude_logitude": "43.076592, -89.412487"
   },
   {
     "name": "University of Wisconsin, Eau Claire",
@@ -16314,7 +16453,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_eau_claire",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1084_university_of_wisconsin_eau_claire.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1084_university_of_wisconsin_eau_claire.png",
+    "latitude_logitude": "44.8, -91.5"
   },
   {
     "name": "University of Wisconsin, Green Bay",
@@ -16323,7 +16463,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_green_bay",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1094_university_of_wisconsin_green_bay.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1094_university_of_wisconsin_green_bay.png",
+    "latitude_logitude": "44.532842, -87.919884"
   },
   {
     "name": "University of Wisconsin, La Crosse",
@@ -16332,7 +16473,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_la_crosse",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1085_university_of_wisconsin_la_crosse.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1085_university_of_wisconsin_la_crosse.png",
+    "latitude_logitude": "43.815632, -91.231461"
   },
   {
     "name": "University of Wisconsin, Madison",
@@ -16341,7 +16483,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_of_wisconsinadison",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/550_University_of_Wisconsin,_Madison.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/550_University_of_Wisconsin,_Madison.png",
+    "latitude_logitude": "43.080274, -89.430959"
   },
   {
     "name": "University of Wisconsin, Milwaukee",
@@ -16350,7 +16493,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_milwaukee",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1086_university_of_wisconsin_milwaukee.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1086_university_of_wisconsin_milwaukee.png",
+    "latitude_logitude": "43.111732, -87.928454"
   },
   {
     "name": "University of Wisconsin, Oshkosh",
@@ -16359,7 +16503,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_oshkosh",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1083_university_of_wisconsin_oshkosh.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1083_university_of_wisconsin_oshkosh.png",
+    "latitude_logitude": "44.019156, -88.55437"
   },
   {
     "name": "University of Wisconsin, Parkside",
@@ -16368,7 +16513,8 @@
     "level": "NCAA DII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_parkside",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1087_university_of_wisconsin_parkside.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1087_university_of_wisconsin_parkside.png",
+    "latitude_logitude": "38.188721, -84.567999"
   },
   {
     "name": "University of Wisconsin, Platteville",
@@ -16377,7 +16523,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_platteville",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1088_university_of_wisconsin_platteville.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1088_university_of_wisconsin_platteville.png",
+    "latitude_logitude": "42.730854, -90.495145"
   },
   {
     "name": "University of Wisconsin, River Falls",
@@ -16386,7 +16533,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_river_falls",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1089_University_of_Wisconsin,_River_Falls.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1089_University_of_Wisconsin,_River_Falls.png",
+    "latitude_logitude": "44.848143, -92.61936"
   },
   {
     "name": "University of Wisconsin, Stevens Point",
@@ -16395,7 +16543,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_stevens_point",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1090_university_of_wisconsin_stevens_point.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1090_university_of_wisconsin_stevens_point.png",
+    "latitude_logitude": "44.53164, -89.569467"
   },
   {
     "name": "University of Wisconsin, Stout",
@@ -16404,7 +16553,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_stout",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1091_university_of_wisconsin_stout.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1091_university_of_wisconsin_stout.png",
+    "latitude_logitude": "39.747942, -104.990459"
   },
   {
     "name": "University of Wisconsin, Superior",
@@ -16413,7 +16563,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsin_superior",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1092_university_of_wisconsin_superior.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1092_university_of_wisconsin_superior.png",
+    "latitude_logitude": "46.717809, -92.088422"
   },
   {
     "name": "University of Wisconsin, Whitewater",
@@ -16422,7 +16573,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/university_ofisconsinhitewater",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1093_university_of_wisconsin_whitewater.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1093_university_of_wisconsin_whitewater.png",
+    "latitude_logitude": "42.84436, -88.743666"
   },
   {
     "name": "Viterbo University",
@@ -16431,7 +16583,8 @@
     "level": "NAIA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/viterbo_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1926_Viterbo_University.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1926_Viterbo_University.png",
+    "latitude_logitude": "42.424217, 12.103529"
   },
   {
     "name": "Western Technical College",
@@ -16440,7 +16593,8 @@
     "level": "NJCAA",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/western_technical_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/485860_western_technical_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/485860_western_technical_college.png",
+    "latitude_logitude": "42.524153, -83.042703"
   },
   {
     "name": "Wisconsin Lutheran College",
@@ -16449,7 +16603,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin/wisconsin_lutheran_college",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/wisconsin",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1132_wisconsin_lutheran_college.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1132_wisconsin_lutheran_college.png",
+    "latitude_logitude": "43.037265, -88.021947"
   },
   {
     "name": "Casper College",
@@ -16528,7 +16683,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia/american_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/20_american_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/20_american_university.png",
+    "latitude_logitude": "38.938045, -77.089392"
   },
   {
     "name": "Catholic University",
@@ -16537,7 +16693,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia/catholic_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/76_catholic_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/76_catholic_university.png",
+    "latitude_logitude": "38.929765, -76.999666"
   },
   {
     "name": "Gallaudet University",
@@ -16546,7 +16703,8 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia/gallaudet_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/755_gallaudet_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/755_gallaudet_university.png",
+    "latitude_logitude": "38.908417, -76.992116"
   },
   {
     "name": "George Washington University",
@@ -16555,7 +16713,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia/georgeashington_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/169_george_washington_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/169_george_washington_university.png",
+    "latitude_logitude": "38.901411, -77.0506"
   },
   {
     "name": "Georgetown University",
@@ -16564,7 +16723,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia/georgetown_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/170_georgetown_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/170_georgetown_university.png",
+    "latitude_logitude": "33.320615, -79.321222"
   },
   {
     "name": "Howard University",
@@ -16573,7 +16733,8 @@
     "level": "NCAA DI",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia/howard_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/202_howard_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/202_howard_university.png",
+    "latitude_logitude": "38.921897, -77.019593"
   },
   {
     "name": "Trinity Washington University",
@@ -16582,6 +16743,7 @@
     "level": "NCAA DIII",
     "college_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia/trinityashington_university",
     "state_link": "https://sportsrecruits.com/athletic-scholarships/womens-volleyball/district-of-columbia",
-    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/473_trinity_washington_university.png"
+    "logo_link": "https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/473_trinity_washington_university.png",
+    "latitude_logitude": "40.872845, -122.917472"
   }
 ]
