@@ -20,9 +20,9 @@ import (
 )
 
 // const CONFIG_FILE = "config.json"
-// const CONFIG_FILE = "config_all.json"
+const CONFIG_FILE = "config_all.json"
 
-const CONFIG_FILE = "config_16.json"
+// const CONFIG_FILE = "config_16.json"
 
 // const CONFIG_FILE = "config_kip.json"
 
@@ -76,13 +76,14 @@ type State struct {
 }
 
 type College struct {
-	Name        string `json:"name"`
-	State       string `json:"state"`
-	City        string `json:"city"`
-	Level       string `json:"level"`
-	CollegeLink string `json:"college_link"`
-	StateLink   string `json:"state_link"`
-	LogoLink    string `json:"logo_link"`
+	Name              string `json:"name"`
+	State             string `json:"state"`
+	City              string `json:"city"`
+	Level             string `json:"level"`
+	CollegeLink       string `json:"college_link"`
+	StateLink         string `json:"state_link"`
+	LogoLink          string `json:"logo_link"`
+	LatitudeLongitude string `json:"latitude_logitude"`
 }
 
 type CollegeDetail struct {
@@ -441,6 +442,7 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	data.CollegeLink = college.CollegeLink
 	data.StateLink = college.StateLink
 	data.LogoLink = college.LogoLink
+	data.LatitudeLongitude = college.LatitudeLongitude
 	temp := data.Name
 	data.GoogleLink = "https://www.google.com/search?q=" + url.QueryEscape(temp)
 	data.GoogleMascotLink = "https://www.google.com/search?q=" + url.QueryEscape(temp+" mascot")
@@ -544,12 +546,47 @@ func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, colleg
 	*details = append(*details, data)
 }
 
-func parseLatitudeLogitude(ctx *context.Context, details *[]CollegeDetail, index int) {
+func parseForCollegeLatitudeLogitude(ctx *context.Context, colleges *[]College, index int) {
+	var err error
+	n := rand.Intn(NAV_TIME_MAX_COLLEGE)
+	random_delay := time.Duration(n) * time.Second
+
+	name := (*colleges)[index].Name
+	fmt.Println(name)
+	location := ""
+
+	err = chromedp.Run(*ctx,
+		chromedp.Navigate(LATLONG_URL),
+		chromedp.Sleep(5*time.Second),
+		chromedp.Sleep(random_delay),
+		chromedp.SendKeys(`#search_box > input.address`, name+", US", chromedp.ByID),
+		chromedp.Sleep(1*time.Second),
+		chromedp.Click(`#search_box > input.big_button`),
+		chromedp.Sleep(10*time.Second),
+		chromedp.Text(`#search_results > span`, &location, chromedp.ByQuery),
+	)
+	if err != nil {
+		// ignore error
+		//DEBUG:
+		fmt.Println(err)
+	}
+	if len(location) > 0 {
+		parts := strings.Split(location, "\n")
+		if len(parts) > 5 {
+			location = parts[5]
+			location = strings.ReplaceAll(location, "\u00B0", "")
+		}
+	}
+	(*colleges)[index].LatitudeLongitude = location
+}
+
+func parseForDetailLatitudeLogitude(ctx *context.Context, details *[]CollegeDetail, index int) {
 	var err error
 	n := rand.Intn(NAV_TIME_MAX_COLLEGE)
 	random_delay := time.Duration(n) * time.Second
 
 	name := (*details)[index].Name
+	fmt.Println(name)
 	location := ""
 
 	err = chromedp.Run(*ctx,
@@ -882,6 +919,16 @@ func main() {
 				parseForColleges(&ctx, &colleges, state)
 			}
 		}
+		// add seperate step for lat/long after import details
+		if appConfig.ParseLatitudeLogitude {
+			fmt.Println("parse colleges latitiude longitude...")
+			for i, college := range colleges {
+				if testLevelSkip(college.Level) {
+					continue
+				}
+				parseForCollegeLatitudeLogitude(&ctx, &colleges, i)
+			}
+		}
 	}
 
 	if appConfig.DumpStates {
@@ -925,9 +972,9 @@ func main() {
 
 	// add seperate step for lat/long after import details
 	if appConfig.ParseLatitudeLogitude {
-		fmt.Println("parse latitiude longitude...")
+		fmt.Println("parse college detail latitiude longitude...")
 		for i, _ := range details {
-			parseLatitudeLogitude(&ctx, &details, i)
+			parseForDetailLatitudeLogitude(&ctx, &details, i)
 		}
 	}
 
