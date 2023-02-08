@@ -1,7 +1,7 @@
 {
     "open_chromedp" : true,
-    "parse_map" : true,
-    "parse_states": true,
+    "parse_map" : false,
+    "parse_states": false,
     "stateslist" : [
         "# filter for state/college list (limited web, completed):",
         "# list of specific states or All, start with # to disable that line",
@@ -58,11 +58,11 @@
         "#District of Columbia",
         "All"
     ],
-    "parse_colleges": true,
+    "import_colleges" : true,
+    "import_colleges_file": "colleges_all.json",
+    "parse_colleges": false,
     "export_colleges": true,
     "export_colleges_file": "colleges_all.json",
-    "import_colleges" : false,
-    "import_colleges_file": "colleges_all.json",
 
     "parse_college_pages": false,
     "collegelist" : [
@@ -110,7 +110,6 @@
         "#NCAA DI",
         "#NCAA DII",
         "#NCAA DIII",
-        "#NCAA DIII",
         "#NAIA",
         "#NJCAA",
         "All"
@@ -119,7 +118,7 @@
     "import_college_details": false,
     "import_college_details_file": "college_details_all.json",
 
-    "parse_lat_long" : false,
+    "parse_lat_long" : true,
     "lat_long_list" : [
         "# placeholder, not used, parse_lat_long is long time each so can be run after import"
     ],

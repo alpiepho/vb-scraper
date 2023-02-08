@@ -552,17 +552,23 @@ func parseForCollegeLatitudeLogitude(ctx *context.Context, colleges *[]College, 
 	random_delay := time.Duration(n) * time.Second
 
 	name := (*colleges)[index].Name
+	state := (*colleges)[index].State
 	fmt.Println(name)
 	location := ""
+
+	if len((*colleges)[index].LatitudeLongitude) > 0 {
+		fmt.Println("lat exists")
+		return
+	}
 
 	err = chromedp.Run(*ctx,
 		chromedp.Navigate(LATLONG_URL),
 		chromedp.Sleep(5*time.Second),
 		chromedp.Sleep(random_delay),
-		chromedp.SendKeys(`#search_box > input.address`, name+", US", chromedp.ByID),
+		chromedp.SendKeys(`#search_box > input.address`, name+", "+state+", US", chromedp.ByID),
 		chromedp.Sleep(1*time.Second),
 		chromedp.Click(`#search_box > input.big_button`),
-		chromedp.Sleep(10*time.Second),
+		chromedp.Sleep(60*time.Second),
 		chromedp.Text(`#search_results > span`, &location, chromedp.ByQuery),
 	)
 	if err != nil {
@@ -577,6 +583,7 @@ func parseForCollegeLatitudeLogitude(ctx *context.Context, colleges *[]College, 
 			location = strings.ReplaceAll(location, "\u00B0", "")
 		}
 	}
+	fmt.Println(location)
 	(*colleges)[index].LatitudeLongitude = location
 }
 
@@ -586,17 +593,23 @@ func parseForDetailLatitudeLogitude(ctx *context.Context, details *[]CollegeDeta
 	random_delay := time.Duration(n) * time.Second
 
 	name := (*details)[index].Name
+	state := (*details)[index].State
 	fmt.Println(name)
 	location := ""
+
+	if len((*details)[index].LatitudeLongitude) > 0 {
+		fmt.Println("lat exists")
+		return
+	}
 
 	err = chromedp.Run(*ctx,
 		chromedp.Navigate(LATLONG_URL),
 		chromedp.Sleep(5*time.Second),
 		chromedp.Sleep(random_delay),
-		chromedp.SendKeys(`#search_box > input.address`, name+", US", chromedp.ByID),
+		chromedp.SendKeys(`#search_box > input.address`, name+", "+state+", US", chromedp.ByID),
 		chromedp.Sleep(1*time.Second),
 		chromedp.Click(`#search_box > input.big_button`),
-		chromedp.Sleep(10*time.Second),
+		chromedp.Sleep(60*time.Second),
 		chromedp.Text(`#search_results > span`, &location, chromedp.ByQuery),
 	)
 	if err != nil {
@@ -939,13 +952,23 @@ func main() {
 		fmt.Println("dump colleges...")
 		dumpColleges(&colleges)
 	}
-	if appConfig.ExportColleges {
-		fmt.Println("export colleges...")
-		exportColleges(&colleges)
-	}
 	if appConfig.ImportColleges {
 		fmt.Println("import colleges...")
 		importColleges(&colleges)
+	}
+	// add seperate step for lat/long after import details
+	if appConfig.ParseLatitudeLogitude {
+		fmt.Println("parse colleges latitiude longitude...")
+		for i, college := range colleges {
+			if testLevelSkip(college.Level) {
+				continue
+			}
+			parseForCollegeLatitudeLogitude(&ctx, &colleges, i)
+		}
+	}
+	if appConfig.ExportColleges {
+		fmt.Println("export colleges...")
+		exportColleges(&colleges)
 	}
 	var details []CollegeDetail
 	if appConfig.ParseCollegePages {
