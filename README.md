@@ -70,7 +70,7 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
     - undergrad_enrollment
     - cost in/out state
 
-
+- [ ] google maps link from radius?
 
 
 - [ ] build as web server
