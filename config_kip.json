@@ -112,6 +112,10 @@
         "#NJCAA",
         "All"
     ],
+    "parse_location": false,
+    "parse_location_name": "",
+    "parse_location_latitude_logitude": "",
+    "parse_location_radius_miles": "",
 
     "import_college_details": false,
     "import_college_details_file": "college_details_kip.json",

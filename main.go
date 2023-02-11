@@ -8,9 +8,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"math"
 	"math/rand"
 	"net/url"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 
@@ -20,9 +22,9 @@ import (
 )
 
 // const CONFIG_FILE = "config.json"
-const CONFIG_FILE = "config_all.json"
-
+//const CONFIG_FILE = "config_all.json"
 // const CONFIG_FILE = "config_16.json"
+const CONFIG_FILE = "config_16_spokane.json"
 
 // const CONFIG_FILE = "config_kip.json"
 
@@ -41,6 +43,11 @@ type Configuration struct {
 	ParseCollegePages bool     `json:"parse_college_pages"`
 	CollegeList       []string `json:"collegelist"`
 	LevelList         []string `json:"levellist"`
+
+	ParseLocation                    bool   `json:"parse_location"`
+	ParseLocationName                string `json:"parse_location_name"`
+	ParseLocationLatitudeLogitude    string `json:"parse_location_latitude_logitude"`
+	ParseLocationLatitudeRadiusMiles string `json:"parse_location_radius_miles"`
 
 	ImportCollegeDetails     bool   `json:"import_college_details"`
 	ImportCollegeDetailsFile string `json:"import_college_details_file"`
@@ -427,6 +434,41 @@ func testLevelSkip(name string) bool {
 		return false
 	}
 	return true
+}
+
+func distance(lat1 float64, lng1 float64, lat2 float64, lng2 float64) float64 {
+	radlat1 := float64(math.Pi * lat1 / 180)
+	radlat2 := float64(math.Pi * lat2 / 180)
+	theta := float64(lng1 - lng2)
+	radtheta := float64(math.Pi * theta / 180)
+	dist := math.Sin(radlat1)*math.Sin(radlat2) + math.Cos(radlat1)*math.Cos(radlat2)*math.Cos(radtheta)
+	if dist > 1 {
+		dist = 1
+	}
+	dist = math.Acos(dist)
+	dist = dist * 180 / math.Pi
+	dist = dist * 60 * 1.1515
+	return dist
+}
+
+func testLocationSkip(latlong string) bool {
+	if appConfig.ParseLocation && len(latlong) > 0 {
+		centerParts := strings.Split(appConfig.ParseLocationLatitudeLogitude, ",")
+		centerLatStr := strings.TrimSpace(centerParts[0])
+		centerLngStr := strings.TrimSpace(centerParts[1])
+		centerLat, _ := strconv.ParseFloat(centerLatStr, 64)
+		centerLng, _ := strconv.ParseFloat(centerLngStr, 64)
+		radiusMiles, _ := strconv.ParseFloat(appConfig.ParseLocationLatitudeRadiusMiles, 64)
+
+		givenParts := strings.Split(latlong, ",")
+		givenLatStr := strings.TrimSpace(givenParts[0])
+		givenLngStr := strings.TrimSpace(givenParts[1])
+		givenLat, _ := strconv.ParseFloat(givenLatStr, 64)
+		givenLng, _ := strconv.ParseFloat(givenLngStr, 64)
+		distMiles := distance(centerLat, centerLng, givenLat, givenLng)
+		return distMiles > radiusMiles
+	}
+	return false
 }
 
 func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, college *College) {
@@ -981,6 +1023,9 @@ func main() {
 				continue
 			}
 			if testLevelSkip(college.Level) {
+				continue
+			}
+			if testLocationSkip(college.LatitudeLongitude) {
 				continue
 			}
 			fmt.Println("details: " + college.Name + "...")

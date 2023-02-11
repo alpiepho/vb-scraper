@@ -105,3 +105,5 @@ or to gather all the output:
 - https://developers.google.com/maps/documentation/javascript/examples/marker-simple
 - https://developers.google.com/maps/documentation/javascript/reference/marker
 - https://pkg.go.dev/github.com/chromedp/chromedp@v0.8.0#Text
+- calc distance:
+- https://gist.github.com/hotdang-ca/6c1ee75c48e515aec5bc6db6e3265e49
