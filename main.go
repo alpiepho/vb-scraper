@@ -22,11 +22,10 @@ import (
 )
 
 // const CONFIG_FILE = "config.json"
-//const CONFIG_FILE = "config_all.json"
-// const CONFIG_FILE = "config_16.json"
-const CONFIG_FILE = "config_16_spokane.json"
-
+// const CONFIG_FILE = "config_all.json"
+// const CONFIG_FILE = "config_16_spokane.json"
 // const CONFIG_FILE = "config_kip.json"
+const CONFIG_FILE = "config_16.json"
 
 type Configuration struct {
 	OpenChromedp  bool     `json:"open_chromedp"`
@@ -789,34 +788,30 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "      }\n"
 	msg2 += "      img {\n"
 	msg2 += "        width: 300px;\n"
+	msg2 += "        padding-top: 50px;\n"
+	msg2 += "      }\n"
+	msg2 += "      button {\n"
+	msg2 += "        border-radius: 10px;\n"
 	msg2 += "      }\n"
 	msg2 += "    </style>\n"
+	msg2 += "    <script src=\"https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.10.1/dist/alpine.js\" defer=\"\"></script>\n"
 	msg2 += "  </head>\n"
 
 	msg2 += "  <body>\n"
 	msg2 += "    <a id=\"top\"></a>\n"
 	msg2 += "    <ul>\n"
 
-	// // prev next top bottom
-	// msg2 += "    "
-	// msg2 += "<li>"
-	// msg2 += "<a href=\"#bottom\">prev</a>"
-	// msg2 += "&nbsp;&nbsp;"
-	// msg2 += "<a href=\"#name1\">next</a>"
-	// msg2 += "&nbsp;&nbsp;"
-	// msg2 += "<a href=\"#top\">top</a>"
-	// msg2 += "&nbsp;&nbsp;"
-	// msg2 += "<a href=\"#bottom\">bottom</a>"
-	// msg2 += "</li>\n"
-
 	indent := ""
 	count := 0
+	inDetails := false
+	inMajors := false
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
 		if len(line) == 0 {
 			continue
 		}
 		if strings.HasPrefix(line, "name:") {
+			inDetails = false
 			fmt.Println(line)
 			count += 1
 			if count > 1 {
@@ -827,7 +822,7 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			// set anchor for this list
 			anchorStr := fmt.Sprintf("name%d", count)
 			msg2 += "    <a id=\"" + anchorStr + "\"></a>\n"
-			msg2 += "    <ul>\n"
+			msg2 += "    <ul x-data=\"{ open: false }\">\n"
 
 			// add logo
 			name := strings.Replace(line, "name:", "", -1)
@@ -884,16 +879,40 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 					rest = parts[1]
 				}
 			}
-			// if strings.Contains(line, "latitude_logitude:") {
-			// 	parts := strings.Split(rest, "\\n")
-			// 	if len(parts) > 5 {
-			// 		rest = parts[5]
-			// 		rest = strings.ReplaceAll(rest, "\u00B0", "")
-			// 	}
-			// }
-			msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
+
+			if strings.Contains(line, "conference:") {
+				// details button after wikipedia_link
+				msg2 += "<button class=\"menu-button\" @click=\"open = !open\">details...</button>\n"
+				inDetails = true
+			}
+
+			// process line
+			if !strings.Contains(line, "majors:") {
+				if inDetails {
+					msg2 += "<li x-show=\"open\"><b>" + label + ":</b> " + rest + "</li>\n"
+				} else {
+					msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
+				}
+			}
+
+			if strings.Contains(line, "majors:") {
+				// start majors list
+				msg2 += "<div x-data=\"{ open: false }\">\n"
+				msg2 += "<button class=\"menu-button\" @click=\"open = !open\">majors...</button>\n"
+				inMajors = true
+			}
+
+			if strings.Contains(line, "latitude_logitude:") {
+				// finish majors list
+				msg2 += "</div\n"
+				inMajors = false
+			}
 		} else {
-			msg2 += "<li>" + indent + line + "</li>\n"
+			if inMajors {
+				msg2 += "<li x-show=\"open\">" + indent + line + "</li>\n"
+			} else {
+				msg2 += "<li>" + indent + line + "</li>\n"
+			}
 		}
 		if strings.Contains(line, "majors:") {
 			indent = "&nbsp;&nbsp;&nbsp;&nbsp;"
