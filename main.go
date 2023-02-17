@@ -25,7 +25,8 @@ import (
 // const CONFIG_FILE = "config_all.json"
 // const CONFIG_FILE = "config_16_spokane.json"
 // const CONFIG_FILE = "config_kip.json"
-const CONFIG_FILE = "config_16.json"
+// const CONFIG_FILE = "config_16.json"
+const CONFIG_FILE = "config_16_spokane.json"
 
 type Configuration struct {
 	OpenChromedp  bool     `json:"open_chromedp"`
@@ -465,6 +466,8 @@ func testLocationSkip(latlong string) bool {
 		givenLat, _ := strconv.ParseFloat(givenLatStr, 64)
 		givenLng, _ := strconv.ParseFloat(givenLngStr, 64)
 		distMiles := distance(centerLat, centerLng, givenLat, givenLng)
+		fmt.Println(latlong)
+		fmt.Println(distMiles)
 		return distMiles > radiusMiles
 	}
 	return false

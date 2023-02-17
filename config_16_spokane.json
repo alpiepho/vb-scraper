@@ -51,12 +51,12 @@
         "#Utah",
         "#Vermont",
         "#Virginia",
-        "Washington",
+        "#Washington",
         "#West Virginia",
         "#Wisconsin",
         "#Wyoming",
         "#District of Columbia",
-        "#All"
+        "All"
     ],
     "parse_colleges": false,
     "export_colleges": false,
