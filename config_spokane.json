@@ -86,7 +86,7 @@
     "parse_location_radius_miles": "300",
 
     "import_college_details": false,
-    "import_college_details_file": "college_details_16_spokane.json",
+    "import_college_details_file": "college_details_spokane.json",
 
     "parse_lat_long" : false,
     "lat_long_list" : [
@@ -94,13 +94,13 @@
     ],
 
     "export_college_details": true,
-    "export_college_details_file": "college_details_16_spokane.json",
+    "export_college_details_file": "college_details_spokane.json",
 
     "export_college_details_text": true,
-    "export_college_details_text_file": "college_details_16_spokane.text",
+    "export_college_details_text_file": "college_details_spokane.text",
 
     "export_college_details_html": true,
-    "export_college_details_html_file": "college_details_16_spokane.html",
+    "export_college_details_html_file": "college_details_spokane.html",
 
     "dump_states" : false,
     "dump_colleges" : false
