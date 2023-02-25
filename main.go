@@ -23,10 +23,13 @@ import (
 
 // const CONFIG_FILE = "config.json"
 // const CONFIG_FILE = "config_all.json"
-// const CONFIG_FILE = "config_spokane.json"
+// const CONFIG_FILE = "config_spokane300.json"
+// const CONFIG_FILE = "config_chicago300.json"
+// const CONFIG_FILE = "config_chicago100.json"
+// const CONFIG_FILE = "config_reno300.json"
 // const CONFIG_FILE = "config_kip.json"
 // const CONFIG_FILE = "config_16.json"
-const CONFIG_FILE = "config_spokane.json"
+const CONFIG_FILE = "config_reno300.json"
 
 type Configuration struct {
 	OpenChromedp  bool     `json:"open_chromedp"`

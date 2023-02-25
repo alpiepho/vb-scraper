@@ -81,12 +81,12 @@
         "All"
     ],
     "parse_location": true,
-    "parse_location_name": "Spokane",
-    "parse_location_latitude_logitude": "47.65878, -117.426046",
-    "parse_location_radius_miles": "300",
+    "parse_location_name": "Chicago",
+    "parse_location_latitude_logitude": "41.71727, -87.609506",
+    "parse_location_radius_miles": "100",
 
     "import_college_details": false,
-    "import_college_details_file": "college_details_spokane.json",
+    "import_college_details_file": "college_details_chicago100.json",
 
     "parse_lat_long" : false,
     "lat_long_list" : [
@@ -94,13 +94,13 @@
     ],
 
     "export_college_details": true,
-    "export_college_details_file": "college_details_spokane.json",
+    "export_college_details_file": "college_details_chicago100.json",
 
     "export_college_details_text": true,
-    "export_college_details_text_file": "college_details_spokane.text",
+    "export_college_details_text_file": "college_details_chicago100.text",
 
     "export_college_details_html": true,
-    "export_college_details_html_file": "college_details_spokane.html",
+    "export_college_details_html_file": "college_details_chicago100.html",
 
     "dump_states" : false,
     "dump_colleges" : false
