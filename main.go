@@ -29,7 +29,7 @@ import (
 // const CONFIG_FILE = "config_reno300.json"
 // const CONFIG_FILE = "config_kip.json"
 // const CONFIG_FILE = "config_16.json"
-const CONFIG_FILE = "config_reno300.json"
+const CONFIG_FILE = "config_chicago300.json"
 
 type Configuration struct {
 	OpenChromedp  bool     `json:"open_chromedp"`
@@ -413,6 +413,65 @@ func importColleges(colleges *[]College) {
 	fmt.Println(len(*colleges))
 }
 
+func stateIndex(name string) int {
+	for i, state := range STATE_NAMES {
+		if name == state {
+			return i
+		}
+	}
+	return 100
+
+}
+
+func checkCollegeLat(colleges *[]College) {
+	// gather average of lat, long per state
+	var avgLats [52]float64
+	var avgLngs [52]float64
+	var avgCnts [52]int
+	for i := 0; i < 52; i++ {
+		avgLats[i] = 0.0
+		avgLngs[i] = 0.0
+		avgCnts[i] = 0
+	}
+	for _, college := range *colleges {
+		index := stateIndex(college.State)
+		parts := strings.Split(college.LatitudeLongitude, ",")
+		latStr := strings.TrimSpace(parts[0])
+		lngStr := strings.TrimSpace(parts[1])
+		lat, _ := strconv.ParseFloat(latStr, 64)
+		lng, _ := strconv.ParseFloat(lngStr, 64)
+		avgLats[index] += lat
+		avgLngs[index] += lng
+		avgCnts[index] += 1
+	}
+	for i := 0; i < 52; i++ {
+		if avgCnts[i] > 0 {
+			avgLats[i] = avgLats[i] / float64(avgCnts[i])
+			avgLngs[i] = avgLngs[i] / float64(avgCnts[i])
+		}
+	}
+
+	// look for outliers compared to averages
+	// print error and google search (ex. https://www.google.com/search?q=latitude+Vassar+College)
+	for _, college := range *colleges {
+		index := stateIndex(college.State)
+		parts := strings.Split(college.LatitudeLongitude, ",")
+		latStr := strings.TrimSpace(parts[0])
+		lngStr := strings.TrimSpace(parts[1])
+		lat, _ := strconv.ParseFloat(latStr, 64)
+		lng, _ := strconv.ParseFloat(lngStr, 64)
+		if (math.Abs(lat)-math.Abs(avgLats[index]) > 5) ||
+			(math.Abs(lng)-math.Abs(avgLngs[index]) > 10) {
+			fmt.Printf("bad lat/lng:\n")
+			fmt.Printf("  name      : %s\n", college.Name)
+			fmt.Printf("  current   : %f, %f\n", lat, lng)
+			fmt.Printf("  state avg : %f, %f\n", avgLats[index], avgLngs[index])
+			url := "https://www.google.com/search?q=latitude+" + strings.Replace(college.Name, " ", "+", -1)
+			fmt.Printf("  google lat: %s\n", url)
+		}
+	}
+}
+
 func testCollegeSkip(name string) bool {
 	if slices.Contains(appConfig.CollegeList, "All") {
 		return false
@@ -788,24 +847,16 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 := ""
 	msg2 += "<html>\n"
 	msg2 += "  <head>\n"
-	msg2 += "    <style>\n"
-	msg2 += "      ul {\n"
-	msg2 += "        list-style: none;\n"
-	msg2 += "      }\n"
-	msg2 += "      img {\n"
-	msg2 += "        width: 300px;\n"
-	msg2 += "        padding-top: 50px;\n"
-	msg2 += "      }\n"
-	msg2 += "      button {\n"
-	msg2 += "        border-radius: 10px;\n"
-	msg2 += "      }\n"
-	msg2 += "    </style>\n"
-	msg2 += "    <script src=\"https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.10.1/dist/alpine.js\" defer=\"\"></script>\n"
+	msg2 += "    <link rel=\"stylesheet\" href=\"style.css\" />\n"
+
+	msg2 += "    <script defer src=\"https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js\"></script>\n"
 	msg2 += "  </head>\n"
 
 	msg2 += "  <body>\n"
 	msg2 += "    <a id=\"top\"></a>\n"
 	msg2 += "    <ul>\n"
+	msg2 += "<div x-data=\"{ openall: false }\">\n"
+	msg2 += "<button class=\"menu-button\" @click=\"openall = !openall\">expand all...</button>\n"
 
 	indent := ""
 	count := 0
@@ -816,6 +867,13 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 		if len(line) == 0 {
 			continue
 		}
+		fmt.Println(line)
+		if strings.Contains(line, "logo_link:") {
+			continue
+		}
+		// if strings.Contains(line, "state_link:") {
+		// 	continue
+		// }
 		if strings.HasPrefix(line, "name:") {
 			inDetails = false
 			fmt.Println(line)
@@ -872,7 +930,12 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 		rest := strings.Join(parts[1:], ":")
 		if strings.Contains(line, "_link:") {
 			// <a href="aaa" target="_blank">aaa</a>
-			msg2 += "<li><b>" + label + ":</b><a href=\"" + rest + "\" target=\"_blank\">" + rest + "</a></li>\n"
+			label2 := label
+			label2 = strings.Replace(label2, "_link", "", -1)
+			label2 = strings.Replace(label2, "_", " ", -1)
+			// msg2 += "<li><button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button></li>\n"
+			msg2 += "<button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button>\n"
+
 		} else if strings.Contains(line, ":") {
 			if strings.Contains(line, "overview:") {
 				// replace line breaks with <br>
@@ -888,34 +951,41 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 
 			if strings.Contains(line, "conference:") {
 				// details button after wikipedia_link
+				msg2 += "<div x-data=\"{ open: false }\">\n"
 				msg2 += "<button class=\"menu-button\" @click=\"open = !open\">details...</button>\n"
 				inDetails = true
 			}
 
 			// process line
-			if !strings.Contains(line, "majors:") {
-				if inDetails {
-					msg2 += "<li x-show=\"open\"><b>" + label + ":</b> " + rest + "</li>\n"
-				} else {
-					msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
-				}
-			}
-
 			if strings.Contains(line, "majors:") {
+				// finish majors list
+				msg2 += "</div>\n"
+				inDetails = false
+
 				// start majors list
 				msg2 += "<div x-data=\"{ open: false }\">\n"
 				msg2 += "<button class=\"menu-button\" @click=\"open = !open\">majors...</button>\n"
 				inMajors = true
+			} else {
+				if strings.Contains(line, "mascot:") {
+					// skip
+				} else if strings.Contains(line, "latitude_logitude:") {
+					// skip
+					// finish majors list
+					msg2 += "</div>\n"
+					inMajors = false
+				} else {
+					if inDetails {
+						msg2 += "<li x-show=\"open | openall\"><b>" + label + ":</b> " + rest + "</li>\n"
+					} else {
+						msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
+					}
+				}
 			}
 
-			if strings.Contains(line, "latitude_logitude:") {
-				// finish majors list
-				msg2 += "</div\n"
-				inMajors = false
-			}
 		} else {
 			if inMajors {
-				msg2 += "<li x-show=\"open\">" + indent + line + "</li>\n"
+				msg2 += "<li x-show=\"open | openall\">" + indent + line + "</li>\n"
 			} else {
 				msg2 += "<li>" + indent + line + "</li>\n"
 			}
@@ -938,6 +1008,8 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "&nbsp;&nbsp;"
 	msg2 += "<a href=\"#bottom\">bottom</a>"
 	msg2 += "</li>\n"
+
+	msg2 += "</div>\n" // openall
 
 	msg2 += "    </ul>\n"
 	msg2 += "  </body>\n"
@@ -1022,6 +1094,7 @@ func main() {
 	if appConfig.ImportColleges {
 		fmt.Println("import colleges...")
 		importColleges(&colleges)
+		checkCollegeLat(&colleges)
 	}
 	// add seperate step for lat/long after import details
 	if appConfig.ParseLatitudeLogitude {

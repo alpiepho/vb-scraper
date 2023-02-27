@@ -1,5 +1,5 @@
 {
-    "open_chromedp" : true,
+    "open_chromedp" : false,
     "parse_map" : false,
     "parse_states": false,
     "stateslist" : [
@@ -80,12 +80,12 @@
         "#NJCAA",
         "All"
     ],
-    "parse_location": true,
+    "parse_location": false,
     "parse_location_name": "Reno",
     "parse_location_latitude_logitude": "36.107826, -115.141861",
     "parse_location_radius_miles": "300",
 
-    "import_college_details": false,
+    "import_college_details": true,
     "import_college_details_file": "college_details_reno300.json",
 
     "parse_lat_long" : false,

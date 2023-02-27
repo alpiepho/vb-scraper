@@ -44,15 +44,14 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
     - [x] google link
     - [x] wikipedia link
     - [x] lat/long
-    - [ ] mascot
-    - [x] volleyball link
+   - [x] volleyball link
 - [x] export details as text
 - [x] export details as html
 - [ ] export details as csv
 
 - [x] filter while scraping details
-- [ ] filter after import details
-- [ ] filter details based on
+- [-] filter after import details
+- [x] filter details based on
     - [x] state
     - [x] college name
     - city
@@ -70,14 +69,25 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
     - undergrad_enrollment
     - cost in/out state
 
-- [ ] google maps link from radius?
+- [x] google maps link from radius?
 
 
-- [ ] build as web server
-- [ ] generate html output
+- [x] build as web server
+- [x] generate html output
 - [ ] build map (scrape site to get lat/long)
-- [ ] more tbd
 
+- [ ] alpine.js, expand all
+- [ ] alpine.js, filters: level, state, cost?
+- [ ] cleaner buttons
+- [ ] labels as links (no url on page)
+- [ ] no logo link
+- [ ] remove label under scores
+- [ ] fonts?
+- [ ] mascot (link for mascot)
+- [ ] link to google map? (ex. https://www.google.com/maps/search/?api=1&query=Northern+Arizona+University)
+- [ ] tbd
+ 
+- [ ] fix lat bugs (automate around per state) (ex. https://www.google.com/search?q=latitude+Vassar+College)
 
 
 ## Golang version
