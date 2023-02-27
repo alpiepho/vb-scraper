@@ -55,9 +55,15 @@ a:active {
 .school-title-details {
   padding-left: 50px;
   padding-top: 150px;
-  font-size: 20px;}
+  font-size: 32px;
+}
 @media only screen and (max-device-width: 480px) {
     button {
-      font-size: 32px;
+      font-size: 40px;
+    }
+    .school-title-details {
+      padding-left: 50px;
+      padding-top: 150px;
+      font-size: 40px;
     }
 }
