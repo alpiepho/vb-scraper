@@ -29,7 +29,7 @@ import (
 // const CONFIG_FILE = "config_reno300.json"
 // const CONFIG_FILE = "config_kip.json"
 // const CONFIG_FILE = "config_16.json"
-const CONFIG_FILE = "config_chicago300.json"
+const CONFIG_FILE = "config_16.json"
 
 type Configuration struct {
 	OpenChromedp  bool     `json:"open_chromedp"`
@@ -853,10 +853,19 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "  </head>\n"
 
 	msg2 += "  <body>\n"
-	msg2 += "    <a id=\"top\"></a>\n"
 	msg2 += "    <ul>\n"
 	msg2 += "<div x-data=\"{ openall: false }\">\n"
-	msg2 += "<button class=\"menu-button\" @click=\"openall = !openall\">expand all...</button>\n"
+	msg2 += "<div x-data=\"{ openDI: true }\">\n"
+	msg2 += "<div x-data=\"{ openDII: true }\">\n"
+	msg2 += "<div x-data=\"{ openDIII: true }\">\n"
+	msg2 += "<div x-data=\"{ openNAIA: true }\">\n"
+	msg2 += "<div x-data=\"{ openNJCAA: true }\">\n"
+	msg2 += "<button class=\"expand-button\" @click=\"openall = !openall\" :class=\"{ 'active': openall }\">expand all...</button>\n"
+	msg2 += "<button class=\"menu-button\" @click=\"openDI = !openDI\" :class=\"{ 'active': openDI }\">NCAA DI...</button>\n"
+	msg2 += "<button class=\"menu-button\" @click=\"openDII = !openDII\" :class=\"{ 'active': openDII }\">NCAA DII...</button>\n"
+	msg2 += "<button class=\"menu-button\" @click=\"openDIII = !openDIII\" :class=\"{ 'active': openDIII }\">NCAA DIII...</button>\n"
+	msg2 += "<button class=\"menu-button\" @click=\"openNAIA = !openNAIA\" :class=\"{ 'active': openNAIA }\">NAIA...</button>\n"
+	msg2 += "<button class=\"menu-button\" @click=\"openNJCAA = !openNJCAA\" :class=\"{ 'active': openNJCAA }\">NJCAA...</button>\n"
 
 	indent := ""
 	count := 0
@@ -881,49 +890,27 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			if count > 1 {
 				// close previous list
 				msg2 += "    </ul>\n"
+				// close previous level filter div
+				msg2 += "</div>\n"
 			}
 
-			// set anchor for this list
-			anchorStr := fmt.Sprintf("name%d", count)
-			msg2 += "    <a id=\"" + anchorStr + "\"></a>\n"
-			msg2 += "    <ul x-data=\"{ open: false }\">\n"
-
-			// add logo
 			name := strings.Replace(line, "name:", "", -1)
 			name = strings.TrimSpace(name)
 			detail := detailFromName(details, name)
+
+			// level filter div
+			openFlag := detail.Level
+			openFlag = strings.Replace(openFlag, "NCAA", "", -1)
+			openFlag = strings.TrimSpace(openFlag)
+			msg2 += "    <div x-show=\"open" + openFlag + "\">\n"
+			// set anchor for this list
+			msg2 += "    <ul>\n"
+			// msg2 += "    <ul x-data=\"{ open: false }\">\n"
+
+			// add logo
 			msg2 += "    <img src=\"" + detail.LogoLink + "\"\n"
 			msg2 += "    <img alt=\"" + detail.Name + "\"\n"
 			msg2 += "    >\n"
-
-			// add iframe (WARNING: page uses alot of processor keeping up with iframes)
-			// name := strings.Replace(line, "name:", "", -1)
-			// name = strings.TrimSpace(name)
-			// detail := detailFromName(details, name)
-			// frameStr := fmt.Sprintf("frame%d", count)
-			// msg2 += "    <iframe id=\"" + frameStr + "\"\n"
-			// msg2 += "    title=\"" + detail.Name + "\"\n"
-			// msg2 += "    loading=\"lazy\"\n"
-			// msg2 += "    width=\"100%\"\n"
-			// msg2 += "    height=\"400\"\n"
-			// msg2 += "    src=\"" + detail.CollegeLink + "\">\n"
-			// msg2 += "    </iframe>\n"
-
-			// prev next top bottom
-			msg2 += "    "
-			msg2 += "<br>"
-			msg2 += "<li>"
-			prevStr := fmt.Sprintf("#name%d", count-1)
-			nextStr := fmt.Sprintf("#name%d", count+1)
-			msg2 += "<a href=\"" + prevStr + "\">prev</a>" // may go to 0 and not work
-			msg2 += "&nbsp;&nbsp;"
-			msg2 += "<a href=\"" + nextStr + "\">next</a>" // may go last list and not work
-			msg2 += "&nbsp;&nbsp;"
-			msg2 += "<a href=\"#top\">top</a>"
-			msg2 += "&nbsp;&nbsp;"
-			msg2 += "<a href=\"#bottom\">bottom</a>"
-			msg2 += "</li>\n"
-			indent = ""
 		}
 		parts := strings.Split(line, ":")
 		label := parts[0]
@@ -994,21 +981,12 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			indent = "&nbsp;&nbsp;&nbsp;&nbsp;"
 		}
 	}
-	msg2 += "    <a id=\"bottom\"></a>\n"
 
-	// prev next top bottom
-	msg2 += "    "
-	msg2 += "<br><li>"
-	prevStr := fmt.Sprintf("#name%d", count-1)
-	msg2 += "<a href=\"" + prevStr + "\">prev</a>"
-	msg2 += "&nbsp;&nbsp;"
-	msg2 += "<a href=\"#top\">next</a>"
-	msg2 += "&nbsp;&nbsp;"
-	msg2 += "<a href=\"#top\">top</a>"
-	msg2 += "&nbsp;&nbsp;"
-	msg2 += "<a href=\"#bottom\">bottom</a>"
-	msg2 += "</li>\n"
-
+	msg2 += "</div>\n" // openNJCAA
+	msg2 += "</div>\n" // openNAIA
+	msg2 += "</div>\n" // openDIII
+	msg2 += "</div>\n" // openDII
+	msg2 += "</div>\n" // openDI
 	msg2 += "</div>\n" // openall
 
 	msg2 += "    </ul>\n"

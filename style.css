@@ -1,3 +1,4 @@
+
 ul {
   list-style: none;
 }
@@ -15,6 +16,9 @@ button {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.expand-button {
+  margin-right: 30px;
+}
 /* a {
   text-decoration: none;
   color: black;
@@ -27,6 +31,9 @@ button a:link {
     text-decoration: none;
     color: black;
 }  
+button.active {
+  background-color: lightgray;
+}
 a:visited {
   text-decoration: none;
   color: black;

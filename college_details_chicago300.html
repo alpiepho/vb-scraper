@@ -4,16 +4,24 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <a id="top"></a>
     <ul>
 <div x-data="{ openall: false }">
-<button class="menu-button" @click="openall = !openall">expand all...</button>
-    <a id="name1"></a>
-    <ul x-data="{ open: false }">
+<div x-data="{ openDI: true }">
+<div x-data="{ openDII: true }">
+<div x-data="{ openDIII: true }">
+<div x-data="{ openNAIA: true }">
+<div x-data="{ openNJCAA: true }">
+<button class="expand-button" @click="openall = !openall" :class="{ 'active': openall }">expand all...</button>
+<button class="menu-button" @click="openDI = !openDI" :class="{ 'active': openDI }">NCAA DI...</button>
+<button class="menu-button" @click="openDII = !openDII" :class="{ 'active': openDII }">NCAA DII...</button>
+<button class="menu-button" @click="openDIII = !openDIII" :class="{ 'active': openDIII }">NCAA DIII...</button>
+<button class="menu-button" @click="openNAIA = !openNAIA" :class="{ 'active': openNAIA }">NAIA...</button>
+<button class="menu-button" @click="openNJCAA = !openNJCAA" :class="{ 'active': openNJCAA }">NJCAA...</button>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/31_aurora_university.png"
     <img alt="Aurora University"
     >
-    <br><li><a href="#name0">prev</a>&nbsp;&nbsp;<a href="#name2">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Aurora University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Aurora</li>
@@ -112,12 +120,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name2"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/42_benedictine_university_il.png"
     <img alt="Benedictine University (IL)"
     >
-    <br><li><a href="#name1">prev</a>&nbsp;&nbsp;<a href="#name3">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Benedictine University (IL)</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Lisle</li>
@@ -223,12 +231,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name3"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2261_black_hawk_college_moline.png"
     <img alt="Black Hawk College"
     >
-    <br><li><a href="#name2">prev</a>&nbsp;&nbsp;<a href="#name4">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Black Hawk College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Moline</li>
@@ -287,12 +295,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name4"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Carl Sandburg College"
     >
-    <br><li><a href="#name3">prev</a>&nbsp;&nbsp;<a href="#name5">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Carl Sandburg College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Galesburg</li>
@@ -373,12 +381,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diesel Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name5"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/688_chicago_state_university.png"
     <img alt="Chicago State University"
     >
-    <br><li><a href="#name4">prev</a>&nbsp;&nbsp;<a href="#name6">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Chicago State University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Chicago</li>
@@ -467,12 +475,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name6"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="College of DuPage"
     >
-    <br><li><a href="#name5">prev</a>&nbsp;&nbsp;<a href="#name7">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  College of DuPage</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Glen Ellyn</li>
@@ -598,12 +606,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Building/Property Maintenance</li>
 </div>
     </ul>
-    <a id="name7"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="College of Lake County"
     >
-    <br><li><a href="#name6">prev</a>&nbsp;&nbsp;<a href="#name8">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  College of Lake County</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Grayslake</li>
@@ -715,12 +723,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name8"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/703_concordia_university_chicago.png"
     <img alt="Concordia University Chicago"
     >
-    <br><li><a href="#name7">prev</a>&nbsp;&nbsp;<a href="#name9">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Concordia University Chicago</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  River Forest</li>
@@ -833,12 +841,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name9"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/715_depaul_university.png"
     <img alt="DePaul University"
     >
-    <br><li><a href="#name8">prev</a>&nbsp;&nbsp;<a href="#name10">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  DePaul University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Chicago</li>
@@ -985,12 +993,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name10"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/717_dominican_university_il.png"
     <img alt="Dominican University (IL)"
     >
-    <br><li><a href="#name9">prev</a>&nbsp;&nbsp;<a href="#name11">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Dominican University (IL)</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  River Forest</li>
@@ -1098,12 +1106,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Culinary Science/Culinology</li>
 </div>
     </ul>
-    <a id="name11"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/726_eastern_illinois_university.png"
     <img alt="Eastern Illinois University"
     >
-    <br><li><a href="#name10">prev</a>&nbsp;&nbsp;<a href="#name12">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Eastern Illinois University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Charleston</li>
@@ -1211,12 +1219,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name12"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/142_elmhurst_college.png"
     <img alt="Elmhurst University"
     >
-    <br><li><a href="#name11">prev</a>&nbsp;&nbsp;<a href="#name13">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Elmhurst University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Elmhurst</li>
@@ -1333,12 +1341,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name13"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/739_eureka_college.png"
     <img alt="Eureka College"
     >
-    <br><li><a href="#name12">prev</a>&nbsp;&nbsp;<a href="#name14">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Eureka College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Eureka</li>
@@ -1420,12 +1428,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name14"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/765_greenville_college.png"
     <img alt="Greenville University"
     >
-    <br><li><a href="#name13">prev</a>&nbsp;&nbsp;<a href="#name15">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Greenville University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Greenville</li>
@@ -1532,12 +1540,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name15"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486648_heartland_community_college.png"
     <img alt="Heartland Community College"
     >
-    <br><li><a href="#name14">prev</a>&nbsp;&nbsp;<a href="#name16">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Heartland Community College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Normal</li>
@@ -1612,12 +1620,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Industrial Mechanics and Maintenance Technology</li>
 </div>
     </ul>
-    <a id="name16"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/484242_Highland_Community_College_(IL).png?timestamp=1663086962"
     <img alt="Highland Community College (IL)"
     >
-    <br><li><a href="#name15">prev</a>&nbsp;&nbsp;<a href="#name17">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Highland Community College (IL)</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Freeport</li>
@@ -1703,12 +1711,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diesel Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name17"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484058_illinois_central_college.png"
     <img alt="Illinois Central College"
     >
-    <br><li><a href="#name16">prev</a>&nbsp;&nbsp;<a href="#name18">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Illinois Central College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  East Peoria</li>
@@ -1822,12 +1830,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diesel Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name18"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/782_Illinois_College.png?timestamp=1642102054"
     <img alt="Illinois College"
     >
-    <br><li><a href="#name17">prev</a>&nbsp;&nbsp;<a href="#name19">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Illinois College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Jacksonville</li>
@@ -1919,12 +1927,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name19"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/205_illinois_state_university.png"
     <img alt="Illinois State University"
     >
-    <br><li><a href="#name18">prev</a>&nbsp;&nbsp;<a href="#name20">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Illinois State University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Normal</li>
@@ -2055,12 +2063,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name20"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484061_illinois_valley_community_college.png"
     <img alt="Illinois Valley Community College"
     >
-    <br><li><a href="#name19">prev</a>&nbsp;&nbsp;<a href="#name21">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Illinois Valley Community College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Oglesby</li>
@@ -2143,12 +2151,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name21"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1812_john_a_logan_college.png"
     <img alt="John A Logan College"
     >
-    <br><li><a href="#name20">prev</a>&nbsp;&nbsp;<a href="#name22">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  John A Logan College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Carterville</li>
@@ -2244,12 +2252,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name22"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="John Wood Community College"
     >
-    <br><li><a href="#name21">prev</a>&nbsp;&nbsp;<a href="#name23">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  John Wood Community College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Quincy</li>
@@ -2333,12 +2341,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Electrician</li>
 </div>
     </ul>
-    <a id="name23"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1643_joliet_junior_college.png"
     <img alt="Joliet Junior College"
     >
-    <br><li><a href="#name22">prev</a>&nbsp;&nbsp;<a href="#name24">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Joliet Junior College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Joliet</li>
@@ -2449,12 +2457,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Construction/Heavy Equipment/Earthmoving Equipment Operation</li>
 </div>
     </ul>
-    <a id="name24"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484066_kankakee_community_college.png"
     <img alt="Kankakee Community College"
     >
-    <br><li><a href="#name23">prev</a>&nbsp;&nbsp;<a href="#name25">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Kankakee Community College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Kankakee</li>
@@ -2537,12 +2545,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name25"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484067_kaskaskia_college.png"
     <img alt="Kaskaskia College"
     >
-    <br><li><a href="#name24">prev</a>&nbsp;&nbsp;<a href="#name26">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Kaskaskia College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Centralia</li>
@@ -2637,12 +2645,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name26"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Kishwaukee College"
     >
-    <br><li><a href="#name25">prev</a>&nbsp;&nbsp;<a href="#name27">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Kishwaukee College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Malta</li>
@@ -2724,12 +2732,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airline/Commercial/Professional Pilot and Flight Crew</li>
 </div>
     </ul>
-    <a id="name27"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/799_knox_college.png"
     <img alt="Knox College"
     >
-    <br><li><a href="#name26">prev</a>&nbsp;&nbsp;<a href="#name28">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Knox College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Galesburg</li>
@@ -2825,12 +2833,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name28"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/800_lake_forest_college.png"
     <img alt="Lake Forest College"
     >
-    <br><li><a href="#name27">prev</a>&nbsp;&nbsp;<a href="#name29">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lake Forest College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Lake Forest</li>
@@ -2921,12 +2929,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name29"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1951_lake_land_college_il.png"
     <img alt="Lake Land College (IL)"
     >
-    <br><li><a href="#name28">prev</a>&nbsp;&nbsp;<a href="#name30">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lake Land College (IL)</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Mattoon</li>
@@ -3024,12 +3032,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name30"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/813_lewis_university.png"
     <img alt="Lewis University"
     >
-    <br><li><a href="#name29">prev</a>&nbsp;&nbsp;<a href="#name31">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lewis University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Romeoville</li>
@@ -3166,12 +3174,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Transportation and Materials Moving, Other</li>
 </div>
     </ul>
-    <a id="name31"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1806_lincoln_christian_university.png"
     <img alt="Lincoln Christian University"
     >
-    <br><li><a href="#name30">prev</a>&nbsp;&nbsp;<a href="#name32">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lincoln Christian University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Lincoln</li>
@@ -3248,12 +3256,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Early Childhood Education and Teaching</li>
 </div>
     </ul>
-    <a id="name32"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1784_Lincoln_College.png"
     <img alt="Lincoln College"
     >
-    <br><li><a href="#name31">prev</a>&nbsp;&nbsp;<a href="#name33">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lincoln College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Lincoln</li>
@@ -3326,12 +3334,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Cosmetology/Cosmetologist, General</li>
 </div>
     </ul>
-    <a id="name33"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1724_lincoln_land_community_college.png"
     <img alt="Lincoln Land Community College"
     >
-    <br><li><a href="#name32">prev</a>&nbsp;&nbsp;<a href="#name34">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lincoln Land Community College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Springfield</li>
@@ -3428,12 +3436,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aviation/Airway Management and Operations</li>
 </div>
     </ul>
-    <a id="name34"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486711_lincoln_trail_college.png"
     <img alt="Lincoln Trail College"
     >
-    <br><li><a href="#name33">prev</a>&nbsp;&nbsp;<a href="#name35">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lincoln Trail College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Robinson</li>
@@ -3501,12 +3509,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Teacher Assistant/Aide</li>
 </div>
     </ul>
-    <a id="name35"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/820_loyola_university_chicago.png"
     <img alt="Loyola University Chicago"
     >
-    <br><li><a href="#name34">prev</a>&nbsp;&nbsp;<a href="#name36">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Loyola University Chicago</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Chicago</li>
@@ -3642,12 +3650,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name36"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/824_macmurray_college.png"
     <img alt="MacMurray College"
     >
-    <br><li><a href="#name35">prev</a>&nbsp;&nbsp;<a href="#name37">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  MacMurray College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Jacksonville</li>
@@ -3724,12 +3732,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name37"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484083_mchenry_county_college.png"
     <img alt="McHenry County College"
     >
-    <br><li><a href="#name36">prev</a>&nbsp;&nbsp;<a href="#name38">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  McHenry County College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Crystal Lake</li>
@@ -3818,12 +3826,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name38"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/270_mckendree_university.png"
     <img alt="McKendree University"
     >
-    <br><li><a href="#name37">prev</a>&nbsp;&nbsp;<a href="#name39">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  McKendree University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Lebanon</li>
@@ -3927,12 +3935,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name39"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/844_millikin_university.png"
     <img alt="Millikin University"
     >
-    <br><li><a href="#name38">prev</a>&nbsp;&nbsp;<a href="#name40">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Millikin University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Decatur</li>
@@ -4030,12 +4038,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name40"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/853_monmouth_college_il.png"
     <img alt="Monmouth College (IL)"
     >
-    <br><li><a href="#name39">prev</a>&nbsp;&nbsp;<a href="#name41">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Monmouth College (IL)</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Monmouth</li>
@@ -4128,12 +4136,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name41"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNCCAA">
+    <ul>
     <img src=""
     <img alt="Moody Bible Institute"
     >
-    <br><li><a href="#name40">prev</a>&nbsp;&nbsp;<a href="#name42">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Moody Bible Institute</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Chicago</li>
@@ -4204,12 +4212,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airframe Mechanics and Aircraft Maintenance Technology/Technician</li>
 </div>
     </ul>
-    <a id="name42"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Moraine Valley Community College"
     >
-    <br><li><a href="#name41">prev</a>&nbsp;&nbsp;<a href="#name43">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Moraine Valley Community College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Palos Hills</li>
@@ -4306,12 +4314,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name43"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484090_morton_college.png"
     <img alt="Morton College"
     >
-    <br><li><a href="#name42">prev</a>&nbsp;&nbsp;<a href="#name44">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Morton College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Cicero</li>
@@ -4386,12 +4394,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name44"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/315_north_central_college.png"
     <img alt="North Central College"
     >
-    <br><li><a href="#name43">prev</a>&nbsp;&nbsp;<a href="#name45">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  North Central College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Naperville</li>
@@ -4509,12 +4517,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name45"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/875_north_park_university.png"
     <img alt="North Park University"
     >
-    <br><li><a href="#name44">prev</a>&nbsp;&nbsp;<a href="#name46">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  North Park University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Chicago</li>
@@ -4613,12 +4621,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name46"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/877_northern_illinois_university.png"
     <img alt="Northern Illinois University"
     >
-    <br><li><a href="#name45">prev</a>&nbsp;&nbsp;<a href="#name47">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Northern Illinois University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Dekalb</li>
@@ -4733,12 +4741,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name47"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/319_Northwestern_University.png"
     <img alt="Northwestern University"
     >
-    <br><li><a href="#name46">prev</a>&nbsp;&nbsp;<a href="#name48">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Northwestern University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Evanston</li>
@@ -4893,12 +4901,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name48"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1868_olivet_nazarene_university.png"
     <img alt="Olivet Nazarene University"
     >
-    <br><li><a href="#name47">prev</a>&nbsp;&nbsp;<a href="#name49">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Olivet Nazarene University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Bourbonnais</li>
@@ -5020,12 +5028,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name49"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1814_parkland_college.png"
     <img alt="Parkland College"
     >
-    <br><li><a href="#name48">prev</a>&nbsp;&nbsp;<a href="#name50">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Parkland College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Champaign</li>
@@ -5131,12 +5139,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diesel Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name50"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/908_principia_college.png"
     <img alt="Principia College"
     >
-    <br><li><a href="#name49">prev</a>&nbsp;&nbsp;<a href="#name51">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Principia College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Elsah</li>
@@ -5220,12 +5228,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name51"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484104_reed_lake_college.png"
     <img alt="Rend Lake College"
     >
-    <br><li><a href="#name50">prev</a>&nbsp;&nbsp;<a href="#name52">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Rend Lake College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Ina</li>
@@ -5321,12 +5329,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name52"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484107_rock_valley_college.png"
     <img alt="Rock Valley College"
     >
-    <br><li><a href="#name51">prev</a>&nbsp;&nbsp;<a href="#name53">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Rock Valley College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Rockford</li>
@@ -5413,12 +5421,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airframe Mechanics and Aircraft Maintenance Technology/Technician</li>
 </div>
     </ul>
-    <a id="name53"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/914_rockford_college.png"
     <img alt="Rockford College"
     >
-    <br><li><a href="#name52">prev</a>&nbsp;&nbsp;<a href="#name54">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Rockford College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Rockford</li>
@@ -5477,12 +5485,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name54"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src=""
     <img alt="Rockford University"
     >
-    <br><li><a href="#name53">prev</a>&nbsp;&nbsp;<a href="#name55">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Rockford University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Rockford</li>
@@ -5567,12 +5575,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name55"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2230_roosevelt_university.png"
     <img alt="Roosevelt University"
     >
-    <br><li><a href="#name54">prev</a>&nbsp;&nbsp;<a href="#name56">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Roosevelt University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Chicago</li>
@@ -5631,12 +5639,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name56"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484114_sauk_valley_community_college.png"
     <img alt="Sauk Valley Community College"
     >
-    <br><li><a href="#name55">prev</a>&nbsp;&nbsp;<a href="#name57">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Sauk Valley Community College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Dixon</li>
@@ -5718,12 +5726,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Electrical/Electronics Equipment Installation and Repair, General</li>
 </div>
     </ul>
-    <a id="name57"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484129_south_suburban_college.png"
     <img alt="South Suburban College"
     >
-    <br><li><a href="#name56">prev</a>&nbsp;&nbsp;<a href="#name58">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  South Suburban College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Oak Forest</li>
@@ -5809,12 +5817,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Education/Teaching of Individuals in Early Childhood Special Education Programs</li>
 </div>
     </ul>
-    <a id="name58"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Southeastern Illinois College"
     >
-    <br><li><a href="#name57">prev</a>&nbsp;&nbsp;<a href="#name59">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Southeastern Illinois College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Harrisburg</li>
@@ -5891,12 +5899,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diesel Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name59"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/942_southern_illinois_university_at_carbondale.png"
     <img alt="Southern Illinois University at Carbondale"
     >
-    <br><li><a href="#name58">prev</a>&nbsp;&nbsp;<a href="#name60">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Southern Illinois University at Carbondale</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Carbondale</li>
@@ -6054,12 +6062,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Funeral Service and Mortuary Science, General</li>
 </div>
     </ul>
-    <a id="name60"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/943_southern_illinois_university_edwardsville.png"
     <img alt="Southern Illinois University Edwardsville"
     >
-    <br><li><a href="#name59">prev</a>&nbsp;&nbsp;<a href="#name61">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Southern Illinois University Edwardsville</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Edwardsville</li>
@@ -6163,12 +6171,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name61"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484007_southwestern_illinois_college.png"
     <img alt="Southwestern Illinois College"
     >
-    <br><li><a href="#name60">prev</a>&nbsp;&nbsp;<a href="#name62">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Southwestern Illinois College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Red Bud</li>
@@ -6282,12 +6290,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name62"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Spoon River College"
     >
-    <br><li><a href="#name61">prev</a>&nbsp;&nbsp;<a href="#name63">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Spoon River College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Canton</li>
@@ -6355,12 +6363,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Natural Resources Management and Policy</li>
 </div>
     </ul>
-    <a id="name63"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1006_university_of_chicago.png"
     <img alt="University of Chicago"
     >
-    <br><li><a href="#name62">prev</a>&nbsp;&nbsp;<a href="#name64">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Chicago</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Chicago</li>
@@ -6465,12 +6473,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name64"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1016_university_of_illinois_champaign.png"
     <img alt="University of Illinois, Champaign"
     >
-    <br><li><a href="#name63">prev</a>&nbsp;&nbsp;<a href="#name65">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Illinois, Champaign</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Champaign</li>
@@ -6650,12 +6658,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name65"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1014_university_of_illinois_chicago.png"
     <img alt="University of Illinois, Chicago"
     >
-    <br><li><a href="#name64">prev</a>&nbsp;&nbsp;<a href="#name66">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Illinois, Chicago</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Chicago</li>
@@ -6789,12 +6797,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name66"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1015_university_of_illinois_springfield.png"
     <img alt="University of Illinois, Springfield"
     >
-    <br><li><a href="#name65">prev</a>&nbsp;&nbsp;<a href="#name67">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Illinois, Springfield</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Springfield</li>
@@ -6878,12 +6886,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name67"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1871_university_of_st_francis_il.png"
     <img alt="University of St. Francis (IL)"
     >
-    <br><li><a href="#name66">prev</a>&nbsp;&nbsp;<a href="#name68">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of St. Francis (IL)</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Joliet</li>
@@ -6984,12 +6992,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
 </div>
     </ul>
-    <a id="name68"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Wabash Valley College"
     >
-    <br><li><a href="#name67">prev</a>&nbsp;&nbsp;<a href="#name69">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Wabash Valley College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Mount Carmel</li>
@@ -7064,12 +7072,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Machine Tool Technology/Machinist</li>
 </div>
     </ul>
-    <a id="name69"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484135_waubonsee_community_college.png"
     <img alt="Waubonsee Community College"
     >
-    <br><li><a href="#name68">prev</a>&nbsp;&nbsp;<a href="#name70">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Waubonsee Community College</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Sugar Grove</li>
@@ -7168,12 +7176,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name70"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1116_western_illinois_university.png"
     <img alt="Western Illinois University"
     >
-    <br><li><a href="#name69">prev</a>&nbsp;&nbsp;<a href="#name71">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Western Illinois University</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Macomb</li>
@@ -7303,12 +7311,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name71"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/582_wheaton_college_il.png"
     <img alt="Wheaton College (IL)"
     >
-    <br><li><a href="#name70">prev</a>&nbsp;&nbsp;<a href="#name72">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Wheaton College (IL)</li>
 <li><b>state:</b>  Illinois</li>
 <li><b>city:</b>  Wheaton</li>
@@ -7409,12 +7417,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name72"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/635_ball_state_university.png"
     <img alt="Ball State University"
     >
-    <br><li><a href="#name71">prev</a>&nbsp;&nbsp;<a href="#name73">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ball State University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Muncie</li>
@@ -7575,12 +7583,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name73"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/62_butler_university.png"
     <img alt="Butler University"
     >
-    <br><li><a href="#name72">prev</a>&nbsp;&nbsp;<a href="#name74">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Butler University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Indianapolis</li>
@@ -7701,12 +7709,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name74"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1939_calumet_college_of_st_joseph.png"
     <img alt="Calumet College of St. Joseph"
     >
-    <br><li><a href="#name73">prev</a>&nbsp;&nbsp;<a href="#name75">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Calumet College of St. Joseph</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Whiting</li>
@@ -7782,12 +7790,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name75"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/127_depauw_university.png"
     <img alt="DePauw University"
     >
-    <br><li><a href="#name74">prev</a>&nbsp;&nbsp;<a href="#name76">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  DePauw University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Greencastle</li>
@@ -7892,12 +7900,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name76"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/753_franklin_college.png"
     <img alt="Franklin College"
     >
-    <br><li><a href="#name75">prev</a>&nbsp;&nbsp;<a href="#name77">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Franklin College</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Franklin</li>
@@ -8006,12 +8014,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name77"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/185_hanover_college.png"
     <img alt="Hanover College"
     >
-    <br><li><a href="#name76">prev</a>&nbsp;&nbsp;<a href="#name78">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Hanover College</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Hanover</li>
@@ -8102,12 +8110,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name78"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/784_indiana_state_university.png"
     <img alt="Indiana State University"
     >
-    <br><li><a href="#name77">prev</a>&nbsp;&nbsp;<a href="#name79">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indiana State University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Terre Haute</li>
@@ -8239,12 +8247,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aviation/Airway Management and Operations</li>
 </div>
     </ul>
-    <a id="name79"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/785_indiana_university_purdue_university_indianapolis.png"
     <img alt="Indiana University - Purdue University Indianapolis"
     >
-    <br><li><a href="#name78">prev</a>&nbsp;&nbsp;<a href="#name80">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indiana University - Purdue University Indianapolis</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Indianapolis</li>
@@ -8385,12 +8393,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name80"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1837_indiana_university_east.png"
     <img alt="Indiana University East"
     >
-    <br><li><a href="#name79">prev</a>&nbsp;&nbsp;<a href="#name81">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indiana University East</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Richmond</li>
@@ -8471,12 +8479,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name81"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1836_indiana_university_northwest.png"
     <img alt="Indiana University Northwest"
     >
-    <br><li><a href="#name80">prev</a>&nbsp;&nbsp;<a href="#name82">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indiana University Northwest</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Gary</li>
@@ -8572,12 +8580,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name82"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2247_indiana_university_south_bend.png"
     <img alt="Indiana University South Bend"
     >
-    <br><li><a href="#name81">prev</a>&nbsp;&nbsp;<a href="#name83">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indiana University South Bend</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  South Bend</li>
@@ -8636,12 +8644,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name83"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1906_Indiana_University_Southeast.png"
     <img alt="Indiana University Southeast"
     >
-    <br><li><a href="#name82">prev</a>&nbsp;&nbsp;<a href="#name84">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indiana University Southeast</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  New Albany</li>
@@ -8736,12 +8744,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name84"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/209_indiana_university_bloomington.png"
     <img alt="Indiana University, Bloomington"
     >
-    <br><li><a href="#name83">prev</a>&nbsp;&nbsp;<a href="#name85">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indiana University, Bloomington</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Bloomington</li>
@@ -8893,12 +8901,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name85"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src=""
     <img alt="Indiana University-Purdue University Indianapolis Columbus"
     >
-    <br><li><a href="#name84">prev</a>&nbsp;&nbsp;<a href="#name86">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indiana University-Purdue University Indianapolis Columbus</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Columbus</li>
@@ -8957,12 +8965,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name86"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/889_oakland_city_university.png"
     <img alt="Oakland City University"
     >
-    <br><li><a href="#name85">prev</a>&nbsp;&nbsp;<a href="#name87">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Oakland City University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Oakland</li>
@@ -9045,12 +9053,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name87"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/786_Purdue_Fort_Wayne.png"
     <img alt="Purdue Fort Wayne"
     >
-    <br><li><a href="#name86">prev</a>&nbsp;&nbsp;<a href="#name88">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Purdue Fort Wayne</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Fort Wayne</li>
@@ -9174,12 +9182,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name88"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/353_purdue_university.png"
     <img alt="Purdue University"
     >
-    <br><li><a href="#name87">prev</a>&nbsp;&nbsp;<a href="#name89">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Purdue University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  West Lafayette</li>
@@ -9379,12 +9387,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Avionics Maintenance Technology/Technician</li>
 </div>
     </ul>
-    <a id="name89"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1830_Purdue_University_Northwest.png"
     <img alt="Purdue University Northwest"
     >
-    <br><li><a href="#name88">prev</a>&nbsp;&nbsp;<a href="#name90">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Purdue University Northwest</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Hammond</li>
@@ -9467,12 +9475,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, Other</li>
 </div>
     </ul>
-    <a id="name90"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/915_rose_hulman_institute_of_technology.png"
     <img alt="Rose-Hulman Institute of Technology"
     >
-    <br><li><a href="#name89">prev</a>&nbsp;&nbsp;<a href="#name91">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Rose-Hulman Institute of Technology</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Terre Haute</li>
@@ -9550,12 +9558,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Economics, General</li>
 </div>
     </ul>
-    <a id="name91"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1675_taylor_university.png"
     <img alt="Taylor University"
     >
-    <br><li><a href="#name90">prev</a>&nbsp;&nbsp;<a href="#name92">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Taylor University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Upland</li>
@@ -9672,12 +9680,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name92"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/471_trine_university.png"
     <img alt="Trine University"
     >
-    <br><li><a href="#name91">prev</a>&nbsp;&nbsp;<a href="#name93">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Trine University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Angola</li>
@@ -9774,12 +9782,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physics Teacher Education</li>
 </div>
     </ul>
-    <a id="name93"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1009_university_of_evansville.png"
     <img alt="University of Evansville"
     >
-    <br><li><a href="#name92">prev</a>&nbsp;&nbsp;<a href="#name94">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Evansville</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Evansville</li>
@@ -9920,12 +9928,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name94"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1017_university_of_indianapolis.png"
     <img alt="University of Indianapolis"
     >
-    <br><li><a href="#name93">prev</a>&nbsp;&nbsp;<a href="#name95">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Indianapolis</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Indianapolis</li>
@@ -10048,12 +10056,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name95"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/525_university_of_notre_dame.png"
     <img alt="University of Notre Dame"
     >
-    <br><li><a href="#name94">prev</a>&nbsp;&nbsp;<a href="#name96">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Notre Dame</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Notre Dame</li>
@@ -10179,12 +10187,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name96"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1063_university_of_southern_indiana.png"
     <img alt="University of Southern Indiana"
     >
-    <br><li><a href="#name95">prev</a>&nbsp;&nbsp;<a href="#name97">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Southern Indiana</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Evansville</li>
@@ -10295,12 +10303,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name97"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1883_university_of_st_francis_in.png"
     <img alt="University of St. Francis (IN)"
     >
-    <br><li><a href="#name96">prev</a>&nbsp;&nbsp;<a href="#name98">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of St. Francis (IN)</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Fort Wayne</li>
@@ -10398,12 +10406,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name98"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1826_vincennes_university.png"
     <img alt="Vincennes University"
     >
-    <br><li><a href="#name97">prev</a>&nbsp;&nbsp;<a href="#name99">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Vincennes University</li>
 <li><b>state:</b>  Indiana</li>
 <li><b>city:</b>  Vincennes</li>
@@ -10574,12 +10582,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name99"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/680_Central_College_(IA).png?timestamp=1617109212"
     <img alt="Central College (IA)"
     >
-    <br><li><a href="#name98">prev</a>&nbsp;&nbsp;<a href="#name100">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Central College (IA)</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Pella</li>
@@ -10672,12 +10680,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name100"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/694_coe_college.png"
     <img alt="Coe College"
     >
-    <br><li><a href="#name99">prev</a>&nbsp;&nbsp;<a href="#name101">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Coe College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Cedar Rapids</li>
@@ -10785,12 +10793,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name101"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484194_ellsworth_community_college.png"
     <img alt="Ellsworth Community College"
     >
-    <br><li><a href="#name100">prev</a>&nbsp;&nbsp;<a href="#name102">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ellsworth Community College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Iowa Falls</li>
@@ -10860,12 +10868,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Surveying Engineering</li>
 </div>
     </ul>
-    <a id="name102"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNCCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/484195_Emmaus_Bible_College.png?timestamp=1645043812"
     <img alt="Emmaus Bible College"
     >
-    <br><li><a href="#name101">prev</a>&nbsp;&nbsp;<a href="#name103">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Emmaus Bible College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Dubuque</li>
@@ -10933,12 +10941,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name103"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1690_graceland_university.png"
     <img alt="Graceland University"
     >
-    <br><li><a href="#name102">prev</a>&nbsp;&nbsp;<a href="#name104">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Graceland University</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Lamoni</li>
@@ -11032,12 +11040,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name104"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/766_grinnell_college.png"
     <img alt="Grinnell College"
     >
-    <br><li><a href="#name103">prev</a>&nbsp;&nbsp;<a href="#name105">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Grinnell College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Grinnell</li>
@@ -11123,12 +11131,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name105"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Hawkeye Community College"
     >
-    <br><li><a href="#name104">prev</a>&nbsp;&nbsp;<a href="#name106">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Hawkeye Community College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Waterloo</li>
@@ -11226,12 +11234,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diesel Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name106"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1671_indian_hills_community_college.png"
     <img alt="Indian Hills Community College"
     >
-    <br><li><a href="#name105">prev</a>&nbsp;&nbsp;<a href="#name107">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Indian Hills Community College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Ottumwa</li>
@@ -11323,12 +11331,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name107"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/250_loras_college.png"
     <img alt="Loras College"
     >
-    <br><li><a href="#name106">prev</a>&nbsp;&nbsp;<a href="#name108">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Loras College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Dubuque</li>
@@ -11424,12 +11432,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name108"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/822_luther_college.png"
     <img alt="Luther College"
     >
-    <br><li><a href="#name107">prev</a>&nbsp;&nbsp;<a href="#name109">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Luther College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Decorah</li>
@@ -11527,12 +11535,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name109"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484213_marshalltown_community_college.png"
     <img alt="Marshalltown Community College"
     >
-    <br><li><a href="#name108">prev</a>&nbsp;&nbsp;<a href="#name110">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Marshalltown Community College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Marshalltown</li>
@@ -11609,12 +11617,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name110"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1759_southeastern_community_college.png"
     <img alt="Southeastern Community College"
     >
-    <br><li><a href="#name109">prev</a>&nbsp;&nbsp;<a href="#name111">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Southeastern Community College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  West Burlington</li>
@@ -11696,12 +11704,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name111"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/498_university_of_dubuque.png"
     <img alt="University of Dubuque"
     >
-    <br><li><a href="#name110">prev</a>&nbsp;&nbsp;<a href="#name112">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Dubuque</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Dubuque</li>
@@ -11799,12 +11807,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aviation/Airway Management and Operations</li>
 </div>
     </ul>
-    <a id="name112"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1018_university_of_iowa.png"
     <img alt="University of Iowa"
     >
-    <br><li><a href="#name111">prev</a>&nbsp;&nbsp;<a href="#name113">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Iowa</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Iowa City</li>
@@ -11941,12 +11949,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name113"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1051_university_of_northern_iowa.png"
     <img alt="University of Northern Iowa"
     >
-    <br><li><a href="#name112">prev</a>&nbsp;&nbsp;<a href="#name114">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Northern Iowa</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Cedar Falls</li>
@@ -12100,12 +12108,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name114"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1096_upper_iowa_university.png"
     <img alt="Upper Iowa University"
     >
-    <br><li><a href="#name113">prev</a>&nbsp;&nbsp;<a href="#name115">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Upper Iowa University</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Fayette</li>
@@ -12208,12 +12216,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name115"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1104_wartburg_college.png"
     <img alt="Wartburg College"
     >
-    <br><li><a href="#name114">prev</a>&nbsp;&nbsp;<a href="#name116">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Wartburg College</li>
 <li><b>state:</b>  Iowa</li>
 <li><b>city:</b>  Waverly</li>
@@ -12311,12 +12319,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name116"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1685_fort_scott_community_college.png"
     <img alt="Fort Scott Community College"
     >
-    <br><li><a href="#name115">prev</a>&nbsp;&nbsp;<a href="#name117">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Fort Scott Community College</li>
 <li><b>state:</b>  Kansas</li>
 <li><b>city:</b>  Fort Scott</li>
@@ -12385,12 +12393,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Carpentry/Carpenter</li>
 </div>
     </ul>
-    <a id="name117"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/39_bellarmine_university.png"
     <img alt="Bellarmine University"
     >
-    <br><li><a href="#name116">prev</a>&nbsp;&nbsp;<a href="#name118">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Bellarmine University</li>
 <li><b>state:</b>  Kentucky</li>
 <li><b>city:</b>  Louisville</li>
@@ -12491,12 +12499,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name118"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1894_brescia_university.png"
     <img alt="Brescia University"
     >
-    <br><li><a href="#name117">prev</a>&nbsp;&nbsp;<a href="#name119">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Brescia University</li>
 <li><b>state:</b>  Kentucky</li>
 <li><b>city:</b>  Owensboro</li>
@@ -12582,12 +12590,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name119"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/795_kentucky_state_university.png"
     <img alt="Kentucky State University"
     >
-    <br><li><a href="#name118">prev</a>&nbsp;&nbsp;<a href="#name120">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Kentucky State University</li>
 <li><b>state:</b>  Kentucky</li>
 <li><b>city:</b>  Frankfort</li>
@@ -12668,12 +12676,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
 </div>
     </ul>
-    <a id="name120"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1796_midway_college.png"
     <img alt="Midway University"
     >
-    <br><li><a href="#name119">prev</a>&nbsp;&nbsp;<a href="#name121">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Midway University</li>
 <li><b>state:</b>  Kentucky</li>
 <li><b>city:</b>  Midway</li>
@@ -12751,12 +12759,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name121"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/878_northern_kentucky_university.png"
     <img alt="Northern Kentucky University"
     >
-    <br><li><a href="#name120">prev</a>&nbsp;&nbsp;<a href="#name122">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Northern Kentucky University</li>
 <li><b>state:</b>  Kentucky</li>
 <li><b>city:</b>  Highland Heights</li>
@@ -12886,12 +12894,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name122"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/504_university_of_louisville.png"
     <img alt="University of Louisville"
     >
-    <br><li><a href="#name121">prev</a>&nbsp;&nbsp;<a href="#name123">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Louisville</li>
 <li><b>state:</b>  Kentucky</li>
 <li><b>city:</b>  Louisville</li>
@@ -13005,12 +13013,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name123"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1840_xavier_university_of_louisiana.png"
     <img alt="Xavier University of Louisiana"
     >
-    <br><li><a href="#name122">prev</a>&nbsp;&nbsp;<a href="#name124">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Xavier University of Louisiana</li>
 <li><b>state:</b>  Louisiana</li>
 <li><b>city:</b>  New Orleans</li>
@@ -13108,12 +13116,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name124"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/8_adrian_college.png"
     <img alt="Adrian College"
     >
-    <br><li><a href="#name123">prev</a>&nbsp;&nbsp;<a href="#name125">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Adrian College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Adrian</li>
@@ -13237,12 +13245,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name125"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/17_alma_college.png"
     <img alt="Alma College"
     >
-    <br><li><a href="#name124">prev</a>&nbsp;&nbsp;<a href="#name126">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Alma College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Alma</li>
@@ -13350,12 +13358,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;International Relations and Affairs</li>
 </div>
     </ul>
-    <a id="name126"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/602_aquinas_college.png"
     <img alt="Aquinas College"
     >
-    <br><li><a href="#name125">prev</a>&nbsp;&nbsp;<a href="#name127">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Aquinas College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Grand Rapids</li>
@@ -13480,12 +13488,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name127"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/68_calvin_college.png"
     <img alt="Calvin University"
     >
-    <br><li><a href="#name126">prev</a>&nbsp;&nbsp;<a href="#name128">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Calvin University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Grand Rapids</li>
@@ -13624,12 +13632,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name128"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/83_central_michigan_university.png"
     <img alt="Central Michigan University"
     >
-    <br><li><a href="#name127">prev</a>&nbsp;&nbsp;<a href="#name129">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Central Michigan University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Mount Pleasant</li>
@@ -13822,12 +13830,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name129"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1929_cornerstone_university.png"
     <img alt="Cornerstone University"
     >
-    <br><li><a href="#name128">prev</a>&nbsp;&nbsp;<a href="#name130">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Cornerstone University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Grand Rapids</li>
@@ -13936,12 +13944,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Economics, General</li>
 </div>
     </ul>
-    <a id="name130"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/121_davenport_university.png"
     <img alt="Davenport University"
     >
-    <br><li><a href="#name129">prev</a>&nbsp;&nbsp;<a href="#name131">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Davenport University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Grand Rapids</li>
@@ -14038,12 +14046,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Information Technology Project Management</li>
 </div>
     </ul>
-    <a id="name131"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/729_eastern_michigan_university.png"
     <img alt="Eastern Michigan University"
     >
-    <br><li><a href="#name130">prev</a>&nbsp;&nbsp;<a href="#name132">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Eastern Michigan University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Ypsilanti</li>
@@ -14227,12 +14235,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airline/Commercial/Professional Pilot and Flight Crew</li>
 </div>
     </ul>
-    <a id="name132"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Glen Oaks Community College"
     >
-    <br><li><a href="#name131">prev</a>&nbsp;&nbsp;<a href="#name133">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Glen Oaks Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Centreville</li>
@@ -14301,12 +14309,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mechanical Engineering Related Technologies/Technicians, Other</li>
 </div>
     </ul>
-    <a id="name133"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484538_grand_rapids_community_college.png"
     <img alt="Grand Rapids Community College"
     >
-    <br><li><a href="#name132">prev</a>&nbsp;&nbsp;<a href="#name134">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Grand Rapids Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Grand Rapids</li>
@@ -14424,12 +14432,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name134"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/177_grand_valley_state_university.png"
     <img alt="Grand Valley State University"
     >
-    <br><li><a href="#name133">prev</a>&nbsp;&nbsp;<a href="#name135">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Grand Valley State University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Allendale</li>
@@ -14571,12 +14579,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name135"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Henry Ford Community College"
     >
-    <br><li><a href="#name134">prev</a>&nbsp;&nbsp;<a href="#name136">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Henry Ford Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Dearborn</li>
@@ -14689,12 +14697,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Plumbing Technology/Plumber</li>
 </div>
     </ul>
-    <a id="name136"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/775_hillsdale_college.png"
     <img alt="Hillsdale College"
     >
-    <br><li><a href="#name135">prev</a>&nbsp;&nbsp;<a href="#name137">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Hillsdale College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Hillsdale</li>
@@ -14787,12 +14795,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name137"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484542_jackson_college.png"
     <img alt="Jackson College"
     >
-    <br><li><a href="#name136">prev</a>&nbsp;&nbsp;<a href="#name138">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Jackson College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Jackson</li>
@@ -14886,12 +14894,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airline/Commercial/Professional Pilot and Flight Crew</li>
 </div>
     </ul>
-    <a id="name138"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/220_kalamazoo_college.png"
     <img alt="Kalamazoo College"
     >
-    <br><li><a href="#name137">prev</a>&nbsp;&nbsp;<a href="#name139">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Kalamazoo College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Kalamazoo</li>
@@ -14975,12 +14983,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name139"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484544_kalamazoo_valley_community_college.png"
     <img alt="Kalamazoo Valley Community College"
     >
-    <br><li><a href="#name138">prev</a>&nbsp;&nbsp;<a href="#name140">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Kalamazoo Valley Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Kalamazoo</li>
@@ -15074,12 +15082,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Machine Tool Technology/Machinist</li>
 </div>
     </ul>
-    <a id="name140"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1947_kellogg_community_college.png"
     <img alt="Kellogg Community College"
     >
-    <br><li><a href="#name139">prev</a>&nbsp;&nbsp;<a href="#name141">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Kellogg Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Battle Creek</li>
@@ -15169,12 +15177,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Precision Systems Maintenance and Repair Technologies, Other</li>
 </div>
     </ul>
-    <a id="name141"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1789_lake_michigan_college.png"
     <img alt="Lake Michigan College"
     >
-    <br><li><a href="#name140">prev</a>&nbsp;&nbsp;<a href="#name142">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lake Michigan College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Benton Harbor</li>
@@ -15285,12 +15293,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Precision Production, Other</li>
 </div>
     </ul>
-    <a id="name142"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484547_lansing_community_college.png"
     <img alt="Lansing Community College"
     >
-    <br><li><a href="#name141">prev</a>&nbsp;&nbsp;<a href="#name143">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lansing Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Lansing</li>
@@ -15443,12 +15451,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airframe Mechanics and Aircraft Maintenance Technology/Technician</li>
 </div>
     </ul>
-    <a id="name143"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/235_lawrence_technological_university.png"
     <img alt="Lawrence Technological University"
     >
-    <br><li><a href="#name142">prev</a>&nbsp;&nbsp;<a href="#name144">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lawrence Technological University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Southfield</li>
@@ -15542,12 +15550,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Speech Communication and Rhetoric</li>
 </div>
     </ul>
-    <a id="name144"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484549_macomb_community_college.png"
     <img alt="Macomb Community College"
     >
-    <br><li><a href="#name143">prev</a>&nbsp;&nbsp;<a href="#name145">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Macomb Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Warren</li>
@@ -15674,12 +15682,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name145"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/839_michigan_state_university.png"
     <img alt="Michigan State University"
     >
-    <br><li><a href="#name144">prev</a>&nbsp;&nbsp;<a href="#name146">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Michigan State University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  East Lansing</li>
@@ -15856,12 +15864,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name146"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484557_muskegon_community_college.png"
     <img alt="Muskegon Community College"
     >
-    <br><li><a href="#name145">prev</a>&nbsp;&nbsp;<a href="#name147">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Muskegon Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Muskegon</li>
@@ -15959,12 +15967,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer Numerically Controlled (CNC</li>
 </div>
     </ul>
-    <a id="name147"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484563_oakland_community_college.png"
     <img alt="Oakland Community College"
     >
-    <br><li><a href="#name146">prev</a>&nbsp;&nbsp;<a href="#name148">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Oakland Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Bloomfield Hills</li>
@@ -16106,12 +16114,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name148"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/890_oakland_university.png"
     <img alt="Oakland University"
     >
-    <br><li><a href="#name147">prev</a>&nbsp;&nbsp;<a href="#name149">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Oakland University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Rochester</li>
@@ -16261,12 +16269,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology and Anthropology</li>
 </div>
     </ul>
-    <a id="name149"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/332_olivet_college.png"
     <img alt="Olivet College"
     >
-    <br><li><a href="#name148">prev</a>&nbsp;&nbsp;<a href="#name150">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Olivet College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Olivet</li>
@@ -16362,12 +16370,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name150"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1792_Rochester_University.png"
     <img alt="Rochester University"
     >
-    <br><li><a href="#name149">prev</a>&nbsp;&nbsp;<a href="#name151">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Rochester University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Rochester Hills</li>
@@ -16452,12 +16460,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Early Childhood Education and Teaching</li>
 </div>
     </ul>
-    <a id="name151"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/918_saginaw_valley_state_university.png"
     <img alt="Saginaw Valley State University"
     >
-    <br><li><a href="#name150">prev</a>&nbsp;&nbsp;<a href="#name152">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Saginaw Valley State University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  University Center</li>
@@ -16570,12 +16578,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Geography</li>
 </div>
     </ul>
-    <a id="name152"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484570_schoolcraft_college.png"
     <img alt="Schoolcraft College"
     >
-    <br><li><a href="#name151">prev</a>&nbsp;&nbsp;<a href="#name153">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Schoolcraft College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Livonia</li>
@@ -16668,12 +16676,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name153"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1870_spring_arbor_university.png"
     <img alt="Spring Arbor University"
     >
-    <br><li><a href="#name152">prev</a>&nbsp;&nbsp;<a href="#name154">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Spring Arbor University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Spring Arbor</li>
@@ -16801,12 +16809,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name154"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484571_st_clair_county_community_college.png"
     <img alt="St Clair County Community College"
     >
-    <br><li><a href="#name153">prev</a>&nbsp;&nbsp;<a href="#name155">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  St Clair County Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Port Huron</li>
@@ -16899,12 +16907,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name155"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/513_university_of_michigan.png"
     <img alt="University of Michigan"
     >
-    <br><li><a href="#name154">prev</a>&nbsp;&nbsp;<a href="#name156">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Michigan</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Ann Arbor</li>
@@ -17079,12 +17087,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physiological Psychology/Psychobiology</li>
 </div>
     </ul>
-    <a id="name156"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1839_University_of_Michigan,_Dearborn.png?timestamp=1635952068"
     <img alt="University of Michigan, Dearborn"
     >
-    <br><li><a href="#name155">prev</a>&nbsp;&nbsp;<a href="#name157">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Michigan, Dearborn</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Dearborn</li>
@@ -17209,12 +17217,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name157"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openClub">
+    <ul>
     <img src=""
     <img alt="University of Michigan-Flint"
     >
-    <br><li><a href="#name156">prev</a>&nbsp;&nbsp;<a href="#name158">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Michigan-Flint</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Flint</li>
@@ -17338,12 +17346,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name158"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openClub">
+    <ul>
     <img src=""
     <img alt="Washtenaw Community College"
     >
-    <br><li><a href="#name157">prev</a>&nbsp;&nbsp;<a href="#name159">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Washtenaw Community College</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Ann Arbor</li>
@@ -17450,12 +17458,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Precision Production, Other</li>
 </div>
     </ul>
-    <a id="name159"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1108_wayne_state_university_mi.png"
     <img alt="Wayne State University (MI)"
     >
-    <br><li><a href="#name158">prev</a>&nbsp;&nbsp;<a href="#name160">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Wayne State University (MI)</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Detroit</li>
@@ -17606,12 +17614,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Funeral Direction/Service</li>
 </div>
     </ul>
-    <a id="name160"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1118_western_michigan_university.png"
     <img alt="Western Michigan University"
     >
-    <br><li><a href="#name159">prev</a>&nbsp;&nbsp;<a href="#name161">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Western Michigan University</li>
 <li><b>state:</b>  Michigan</li>
 <li><b>city:</b>  Kalamazoo</li>
@@ -17819,12 +17827,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Avionics Maintenance Technology/Technician</li>
 </div>
     </ul>
-    <a id="name161"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="open">
+    <ul>
     <img src=""
     <img alt=""
     >
-    <br><li><a href="#name160">prev</a>&nbsp;&nbsp;<a href="#name162">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Fond du Lac Tribal \u0026 Community College</li>
 <li><b>state:</b>  Minnesota</li>
 <li><b>city:</b>  Cloquet</li>
@@ -17883,12 +17891,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name162"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1130_winona_state_university.png"
     <img alt="Winona State University"
     >
-    <br><li><a href="#name161">prev</a>&nbsp;&nbsp;<a href="#name163">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Winona State University</li>
 <li><b>state:</b>  Minnesota</li>
 <li><b>city:</b>  Winona</li>
@@ -18014,12 +18022,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name163"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1676_culver_stockton_college.png"
     <img alt="Culver-Stockton College"
     >
-    <br><li><a href="#name162">prev</a>&nbsp;&nbsp;<a href="#name164">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Culver-Stockton College</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  Canton</li>
@@ -18110,12 +18118,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
 </div>
     </ul>
-    <a id="name164"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2199_east_central_college.png"
     <img alt="East Central College"
     >
-    <br><li><a href="#name163">prev</a>&nbsp;&nbsp;<a href="#name165">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  East Central College</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  Union</li>
@@ -18200,12 +18208,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name165"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/159_fontbonne_university.png"
     <img alt="Fontbonne University"
     >
-    <br><li><a href="#name164">prev</a>&nbsp;&nbsp;<a href="#name166">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Fontbonne University</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  St. Louis</li>
@@ -18307,12 +18315,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name166"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/484711_jefferson_college.png"
     <img alt="Jefferson College"
     >
-    <br><li><a href="#name165">prev</a>&nbsp;&nbsp;<a href="#name167">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Jefferson College</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  Hillsboro</li>
@@ -18396,12 +18404,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name167"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/243_lindenwood_university.png"
     <img alt="Lindenwood University"
     >
-    <br><li><a href="#name166">prev</a>&nbsp;&nbsp;<a href="#name168">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lindenwood University</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  St. Charles</li>
@@ -18534,12 +18542,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name168"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/833_maryville_university_of_saint_louis.png"
     <img alt="Maryville University of Saint Louis"
     >
-    <br><li><a href="#name167">prev</a>&nbsp;&nbsp;<a href="#name169">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Maryville University of Saint Louis</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  St. Louis</li>
@@ -18644,12 +18652,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name169"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/288_missouri_baptist_university.png"
     <img alt="Missouri Baptist University"
     >
-    <br><li><a href="#name168">prev</a>&nbsp;&nbsp;<a href="#name170">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Missouri Baptist University</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  St. Louis</li>
@@ -18758,12 +18766,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, General</li>
 </div>
     </ul>
-    <a id="name170"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/983_truman_state_university.png"
     <img alt="Truman State University"
     >
-    <br><li><a href="#name169">prev</a>&nbsp;&nbsp;<a href="#name171">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Truman State University</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  Kirksville</li>
@@ -18859,12 +18867,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name171"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1034_university_of_missouri_st_louis.png"
     <img alt="University of Missouri, St. Louis"
     >
-    <br><li><a href="#name170">prev</a>&nbsp;&nbsp;<a href="#name172">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Missouri, St. Louis</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  St. Louis</li>
@@ -18964,12 +18972,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name172"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/568_Washington_University_(MO).png"
     <img alt="Washington University (MO)"
     >
-    <br><li><a href="#name171">prev</a>&nbsp;&nbsp;<a href="#name173">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Washington University (MO)</li>
 <li><b>state:</b>  Missouri</li>
 <li><b>city:</b>  St. Louis</li>
@@ -19124,12 +19132,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name173"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1832_concordia_university_ne.png"
     <img alt="Concordia University (NE)"
     >
-    <br><li><a href="#name172">prev</a>&nbsp;&nbsp;<a href="#name174">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Concordia University (NE)</li>
 <li><b>state:</b>  Nebraska</li>
 <li><b>city:</b>  Seward</li>
@@ -19229,12 +19237,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Geography</li>
 </div>
     </ul>
-    <a id="name174"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/627_ashland_university.png"
     <img alt="Ashland University"
     >
-    <br><li><a href="#name173">prev</a>&nbsp;&nbsp;<a href="#name175">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ashland University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Ashland</li>
@@ -19364,12 +19372,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
 </div>
     </ul>
-    <a id="name175"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/71_capital_university.png"
     <img alt="Capital University"
     >
-    <br><li><a href="#name174">prev</a>&nbsp;&nbsp;<a href="#name176">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Capital University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Columbus</li>
@@ -19491,12 +19499,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name176"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/681_central_state_university.png"
     <img alt="Central State University"
     >
-    <br><li><a href="#name175">prev</a>&nbsp;&nbsp;<a href="#name177">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Central State University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Wilberforce</li>
@@ -19585,12 +19593,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name177"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Clark State Community College"
     >
-    <br><li><a href="#name176">prev</a>&nbsp;&nbsp;<a href="#name178">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Clark State Community College</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Springfield</li>
@@ -19649,12 +19657,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name178"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Columbus State Community College"
     >
-    <br><li><a href="#name177">prev</a>&nbsp;&nbsp;<a href="#name179">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Columbus State Community College</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Columbus</li>
@@ -19772,12 +19780,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Building/Property Maintenance</li>
 </div>
     </ul>
-    <a id="name179"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/124_defiance_college.png"
     <img alt="Defiance College"
     >
-    <br><li><a href="#name178">prev</a>&nbsp;&nbsp;<a href="#name180">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Defiance College</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Defiance</li>
@@ -19876,12 +19884,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name180"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/489365_edison_community_college.png"
     <img alt="Edison State Community College"
     >
-    <br><li><a href="#name179">prev</a>&nbsp;&nbsp;<a href="#name181">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Edison State Community College</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Piqua</li>
@@ -19940,12 +19948,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name181"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/485326_lorain_county_community_college.png"
     <img alt="Lorain County Community College"
     >
-    <br><li><a href="#name180">prev</a>&nbsp;&nbsp;<a href="#name182">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lorain County Community College</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Elyria</li>
@@ -20043,12 +20051,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Building/Construction Site Management/Manager</li>
 </div>
     </ul>
-    <a id="name182"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openUSCAA">
+    <ul>
     <img src=""
     <img alt="Miami University-Middletown"
     >
-    <br><li><a href="#name181">prev</a>&nbsp;&nbsp;<a href="#name183">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Miami University-Middletown</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Middletown</li>
@@ -20107,12 +20115,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name183"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/100_college_of_mount_st_joseph.png"
     <img alt="Mount St. Joseph University"
     >
-    <br><li><a href="#name182">prev</a>&nbsp;&nbsp;<a href="#name184">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Mount St. Joseph University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Cincinnati</li>
@@ -20206,12 +20214,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name184"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1917_mount_vernon_nazarene_university.png"
     <img alt="Mount Vernon Nazarene University"
     >
-    <br><li><a href="#name183">prev</a>&nbsp;&nbsp;<a href="#name185">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Mount Vernon Nazarene University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Mount Vernon</li>
@@ -20327,12 +20335,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name185"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/325_oberlin_college.png"
     <img alt="Oberlin College"
     >
-    <br><li><a href="#name184">prev</a>&nbsp;&nbsp;<a href="#name186">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Oberlin College</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Oberlin</li>
@@ -20441,12 +20449,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name186"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1742_ohio_christian_university.png"
     <img alt="Ohio Christian University"
     >
-    <br><li><a href="#name185">prev</a>&nbsp;&nbsp;<a href="#name187">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ohio Christian University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Circleville</li>
@@ -20528,12 +20536,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name187"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2166_ohio_dominican_university.png"
     <img alt="Ohio Dominican University"
     >
-    <br><li><a href="#name186">prev</a>&nbsp;&nbsp;<a href="#name188">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ohio Dominican University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Columbus</li>
@@ -20631,12 +20639,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name188"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/891_ohio_northern_university.png"
     <img alt="Ohio Northern University"
     >
-    <br><li><a href="#name187">prev</a>&nbsp;&nbsp;<a href="#name189">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ohio Northern University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Ada</li>
@@ -20765,12 +20773,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name189"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/328_ohio_state_university.png"
     <img alt="Ohio State University"
     >
-    <br><li><a href="#name188">prev</a>&nbsp;&nbsp;<a href="#name190">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ohio State University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Columbus</li>
@@ -20984,12 +20992,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aeronautics/Aviation/Aerospace Science and Technology, General</li>
 </div>
     </ul>
-    <a id="name190"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/334_otterbein_university.png"
     <img alt="Otterbein University"
     >
-    <br><li><a href="#name189">prev</a>&nbsp;&nbsp;<a href="#name191">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Otterbein University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Westerville</li>
@@ -21110,12 +21118,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name191"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/485392_Terra_State_Community_College.png"
     <img alt="Terra State Community College"
     >
-    <br><li><a href="#name190">prev</a>&nbsp;&nbsp;<a href="#name192">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Terra State Community College</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Fremont</li>
@@ -21227,12 +21235,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name192"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/468_tiffin_university.png"
     <img alt="Tiffin University"
     >
-    <br><li><a href="#name191">prev</a>&nbsp;&nbsp;<a href="#name193">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Tiffin University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Tiffin</li>
@@ -21332,12 +21340,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;International Relations and Affairs</li>
 </div>
     </ul>
-    <a id="name193"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/491_university_of_cincinnati.png"
     <img alt="University of Cincinnati"
     >
-    <br><li><a href="#name192">prev</a>&nbsp;&nbsp;<a href="#name194">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Cincinnati</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Cincinnati</li>
@@ -21505,12 +21513,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name194"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openUSCAA">
+    <ul>
     <img src=""
     <img alt="University of Cincinnati-Clermont College"
     >
-    <br><li><a href="#name193">prev</a>&nbsp;&nbsp;<a href="#name195">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Cincinnati-Clermont College</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Batavia</li>
@@ -21602,12 +21610,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aeronautics/Aviation/Aerospace Science and Technology, General</li>
 </div>
     </ul>
-    <a id="name195"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1008_university_of_dayton.png"
     <img alt="University of Dayton"
     >
-    <br><li><a href="#name194">prev</a>&nbsp;&nbsp;<a href="#name196">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Dayton</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Dayton</li>
@@ -21739,12 +21747,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name196"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/499_university_of_findlay.png"
     <img alt="University of Findlay"
     >
-    <br><li><a href="#name195">prev</a>&nbsp;&nbsp;<a href="#name197">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Findlay</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Findlay</li>
@@ -21870,12 +21878,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
 </div>
     </ul>
-    <a id="name197"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1901_university_of_northwestern_ohio.png"
     <img alt="University of Northwestern Ohio"
     >
-    <br><li><a href="#name196">prev</a>&nbsp;&nbsp;<a href="#name198">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Northwestern Ohio</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Lima</li>
@@ -21959,12 +21967,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;High Performance and Custom Engine Technician/Mechanic</li>
 </div>
     </ul>
-    <a id="name198"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1078_university_of_toledo.png"
     <img alt="University of Toledo"
     >
-    <br><li><a href="#name197">prev</a>&nbsp;&nbsp;<a href="#name199">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Toledo</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Toledo</li>
@@ -22134,12 +22142,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name199"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/592_wilmington_college_oh.png"
     <img alt="Wilmington College (OH)"
     >
-    <br><li><a href="#name198">prev</a>&nbsp;&nbsp;<a href="#name200">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Wilmington College (OH)</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Wilmington</li>
@@ -22229,12 +22237,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Economics, General</li>
 </div>
     </ul>
-    <a id="name200"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1135_wright_state_university.png"
     <img alt="Wright State University"
     >
-    <br><li><a href="#name199">prev</a>&nbsp;&nbsp;<a href="#name201">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Wright State University</li>
 <li><b>state:</b>  Ohio</li>
 <li><b>city:</b>  Dayton</li>
@@ -22360,12 +22368,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name201"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/619_alverno_college.png"
     <img alt="Alverno College"
     >
-    <br><li><a href="#name200">prev</a>&nbsp;&nbsp;<a href="#name202">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Alverno College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Milwaukee</li>
@@ -22458,12 +22466,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name202"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/41_beloit_college.png"
     <img alt="Beloit College"
     >
-    <br><li><a href="#name201">prev</a>&nbsp;&nbsp;<a href="#name203">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Beloit College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Beloit</li>
@@ -22576,12 +22584,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name203"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1723_cardinal_stritch_university.png"
     <img alt="Cardinal Stritch University"
     >
-    <br><li><a href="#name202">prev</a>&nbsp;&nbsp;<a href="#name204">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Cardinal Stritch University</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Milwaukee</li>
@@ -22674,12 +22682,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name204"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/675_carroll_university_wi.png"
     <img alt="Carroll University (WI)"
     >
-    <br><li><a href="#name203">prev</a>&nbsp;&nbsp;<a href="#name205">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Carroll University (WI)</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Waukesha</li>
@@ -22786,12 +22794,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
 </div>
     </ul>
-    <a id="name205"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/73_carthage_college.png"
     <img alt="Carthage College"
     >
-    <br><li><a href="#name204">prev</a>&nbsp;&nbsp;<a href="#name206">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Carthage College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Kenosha</li>
@@ -22893,12 +22901,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name206"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/734_edgewood_college.png"
     <img alt="Edgewood College"
     >
-    <br><li><a href="#name205">prev</a>&nbsp;&nbsp;<a href="#name207">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Edgewood College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Madison</li>
@@ -23006,12 +23014,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name207"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/802_lakeland_college_wi.png"
     <img alt="Lakeland University (WI)"
     >
-    <br><li><a href="#name206">prev</a>&nbsp;&nbsp;<a href="#name208">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lakeland University (WI)</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Plymouth</li>
@@ -23109,12 +23117,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name208"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/806_lawrence_university.png"
     <img alt="Lawrence University"
     >
-    <br><li><a href="#name207">prev</a>&nbsp;&nbsp;<a href="#name209">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Lawrence University</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Appleton</li>
@@ -23209,12 +23217,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name209"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Madison College"
     >
-    <br><li><a href="#name208">prev</a>&nbsp;&nbsp;<a href="#name210">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Madison College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Madison</li>
@@ -23327,12 +23335,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diesel Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name210"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/827_maranatha_baptist_bible_college.png"
     <img alt="Maranatha Baptist University"
     >
-    <br><li><a href="#name209">prev</a>&nbsp;&nbsp;<a href="#name211">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Maranatha Baptist University</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Watertown</li>
@@ -23423,12 +23431,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History Teacher Education</li>
 </div>
     </ul>
-    <a id="name211"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486149_milwaukee_area_technical_college.png"
     <img alt="Milwaukee Area Technical College"
     >
-    <br><li><a href="#name210">prev</a>&nbsp;&nbsp;<a href="#name212">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Milwaukee Area Technical College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Milwaukee</li>
@@ -23560,12 +23568,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name212"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/285_milwaukee_school_of_engineering.png"
     <img alt="Milwaukee School of Engineering"
     >
-    <br><li><a href="#name211">prev</a>&nbsp;&nbsp;<a href="#name213">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Milwaukee School of Engineering</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Milwaukee</li>
@@ -23643,12 +23651,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Technical and Scientific Communication</li>
 </div>
     </ul>
-    <a id="name213"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/859_mount_mary_college.png"
     <img alt="Mount Mary College"
     >
-    <br><li><a href="#name212">prev</a>&nbsp;&nbsp;<a href="#name214">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Mount Mary College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Milwaukee</li>
@@ -23737,12 +23745,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name214"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/913_ripon_college.png"
     <img alt="Ripon College"
     >
-    <br><li><a href="#name213">prev</a>&nbsp;&nbsp;<a href="#name215">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ripon College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Ripon</li>
@@ -23831,12 +23839,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name215"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src=""
     <img alt="University of Wisconsin Colleges"
     >
-    <br><li><a href="#name214">prev</a>&nbsp;&nbsp;<a href="#name216">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin Colleges</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Madison</li>
@@ -23895,12 +23903,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name216"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1084_university_of_wisconsin_eau_claire.png"
     <img alt="University of Wisconsin, Eau Claire"
     >
-    <br><li><a href="#name215">prev</a>&nbsp;&nbsp;<a href="#name217">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Eau Claire</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Eau Claire</li>
@@ -24012,12 +24020,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name217"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1094_university_of_wisconsin_green_bay.png"
     <img alt="University of Wisconsin, Green Bay"
     >
-    <br><li><a href="#name216">prev</a>&nbsp;&nbsp;<a href="#name218">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Green Bay</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Green Bay</li>
@@ -24117,12 +24125,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name218"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1085_university_of_wisconsin_la_crosse.png"
     <img alt="University of Wisconsin, La Crosse"
     >
-    <br><li><a href="#name217">prev</a>&nbsp;&nbsp;<a href="#name219">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, La Crosse</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  La Crosse</li>
@@ -24227,12 +24235,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name219"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/550_University_of_Wisconsin,_Madison.png"
     <img alt="University of Wisconsin, Madison"
     >
-    <br><li><a href="#name218">prev</a>&nbsp;&nbsp;<a href="#name220">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Madison</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Madison</li>
@@ -24421,12 +24429,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name220"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1086_university_of_wisconsin_milwaukee.png"
     <img alt="University of Wisconsin, Milwaukee"
     >
-    <br><li><a href="#name219">prev</a>&nbsp;&nbsp;<a href="#name221">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Milwaukee</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Milwaukee</li>
@@ -24561,12 +24569,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name221"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1083_university_of_wisconsin_oshkosh.png"
     <img alt="University of Wisconsin, Oshkosh"
     >
-    <br><li><a href="#name220">prev</a>&nbsp;&nbsp;<a href="#name222">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Oshkosh</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Oshkosh</li>
@@ -24684,12 +24692,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name222"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1087_university_of_wisconsin_parkside.png"
     <img alt="University of Wisconsin, Parkside"
     >
-    <br><li><a href="#name221">prev</a>&nbsp;&nbsp;<a href="#name223">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Parkside</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Kenosha</li>
@@ -24779,12 +24787,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name223"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1088_university_of_wisconsin_platteville.png"
     <img alt="University of Wisconsin, Platteville"
     >
-    <br><li><a href="#name222">prev</a>&nbsp;&nbsp;<a href="#name224">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Platteville</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Platteville</li>
@@ -24884,12 +24892,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name224"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1090_university_of_wisconsin_stevens_point.png"
     <img alt="University of Wisconsin, Stevens Point"
     >
-    <br><li><a href="#name223">prev</a>&nbsp;&nbsp;<a href="#name225">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Stevens Point</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Stevens Point</li>
@@ -25008,12 +25016,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name225"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1093_university_of_wisconsin_whitewater.png"
     <img alt="University of Wisconsin, Whitewater"
     >
-    <br><li><a href="#name224">prev</a>&nbsp;&nbsp;<a href="#name226">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Wisconsin, Whitewater</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Whitewater</li>
@@ -25123,12 +25131,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name226"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/485860_western_technical_college.png"
     <img alt="Western Technical College"
     >
-    <br><li><a href="#name225">prev</a>&nbsp;&nbsp;<a href="#name227">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Western Technical College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  La Crosse</li>
@@ -25190,12 +25198,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Industrial Electronics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name227"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1132_wisconsin_lutheran_college.png"
     <img alt="Wisconsin Lutheran College"
     >
-    <br><li><a href="#name226">prev</a>&nbsp;&nbsp;<a href="#name228">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Wisconsin Lutheran College</li>
 <li><b>state:</b>  Wisconsin</li>
 <li><b>city:</b>  Milwaukee</li>
@@ -25294,8 +25302,11 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physical and Biological Anthropology</li>
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, General</li>
 </div>
-    <a id="bottom"></a>
-    <br><li><a href="#name226">prev</a>&nbsp;&nbsp;<a href="#top">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
     </ul>
   </body>

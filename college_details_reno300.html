@@ -4,16 +4,24 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
-    <a id="top"></a>
     <ul>
 <div x-data="{ openall: false }">
-<button class="menu-button" @click="openall = !openall">expand all...</button>
-    <a id="name1"></a>
-    <ul x-data="{ open: false }">
+<div x-data="{ openDI: true }">
+<div x-data="{ openDII: true }">
+<div x-data="{ openDIII: true }">
+<div x-data="{ openNAIA: true }">
+<div x-data="{ openNJCAA: true }">
+<button class="expand-button" @click="openall = !openall" :class="{ 'active': openall }">expand all...</button>
+<button class="menu-button" @click="openDI = !openDI" :class="{ 'active': openDI }">NCAA DI...</button>
+<button class="menu-button" @click="openDII = !openDII" :class="{ 'active': openDII }">NCAA DII...</button>
+<button class="menu-button" @click="openDIII = !openDIII" :class="{ 'active': openDIII }">NCAA DIII...</button>
+<button class="menu-button" @click="openNAIA = !openNAIA" :class="{ 'active': openNAIA }">NAIA...</button>
+<button class="menu-button" @click="openNJCAA = !openNJCAA" :class="{ 'active': openNJCAA }">NJCAA...</button>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1853_arizona_christian_university.png"
     <img alt="Arizona Christian University"
     >
-    <br><li><a href="#name0">prev</a>&nbsp;&nbsp;<a href="#name2">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Arizona Christian University</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Glendale</li>
@@ -93,12 +101,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;American Government and Politics (United States</li>
 </div>
     </ul>
-    <a id="name2"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2254_arizona_western_college.png"
     <img alt="Arizona Western College"
     >
-    <br><li><a href="#name1">prev</a>&nbsp;&nbsp;<a href="#name3">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Arizona Western College</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Yuma</li>
@@ -219,12 +227,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name3"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2243_benedictine_university_at_mesa.png"
     <img alt="Benedictine University at Mesa"
     >
-    <br><li><a href="#name2">prev</a>&nbsp;&nbsp;<a href="#name4">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Benedictine University at Mesa</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Mesa</li>
@@ -283,12 +291,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name4"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Chandler-Gilbert Community College"
     >
-    <br><li><a href="#name3">prev</a>&nbsp;&nbsp;<a href="#name5">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Chandler-Gilbert Community College</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Chandler</li>
@@ -373,12 +381,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mechanic and Repair Technologies/Technicians, Other</li>
 </div>
     </ul>
-    <a id="name5"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2192_embry_riddle_aeronautical_university_prescott.png"
     <img alt="Embry-Riddle Aeronautical University - Prescott"
     >
-    <br><li><a href="#name4">prev</a>&nbsp;&nbsp;<a href="#name6">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Embry-Riddle Aeronautical University - Prescott</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Prescott</li>
@@ -456,12 +464,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Air Traffic Controller</li>
 </div>
     </ul>
-    <a id="name6"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/489489_Glendale_Community_College-Arizona.png"
     <img alt="Glendale Community College-Arizona"
     >
-    <br><li><a href="#name5">prev</a>&nbsp;&nbsp;<a href="#name7">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Glendale Community College-Arizona</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Glendale</li>
@@ -520,12 +528,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name7"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/176_grand_canyon_university.png"
     <img alt="Grand Canyon University"
     >
-    <br><li><a href="#name6">prev</a>&nbsp;&nbsp;<a href="#name8">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Grand Canyon University</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Phoenix</li>
@@ -621,12 +629,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Drama and Dance Teacher Education</li>
 </div>
     </ul>
-    <a id="name8"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/483293_mesa_community_college.png"
     <img alt="Mesa Community College"
     >
-    <br><li><a href="#name7">prev</a>&nbsp;&nbsp;<a href="#name9">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Mesa Community College</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Mesa</li>
@@ -735,12 +743,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Construction/Heavy Equipment/Earthmoving Equipment Operation</li>
 </div>
     </ul>
-    <a id="name9"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/876_northern_arizona_university.png"
     <img alt="Northern Arizona University"
     >
-    <br><li><a href="#name8">prev</a>&nbsp;&nbsp;<a href="#name10">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Northern Arizona University</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Flagstaff</li>
@@ -907,12 +915,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name10"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/489403_Point_Park_University.png?timestamp=1649097541"
     <img alt="Park University - Gilbert"
     >
-    <br><li><a href="#name9">prev</a>&nbsp;&nbsp;<a href="#name11">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Park University - Gilbert</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Gilbert</li>
@@ -971,12 +979,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name11"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/483301_phoenix_college.png"
     <img alt="Phoenix College"
     >
-    <br><li><a href="#name10">prev</a>&nbsp;&nbsp;<a href="#name12">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Phoenix College</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Phoenix</li>
@@ -1078,12 +1086,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Culinary Arts/Chef Training</li>
 </div>
     </ul>
-    <a id="name12"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/483312_scottsdale_community_college.png"
     <img alt="Scottsdale Community College"
     >
-    <br><li><a href="#name11">prev</a>&nbsp;&nbsp;<a href="#name13">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Scottsdale Community College</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Scottsdale</li>
@@ -1180,12 +1188,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Culinary Arts/Chef Training</li>
 </div>
     </ul>
-    <a id="name13"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/483313_south_mountain_community_college.png"
     <img alt="South Mountain Community College"
     >
-    <br><li><a href="#name12">prev</a>&nbsp;&nbsp;<a href="#name14">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  South Mountain Community College</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Phoenix</li>
@@ -1263,12 +1271,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Early Childhood Education and Teaching</li>
 </div>
     </ul>
-    <a id="name14"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1750_yavapai_college.png"
     <img alt="Yavapai College"
     >
-    <br><li><a href="#name13">prev</a>&nbsp;&nbsp;<a href="#name15">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Yavapai College</li>
 <li><b>state:</b>  Arizona</li>
 <li><b>city:</b>  Prescott</li>
@@ -1360,12 +1368,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airline/Commercial/Professional Pilot and Flight Crew</li>
 </div>
     </ul>
-    <a id="name15"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/634_azusa_pacific_university.png"
     <img alt="Azusa Pacific University"
     >
-    <br><li><a href="#name14">prev</a>&nbsp;&nbsp;<a href="#name16">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Azusa Pacific University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Azusa</li>
@@ -1457,12 +1465,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name16"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Bakersfield College"
     >
-    <br><li><a href="#name15">prev</a>&nbsp;&nbsp;<a href="#name17">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Bakersfield College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Bakersfield</li>
@@ -1574,12 +1582,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name17"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Barstow Community College"
     >
-    <br><li><a href="#name16">prev</a>&nbsp;&nbsp;<a href="#name18">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Barstow Community College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Barstow</li>
@@ -1655,12 +1663,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diesel Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name18"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/47_biola_university.png"
     <img alt="Biola University"
     >
-    <br><li><a href="#name17">prev</a>&nbsp;&nbsp;<a href="#name19">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Biola University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  La Mirada</li>
@@ -1768,12 +1776,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name19"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/658_california_baptist_university.png"
     <img alt="California Baptist University"
     >
-    <br><li><a href="#name18">prev</a>&nbsp;&nbsp;<a href="#name20">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California Baptist University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Riverside</li>
@@ -1902,12 +1910,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Air Transportation, Other</li>
 </div>
     </ul>
-    <a id="name20"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/660_california_lutheran_university.png"
     <img alt="California Lutheran University"
     >
-    <br><li><a href="#name19">prev</a>&nbsp;&nbsp;<a href="#name21">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California Lutheran University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Thousand Oaks</li>
@@ -2000,12 +2008,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name21"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/661_california_state_polytechnic_university_pomona.png"
     <img alt="California State Polytechnic University, Pomona"
     >
-    <br><li><a href="#name20">prev</a>&nbsp;&nbsp;<a href="#name22">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State Polytechnic University, Pomona</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Pomona</li>
@@ -2119,12 +2127,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name22"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/818_california_state_university_long_beach.png"
     <img alt="California State University - Long Beach"
     >
-    <br><li><a href="#name21">prev</a>&nbsp;&nbsp;<a href="#name23">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University - Long Beach</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Long Beach</li>
@@ -2266,12 +2274,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name23"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/662_california_state_university_bakersfield.png"
     <img alt="California State University, Bakersfield"
     >
-    <br><li><a href="#name22">prev</a>&nbsp;&nbsp;<a href="#name24">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University, Bakersfield</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Bakersfield</li>
@@ -2366,12 +2374,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name24"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/663_california_state_university_dominguez_hills.png"
     <img alt="California State University, Dominguez Hills"
     >
-    <br><li><a href="#name23">prev</a>&nbsp;&nbsp;<a href="#name25">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University, Dominguez Hills</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Carson</li>
@@ -2473,12 +2481,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name25"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/67_california_state_university_fresno.png"
     <img alt="California State University, Fresno"
     >
-    <br><li><a href="#name24">prev</a>&nbsp;&nbsp;<a href="#name26">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University, Fresno</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Fresno</li>
@@ -2596,12 +2604,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name26"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/665_california_state_university_fullerton.png"
     <img alt="California State University, Fullerton"
     >
-    <br><li><a href="#name25">prev</a>&nbsp;&nbsp;<a href="#name27">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University, Fullerton</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Fullerton</li>
@@ -2714,12 +2722,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name27"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/666_california_state_university_los_angeles.png"
     <img alt="California State University, Los Angeles"
     >
-    <br><li><a href="#name26">prev</a>&nbsp;&nbsp;<a href="#name28">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University, Los Angeles</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Los Angeles</li>
@@ -2838,12 +2846,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name28"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/668_california_state_university_northridge.png"
     <img alt="California State University, Northridge"
     >
-    <br><li><a href="#name27">prev</a>&nbsp;&nbsp;<a href="#name29">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University, Northridge</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Northridge</li>
@@ -2969,12 +2977,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name29"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/670_california_state_university_san_bernardino.png"
     <img alt="California State University, San Bernardino"
     >
-    <br><li><a href="#name28">prev</a>&nbsp;&nbsp;<a href="#name30">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University, San Bernardino</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Bernardino</li>
@@ -3072,12 +3080,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name30"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openClub">
+    <ul>
     <img src=""
     <img alt="California State University-Channel Islands"
     >
-    <br><li><a href="#name29">prev</a>&nbsp;&nbsp;<a href="#name31">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  California State University-Channel Islands</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Camarillo</li>
@@ -3136,12 +3144,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name31"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Cerro Coso Community College"
     >
-    <br><li><a href="#name30">prev</a>&nbsp;&nbsp;<a href="#name32">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Cerro Coso Community College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Ridgecrest</li>
@@ -3200,12 +3208,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name32"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Chaffey College"
     >
-    <br><li><a href="#name31">prev</a>&nbsp;&nbsp;<a href="#name33">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Chaffey College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Rancho Cucamonga</li>
@@ -3343,12 +3351,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Electrical and Power Transmission Installation/Installer, General</li>
 </div>
     </ul>
-    <a id="name33"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/85_chapman_university.png"
     <img alt="Chapman University"
     >
-    <br><li><a href="#name32">prev</a>&nbsp;&nbsp;<a href="#name34">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Chapman University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Orange</li>
@@ -3465,12 +3473,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name34"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/89_Claremont_McKenna-Harvey_Mudd-Scripps_Colleges.png"
     <img alt="Claremont McKenna-Harvey Mudd-Scripps Colleges"
     >
-    <br><li><a href="#name33">prev</a>&nbsp;&nbsp;<a href="#name35">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Claremont McKenna-Harvey Mudd-Scripps Colleges</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Claremont</li>
@@ -3569,12 +3577,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name35"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1828_concordia_university_irvine_ca.png"
     <img alt="Concordia University, Irvine (CA)"
     >
-    <br><li><a href="#name34">prev</a>&nbsp;&nbsp;<a href="#name36">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Concordia University, Irvine (CA)</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Irvine</li>
@@ -3659,12 +3667,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name36"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Cypress College"
     >
-    <br><li><a href="#name35">prev</a>&nbsp;&nbsp;<a href="#name37">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Cypress College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Cypress</li>
@@ -3779,12 +3787,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name37"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Diablo Valley College"
     >
-    <br><li><a href="#name36">prev</a>&nbsp;&nbsp;<a href="#name38">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Diablo Valley College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Pleasant Hill</li>
@@ -3910,12 +3918,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Plumbing Technology/Plumber</li>
 </div>
     </ul>
-    <a id="name38"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="East Los Angeles College"
     >
-    <br><li><a href="#name37">prev</a>&nbsp;&nbsp;<a href="#name39">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  East Los Angeles College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Monterey Park</li>
@@ -4015,12 +4023,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name39"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="El Camino Community College District"
     >
-    <br><li><a href="#name38">prev</a>&nbsp;&nbsp;<a href="#name40">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  El Camino Community College District</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Torrance</li>
@@ -4145,12 +4153,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name40"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2188_fresno_city_college.png"
     <img alt="Fresno City College"
     >
-    <br><li><a href="#name39">prev</a>&nbsp;&nbsp;<a href="#name41">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Fresno City College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Fresno</li>
@@ -4282,12 +4290,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name41"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/754_fresno_pacific_university.png"
     <img alt="Fresno Pacific University"
     >
-    <br><li><a href="#name40">prev</a>&nbsp;&nbsp;<a href="#name42">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Fresno Pacific University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Fresno</li>
@@ -4412,12 +4420,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name42"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Fullerton College"
     >
-    <br><li><a href="#name41">prev</a>&nbsp;&nbsp;<a href="#name43">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Fullerton College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Fullerton</li>
@@ -4543,12 +4551,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Building Construction Technology</li>
 </div>
     </ul>
-    <a id="name43"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/483287_Glendale_Community_College.png"
     <img alt="Glendale Community College"
     >
-    <br><li><a href="#name42">prev</a>&nbsp;&nbsp;<a href="#name44">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Glendale Community College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Glendale</li>
@@ -4642,12 +4650,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name44"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Golden West College"
     >
-    <br><li><a href="#name43">prev</a>&nbsp;&nbsp;<a href="#name45">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Golden West College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Huntington Beach</li>
@@ -4748,12 +4756,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name45"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Grossmont College"
     >
-    <br><li><a href="#name44">prev</a>&nbsp;&nbsp;<a href="#name46">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Grossmont College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  El Cajon</li>
@@ -4872,12 +4880,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Restaurant, Culinary, and Catering Management/Manager</li>
 </div>
     </ul>
-    <a id="name46"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Irvine Valley College"
     >
-    <br><li><a href="#name45">prev</a>&nbsp;&nbsp;<a href="#name47">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Irvine Valley College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Irvine</li>
@@ -4984,12 +4992,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Electrical/Electronics Equipment Installation and Repair, General</li>
 </div>
     </ul>
-    <a id="name47"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1639_la_sierra_university.png"
     <img alt="La Sierra University"
     >
-    <br><li><a href="#name46">prev</a>&nbsp;&nbsp;<a href="#name48">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  La Sierra University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Riverside</li>
@@ -5083,12 +5091,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name48"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Las Positas College"
     >
-    <br><li><a href="#name47">prev</a>&nbsp;&nbsp;<a href="#name49">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Las Positas College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Livermore</li>
@@ -5147,12 +5155,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name49"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="Los Angeles Harbor College"
     >
-    <br><li><a href="#name48">prev</a>&nbsp;&nbsp;<a href="#name50">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Los Angeles Harbor College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Wilmington</li>
@@ -5211,12 +5219,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name50"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Los Angeles Mission College"
     >
-    <br><li><a href="#name49">prev</a>&nbsp;&nbsp;<a href="#name51">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Los Angeles Mission College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Sylmar</li>
@@ -5304,12 +5312,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Restaurant, Culinary, and Catering Management/Manager</li>
 </div>
     </ul>
-    <a id="name51"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2180_miracosta_community_college.png"
     <img alt="MiraCosta Community College"
     >
-    <br><li><a href="#name50">prev</a>&nbsp;&nbsp;<a href="#name52">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  MiraCosta Community College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Oceanside</li>
@@ -5422,12 +5430,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name52"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Moorpark College"
     >
-    <br><li><a href="#name51">prev</a>&nbsp;&nbsp;<a href="#name53">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Moorpark College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Moorpark</li>
@@ -5536,12 +5544,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name53"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/326_occidental_college.png"
     <img alt="Occidental College"
     >
-    <br><li><a href="#name52">prev</a>&nbsp;&nbsp;<a href="#name54">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Occidental College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Los Angeles</li>
@@ -5633,12 +5641,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name54"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/483593_Orange_Coast_College.png?timestamp=1649097565"
     <img alt="Orange Coast College"
     >
-    <br><li><a href="#name53">prev</a>&nbsp;&nbsp;<a href="#name55">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Orange Coast College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Costa Mesa</li>
@@ -5779,12 +5787,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name55"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/483603_Palomar_InStitute_of_Cosmetology.png"
     <img alt="Palomar College"
     >
-    <br><li><a href="#name54">prev</a>&nbsp;&nbsp;<a href="#name56">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Palomar College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Marcos</li>
@@ -5928,12 +5936,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aviation/Airway Management and Operations</li>
 </div>
     </ul>
-    <a id="name56"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Pasadena City College"
     >
-    <br><li><a href="#name55">prev</a>&nbsp;&nbsp;<a href="#name57">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Pasadena City College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Pasadena</li>
@@ -6055,12 +6063,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name57"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/903_pepperdine_university.png"
     <img alt="Pepperdine University"
     >
-    <br><li><a href="#name56">prev</a>&nbsp;&nbsp;<a href="#name58">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Pepperdine University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Malibu</li>
@@ -6180,12 +6188,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name58"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/905_point_loma_nazarene_university.png"
     <img alt="Point Loma Nazarene University"
     >
-    <br><li><a href="#name57">prev</a>&nbsp;&nbsp;<a href="#name59">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Point Loma Nazarene University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Diego</li>
@@ -6308,12 +6316,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name59"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/347_pomona_pitzer_colleges.png"
     <img alt="Pomona-Pitzer Colleges"
     >
-    <br><li><a href="#name58">prev</a>&nbsp;&nbsp;<a href="#name60">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Pomona-Pitzer Colleges</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Claremont</li>
@@ -6414,12 +6422,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name60"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/483609_Porterville_College.png?timestamp=1645043770"
     <img alt="Porterville College"
     >
-    <br><li><a href="#name59">prev</a>&nbsp;&nbsp;<a href="#name61">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Porterville College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Porterville</li>
@@ -6496,12 +6504,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name61"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Reedley College"
     >
-    <br><li><a href="#name60">prev</a>&nbsp;&nbsp;<a href="#name62">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Reedley College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Reedley</li>
@@ -6560,12 +6568,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name62"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Riverside City College"
     >
-    <br><li><a href="#name61">prev</a>&nbsp;&nbsp;<a href="#name63">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Riverside City College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Riverside</li>
@@ -6681,12 +6689,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name63"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="San Bernardino Valley College"
     >
-    <br><li><a href="#name62">prev</a>&nbsp;&nbsp;<a href="#name64">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  San Bernardino Valley College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Bernardino</li>
@@ -6792,12 +6800,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name64"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1923_san_diego_christian_college.png"
     <img alt="San Diego Christian College"
     >
-    <br><li><a href="#name63">prev</a>&nbsp;&nbsp;<a href="#name65">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  San Diego Christian College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Spring Valley</li>
@@ -6871,12 +6879,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aviation/Airway Management and Operations</li>
 </div>
     </ul>
-    <a id="name65"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="San Diego City College"
     >
-    <br><li><a href="#name64">prev</a>&nbsp;&nbsp;<a href="#name66">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  San Diego City College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Diego</li>
@@ -6992,12 +7000,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Plumbing Technology/Plumber</li>
 </div>
     </ul>
-    <a id="name66"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/483630_San_Diego_Mesa_College.png"
     <img alt="San Diego Mesa College"
     >
-    <br><li><a href="#name65">prev</a>&nbsp;&nbsp;<a href="#name67">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  San Diego Mesa College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Diego</li>
@@ -7120,12 +7128,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Building/Construction Site Management/Manager</li>
 </div>
     </ul>
-    <a id="name67"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="San Diego Miramar College"
     >
-    <br><li><a href="#name66">prev</a>&nbsp;&nbsp;<a href="#name68">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  San Diego Miramar College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Diego</li>
@@ -7227,12 +7235,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aviation/Airway Management and Operations</li>
 </div>
     </ul>
-    <a id="name68"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/393_san_diego_state_university.png"
     <img alt="San Diego State University"
     >
-    <br><li><a href="#name67">prev</a>&nbsp;&nbsp;<a href="#name69">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  San Diego State University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Diego</li>
@@ -7374,12 +7382,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name69"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Santa Ana College"
     >
-    <br><li><a href="#name68">prev</a>&nbsp;&nbsp;<a href="#name70">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Santa Ana College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Santa Ana</li>
@@ -7509,12 +7517,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name70"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Santa Barbara City College"
     >
-    <br><li><a href="#name69">prev</a>&nbsp;&nbsp;<a href="#name71">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Santa Barbara City College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Santa Barbara</li>
@@ -7638,12 +7646,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Diver, Professional and Instructor</li>
 </div>
     </ul>
-    <a id="name71"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Santa Monica College"
     >
-    <br><li><a href="#name70">prev</a>&nbsp;&nbsp;<a href="#name72">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Santa Monica College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Santa Monica</li>
@@ -7753,12 +7761,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Cosmetology/Cosmetologist, General</li>
 </div>
     </ul>
-    <a id="name72"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNCCAA">
+    <ul>
     <img src=""
     <img alt="Southern California Leadership University"
     >
-    <br><li><a href="#name71">prev</a>&nbsp;&nbsp;<a href="#name73">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Southern California Leadership University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Westminster</li>
@@ -7817,12 +7825,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name73"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Southwestern Community College Chula Vista"
     >
-    <br><li><a href="#name72">prev</a>&nbsp;&nbsp;<a href="#name74">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Southwestern Community College Chula Vista</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Chula Vista</li>
@@ -7881,12 +7889,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name74"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1747_taft_college.png"
     <img alt="Taft College"
     >
-    <br><li><a href="#name73">prev</a>&nbsp;&nbsp;<a href="#name75">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Taft College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Taft</li>
@@ -7973,12 +7981,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name75"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1000_university_of_california_irvine.png"
     <img alt="University of California, Irvine"
     >
-    <br><li><a href="#name74">prev</a>&nbsp;&nbsp;<a href="#name76">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of California, Irvine</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Irvine</li>
@@ -8119,12 +8127,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Urban Studies/Affairs</li>
 </div>
     </ul>
-    <a id="name76"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/486_university_of_california_los_angeles.png"
     <img alt="University of California, Los Angeles"
     >
-    <br><li><a href="#name75">prev</a>&nbsp;&nbsp;<a href="#name77">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of California, Los Angeles</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Los Angeles</li>
@@ -8287,12 +8295,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
 </div>
     </ul>
-    <a id="name77"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1001_university_of_california_riverside.png"
     <img alt="University of California, Riverside"
     >
-    <br><li><a href="#name76">prev</a>&nbsp;&nbsp;<a href="#name78">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of California, Riverside</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Riverside</li>
@@ -8427,12 +8435,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name78"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/487_university_of_california_san_diego.png"
     <img alt="University of California, San Diego"
     >
-    <br><li><a href="#name77">prev</a>&nbsp;&nbsp;<a href="#name79">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of California, San Diego</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  La Jolla</li>
@@ -8579,12 +8587,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name79"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/488_university_of_california_santa_barbara.png"
     <img alt="University of California, Santa Barbara"
     >
-    <br><li><a href="#name78">prev</a>&nbsp;&nbsp;<a href="#name80">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of California, Santa Barbara</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Santa Barbara</li>
@@ -8716,12 +8724,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, Other</li>
 </div>
     </ul>
-    <a id="name80"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1021_university_of_la_verne.png"
     <img alt="University of La Verne"
     >
-    <br><li><a href="#name79">prev</a>&nbsp;&nbsp;<a href="#name81">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of La Verne</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  La Verne</li>
@@ -8825,12 +8833,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
 </div>
     </ul>
-    <a id="name81"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/531_university_of_redlands.png"
     <img alt="University of Redlands"
     >
-    <br><li><a href="#name80">prev</a>&nbsp;&nbsp;<a href="#name82">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Redlands</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Redlands</li>
@@ -8935,12 +8943,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name82"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/535_university_of_san_diego.png"
     <img alt="University of San Diego"
     >
-    <br><li><a href="#name81">prev</a>&nbsp;&nbsp;<a href="#name83">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of San Diego</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  San Diego</li>
@@ -9041,12 +9049,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name83"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/538_university_of_southern_california.png"
     <img alt="University of Southern California"
     >
-    <br><li><a href="#name82">prev</a>&nbsp;&nbsp;<a href="#name84">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Southern California</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Los Angeles</li>
@@ -9215,12 +9223,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
 </div>
     </ul>
-    <a id="name84"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1882_vanguard_university_of_southern_california.png"
     <img alt="Vanguard University of Southern California"
     >
-    <br><li><a href="#name83">prev</a>&nbsp;&nbsp;<a href="#name85">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Vanguard University of Southern California</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Costa Mesa</li>
@@ -9306,12 +9314,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name85"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="Ventura College"
     >
-    <br><li><a href="#name84">prev</a>&nbsp;&nbsp;<a href="#name86">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Ventura College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Ventura</li>
@@ -9413,12 +9421,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
 </div>
     </ul>
-    <a id="name86"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="West Hills College-Coalinga"
     >
-    <br><li><a href="#name85">prev</a>&nbsp;&nbsp;<a href="#name87">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  West Hills College-Coalinga</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Coalinga</li>
@@ -9477,12 +9485,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name87"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openCCCAA">
+    <ul>
     <img src=""
     <img alt="West Los Angeles College"
     >
-    <br><li><a href="#name86">prev</a>&nbsp;&nbsp;<a href="#name88">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  West Los Angeles College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Culver City</li>
@@ -9580,12 +9588,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airframe Mechanics and Aircraft Maintenance Technology/Technician</li>
 </div>
     </ul>
-    <a id="name88"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNAIA">
+    <ul>
     <img src=""
     <img alt="Westcliff University"
     >
-    <br><li><a href="#name87">prev</a>&nbsp;&nbsp;<a href="#name89">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Westcliff University</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Irvine</li>
@@ -9644,12 +9652,12 @@
 <button class="menu-button" @click="open = !open">majors...</button>
 </div>
     </ul>
-    <a id="name89"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1779_westmont_college.png"
     <img alt="Westmont College"
     >
-    <br><li><a href="#name88">prev</a>&nbsp;&nbsp;<a href="#name90">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Westmont College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Santa Barbara</li>
@@ -9732,12 +9740,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 </div>
     </ul>
-    <a id="name90"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDIII">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/586_whittier_college.png"
     <img alt="Whittier College"
     >
-    <br><li><a href="#name89">prev</a>&nbsp;&nbsp;<a href="#name91">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Whittier College</li>
 <li><b>state:</b>  California</li>
 <li><b>city:</b>  Whittier</li>
@@ -9826,12 +9834,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name91"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openNJCAA">
+    <ul>
     <img src=""
     <img alt="College of Southern Nevada"
     >
-    <br><li><a href="#name90">prev</a>&nbsp;&nbsp;<a href="#name92">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  College of Southern Nevada</li>
 <li><b>state:</b>  Nevada</li>
 <li><b>city:</b>  Henderson</li>
@@ -9995,12 +10003,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Welding Technology/Welder</li>
 </div>
     </ul>
-    <a id="name92"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1040_university_of_nevada.png"
     <img alt="University of Nevada"
     >
-    <br><li><a href="#name91">prev</a>&nbsp;&nbsp;<a href="#name93">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Nevada</li>
 <li><b>state:</b>  Nevada</li>
 <li><b>city:</b>  Reno</li>
@@ -10128,12 +10136,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
 </div>
     </ul>
-    <a id="name93"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/518_university_of_nevada_las_vegas.png"
     <img alt="University of Nevada, Las Vegas"
     >
-    <br><li><a href="#name92">prev</a>&nbsp;&nbsp;<a href="#name94">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  University of Nevada, Las Vegas</li>
 <li><b>state:</b>  Nevada</li>
 <li><b>city:</b>  Las Vegas</li>
@@ -10282,12 +10290,12 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Culinary Arts and Related Services, Other</li>
 </div>
     </ul>
-    <a id="name94"></a>
-    <ul x-data="{ open: false }">
+</div>
+    <div x-show="openDI">
+    <ul>
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/946_southern_utah_university.png"
     <img alt="Southern Utah University"
     >
-    <br><li><a href="#name93">prev</a>&nbsp;&nbsp;<a href="#name95">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
 <li><b>name:</b>  Southern Utah University</li>
 <li><b>state:</b>  Utah</li>
 <li><b>city:</b>  Cedar City</li>
@@ -10406,8 +10414,11 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Building Construction Technology</li>
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airline/Commercial/Professional Pilot and Flight Crew</li>
 </div>
-    <a id="bottom"></a>
-    <br><li><a href="#name93">prev</a>&nbsp;&nbsp;<a href="#top">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
     </ul>
   </body>
