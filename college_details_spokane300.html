@@ -17,6 +17,7 @@
   <body>
     <a id="top"></a>
     <ul>
+<<<<<<< Updated upstream
     <a id="name1"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -341,6 +342,42 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Boise+State+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Boise+State+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Boise+State+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Boise+State+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Boise_State_University" target="_blank"> https://en.wikipedia.org/wiki/Boise_State_University</a></li>
+=======
+<div x-data="{ openall: false }">
+<div x-data="{ openDI: true }">
+<div x-data="{ openDII: true }">
+<div x-data="{ openDIII: true }">
+<div x-data="{ openNAIA: true }">
+<div x-data="{ openNJCAA: true }">
+<button class="expand-button" @click="openall = !openall" :class="{ 'active': openall }">expand all...</button>
+<button class="menu-button" @click="openDI = !openDI" :class="{ 'active': openDI }">NCAA DI...</button>
+<button class="menu-button" @click="openDII = !openDII" :class="{ 'active': openDII }">NCAA DII...</button>
+<button class="menu-button" @click="openDIII = !openDIII" :class="{ 'active': openDIII }">NCAA DIII...</button>
+<button class="menu-button" @click="openNAIA = !openNAIA" :class="{ 'active': openNAIA }">NAIA...</button>
+<button class="menu-button" @click="openNJCAA = !openNJCAA" :class="{ 'active': openNJCAA }">NJCAA...</button>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/649_boise_state_university.png" alt="Boise State University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Boise State University</div>
+    <div><b>state:</b>  Idaho</div>
+    <div><b>city:</b>  Boise</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho/boise_state_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Boise+State+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Boise+State+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Boise+State+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Boise+State+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Boise+State+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Boise_State_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Mountain West Conference (MW)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -483,6 +520,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name5"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/99_college_of_idaho.png"
@@ -502,6 +540,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=College+of+Idaho+volleyball+coaches" target="_blank"> https://www.google.com/search?q=College+of+Idaho+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=College+of+Idaho+volleyball+schedule" target="_blank"> https://www.google.com/search?q=College+of+Idaho+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/College_of_Idaho" target="_blank"> https://en.wikipedia.org/wiki/College_of_Idaho</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/99_college_of_idaho.png" alt="College of Idaho">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  College of Idaho</div>
+    <div><b>state:</b>  Idaho</div>
+    <div><b>city:</b>  Caldwell</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho/college_of_idaho" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=College+of+Idaho" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=College+of+Idaho+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=College+of+Idaho+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=College+of+Idaho+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=College+of+Idaho+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/College_of_Idaho" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -578,6 +641,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name6"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1857_lewis_clark_state_college.png"
@@ -597,6 +661,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Lewis-Clark+State+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Lewis-Clark+State+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Lewis-Clark+State+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Lewis-Clark+State+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Lewis-Clark_State_College" target="_blank"> https://en.wikipedia.org/wiki/Lewis-Clark_State_College</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1857_lewis_clark_state_college.png" alt="Lewis-Clark State College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Lewis-Clark State College</div>
+    <div><b>state:</b>  Idaho</div>
+    <div><b>city:</b>  Lewiston</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho/lewisclark_state_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lewis-Clark+State+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lewis-Clark+State+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lewis-Clark+State+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lewis-Clark+State+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lewis-Clark+State+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Lewis-Clark_State_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Frontier Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -714,6 +803,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name7"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/483996_north_idaho_college.png"
@@ -733,6 +823,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=North+Idaho+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=North+Idaho+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=North+Idaho+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=North+Idaho+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/North_Idaho_College" target="_blank"> https://en.wikipedia.org/wiki/North_Idaho_College</a></li>
+=======
+</div>
+<div x-show="openNJCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/483996_north_idaho_college.png" alt="North Idaho College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  North Idaho College</div>
+    <div><b>state:</b>  Idaho</div>
+    <div><b>city:</b>  Coeur d'Alene</div>
+    <div><b>level:</b>  NJCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho/north_idaho_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=North+Idaho+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=North+Idaho+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=North+Idaho+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=North+Idaho+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=North+Idaho+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/North_Idaho_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -848,6 +963,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name8"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/883_northwest_nazarene_university.png"
@@ -867,6 +983,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Northwest+Nazarene+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Northwest+Nazarene+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Northwest+Nazarene+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Northwest+Nazarene+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Northwest_Nazarene_University" target="_blank"> https://en.wikipedia.org/wiki/Northwest_Nazarene_University</a></li>
+=======
+</div>
+<div x-show="openDII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/883_northwest_nazarene_university.png" alt="Northwest Nazarene University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Northwest Nazarene University</div>
+    <div><b>state:</b>  Idaho</div>
+    <div><b>city:</b>  Nampa</div>
+    <div><b>level:</b>  NCAA DII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho/northwest_nazarene_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+Nazarene+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+Nazarene+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+Nazarene+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+Nazarene+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+Nazarene+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Northwest_Nazarene_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Great Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -964,6 +1105,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name9"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1013_university_of_idaho.png"
@@ -983,6 +1125,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=University+of+Idaho+volleyball+coaches" target="_blank"> https://www.google.com/search?q=University+of+Idaho+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=University+of+Idaho+volleyball+schedule" target="_blank"> https://www.google.com/search?q=University+of+Idaho+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/University_of_Idaho" target="_blank"> https://en.wikipedia.org/wiki/University_of_Idaho</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1013_university_of_idaho.png" alt="University of Idaho">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  University of Idaho</div>
+    <div><b>state:</b>  Idaho</div>
+    <div><b>city:</b>  Moscow</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho/university_of_idaho" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/idaho" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Idaho" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Idaho+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Idaho+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Idaho+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Idaho+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/University_of_Idaho" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Big Sky Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -1141,6 +1308,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name10"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/486648_heartland_community_college.png"
@@ -2060,6 +2228,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Carroll+College+%28MT%29+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Carroll+College+%28MT%29+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Carroll+College+%28MT%29+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Carroll+College+%28MT%29+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Carroll_College_(MT)" target="_blank"> https://en.wikipedia.org/wiki/Carroll_College_(MT)</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1838_carroll_college_mt.png" alt="Carroll College (MT)">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Carroll College (MT)</div>
+    <div><b>state:</b>  Montana</div>
+    <div><b>city:</b>  Helena</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/montana/carroll_college_mt" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/montana" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Carroll+College+%28MT%29" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Carroll+College+%28MT%29+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Carroll+College+%28MT%29+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Carroll+College+%28MT%29+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Carroll+College+%28MT%29+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Carroll_College_(MT)" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Frontier Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  More Selective</li>
@@ -2152,6 +2345,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name20"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/516_university_of_montana.png"
@@ -2171,6 +2365,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=University+of+Montana+volleyball+coaches" target="_blank"> https://www.google.com/search?q=University+of+Montana+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=University+of+Montana+volleyball+schedule" target="_blank"> https://www.google.com/search?q=University+of+Montana+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/University_of_Montana" target="_blank"> https://en.wikipedia.org/wiki/University_of_Montana</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/516_university_of_montana.png" alt="University of Montana">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  University of Montana</div>
+    <div><b>state:</b>  Montana</div>
+    <div><b>city:</b>  Missoula</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/montana/university_ofontana" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/montana" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Montana" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Montana+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Montana+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Montana+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Montana+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/University_of_Montana" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Big Sky Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -2292,6 +2511,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name21"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1715_queensborough_community_college.png"
@@ -2401,6 +2621,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Blue+Mountain+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Blue+Mountain+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Blue+Mountain+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Blue+Mountain+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Blue_Mountain_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Blue_Mountain_Community_College</a></li>
+=======
+</div>
+<div x-show="openNCCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Blue Mountain Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Blue Mountain Community College</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  Pendleton</div>
+    <div><b>level:</b>  NCCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/blueountain_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Blue+Mountain+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Blue+Mountain+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Blue+Mountain+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Blue+Mountain+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Blue+Mountain+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Blue_Mountain_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -2465,6 +2710,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name23"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/485459_NorthweSt_College-Clackamas.png?timestamp=1643149953"
@@ -2484,6 +2730,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Clackamas+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Clackamas+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Clackamas+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Clackamas+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Clackamas_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Clackamas_Community_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/485459_NorthweSt_College-Clackamas.png?timestamp=1643149953" alt="Clackamas Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Clackamas Community College</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  Oregon City</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/clackamas_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Clackamas+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Clackamas+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Clackamas+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Clackamas+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Clackamas+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Clackamas_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -2563,6 +2834,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name24"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1846_eastern_oregon_university.png"
@@ -2582,6 +2854,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Eastern+Oregon+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Eastern+Oregon+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Eastern+Oregon+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Eastern+Oregon+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Eastern_Oregon_University" target="_blank"> https://en.wikipedia.org/wiki/Eastern_Oregon_University</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1846_eastern_oregon_university.png" alt="Eastern Oregon University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Eastern Oregon University</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  La Grande</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/eastern_oregon_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Eastern_Oregon_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Less Selective</li>
@@ -2653,6 +2950,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name25"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -2672,6 +2970,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Mt.+Hood+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Mt.+Hood+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Mt.+Hood+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Mt.+Hood+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Mt._Hood_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Mt._Hood_Community_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Mt. Hood Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Mt. Hood Community College</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  Gresham</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/mt_hood_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Mt.+Hood+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Mt.+Hood+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Mt.+Hood+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Mt.+Hood+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Mt.+Hood+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Mt._Hood_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -2796,6 +3119,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name26"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2228_multnomah_university.png"
@@ -2815,6 +3139,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Multnomah+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Multnomah+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Multnomah+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Multnomah+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Multnomah_University" target="_blank"> https://en.wikipedia.org/wiki/Multnomah_University</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/2228_multnomah_university.png" alt="Multnomah University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Multnomah University</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  Portland</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/multnomah_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Multnomah+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Multnomah+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Multnomah+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Multnomah+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Multnomah+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Multnomah_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -2876,6 +3225,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name27"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/348_portland_state_university.png"
@@ -2895,6 +3245,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Portland+State+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Portland+State+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Portland+State+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Portland+State+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Portland_State_University" target="_blank"> https://en.wikipedia.org/wiki/Portland_State_University</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/348_portland_state_university.png" alt="Portland State University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Portland State University</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  Portland</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/portland_state_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Portland+State+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Portland+State+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Portland+State+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Portland+State+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Portland+State+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Portland_State_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Big Sky Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -3014,6 +3389,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name28"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1055_university_of_portland.png"
@@ -3033,6 +3409,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=University+of+Portland+volleyball+coaches" target="_blank"> https://www.google.com/search?q=University+of+Portland+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=University+of+Portland+volleyball+schedule" target="_blank"> https://www.google.com/search?q=University+of+Portland+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/University_of_Portland" target="_blank"> https://en.wikipedia.org/wiki/University_of_Portland</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1055_university_of_portland.png" alt="University of Portland">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  University of Portland</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  Portland</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/university_of_portland" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Portland" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Portland+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Portland+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Portland+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Portland+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/University_of_Portland" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  West Coast Conference (WCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  More Selective</li>
@@ -3115,6 +3516,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name29"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1913_warner_pacific_college.png"
@@ -3134,6 +3536,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Warner+Pacific+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Warner+Pacific+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Warner+Pacific+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Warner+Pacific+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Warner_Pacific_College" target="_blank"> https://en.wikipedia.org/wiki/Warner_Pacific_College</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1913_warner_pacific_college.png" alt="Warner Pacific College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Warner Pacific College</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  Portland</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/warner_pacific_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Warner+Pacific+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Warner+Pacific+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Warner+Pacific+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Warner+Pacific+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Warner+Pacific+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Warner_Pacific_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Less Selective</li>
@@ -3210,6 +3637,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name30"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/589_willamette_university.png"
@@ -3229,6 +3657,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Willamette+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Willamette+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Willamette+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Willamette+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Willamette_University" target="_blank"> https://en.wikipedia.org/wiki/Willamette_University</a></li>
+=======
+</div>
+<div x-show="openDIII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/589_willamette_university.png" alt="Willamette University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Willamette University</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  Salem</div>
+    <div><b>level:</b>  NCAA DIII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/willamette_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Willamette+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Willamette+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Willamette+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Willamette+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Willamette+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Willamette_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  More Selective</li>
@@ -3318,6 +3771,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name31"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/485816_walters_state_community_college.png"
@@ -3337,6 +3791,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Walters+State+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Walters+State+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Walters+State+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Walters+State+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Walters_State_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Walters_State_Community_College</a></li>
+=======
+</div>
+<div x-show="openNJCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/lacrosserecruits/2015/485816_walters_state_community_college.png" alt="Walters State Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Walters State Community College</div>
+    <div><b>state:</b>  Tennessee</div>
+    <div><b>city:</b>  Morristown</div>
+    <div><b>level:</b>  NJCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/tennessee/walters_state_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/tennessee" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walters+State+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walters+State+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walters+State+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walters+State+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walters+State+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Walters_State_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Tennessee Community College Athletic Association (TCCAA)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -3402,6 +3881,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name32"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1818_ranger_college.png"
@@ -3489,6 +3969,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Bellevue+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Bellevue+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Bellevue+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Bellevue+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Bellevue_College" target="_blank"> https://en.wikipedia.org/wiki/Bellevue_College</a></li>
+=======
+</div>
+<div x-show="openClub">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/2195_bellevue_college.png" alt="Bellevue College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Bellevue College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Bellevue</div>
+    <div><b>level:</b>  Club</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/bellevue_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Bellevue+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Bellevue+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Bellevue+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Bellevue+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Bellevue+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Bellevue_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -3565,6 +4070,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name34"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/682_central_washington_university.png"
@@ -3584,6 +4090,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Central+Washington+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Central+Washington+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Central+Washington+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Central+Washington+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Central_Washington_University" target="_blank"> https://en.wikipedia.org/wiki/Central_Washington_University</a></li>
+=======
+</div>
+<div x-show="openDII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/682_central_washington_university.png" alt="Central Washington University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Central Washington University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Ellensburg</div>
+    <div><b>level:</b>  NCAA DII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/centralashington_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Central+Washington+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Central+Washington+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Central+Washington+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Central+Washington+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Central+Washington+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Central_Washington_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Great Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Less Selective</li>
@@ -3771,6 +4302,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name35"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -3790,6 +4322,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Centralia+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Centralia+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Centralia+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Centralia+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Centralia_College" target="_blank"> https://en.wikipedia.org/wiki/Centralia_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Centralia College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Centralia College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Centralia</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/centralia_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Centralia+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Centralia+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Centralia+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Centralia+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Centralia+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Centralia_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -3856,6 +4413,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name36"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/732_eastern_washington_university.png"
@@ -3875,6 +4433,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Eastern+Washington+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Eastern+Washington+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Eastern+Washington+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Eastern+Washington+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Eastern_Washington_University" target="_blank"> https://en.wikipedia.org/wiki/Eastern_Washington_University</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/732_eastern_washington_university.png" alt="Eastern Washington University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Eastern Washington University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Cheney</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/easternashington_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Washington+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Washington+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Washington+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Washington+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Washington+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Eastern_Washington_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Big Sky Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Less Selective</li>
@@ -3995,6 +4578,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name37"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1808_Edmonds_College.png?timestamp=1644424108"
@@ -4014,6 +4598,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Edmonds+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Edmonds+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Edmonds+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Edmonds+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Edmonds_College" target="_blank"> https://en.wikipedia.org/wiki/Edmonds_College</a></li>
+=======
+</div>
+<div x-show="openNJCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/1808_Edmonds_College.png?timestamp=1644424108" alt="Edmonds College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Edmonds College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Lynnwood</div>
+    <div><b>level:</b>  NJCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/edmonds_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Edmonds+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Edmonds+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Edmonds+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Edmonds+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Edmonds+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Edmonds_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Less Selective</li>
@@ -4103,6 +4712,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name38"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1755_evergreen_state_college.png"
@@ -4122,6 +4732,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Evergreen+State+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Evergreen+State+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Evergreen+State+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Evergreen+State+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Evergreen_State_College" target="_blank"> https://en.wikipedia.org/wiki/Evergreen_State_College</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1755_evergreen_state_college.png" alt="Evergreen State College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Evergreen State College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Olympia</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/evergreen_state_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Evergreen+State+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Evergreen+State+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Evergreen+State+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Evergreen+State+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Evergreen+State+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Evergreen_State_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -4170,6 +4805,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name39"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/763_gonzaga_university.png"
@@ -4189,6 +4825,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Gonzaga+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Gonzaga+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Gonzaga+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Gonzaga+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Gonzaga_University" target="_blank"> https://en.wikipedia.org/wiki/Gonzaga_University</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/763_gonzaga_university.png" alt="Gonzaga University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Gonzaga University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Spokane</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/gonzaga_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Gonzaga+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Gonzaga+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Gonzaga+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Gonzaga+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Gonzaga+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Gonzaga_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  West Coast Conference (WCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  More Selective</li>
@@ -4280,6 +4941,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name40"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486066_Green_River_Community_College.png"
@@ -4299,6 +4961,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Green+River+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Green+River+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Green+River+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Green+River+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Green_River_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Green_River_Community_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486066_Green_River_Community_College.png" alt="Green River Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Green River Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Auburn</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/green_river_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Green+River+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Green+River+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Green+River+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Green+River+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Green+River+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Green_River_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -4388,6 +5075,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name41"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -4407,6 +5095,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Highline+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Highline+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Highline+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Highline+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Highline_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Highline_Community_College</a></li>
+=======
+</div>
+<div x-show="openNJCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Highline Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Highline Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Des Moines</div>
+    <div><b>level:</b>  NJCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/highline_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Highline+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Highline+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Highline+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Highline+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Highline+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Highline_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -4483,6 +5196,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name42"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486078_Lower_Columbia_College.png"
@@ -4502,6 +5216,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Lower+Columbia+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Lower+Columbia+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Lower+Columbia+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Lower+Columbia+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Lower_Columbia_College" target="_blank"> https://en.wikipedia.org/wiki/Lower_Columbia_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486078_Lower_Columbia_College.png" alt="Lower Columbia College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Lower Columbia College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Longview</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/lower_columbia_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lower+Columbia+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lower+Columbia+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lower+Columbia+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lower+Columbia+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Lower+Columbia+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Lower_Columbia_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -4572,6 +5311,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name43"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1761_northwest_university.png"
@@ -4591,6 +5331,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Northwest+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Northwest+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Northwest+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Northwest+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Northwest_University" target="_blank"> https://en.wikipedia.org/wiki/Northwest_University</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1761_northwest_university.png" alt="Northwest University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Northwest University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Kirkland</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/northwest_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Northwest_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -4666,6 +5431,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name44"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -4685,6 +5451,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Olympic+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Olympic+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Olympic+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Olympic+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Olympic_College" target="_blank"> https://en.wikipedia.org/wiki/Olympic_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Olympic College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Olympic College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Bremerton</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/olympic_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Olympic+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Olympic+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Olympic+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Olympic+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Olympic+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Olympic_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -4756,6 +5547,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name45"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/897_pacific_lutheran_university.png"
@@ -4775,6 +5567,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Pacific+Lutheran+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Pacific+Lutheran+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Pacific+Lutheran+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Pacific+Lutheran+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Pacific_Lutheran_University" target="_blank"> https://en.wikipedia.org/wiki/Pacific_Lutheran_University</a></li>
+=======
+</div>
+<div x-show="openDIII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/897_pacific_lutheran_university.png" alt="Pacific Lutheran University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Pacific Lutheran University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Tacoma</div>
+    <div><b>level:</b>  NCAA DIII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/pacific_lutheran_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pacific+Lutheran+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pacific+Lutheran+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pacific+Lutheran+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pacific+Lutheran+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pacific+Lutheran+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Pacific_Lutheran_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -4867,6 +5684,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name46"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -4886,6 +5704,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Pierce+College+at+Puyallup+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Pierce+College+at+Puyallup+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Pierce+College+at+Puyallup+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Pierce+College+at+Puyallup+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Pierce_College_at_Puyallup" target="_blank"> https://en.wikipedia.org/wiki/Pierce_College_at_Puyallup</a></li>
+=======
+</div>
+<div x-show="openNJCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Pierce College at Puyallup">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Pierce College at Puyallup</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Puyallup</div>
+    <div><b>level:</b>  NJCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/pierce_college_at_puyallup" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pierce+College+at+Puyallup" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pierce+College+at+Puyallup+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pierce+College+at+Puyallup+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pierce+College+at+Puyallup+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Pierce+College+at+Puyallup+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Pierce_College_at_Puyallup" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -4946,6 +5789,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name47"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/957_Saint_Martin's_University.png"
@@ -4965,6 +5809,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Saint+Martin%27s+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Saint+Martin%27s+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Saint+Martin%27s+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Saint+Martin%27s+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Saint_Martin's_University" target="_blank"> https://en.wikipedia.org/wiki/Saint_Martin's_University</a></li>
+=======
+</div>
+<div x-show="openDII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/957_Saint_Martin's_University.png" alt="Saint Martin's University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Saint Martin's University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Lacey</div>
+    <div><b>level:</b>  NCAA DII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/st_martins_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Saint+Martin%27s+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Saint+Martin%27s+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Saint+Martin%27s+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Saint+Martin%27s+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Saint+Martin%27s+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Saint_Martin's_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Great Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -5035,6 +5904,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name48"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/930_seattle_pacific_university.png"
@@ -5054,6 +5924,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Seattle+Pacific+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Seattle+Pacific+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Seattle+Pacific+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Seattle+Pacific+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Seattle_Pacific_University" target="_blank"> https://en.wikipedia.org/wiki/Seattle_Pacific_University</a></li>
+=======
+</div>
+<div x-show="openDII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/930_seattle_pacific_university.png" alt="Seattle Pacific University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Seattle Pacific University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Seattle</div>
+    <div><b>level:</b>  NCAA DII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/seattle_pacific_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+Pacific+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+Pacific+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+Pacific+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+Pacific+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+Pacific+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Seattle_Pacific_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Great Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -5155,6 +6050,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name49"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/931_seattle_university.png"
@@ -5174,6 +6070,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Seattle+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Seattle+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Seattle+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Seattle+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Seattle_University" target="_blank"> https://en.wikipedia.org/wiki/Seattle_University</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/931_seattle_university.png" alt="Seattle University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Seattle University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Seattle</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/seattle_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Seattle+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Seattle_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Western Athletic Conference (WAC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  More Selective</li>
@@ -5287,6 +6208,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name50"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -5306,6 +6228,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Shoreline+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Shoreline+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Shoreline+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Shoreline+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Shoreline_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Shoreline_Community_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Shoreline Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Shoreline Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Shoreline</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/shoreline_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Shoreline+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Shoreline+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Shoreline+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Shoreline+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Shoreline+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Shoreline_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -5384,6 +6331,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name51"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1954_skagit_valley_college.png"
@@ -5403,6 +6351,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Skagit+Valley+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Skagit+Valley+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Skagit+Valley+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Skagit+Valley+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Skagit_Valley_College" target="_blank"> https://en.wikipedia.org/wiki/Skagit_Valley_College</a></li>
+=======
+</div>
+<div x-show="openNJCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1954_skagit_valley_college.png" alt="Skagit Valley College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Skagit Valley College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Mount Vernon</div>
+    <div><b>level:</b>  NJCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/skagit_valley_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Skagit+Valley+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Skagit+Valley+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Skagit+Valley+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Skagit+Valley+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Skagit+Valley+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Skagit_Valley_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Less Selective</li>
@@ -5479,6 +6452,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name52"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -5498,6 +6472,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Spokane+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Spokane+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Spokane+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Spokane+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Spokane_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Spokane_Community_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Spokane Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Spokane Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Spokane</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/spokane_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Spokane_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -5600,6 +6599,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name53"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -5619,6 +6619,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Spokane+Falls+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Spokane+Falls+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Spokane+Falls+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Spokane+Falls+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Spokane_Falls_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Spokane_Falls_Community_College</a></li>
+=======
+</div>
+<div x-show="openNJCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Spokane Falls Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Spokane Falls Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Spokane</div>
+    <div><b>level:</b>  NJCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/spokane_falls_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Falls+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Falls+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Falls+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Falls+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Spokane+Falls+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Spokane_Falls_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference (NWAC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -5693,6 +6718,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name54"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -5712,6 +6738,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Tacoma+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Tacoma+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Tacoma+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Tacoma+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Tacoma_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Tacoma_Community_College</a></li>
+=======
+</div>
+<div x-show="openNJCAA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Tacoma Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Tacoma Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Tacoma</div>
+    <div><b>level:</b>  NJCAA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/tacoma_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Tacoma+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Tacoma+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Tacoma+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Tacoma+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Tacoma+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Tacoma_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -5781,6 +6832,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name55"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/549_university_of_washington.png"
@@ -5800,6 +6852,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=University+of+Washington+volleyball+coaches" target="_blank"> https://www.google.com/search?q=University+of+Washington+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=University+of+Washington+volleyball+schedule" target="_blank"> https://www.google.com/search?q=University+of+Washington+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/University_of_Washington" target="_blank"> https://en.wikipedia.org/wiki/University_of_Washington</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/549_university_of_washington.png" alt="University of Washington">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  University of Washington</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Seattle</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/university_of_washington" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Washington" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Washington+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Washington+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Washington+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Washington+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/University_of_Washington" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Pac-12 Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  More Selective</li>
@@ -6037,6 +7114,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name56"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -6056,6 +7134,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Walla+Walla+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Walla+Walla+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Walla+Walla+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Walla+Walla+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Walla_Walla_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Walla_Walla_Community_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Walla Walla Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Walla Walla Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Walla Walla</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/walla_walla_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Walla_Walla_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -6143,6 +7246,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name57"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1930_walla_walla_university.png"
@@ -6162,6 +7266,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Walla+Walla+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Walla+Walla+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Walla+Walla+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Walla+Walla+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Walla_Walla_University" target="_blank"> https://en.wikipedia.org/wiki/Walla_Walla_University</a></li>
+=======
+</div>
+<div x-show="openNAIA">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1930_walla_walla_university.png" alt="Walla Walla University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Walla Walla University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  College Place</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/wallaalla_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Walla+Walla+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Walla_Walla_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -6258,6 +7387,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name58"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1106_washington_state_university.png"
@@ -6277,6 +7407,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Washington+State+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Washington+State+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Washington+State+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Washington+State+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Washington_State_University" target="_blank"> https://en.wikipedia.org/wiki/Washington_State_University</a></li>
+=======
+</div>
+<div x-show="openDI">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1106_washington_state_university.png" alt="Washington State University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Washington State University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Pullman</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/washington_state_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Washington+State+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Washington+State+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Washington+State+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Washington+State+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Washington+State+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Washington_State_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Pac-12 Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -6429,6 +7584,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name59"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -6448,6 +7604,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Wenatchee+Valley+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Wenatchee+Valley+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Wenatchee+Valley+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Wenatchee+Valley+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Wenatchee_Valley_College" target="_blank"> https://en.wikipedia.org/wiki/Wenatchee_Valley_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Wenatchee Valley College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Wenatchee Valley College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Wenatchee</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/wenatchee_valley_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Wenatchee+Valley+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Wenatchee+Valley+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Wenatchee+Valley+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Wenatchee+Valley+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Wenatchee+Valley+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Wenatchee_Valley_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -6513,6 +7694,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name60"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1121_western_washington_university.png"
@@ -6532,6 +7714,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Western+Washington+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Western+Washington+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Western+Washington+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Western+Washington+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Western_Washington_University" target="_blank"> https://en.wikipedia.org/wiki/Western_Washington_University</a></li>
+=======
+</div>
+<div x-show="openDII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1121_western_washington_university.png" alt="Western Washington University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Western Washington University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Bellingham</div>
+    <div><b>level:</b>  NCAA DII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/westernashington_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Western+Washington+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Western+Washington+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Western+Washington+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Western+Washington+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Western+Washington+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Western_Washington_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Great Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -6676,6 +7883,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name61"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486100_Whatcom_Community_College.png"
@@ -6695,6 +7903,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Whatcom+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Whatcom+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Whatcom+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Whatcom+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Whatcom_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Whatcom_Community_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/486100_Whatcom_Community_College.png" alt="Whatcom Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Whatcom Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Bellingham</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/whatcom_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whatcom+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whatcom+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whatcom+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whatcom+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whatcom+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Whatcom_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -6759,6 +7992,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name62"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1124_whitman_college.png"
@@ -6778,6 +8012,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Whitman+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Whitman+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Whitman+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Whitman+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Whitman_College" target="_blank"> https://en.wikipedia.org/wiki/Whitman_College</a></li>
+=======
+</div>
+<div x-show="openDIII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1124_whitman_college.png" alt="Whitman College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Whitman College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Walla Walla</div>
+    <div><b>level:</b>  NCAA DIII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/whitman_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitman+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitman+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitman+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitman+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitman+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Whitman_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Conference (NWC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  More Selective</li>
@@ -6870,6 +8129,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name63"></a>
     <ul x-data="{ open: false }">
     <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1125_whitworth_university.png"
@@ -6889,6 +8149,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Whitworth+University+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Whitworth+University+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Whitworth+University+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Whitworth+University+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Whitworth_University" target="_blank"> https://en.wikipedia.org/wiki/Whitworth_University</a></li>
+=======
+</div>
+<div x-show="openDIII">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1125_whitworth_university.png" alt="Whitworth University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Whitworth University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Spokane</div>
+    <div><b>level:</b>  NCAA DIII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/whitworth_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitworth+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitworth+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitworth+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitworth+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Whitworth+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Whitworth_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Conference (NWC)</li>
 <li x-show="open"><b>academic_selectivity:</b>  Selective</li>
@@ -6992,6 +8277,7 @@
 </div
 <li x-show="open"><b>mascot:</b> </li>
     </ul>
+<<<<<<< Updated upstream
     <a id="name64"></a>
     <ul x-data="{ open: false }">
     <img src=""
@@ -7011,6 +8297,31 @@
 <li><b>google_coaches_link:</b><a href=" https://www.google.com/search?q=Yakima+Valley+Community+College+volleyball+coaches" target="_blank"> https://www.google.com/search?q=Yakima+Valley+Community+College+volleyball+coaches</a></li>
 <li><b>google_schedule_link:</b><a href=" https://www.google.com/search?q=Yakima+Valley+Community+College+volleyball+schedule" target="_blank"> https://www.google.com/search?q=Yakima+Valley+Community+College+volleyball+schedule</a></li>
 <li><b>wikipedia_link:</b><a href=" https://en.wikipedia.org/wiki/Yakima_Valley_Community_College" target="_blank"> https://en.wikipedia.org/wiki/Yakima_Valley_Community_College</a></li>
+=======
+</div>
+<div x-show="openNWAC">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="" alt="Yakima Valley Community College">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Yakima Valley Community College</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Yakima</div>
+    <div><b>level:</b>  NWAC</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/yakima_valley_community_college" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Yakima+Valley+Community+College" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Yakima+Valley+Community+College+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Yakima+Valley+Community+College+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Yakima+Valley+Community+College+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Yakima+Valley+Community+College+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Yakima_Valley_Community_College" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+>>>>>>> Stashed changes
 <button class="menu-button" @click="open = !open">details...</button>
 <li x-show="open"><b>conference:</b>  Northwest Athletic Conference</li>
 <li x-show="open"><b>academic_selectivity:</b>  Least Selective</li>
@@ -7210,5 +8521,6 @@
     <a id="bottom"></a>
     <br><li><a href="#name64">prev</a>&nbsp;&nbsp;<a href="#top">next</a>&nbsp;&nbsp;<a href="#top">top</a>&nbsp;&nbsp;<a href="#bottom">bottom</a></li>
     </ul>
+    <br><br><br><br><br><br><br><br>
   </body>
 </html>
