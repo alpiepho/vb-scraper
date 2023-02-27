@@ -9,7 +9,7 @@ img {
 button {
   border-radius: 20px;
   color: black;
-  font-size: 24px;
+  font-size: 16px;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -55,9 +55,15 @@ a:active {
 .school-title-details {
   padding-left: 50px;
   padding-top: 150px;
-  font-size: 20px;}
-@media only screen and (min-width: 600px) {
+  font-size: 24px;
+}
+@media only screen and (max-device-width: 480px) {
     button {
-      font-size: 16px;
+      font-size: 40px;
+    }
+    .school-title-details {
+      padding-left: 50px;
+      padding-top: 150px;
+      font-size: 40px;
     }
 }
