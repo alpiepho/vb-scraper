@@ -871,6 +871,10 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	count := 0
 	inDetails := false
 	inMajors := false
+	pendingName := ""
+	pendingState := ""
+	pendingCity := ""
+	pendingLevel := ""
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
 		if len(line) == 0 {
@@ -883,7 +887,40 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 		// if strings.Contains(line, "state_link:") {
 		// 	continue
 		// }
+		// if strings.HasPrefix(line, "name:") {
+		// 	inDetails = false
+		// 	fmt.Println(line)
+		// 	count += 1
+		// 	if count > 1 {
+		// 		// close previous list
+		// 		msg2 += "    </ul>\n"
+		// 		// close previous level filter div
+		// 		msg2 += "</div>\n"
+		// 	}
+
+		// 	name := strings.Replace(line, "name:", "", -1)
+		// 	name = strings.TrimSpace(name)
+		// 	detail := detailFromName(details, name)
+
+		// 	// level filter div
+		// 	openFlag := detail.Level
+		// 	openFlag = strings.Replace(openFlag, "NCAA", "", -1)
+		// 	openFlag = strings.TrimSpace(openFlag)
+		// 	msg2 += "    <div x-show=\"open" + openFlag + "\">\n"
+		// 	// set anchor for this list
+		// 	msg2 += "    <ul>\n"
+		// 	// msg2 += "    <ul x-data=\"{ open: false }\">\n"
+
+		// 	// add logo
+		// 	msg2 += "    <img src=\"" + detail.LogoLink + "\"\n"
+		// 	msg2 += "    <img alt=\"" + detail.Name + "\"\n"
+		// 	msg2 += "    >\n"
+		// }
 		if strings.HasPrefix(line, "name:") {
+			value := strings.Replace(line, "name:", "", -1)
+			value = strings.TrimSpace(value)
+			pendingName = value
+
 			inDetails = false
 			fmt.Println(line)
 			count += 1
@@ -893,92 +930,119 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 				// close previous level filter div
 				msg2 += "</div>\n"
 			}
+		} else if strings.HasPrefix(line, "state:") {
+			value := strings.Replace(line, "state:", "", -1)
+			value = strings.TrimSpace(value)
+			pendingState = value
+		} else if strings.HasPrefix(line, "city:") {
+			value := strings.Replace(line, "city:", "", -1)
+			value = strings.TrimSpace(value)
+			pendingCity = value
+		} else if strings.HasPrefix(line, "level:") {
+			value := strings.Replace(line, "level:", "", -1)
+			value = strings.TrimSpace(value)
+			pendingLevel = value
 
-			name := strings.Replace(line, "name:", "", -1)
-			name = strings.TrimSpace(name)
-			detail := detailFromName(details, name)
+			// TODO build line with image and name/state/city/level to the right
+			detail := detailFromName(details, pendingName)
 
 			// level filter div
 			openFlag := detail.Level
 			openFlag = strings.Replace(openFlag, "NCAA", "", -1)
 			openFlag = strings.TrimSpace(openFlag)
-			msg2 += "    <div x-show=\"open" + openFlag + "\">\n"
-			// set anchor for this list
+			msg2 += "<div x-show=\"open" + openFlag + "\">\n"
 			msg2 += "    <ul>\n"
-			// msg2 += "    <ul x-data=\"{ open: false }\">\n"
+
+			msg2 += "    <div class=\"school-title-bar\">\n"
+			msg2 += "    <div class=\"school-title-image\">\n"
 
 			// add logo
-			msg2 += "    <img src=\"" + detail.LogoLink + "\"\n"
-			msg2 += "    <img alt=\"" + detail.Name + "\"\n"
-			msg2 += "    >\n"
-		}
-		parts := strings.Split(line, ":")
-		label := parts[0]
-		rest := strings.Join(parts[1:], ":")
-		if strings.Contains(line, "_link:") {
-			// <a href="aaa" target="_blank">aaa</a>
-			label2 := label
-			label2 = strings.Replace(label2, "_link", "", -1)
-			label2 = strings.Replace(label2, "_", " ", -1)
-			// msg2 += "<li><button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button></li>\n"
-			msg2 += "<button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button>\n"
+			msg2 += "    <img src=\"" + detail.LogoLink + "\" alt=\"" + detail.Name + "\">\n"
 
-		} else if strings.Contains(line, ":") {
-			if strings.Contains(line, "overview:") {
-				// replace line breaks with <br>
-				rest = strings.ReplaceAll(rest, "\\n", "<br>")
-				rest = strings.ReplaceAll(rest, "<br><br>", "<br>")
-				rest = strings.ReplaceAll(rest, "Hide Content", "")
-				// only 2nd paragraph is useful
-				parts := strings.Split(rest, "<br>")
-				if len(parts) > 1 {
-					rest = parts[1]
-				}
-			}
+			msg2 += "    </div>\n"
+			msg2 += "    <div class=\"school-title-details\">\n"
 
-			if strings.Contains(line, "conference:") {
-				// details button after wikipedia_link
-				msg2 += "<div x-data=\"{ open: false }\">\n"
-				msg2 += "<button class=\"menu-button\" @click=\"open = !open\">details...</button>\n"
-				inDetails = true
-			}
+			// add pending name/state/city
+			msg2 += "    <div><b>name:</b>  " + pendingName + "</div>\n"
+			msg2 += "    <div><b>state:</b>  " + pendingState + "</div>\n"
+			msg2 += "    <div><b>city:</b>  " + pendingCity + "</div>\n"
+			msg2 += "    <div><b>level:</b>  " + pendingLevel + "</div>\n"
+			msg2 += "    </div>\n"
+			msg2 += "    </div>\n"
 
-			// process line
-			if strings.Contains(line, "majors:") {
-				// finish majors list
-				msg2 += "</div>\n"
-				inDetails = false
+			// clean up
+			pendingName = ""
+			pendingState = ""
+			pendingCity = ""
+		} else {
+			parts := strings.Split(line, ":")
+			label := parts[0]
+			rest := strings.Join(parts[1:], ":")
+			if strings.Contains(line, "_link:") {
+				// <a href="aaa" target="_blank">aaa</a>
+				label2 := label
+				label2 = strings.Replace(label2, "_link", "", -1)
+				label2 = strings.Replace(label2, "_", " ", -1)
+				// msg2 += "<li><button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button></li>\n"
+				msg2 += "<button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button>\n"
 
-				// start majors list
-				msg2 += "<div x-data=\"{ open: false }\">\n"
-				msg2 += "<button class=\"menu-button\" @click=\"open = !open\">majors...</button>\n"
-				inMajors = true
-			} else {
-				if strings.Contains(line, "mascot:") {
-					// skip
-				} else if strings.Contains(line, "latitude_logitude:") {
-					// skip
-					// finish majors list
-					msg2 += "</div>\n"
-					inMajors = false
-				} else {
-					if inDetails {
-						msg2 += "<li x-show=\"open | openall\"><b>" + label + ":</b> " + rest + "</li>\n"
-					} else {
-						msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
+			} else if strings.Contains(line, ":") {
+				if strings.Contains(line, "overview:") {
+					// replace line breaks with <br>
+					rest = strings.ReplaceAll(rest, "\\n", "<br>")
+					rest = strings.ReplaceAll(rest, "<br><br>", "<br>")
+					rest = strings.ReplaceAll(rest, "Hide Content", "")
+					// only 2nd paragraph is useful
+					parts := strings.Split(rest, "<br>")
+					if len(parts) > 1 {
+						rest = parts[1]
 					}
 				}
-			}
 
-		} else {
-			if inMajors {
-				msg2 += "<li x-show=\"open | openall\">" + indent + line + "</li>\n"
+				if strings.Contains(line, "conference:") {
+					// details button after wikipedia_link
+					msg2 += "<div x-data=\"{ open: false }\">\n"
+					msg2 += "<button class=\"menu-button\" @click=\"open = !open\">details...</button>\n"
+					inDetails = true
+				}
+
+				// process line
+				if strings.Contains(line, "majors:") {
+					// finish majors list
+					msg2 += "</div>\n"
+					inDetails = false
+
+					// start majors list
+					msg2 += "<div x-data=\"{ open: false }\">\n"
+					msg2 += "<button class=\"menu-button\" @click=\"open = !open\">majors...</button>\n"
+					inMajors = true
+				} else {
+					if strings.Contains(line, "mascot:") {
+						// skip
+					} else if strings.Contains(line, "latitude_logitude:") {
+						// skip
+						// finish majors list
+						msg2 += "</div>\n"
+						inMajors = false
+					} else {
+						if inDetails {
+							msg2 += "<li x-show=\"open | openall\"><b>" + label + ":</b> " + rest + "</li>\n"
+						} else {
+							msg2 += "<li><b>" + label + ":</b> " + rest + "</li>\n"
+						}
+					}
+				}
+
 			} else {
-				msg2 += "<li>" + indent + line + "</li>\n"
+				if inMajors {
+					msg2 += "<li x-show=\"open | openall\">" + indent + line + "</li>\n"
+				} else {
+					msg2 += "<li>" + indent + line + "</li>\n"
+				}
 			}
-		}
-		if strings.Contains(line, "majors:") {
-			indent = "&nbsp;&nbsp;&nbsp;&nbsp;"
+			if strings.Contains(line, "majors:") {
+				indent = "&nbsp;&nbsp;&nbsp;&nbsp;"
+			}
 		}
 	}
 
@@ -990,6 +1054,7 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "</div>\n" // openall
 
 	msg2 += "    </ul>\n"
+	msg2 += "    <br><br><br><br><br><br><br><br>\n"
 	msg2 += "  </body>\n"
 	msg2 += "</html>\n"
 
