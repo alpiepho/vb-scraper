@@ -46,6 +46,16 @@ a:active {
   text-decoration: none;
   color: black;
 }
+.school-title-bar {
+  display: flex;
+}
+.school-title-image {
+  display: block;
+}
+.school-title-details {
+  padding-left: 50px;
+  padding-top: 150px;
+  font-size: 20px;}
 @media only screen and (min-width: 600px) {
     button {
       font-size: 16px;
