@@ -1,0 +1,488 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body>
+  <h2>spokaneCoaches</h2>
+    <ul>
+<div x-data="{ openall: false }">
+<div x-data="{ openDI: true }">
+<div x-data="{ openDII: true }">
+<div x-data="{ openDIII: true }">
+<div x-data="{ openNAIA: true }">
+<div x-data="{ openNJCAA: true }">
+<div x-data="{ openColorado: true }">
+<div x-data="{ openMontana: true }">
+<div x-data="{ openOregon: true }">
+<div x-data="{ openWashington: true }">
+<button class="home-button"><a href="index.html">home</a></button>
+<button class="expand-button" @click="openall = !openall" :class="{ 'active': openall }">expand all...</button>
+<button class="menu-button" @click="openDI = !openDI" :class="{ 'active': openDI }">NCAA DI...</button>
+<button class="menu-button" @click="openNAIA = !openNAIA" :class="{ 'active': openNAIA }">NAIA...</button>
+<button class="menu-button" @click="openColorado = !openColorado" :class="{ 'active': openColorado }">Colorado...</button>
+<button class="menu-button" @click="openMontana = !openMontana" :class="{ 'active': openMontana }">Montana...</button>
+<button class="menu-button" @click="openOregon = !openOregon" :class="{ 'active': openOregon }">Oregon...</button>
+<button class="menu-button" @click="openWashington = !openWashington" :class="{ 'active': openWashington }">Washington...</button>
+<div x-show="openDI && openColorado">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/492_university_of_colorado_boulder.png" alt="University of Colorado, Boulder">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  University of Colorado, Boulder</div>
+    <div><b>state:</b>  Colorado</div>
+    <div><b>city:</b>  Boulder</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/colorado/university_of_colorado_boulder" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/colorado" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Colorado%2C+Boulder" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Colorado%2C+Boulder+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Colorado%2C+Boulder+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Colorado%2C+Boulder+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=University+of+Colorado%2C+Boulder+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/University_of_Colorado,_Boulder" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">details...</button>
+<li x-show="open | openall"><b>conference:</b>  Pac-12 Conference</li>
+<li x-show="open | openall"><b>academic_selectivity:</b>  More Selective</li>
+<li x-show="open | openall"><b>undergrad_enrollment:</b>  27142</li>
+<li x-show="open | openall"><b>control_affilication:</b>  Public</li>
+<li x-show="open | openall"><b>overview:</b> University Of Colorado, Boulder does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Jesse Mahoney</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  Lee Maes</li>
+<li x-show="open | openall"><b>student_ratio:</b>  18-1</li>
+<li x-show="open | openall"><b>graduation_rate:</b>  71%</li>
+<li x-show="open | openall"><b>enrollment_by_gender:</b>  55% Male / 45% Female</li>
+<li x-show="open | openall"><b>calendar_system:</b>  Semester</li>
+<li x-show="open | openall"><b>retention_rate:</b>  86%</li>
+<li x-show="open | openall"><b>on_campus_housing:</b>  Yes</li>
+<li x-show="open | openall"><b>acceptance_rate:</b>  80%</li>
+<li x-show="open | openall"><b>total_applicants:</b>  31,325</li>
+<li x-show="open | openall"><b>sat_students_submitting:</b>  38%</li>
+<li x-show="open | openall"><b>sat_reading_range:</b>  530-640</li>
+<li x-show="open | openall"><b>sat_math_range:</b>  540-660</li>
+<li x-show="open | openall"><b>sat_writing_range:</b>  Not Reported</li>
+<li x-show="open | openall"><b>act_students_submitting:</b>  77%</li>
+<li x-show="open | openall"><b>act_composite:</b>  24-30</li>
+<li x-show="open | openall"><b>act_english:</b>  24-31</li>
+<li x-show="open | openall"><b>act_math:</b>  24-29</li>
+<li x-show="open | openall"><b>act_writing:</b>  Not Reported</li>
+<li x-show="open | openall"><b>requirements_open_admission_policy:</b>  No</li>
+<li x-show="open | openall"><b>requirements_application_fee:</b>  $50</li>
+<li x-show="open | openall"><b>requirements_recomedations:</b>  Recommended</li>
+<li x-show="open | openall"><b>requirements_secondary_school_record:</b>  Required</li>
+<li x-show="open | openall"><b>requirements_secondary_school_rank:</b>  Recommended</li>
+<li x-show="open | openall"><b>requirements_secondary_school_gpa:</b>  Required</li>
+<li x-show="open | openall"><b>cost_in_state_total:</b>  $29,215</li>
+<li x-show="open | openall"><b>cost_in_state_tuition:</b>  $8,760</li>
+<li x-show="open | openall"><b>cost_in_state_fee:</b>  $1,587</li>
+<li x-show="open | openall"><b>cost_in_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_out_state_total:</b>  $52,763</li>
+<li x-show="open | openall"><b>cost_out_state_tuition:</b>  $30,528</li>
+<li x-show="open | openall"><b>cost_out_state_fee:</b>  $1,587</li>
+<li x-show="open | openall"><b>cost_out_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_percent_undergrad_aid:</b>  59%</li>
+</div>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">majors...</button>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Environmental Design/Architecture</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;English Language and Literature, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Dance, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Drama and Dramatics/Theatre Arts, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Film/Cinema/Video Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Fine/Studio Arts, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Art History, Criticism and Conservation</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music Performance, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Linguistics</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Chinese Language and Literature</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Japanese Language and Literature</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Germanic Languages, Literatures, and Linguistics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;French Language and Literature</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Italian Language and Literature</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Spanish Language and Literature</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Classics and Classical Languages, Literatures, and Linguistics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Philosophy</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Religion/Religious Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Jewish/Judaic Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Business Administration and Management, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Communication Sciences and Disorders, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;American/United States Studies/Civilization</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Asian Studies/Civilization</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Russian, Central European, East European and Eurasian Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Russian Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Ethnic Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Women's Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;International/Global Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Multi-/Interdisciplinary Studies, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Humanities/Humanistic Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Environmental Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Engineering, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aerospace, Aeronautical and Astronautical/Space Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Architectural Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Chemical Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Civil Engineering, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer Engineering, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Electrical and Electronics Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Engineering Physics/Applied Physics</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Environmental/Environmental Health Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mechanical Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biochemical Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mathematics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Applied Mathematics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer Science</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biochemistry</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Cell/Cellular and Molecular Biology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physiology, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Ecology and Evolutionary Biology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Neuroscience</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Astronomy</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Chemistry, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Geology/Earth Science, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Speech Communication and Rhetoric</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mass Communication/Media Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Communication and Media Studies, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Journalism</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Journalism, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Anthropology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Economics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Geography</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
+</div>
+    </ul>
+</div>
+<div x-show="openDI && openMontana">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/855_montana_state_university_bozeman.png" alt="Montana State University, Bozeman">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Montana State University, Bozeman</div>
+    <div><b>state:</b>  Montana</div>
+    <div><b>city:</b>  Bozeman</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/montana/montana_state_university_bozeman" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/montana" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Montana+State+University%2C+Bozeman" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Montana+State+University%2C+Bozeman+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Montana+State+University%2C+Bozeman+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Montana+State+University%2C+Bozeman+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Montana+State+University%2C+Bozeman+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Montana_State_University,_Bozeman" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">details...</button>
+<li x-show="open | openall"><b>conference:</b>  Big Sky Conference</li>
+<li x-show="open | openall"><b>academic_selectivity:</b>  Least Selective</li>
+<li x-show="open | openall"><b>undergrad_enrollment:</b>  13633</li>
+<li x-show="open | openall"><b>control_affilication:</b>  Public</li>
+<li x-show="open | openall"><b>overview:</b>  Read More</li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Matt Houk</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b> </li>
+<li x-show="open | openall"><b>student_ratio:</b>  19-1</li>
+<li x-show="open | openall"><b>graduation_rate:</b>  52%</li>
+<li x-show="open | openall"><b>enrollment_by_gender:</b>  55% Male / 45% Female</li>
+<li x-show="open | openall"><b>calendar_system:</b>  Semester</li>
+<li x-show="open | openall"><b>retention_rate:</b>  76%</li>
+<li x-show="open | openall"><b>on_campus_housing:</b>  Yes</li>
+<li x-show="open | openall"><b>acceptance_rate:</b>  83%</li>
+<li x-show="open | openall"><b>total_applicants:</b>  14,816</li>
+<li x-show="open | openall"><b>sat_students_submitting:</b>  33%</li>
+<li x-show="open | openall"><b>sat_reading_range:</b>  510-630</li>
+<li x-show="open | openall"><b>sat_math_range:</b>  510-640</li>
+<li x-show="open | openall"><b>sat_writing_range:</b>  490-610</li>
+<li x-show="open | openall"><b>act_students_submitting:</b>  77%</li>
+<li x-show="open | openall"><b>act_composite:</b>  21-28</li>
+<li x-show="open | openall"><b>act_english:</b>  20-27</li>
+<li x-show="open | openall"><b>act_math:</b>  21-28</li>
+<li x-show="open | openall"><b>act_writing:</b>  Not Reported</li>
+<li x-show="open | openall"><b>requirements_open_admission_policy:</b>  No</li>
+<li x-show="open | openall"><b>requirements_application_fee:</b>  $30</li>
+<li x-show="open | openall"><b>requirements_recomedations:</b>  Neither required nor recommended</li>
+<li x-show="open | openall"><b>requirements_secondary_school_record:</b>  Required</li>
+<li x-show="open | openall"><b>requirements_secondary_school_rank:</b>  Required</li>
+<li x-show="open | openall"><b>requirements_secondary_school_gpa:</b>  Required</li>
+<li x-show="open | openall"><b>cost_in_state_total:</b>  $20,467</li>
+<li x-show="open | openall"><b>cost_in_state_tuition:</b>  $5,330</li>
+<li x-show="open | openall"><b>cost_in_state_fee:</b>  $1,422</li>
+<li x-show="open | openall"><b>cost_in_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_out_state_total:</b>  $36,766</li>
+<li x-show="open | openall"><b>cost_out_state_tuition:</b>  $19,157</li>
+<li x-show="open | openall"><b>cost_out_state_fee:</b>  $1,560</li>
+<li x-show="open | openall"><b>cost_out_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_percent_undergrad_aid:</b>  87%</li>
+</div>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">majors...</button>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Environmental Design/Architecture</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;English Language and Literature, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Interior Design</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Cinematography and Film/Video Production</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Art/Art Studies, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Foreign Languages and Literatures, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Philosophy</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Religion/Religious Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Business/Commerce, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Finance and Financial Management Services, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Registered Nursing/Registered Nurse</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Family and Consumer Sciences/Human Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sustainability Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Liberal Arts and Sciences/Liberal Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;General Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Agricultural Business and Management, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Animal Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Plant Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer Science</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mechanical Engineering/Mechanical Technology/Technician</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Construction Engineering Technology/Technician</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;CAD/CADD Drafting and/or Design Technology/Technician</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mathematics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Statistics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Natural Resources/Conservation, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Environmental Science</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Land Use Planning and Management/Development</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Wildlife, Fish and Wildlands Science and Management</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Bioengineering and Biomedical Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Chemical Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Civil Engineering, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer Engineering, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Electrical and Electronics Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mechanical Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Industrial Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biology/Biological Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Cell/Cellular Biology and Histology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Medical Microbiology and Bacteriology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biotechnology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Chemistry, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Geology/Earth Science, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Elementary Education and Teaching</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Agricultural Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Science Teacher Education/General Science Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Science Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Technical Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Anthropology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Economics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aeronautics/Aviation/Aerospace Science and Technology, General</li>
+</div>
+    </ul>
+</div>
+<div x-show="openNAIA && openOregon">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1846_eastern_oregon_university.png" alt="Eastern Oregon University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Eastern Oregon University</div>
+    <div><b>state:</b>  Oregon</div>
+    <div><b>city:</b>  La Grande</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon/eastern_oregon_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/oregon" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Eastern+Oregon+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Eastern_Oregon_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">details...</button>
+<li x-show="open | openall"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
+<li x-show="open | openall"><b>academic_selectivity:</b>  Less Selective</li>
+<li x-show="open | openall"><b>undergrad_enrollment:</b>  3128</li>
+<li x-show="open | openall"><b>control_affilication:</b>  Public</li>
+<li x-show="open | openall"><b>overview:</b> Eastern Oregon University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Kaki McLean Morehead</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  Taylor Tibbetts</li>
+<li x-show="open | openall"><b>student_ratio:</b>  17-1</li>
+<li x-show="open | openall"><b>graduation_rate:</b>  26%</li>
+<li x-show="open | openall"><b>enrollment_by_gender:</b>  38% Male / 62% Female</li>
+<li x-show="open | openall"><b>calendar_system:</b>  Quarter</li>
+<li x-show="open | openall"><b>retention_rate:</b>  57%</li>
+<li x-show="open | openall"><b>on_campus_housing:</b>  Yes</li>
+<li x-show="open | openall"><b>acceptance_rate:</b>  97%</li>
+<li x-show="open | openall"><b>total_applicants:</b>  994</li>
+<li x-show="open | openall"><b>sat_students_submitting:</b>  70%</li>
+<li x-show="open | openall"><b>sat_reading_range:</b>  420-530</li>
+<li x-show="open | openall"><b>sat_math_range:</b>  420-520</li>
+<li x-show="open | openall"><b>sat_writing_range:</b>  400-490</li>
+<li x-show="open | openall"><b>act_students_submitting:</b>  22%</li>
+<li x-show="open | openall"><b>act_composite:</b>  18-23</li>
+<li x-show="open | openall"><b>act_english:</b>  15-23</li>
+<li x-show="open | openall"><b>act_math:</b>  17-23</li>
+<li x-show="open | openall"><b>act_writing:</b>  6-8</li>
+<li x-show="open | openall"><b>requirements_open_admission_policy:</b>  No</li>
+<li x-show="open | openall"><b>requirements_application_fee:</b>  $50</li>
+<li x-show="open | openall"><b>requirements_recomedations:</b>  Recommended</li>
+<li x-show="open | openall"><b>requirements_secondary_school_record:</b>  Required</li>
+<li x-show="open | openall"><b>requirements_secondary_school_rank:</b>  Recommended</li>
+<li x-show="open | openall"><b>requirements_secondary_school_gpa:</b>  Required</li>
+<li x-show="open | openall"><b>cost_in_state_total:</b>  $21,314</li>
+<li x-show="open | openall"><b>cost_in_state_tuition:</b>  $6,120</li>
+<li x-show="open | openall"><b>cost_in_state_fee:</b>  $1,410</li>
+<li x-show="open | openall"><b>cost_in_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_out_state_total:</b>  $31,955</li>
+<li x-show="open | openall"><b>cost_out_state_tuition:</b>  $15,345</li>
+<li x-show="open | openall"><b>cost_out_state_fee:</b>  $1,410</li>
+<li x-show="open | openall"><b>cost_out_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_percent_undergrad_aid:</b>  94%</li>
+</div>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">majors...</button>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;English Language and Literature, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Drama and Dramatics/Theatre Arts, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Art/Art Studies, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Philosophy</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Business/Commerce, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Business Administration, Management and Operations, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Liberal Arts and Sciences/Liberal Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Humanities/Humanistic Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Health and Physical Education/Fitness, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Fire Services Administration</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Public Administration</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer and Information Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mathematics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biology/Biological Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biochemistry</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Chemistry, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mass Communication/Media Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Education, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Education, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Economics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Sciences, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Economy</li>
+</div>
+    </ul>
+</div>
+<div x-show="openNAIA && openWashington">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/1761_northwest_university.png" alt="Northwest University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Northwest University</div>
+    <div><b>state:</b>  Washington</div>
+    <div><b>city:</b>  Kirkland</div>
+    <div><b>level:</b>  NAIA</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington/northwest_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/washington" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Northwest+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Northwest_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">details...</button>
+<li x-show="open | openall"><b>conference:</b>  Cascade Collegiate Conference (CCC)</li>
+<li x-show="open | openall"><b>academic_selectivity:</b>  Selective</li>
+<li x-show="open | openall"><b>undergrad_enrollment:</b>  930</li>
+<li x-show="open | openall"><b>control_affilication:</b>  Private not-for-profit (religious affiliation)</li>
+<li x-show="open | openall"><b>overview:</b> Northwest University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Steve Bain</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  Rachael Carbary</li>
+<li x-show="open | openall"><b>student_ratio:</b>  10-1</li>
+<li x-show="open | openall"><b>graduation_rate:</b>  51%</li>
+<li x-show="open | openall"><b>enrollment_by_gender:</b>  34% Male / 66% Female</li>
+<li x-show="open | openall"><b>calendar_system:</b>  Semester</li>
+<li x-show="open | openall"><b>retention_rate:</b>  82%</li>
+<li x-show="open | openall"><b>on_campus_housing:</b>  Yes</li>
+<li x-show="open | openall"><b>acceptance_rate:</b>  64%</li>
+<li x-show="open | openall"><b>total_applicants:</b>  766</li>
+<li x-show="open | openall"><b>sat_students_submitting:</b>  81%</li>
+<li x-show="open | openall"><b>sat_reading_range:</b>  440-560</li>
+<li x-show="open | openall"><b>sat_math_range:</b>  430-550</li>
+<li x-show="open | openall"><b>sat_writing_range:</b>  420-540</li>
+<li x-show="open | openall"><b>act_students_submitting:</b>  33%</li>
+<li x-show="open | openall"><b>act_composite:</b>  19-24</li>
+<li x-show="open | openall"><b>act_english:</b>  17-25</li>
+<li x-show="open | openall"><b>act_math:</b>  18-24</li>
+<li x-show="open | openall"><b>act_writing:</b>  8-9</li>
+<li x-show="open | openall"><b>requirements_open_admission_policy:</b>  No</li>
+<li x-show="open | openall"><b>requirements_application_fee:</b>  $30</li>
+<li x-show="open | openall"><b>requirements_recomedations:</b>  Required</li>
+<li x-show="open | openall"><b>requirements_secondary_school_record:</b>  Required</li>
+<li x-show="open | openall"><b>requirements_secondary_school_rank:</b>  Neither required nor recommended</li>
+<li x-show="open | openall"><b>requirements_secondary_school_gpa:</b>  Required</li>
+<li x-show="open | openall"><b>cost_in_state_total:</b>  $41,350</li>
+<li x-show="open | openall"><b>cost_in_state_tuition:</b>  $25,390</li>
+<li x-show="open | openall"><b>cost_in_state_fee:</b>  $544</li>
+<li x-show="open | openall"><b>cost_in_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_out_state_total:</b>  $41,350</li>
+<li x-show="open | openall"><b>cost_out_state_tuition:</b>  $25,390</li>
+<li x-show="open | openall"><b>cost_out_state_fee:</b>  $544</li>
+<li x-show="open | openall"><b>cost_out_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_percent_undergrad_aid:</b>  99%</li>
+</div>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">majors...</button>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;English Language and Literature, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music Theory and Composition</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music Technology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Business Administration and Management, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Accounting</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Marketing/Marketing Management, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Registered Nursing/Registered Nurse</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;General Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Health and Physical Education/Fitness, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Kinesiology and Exercise Science</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Bible/Biblical Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Missions/Missionary Studies and Missiology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Theological and Ministerial Studies, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Environmental Science</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mathematics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biology/Biological Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Organizational Communication, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Elementary Education and Teaching</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Secondary Education and Teaching</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;English/Language Arts Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mathematics Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Studies Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biology Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physics Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
+</div>
+</div> <!-- openColorado -->
+</div> <!-- openMontana -->
+</div> <!-- openOregon -->
+</div> <!-- openWashington -->
+</div> <!-- openNJCAA -->
+</div> <!-- openNAIA -->
+</div> <!-- openDIII -->
+</div> <!-- openDII -->
+</div> <!-- openDI -->
+</div> <!-- openall -->
+    </ul>
+    <br><br><br><br><br><br><br><br>
+  </body>
+</html>

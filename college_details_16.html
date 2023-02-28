@@ -12,14 +12,33 @@
 <div x-data="{ openDIII: true }">
 <div x-data="{ openNAIA: true }">
 <div x-data="{ openNJCAA: true }">
+<div x-data="{ openArizona: true }">
+<div x-data="{ openFlorida: true }">
+<div x-data="{ openGeorgia: true }">
+<div x-data="{ openKansas: true }">
+<div x-data="{ openMaryland: true }">
+<div x-data="{ openMontana: true }">
+<div x-data="{ openNewYork: true }">
+<div x-data="{ openNorthCarolina: true }">
+<div x-data="{ openPennsylvania: true }">
+<div x-data="{ openSouthCarolina: true }">
+<div x-data="{ openTexas: true }">
 <button class="home-button"><a href="index.html">home</a></button>
 <button class="expand-button" @click="openall = !openall" :class="{ 'active': openall }">expand all...</button>
 <button class="menu-button" @click="openDI = !openDI" :class="{ 'active': openDI }">NCAA DI...</button>
 <button class="menu-button" @click="openDII = !openDII" :class="{ 'active': openDII }">NCAA DII...</button>
-<button class="menu-button" @click="openDIII = !openDIII" :class="{ 'active': openDIII }">NCAA DIII...</button>
-<button class="menu-button" @click="openNAIA = !openNAIA" :class="{ 'active': openNAIA }">NAIA...</button>
-<button class="menu-button" @click="openNJCAA = !openNJCAA" :class="{ 'active': openNJCAA }">NJCAA...</button>
-<div x-show="openDI">
+<button class="menu-button" @click="openArizona = !openArizona" :class="{ 'active': openArizona }">Arizona...</button>
+<button class="menu-button" @click="openFlorida = !openFlorida" :class="{ 'active': openFlorida }">Florida...</button>
+<button class="menu-button" @click="openGeorgia = !openGeorgia" :class="{ 'active': openGeorgia }">Georgia...</button>
+<button class="menu-button" @click="openKansas = !openKansas" :class="{ 'active': openKansas }">Kansas...</button>
+<button class="menu-button" @click="openMaryland = !openMaryland" :class="{ 'active': openMaryland }">Maryland...</button>
+<button class="menu-button" @click="openMontana = !openMontana" :class="{ 'active': openMontana }">Montana...</button>
+<button class="menu-button" @click="openNewYork = !openNewYork" :class="{ 'active': openNewYork }">NewYork...</button>
+<button class="menu-button" @click="openNorthCarolina = !openNorthCarolina" :class="{ 'active': openNorthCarolina }">NorthCarolina...</button>
+<button class="menu-button" @click="openPennsylvania = !openPennsylvania" :class="{ 'active': openPennsylvania }">Pennsylvania...</button>
+<button class="menu-button" @click="openSouthCarolina = !openSouthCarolina" :class="{ 'active': openSouthCarolina }">SouthCarolina...</button>
+<button class="menu-button" @click="openTexas = !openTexas" :class="{ 'active': openTexas }">Texas...</button>
+<div x-show="openDI && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -177,7 +196,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -282,7 +301,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -458,7 +477,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openFlorida">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -574,7 +593,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openFlorida">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -700,7 +719,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openFlorida">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -800,7 +819,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openFlorida">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -918,7 +937,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openFlorida">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1070,7 +1089,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openFlorida">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1190,7 +1209,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openGeorgia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1298,7 +1317,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openKansas">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1419,7 +1438,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openKansas">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1558,7 +1577,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openMaryland">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1673,7 +1692,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openMontana">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1816,7 +1835,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNewYork">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1928,7 +1947,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNewYork">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2067,7 +2086,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNorthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2202,7 +2221,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNorthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2297,7 +2316,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNorthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2449,7 +2468,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNorthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2588,7 +2607,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNorthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2698,7 +2717,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openPennsylvania">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2831,7 +2850,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openSouthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2963,7 +2982,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openSouthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3081,7 +3100,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openSouthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3192,7 +3211,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openSouthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3301,7 +3320,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openSouthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3390,7 +3409,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openSouthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3482,7 +3501,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openSouthCarolina">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3585,7 +3604,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openTexas">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3737,12 +3756,23 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aeronautics/Aviation/Aerospace Science and Technology, General</li>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+</div> <!-- openArizona -->
+</div> <!-- openFlorida -->
+</div> <!-- openGeorgia -->
+</div> <!-- openKansas -->
+</div> <!-- openMaryland -->
+</div> <!-- openMontana -->
+</div> <!-- openNewYork -->
+</div> <!-- openNorthCarolina -->
+</div> <!-- openPennsylvania -->
+</div> <!-- openSouthCarolina -->
+</div> <!-- openTexas -->
+</div> <!-- openNJCAA -->
+</div> <!-- openNAIA -->
+</div> <!-- openDIII -->
+</div> <!-- openDII -->
+</div> <!-- openDI -->
+</div> <!-- openall -->
     </ul>
     <br><br><br><br><br><br><br><br>
   </body>
