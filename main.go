@@ -853,6 +853,10 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "  </head>\n"
 
 	msg2 += "  <body>\n"
+	title := CONFIG_FILE
+	title = strings.Replace(title, ".json", "", -1)
+	title = strings.Replace(title, "config_", "", -1)
+	msg2 += "  <h2>" + title + "</h2>\n"
 	msg2 += "    <ul>\n"
 	msg2 += "<div x-data=\"{ openall: false }\">\n"
 	msg2 += "<div x-data=\"{ openDI: true }\">\n"
@@ -860,6 +864,7 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "<div x-data=\"{ openDIII: true }\">\n"
 	msg2 += "<div x-data=\"{ openNAIA: true }\">\n"
 	msg2 += "<div x-data=\"{ openNJCAA: true }\">\n"
+	msg2 += "<button class=\"home-button\"><a href=\"index.html\">home</a></button>\n"
 	msg2 += "<button class=\"expand-button\" @click=\"openall = !openall\" :class=\"{ 'active': openall }\">expand all...</button>\n"
 	msg2 += "<button class=\"menu-button\" @click=\"openDI = !openDI\" :class=\"{ 'active': openDI }\">NCAA DI...</button>\n"
 	msg2 += "<button class=\"menu-button\" @click=\"openDII = !openDII\" :class=\"{ 'active': openDII }\">NCAA DII...</button>\n"
