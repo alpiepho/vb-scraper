@@ -76,14 +76,16 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 - [x] generate html output
 - [ ] build map (scrape site to get lat/long)
 
-- [ ] alpine.js, expand all
-- [ ] alpine.js, filters: level, state, cost?
-- [ ] cleaner buttons
-- [ ] labels as links (no url on page)
-- [ ] no logo link
-- [ ] remove label under scores
-- [ ] fonts?
-- [ ] mascot (link for mascot)
+- [x] alpine.js, expand all
+- [x] alpine.js, filters: level
+- [ ] alpine.js, filters: state
+- [ ] alpine.js, filters: other?
+- [x] cleaner buttons
+- [x] labels as links (no url on page)
+- [x] no logo link
+- [x] remove label under scores
+- [x] fonts?
+- [-] mascot (link for mascot)
 - [ ] link to google map? (ex. https://www.google.com/maps/search/?api=1&query=Northern+Arizona+University)
 - [ ] tbd
  
@@ -117,3 +119,124 @@ or to gather all the output:
 - https://pkg.go.dev/github.com/chromedp/chromedp@v0.8.0#Text
 - calc distance:
 - https://gist.github.com/hotdang-ca/6c1ee75c48e515aec5bc6db6e3265e49
+
+
+
+## APENDIX: pending kip2
+<pre>
+Las Vegas
+Arizona Christian
+Eastern Washington.
+Georgia
+George Fox
+Kean 
+Le moine
+Linfield 
+Mcla
+Midwestern state 
+Nevada 
+New Mexico State 
+Northern arizona 
+Occidental 
+Pacific
+Pacific Lutheran
+Providence. 
+Puget sound
+Southern Connecticut 
+UNLV
+Temple
+Washington college 
+Westminster. 
+Whitman 
+William Paterson
+
+
+
+NIT
+Arkansas state x2
+Babson x2
+Baker 
+Belmont
+Cameron 
+Colorado College
+Cornell college
+Creighton x3
+Elon x2
+Emporia 
+Georgia
+Georgia tech
+Gettysburg
+Graceland
+Grand Canyon x2
+Grand valley
+Harvard
+Houston x2
+Iowa x3
+Iowa state x2 
+Kansas 
+Lehigh
+Loyola 
+Marist 
+Mason.  Emerson 
+Mesa
+Michigan
+Middlebury
+Ohio state 
+Oregon state 
+Palm beach Atlantic
+Rhodes 
+Sac state 
+Samford Christian school 
+Seattle pacific
+Sewanee
+SFA x2
+Southern Utah 
+Texas x2
+UCF x2
+UNLV 
+UTSA x2
+Washington 
+West Virginia x3 
+Western Carolina.  Shorter athletic on move was
+Westmont 
+</pre>
+ 
+## APENDIX: pending kip spokane tour
+
+<pre>
+Seattle U
+UW
+Seattle Pacific
+Northwest Nazarene
+Lewis and Clark (ID)
+Pacific Lutheran
+Pacific
+Linfield
+Geogre Fox
+Eastern Washington
+</pre>
+
+## APENDIX: pending kip camp
+
+<pre>
+Southern Utah
+Creighton
+Lehigh
+Westmont
+Oklahoma Christian
+Iowa
+Mesa
+Pacific
+Emporia State
+Friends
+Cameron
+Arkansas State
+Bethel
+Anderson
+Temple
+Lynn
+Nova
+Flagler
+</pre>
+
+

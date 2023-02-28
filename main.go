@@ -24,10 +24,15 @@ import (
 // const CONFIG_FILE = "config.json"
 // const CONFIG_FILE = "config_all.json"
 // const CONFIG_FILE = "config_spokane300.json"
+// const CONFIG_FILE = "config_spokaneStates.json"
+// const CONFIG_FILE = "config_spokaneCoaches.json"
 // const CONFIG_FILE = "config_chicago300.json"
 // const CONFIG_FILE = "config_chicago100.json"
 // const CONFIG_FILE = "config_reno300.json"
-// const CONFIG_FILE = "config_kip.json"
+// const CONFIG_FILE = "config_kip.json"        // ???
+// const CONFIG_FILE = "config_kip2.json"       // ???
+// const CONFIG_FILE = "config_kipSpokane.json" // ???
+// const CONFIG_FILE = "config_kipCamp.json"    // ???
 // const CONFIG_FILE = "config_16.json"
 const CONFIG_FILE = "config_16.json"
 
@@ -420,7 +425,21 @@ func stateIndex(name string) int {
 		}
 	}
 	return 100
+}
 
+func distance(lat1 float64, lng1 float64, lat2 float64, lng2 float64) float64 {
+	radlat1 := float64(math.Pi * lat1 / 180)
+	radlat2 := float64(math.Pi * lat2 / 180)
+	theta := float64(lng1 - lng2)
+	radtheta := float64(math.Pi * theta / 180)
+	dist := math.Sin(radlat1)*math.Sin(radlat2) + math.Cos(radlat1)*math.Cos(radlat2)*math.Cos(radtheta)
+	if dist > 1 {
+		dist = 1
+	}
+	dist = math.Acos(dist)
+	dist = dist * 180 / math.Pi
+	dist = dist * 60 * 1.1515
+	return dist
 }
 
 func checkCollegeLat(colleges *[]College) {
@@ -440,9 +459,16 @@ func checkCollegeLat(colleges *[]College) {
 		lngStr := strings.TrimSpace(parts[1])
 		lat, _ := strconv.ParseFloat(latStr, 64)
 		lng, _ := strconv.ParseFloat(lngStr, 64)
-		avgLats[index] += lat
-		avgLngs[index] += lng
-		avgCnts[index] += 1
+		// WARNING: assume US where lat > 0 and lng < 0
+		if lat > 0 && lng < 0 {
+			avgLats[index] += lat
+			avgLngs[index] += lng
+			avgCnts[index] += 1
+		}
+		// DEBUG
+		// if college.State == "Alabama" {
+		// 	fmt.Printf("%-40s: %s, %s; %f  %f  %d\n", college.Name, latStr, lngStr, avgLats[index], avgLngs[index], avgCnts[index])
+		// }
 	}
 	for i := 0; i < 52; i++ {
 		if avgCnts[i] > 0 {
@@ -460,12 +486,18 @@ func checkCollegeLat(colleges *[]College) {
 		lngStr := strings.TrimSpace(parts[1])
 		lat, _ := strconv.ParseFloat(latStr, 64)
 		lng, _ := strconv.ParseFloat(lngStr, 64)
-		if (math.Abs(lat)-math.Abs(avgLats[index]) > 5) ||
-			(math.Abs(lng)-math.Abs(avgLngs[index]) > 10) {
+		distMiles := distance(lat, lng, avgLats[index], avgLngs[index])
+		// WARNING: assume US where lat > 0 and lng < 0
+		if distMiles > 500 || lat < 0 || lng > 0 {
+			// DEBUG
+			// if college.State != "Alabama" {
+			// 	continue
+			// }
 			fmt.Printf("bad lat/lng:\n")
 			fmt.Printf("  name      : %s\n", college.Name)
 			fmt.Printf("  current   : %f, %f\n", lat, lng)
 			fmt.Printf("  state avg : %f, %f\n", avgLats[index], avgLngs[index])
+			fmt.Printf("  distance  : %f\n", distMiles)
 			url := "https://www.google.com/search?q=latitude+" + strings.Replace(college.Name, " ", "+", -1)
 			fmt.Printf("  google lat: %s\n", url)
 		}
@@ -496,21 +528,6 @@ func testLevelSkip(name string) bool {
 		return false
 	}
 	return true
-}
-
-func distance(lat1 float64, lng1 float64, lat2 float64, lng2 float64) float64 {
-	radlat1 := float64(math.Pi * lat1 / 180)
-	radlat2 := float64(math.Pi * lat2 / 180)
-	theta := float64(lng1 - lng2)
-	radtheta := float64(math.Pi * theta / 180)
-	dist := math.Sin(radlat1)*math.Sin(radlat2) + math.Cos(radlat1)*math.Cos(radlat2)*math.Cos(radtheta)
-	if dist > 1 {
-		dist = 1
-	}
-	dist = math.Acos(dist)
-	dist = dist * 180 / math.Pi
-	dist = dist * 60 * 1.1515
-	return dist
 }
 
 func testLocationSkip(latlong string) bool {
@@ -815,6 +832,36 @@ func detailFromName(details *[]CollegeDetail, name string) CollegeDetail {
 	return result
 }
 
+func anyLevel(level string, details *[]CollegeDetail) bool {
+	result := false
+	for _, detail := range *details {
+		if level == detail.Level {
+			result = true
+		}
+	}
+	return result
+}
+
+func unique(stringSlice []string) []string {
+	keys := make(map[string]bool)
+	list := []string{}
+	for _, entry := range stringSlice {
+		if _, value := keys[entry]; !value {
+			keys[entry] = true
+			list = append(list, entry)
+		}
+	}
+	return list
+}
+
+func statesUsed(details *[]CollegeDetail) []string {
+	var result []string
+	for _, detail := range *details {
+		result = append(result, detail.State)
+	}
+	return unique(result)
+}
+
 func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	if len(appConfig.ExportCollegeDetailsHtmlFile) == 0 {
 		return
@@ -864,13 +911,35 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "<div x-data=\"{ openDIII: true }\">\n"
 	msg2 += "<div x-data=\"{ openNAIA: true }\">\n"
 	msg2 += "<div x-data=\"{ openNJCAA: true }\">\n"
+
+	states := statesUsed(details)
+	for _, state := range states {
+		s := strings.ReplaceAll(state, " ", "")
+		msg2 += "<div x-data=\"{ open" + s + ": true }\">\n"
+	}
+
 	msg2 += "<button class=\"home-button\"><a href=\"index.html\">home</a></button>\n"
 	msg2 += "<button class=\"expand-button\" @click=\"openall = !openall\" :class=\"{ 'active': openall }\">expand all...</button>\n"
-	msg2 += "<button class=\"menu-button\" @click=\"openDI = !openDI\" :class=\"{ 'active': openDI }\">NCAA DI...</button>\n"
-	msg2 += "<button class=\"menu-button\" @click=\"openDII = !openDII\" :class=\"{ 'active': openDII }\">NCAA DII...</button>\n"
-	msg2 += "<button class=\"menu-button\" @click=\"openDIII = !openDIII\" :class=\"{ 'active': openDIII }\">NCAA DIII...</button>\n"
-	msg2 += "<button class=\"menu-button\" @click=\"openNAIA = !openNAIA\" :class=\"{ 'active': openNAIA }\">NAIA...</button>\n"
-	msg2 += "<button class=\"menu-button\" @click=\"openNJCAA = !openNJCAA\" :class=\"{ 'active': openNJCAA }\">NJCAA...</button>\n"
+
+	if anyLevel("NCAA DI", details) {
+		msg2 += "<button class=\"menu-button\" @click=\"openDI = !openDI\" :class=\"{ 'active': openDI }\">NCAA DI...</button>\n"
+	}
+	if anyLevel("NCAA DII", details) {
+		msg2 += "<button class=\"menu-button\" @click=\"openDII = !openDII\" :class=\"{ 'active': openDII }\">NCAA DII...</button>\n"
+	}
+	if anyLevel("NCAA DIII", details) {
+		msg2 += "<button class=\"menu-button\" @click=\"openDIII = !openDIII\" :class=\"{ 'active': openDIII }\">NCAA DIII...</button>\n"
+	}
+	if anyLevel("NAIA", details) {
+		msg2 += "<button class=\"menu-button\" @click=\"openNAIA = !openNAIA\" :class=\"{ 'active': openNAIA }\">NAIA...</button>\n"
+	}
+	if anyLevel("NJCAA", details) {
+		msg2 += "<button class=\"menu-button\" @click=\"openNJCAA = !openNJCAA\" :class=\"{ 'active': openNJCAA }\">NJCAA...</button>\n"
+	}
+	for _, state := range states {
+		s := strings.ReplaceAll(state, " ", "")
+		msg2 += "<button class=\"menu-button\" @click=\"open" + s + " = !open" + s + "\" :class=\"{ 'active': open" + s + " }\">" + s + "...</button>\n"
+	}
 
 	indent := ""
 	count := 0
@@ -885,49 +954,16 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 		if len(line) == 0 {
 			continue
 		}
-		fmt.Println(line)
 		if strings.Contains(line, "logo_link:") {
 			continue
 		}
-		// if strings.Contains(line, "state_link:") {
-		// 	continue
-		// }
-		// if strings.HasPrefix(line, "name:") {
-		// 	inDetails = false
-		// 	fmt.Println(line)
-		// 	count += 1
-		// 	if count > 1 {
-		// 		// close previous list
-		// 		msg2 += "    </ul>\n"
-		// 		// close previous level filter div
-		// 		msg2 += "</div>\n"
-		// 	}
-
-		// 	name := strings.Replace(line, "name:", "", -1)
-		// 	name = strings.TrimSpace(name)
-		// 	detail := detailFromName(details, name)
-
-		// 	// level filter div
-		// 	openFlag := detail.Level
-		// 	openFlag = strings.Replace(openFlag, "NCAA", "", -1)
-		// 	openFlag = strings.TrimSpace(openFlag)
-		// 	msg2 += "    <div x-show=\"open" + openFlag + "\">\n"
-		// 	// set anchor for this list
-		// 	msg2 += "    <ul>\n"
-		// 	// msg2 += "    <ul x-data=\"{ open: false }\">\n"
-
-		// 	// add logo
-		// 	msg2 += "    <img src=\"" + detail.LogoLink + "\"\n"
-		// 	msg2 += "    <img alt=\"" + detail.Name + "\"\n"
-		// 	msg2 += "    >\n"
-		// }
 		if strings.HasPrefix(line, "name:") {
 			value := strings.Replace(line, "name:", "", -1)
 			value = strings.TrimSpace(value)
 			pendingName = value
 
 			inDetails = false
-			fmt.Println(line)
+			// fmt.Println(line)
 			count += 1
 			if count > 1 {
 				// close previous list
@@ -955,6 +991,8 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			openFlag := detail.Level
 			openFlag = strings.Replace(openFlag, "NCAA", "", -1)
 			openFlag = strings.TrimSpace(openFlag)
+			s := strings.ReplaceAll(detail.State, " ", "")
+			openFlag += " && open" + s
 			msg2 += "<div x-show=\"open" + openFlag + "\">\n"
 			msg2 += "    <ul>\n"
 
@@ -1051,12 +1089,17 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 		}
 	}
 
-	msg2 += "</div>\n" // openNJCAA
-	msg2 += "</div>\n" // openNAIA
-	msg2 += "</div>\n" // openDIII
-	msg2 += "</div>\n" // openDII
-	msg2 += "</div>\n" // openDI
-	msg2 += "</div>\n" // openall
+	for _, state := range states {
+		s := strings.ReplaceAll(state, " ", "")
+		msg2 += "</div> <!-- open" + s + " -->\n"
+	}
+
+	msg2 += "</div> <!-- openNJCAA -->\n"
+	msg2 += "</div> <!-- openNAIA -->\n"
+	msg2 += "</div> <!-- openDIII -->\n"
+	msg2 += "</div> <!-- openDII -->\n"
+	msg2 += "</div> <!-- openDI -->\n"
+	msg2 += "</div> <!-- openall -->\n"
 
 	msg2 += "    </ul>\n"
 	msg2 += "    <br><br><br><br><br><br><br><br>\n"
