@@ -21,7 +21,7 @@ overview: This is the Boise State University (Idaho) Volleyball scholarship and 
 head_coach_name: Shawn Garus
 assistant_coach_name: Candy Murphy
 student_ratio: 17-1
-garduation_rate: 39%
+graduation_rate: 39%
 enrollment_by_gender: 46% Male / 54% Female
 calendar_system: Semester
 retention_rate: 76%
@@ -175,7 +175,7 @@ overview: This is the College Of Idaho (Idaho) Volleyball scholarship and progra
 head_coach_name: Liz Mendiola
 assistant_coach_name: 
 student_ratio: 10-1
-garduation_rate: 68%
+graduation_rate: 68%
 enrollment_by_gender: 49% Male / 51% Female
 calendar_system: Four-one-four plan
 retention_rate: 82%
@@ -263,7 +263,7 @@ overview: This is the Lewis-Clark State College (Idaho) Volleyball scholarship a
 head_coach_name: Shaun Pohlman
 assistant_coach_name: 
 student_ratio: 14-1
-garduation_rate: 30%
+graduation_rate: 30%
 enrollment_by_gender: 37% Male / 63% Female
 calendar_system: Semester
 retention_rate: 57%
@@ -392,7 +392,7 @@ overview: This is the North Idaho College (Idaho) Volleyball scholarship and pro
 head_coach_name: Kelsey Stanley
 assistant_coach_name: Brittany Tilleman
 student_ratio: 15-1
-garduation_rate: 22%
+graduation_rate: 22%
 enrollment_by_gender: 38% Male / 62% Female
 calendar_system: Semester
 retention_rate: 58%
@@ -519,7 +519,7 @@ overview: This is the Northwest Nazarene University (Idaho) Volleyball scholarsh
 head_coach_name: Doug English
 assistant_coach_name: Jessie Bartlow
 student_ratio: 15-1
-garduation_rate: 49%
+graduation_rate: 49%
 enrollment_by_gender: 43% Male / 57% Female
 calendar_system: Semester
 retention_rate: 77%
@@ -628,7 +628,7 @@ overview: This is the University Of Idaho (Idaho) Volleyball scholarship and pro
 head_coach_name: Chris Gonzalez
 assistant_coach_name: Bryan Bastuba
 student_ratio: 16-1
-garduation_rate: 57%
+graduation_rate: 57%
 enrollment_by_gender: 52% Male / 48% Female
 calendar_system: Semester
 retention_rate: 80%
@@ -798,7 +798,7 @@ overview: This is the Carroll College (MT) (Montana) Volleyball scholarship and 
 head_coach_name: Maureen Boyle
 assistant_coach_name: 
 student_ratio: 13-1
-garduation_rate: 64%
+graduation_rate: 64%
 enrollment_by_gender: 42% Male / 58% Female
 calendar_system: Semester
 retention_rate: 79%
@@ -902,7 +902,7 @@ overview: This is the University Of Montana (Montana) Volleyball scholarship and
 head_coach_name: Allison Lawrence
 assistant_coach_name: Dana Hallisey
 student_ratio: 17-1
-garduation_rate: 44%
+graduation_rate: 44%
 enrollment_by_gender: 46% Male / 54% Female
 calendar_system: Semester
 retention_rate: 73%
@@ -1035,7 +1035,7 @@ overview: This is the Blue Mountain Community College (Oregon) Volleyball schola
 head_coach_name: Ceanna Larson
 assistant_coach_name: 
 student_ratio: 14-1
-garduation_rate: 20%
+graduation_rate: 20%
 enrollment_by_gender: 44% Male / 56% Female
 calendar_system: Quarter
 retention_rate: 52%
@@ -1111,7 +1111,7 @@ overview: This is the Clackamas Community College Cougars (Oregon) Volleyball sc
 head_coach_name: Ashli Itami
 assistant_coach_name: 
 student_ratio: 19-1
-garduation_rate: 19%
+graduation_rate: 19%
 enrollment_by_gender: 51% Male / 49% Female
 calendar_system: Quarter
 retention_rate: 57%
@@ -1202,7 +1202,7 @@ overview: This is the Eastern Oregon University (Oregon) Volleyball scholarship 
 head_coach_name: Kaki McLean Morehead
 assistant_coach_name: Taylor Tibbetts
 student_ratio: 17-1
-garduation_rate: 26%
+graduation_rate: 26%
 enrollment_by_gender: 38% Male / 62% Female
 calendar_system: Quarter
 retention_rate: 57%
@@ -1285,7 +1285,7 @@ overview: This is the Mt. Hood Community College Saints (Oregon) Volleyball scho
 head_coach_name: Kirsten Day
 assistant_coach_name: 
 student_ratio: 17-1
-garduation_rate: 22%
+graduation_rate: 22%
 enrollment_by_gender: 49% Male / 51% Female
 calendar_system: Quarter
 retention_rate: 56%
@@ -1421,7 +1421,7 @@ overview: This is the Multnomah University (Oregon) Volleyball scholarship and p
 head_coach_name: Chris Hynes
 assistant_coach_name: Taryn Frey
 student_ratio: 13-1
-garduation_rate: 55%
+graduation_rate: 55%
 enrollment_by_gender: 55% Male / 45% Female
 calendar_system: Semester
 retention_rate: 70%
@@ -1494,7 +1494,7 @@ overview: This is the Portland State University (Oregon) Volleyball scholarship 
 head_coach_name: Michael Seemann
 assistant_coach_name: Aquiles Montoya
 student_ratio: 19-1
-garduation_rate: 42%
+graduation_rate: 42%
 enrollment_by_gender: 47% Male / 53% Female
 calendar_system: Quarter
 retention_rate: 71%
@@ -1625,7 +1625,7 @@ overview: This is the University Of Portland (Oregon) Volleyball scholarship and
 head_coach_name: Megan Burton
 assistant_coach_name: Dylan Hamilton
 student_ratio: 14-1
-garduation_rate: 78%
+graduation_rate: 78%
 enrollment_by_gender: 41% Male / 59% Female
 calendar_system: Semester
 retention_rate: 92%
@@ -1719,7 +1719,7 @@ overview: This is the Warner Pacific College (Oregon) Volleyball scholarship and
 head_coach_name: Kim Lissinna
 assistant_coach_name: 
 student_ratio: 11-1
-garduation_rate: 55%
+graduation_rate: 55%
 enrollment_by_gender: 44% Male / 56% Female
 calendar_system: Semester
 retention_rate: 62%
@@ -1807,7 +1807,7 @@ overview: This is the Willamette University (Oregon) Volleyball scholarship and 
 head_coach_name: Lily Hallock
 assistant_coach_name: Max Ransom
 student_ratio: 10-1
-garduation_rate: 79%
+graduation_rate: 79%
 enrollment_by_gender: 43% Male / 57% Female
 calendar_system: Semester
 retention_rate: 87%
@@ -1908,7 +1908,7 @@ overview: This is the Walters State Community College (Tennessee) Volleyball sch
 head_coach_name: Megan Blaylock
 assistant_coach_name: Erika Waycaster
 student_ratio: 18-1
-garduation_rate: 20%
+graduation_rate: 20%
 enrollment_by_gender: 39% Male / 61% Female
 calendar_system: Semester
 retention_rate: 55%
@@ -1985,7 +1985,7 @@ overview: This is the Bellevue College (Washington) Volleyball scholarship and p
 head_coach_name: Jocelyn Lawrence
 assistant_coach_name: Angela D'Amelio
 student_ratio: 17-1
-garduation_rate: 24%
+graduation_rate: 24%
 enrollment_by_gender: 45% Male / 55% Female
 calendar_system: Quarter
 retention_rate: Not Reported
@@ -2073,7 +2073,7 @@ overview: This is the Central Washington University (Washington) Volleyball scho
 head_coach_name: Mario Andaya
 assistant_coach_name: Lauren Herseth
 student_ratio: 20-1
-garduation_rate: 52%
+graduation_rate: 52%
 enrollment_by_gender: 49% Male / 51% Female
 calendar_system: Quarter
 retention_rate: 79%
@@ -2272,7 +2272,7 @@ overview: This is the Centralia College Blazers (Washington) Volleyball scholars
 head_coach_name: Susan Gordon
 assistant_coach_name: Kary Sathre
 student_ratio: 15-1
-garduation_rate: 37%
+graduation_rate: 37%
 enrollment_by_gender: 43% Male / 57% Female
 calendar_system: Quarter
 retention_rate: Not Reported
@@ -2350,7 +2350,7 @@ overview: This is the Eastern Washington University (Washington) Volleyball scho
 head_coach_name: Jon Haruguchi
 assistant_coach_name: Grayson DuBose
 student_ratio: 22-1
-garduation_rate: 46%
+graduation_rate: 46%
 enrollment_by_gender: 46% Male / 54% Female
 calendar_system: Quarter
 retention_rate: 78%
@@ -2482,7 +2482,7 @@ overview: This is the Edmonds College (Washington) Volleyball scholarship and pr
 head_coach_name: Tony Miranda
 assistant_coach_name: 
 student_ratio: 14-1
-garduation_rate: 24%
+graduation_rate: 24%
 enrollment_by_gender: 47% Male / 53% Female
 calendar_system: Quarter
 retention_rate: 62%
@@ -2583,7 +2583,7 @@ overview: This is the Evergreen State College (Washington) Volleyball scholarshi
 head_coach_name: Alexis Garrison
 assistant_coach_name: Carissa Bounds
 student_ratio: 22-1
-garduation_rate: 54%
+graduation_rate: 54%
 enrollment_by_gender: 45% Male / 55% Female
 calendar_system: Quarter
 retention_rate: 67%
@@ -2643,7 +2643,7 @@ overview: This is the Gonzaga University (Washington) Volleyball scholarship and
 head_coach_name: Katie Wilson
 assistant_coach_name: Kindra Gillen
 student_ratio: 12-1
-garduation_rate: 83%
+graduation_rate: 83%
 enrollment_by_gender: 46% Male / 54% Female
 calendar_system: Semester
 retention_rate: 95%
@@ -2746,7 +2746,7 @@ overview: This is the Green River Community College Gators (Washington) Volleyba
 head_coach_name: Kyle Densley
 assistant_coach_name: 
 student_ratio: 12-1
-garduation_rate: 36%
+graduation_rate: 36%
 enrollment_by_gender: 50% Male / 50% Female
 calendar_system: Quarter
 retention_rate: 62%
@@ -2847,7 +2847,7 @@ overview: This is the Highline Community College Thunderbirds (Washington) Volle
 head_coach_name: Chris Littleman
 assistant_coach_name: 
 student_ratio: 9-1
-garduation_rate: 31%
+graduation_rate: 31%
 enrollment_by_gender: 41% Male / 59% Female
 calendar_system: Quarter
 retention_rate: 63%
@@ -2935,7 +2935,7 @@ overview: This is the Lower Columbia College Red Devils (Washington) Volleyball 
 head_coach_name: Carri Smith
 assistant_coach_name: Josh Smith
 student_ratio: 15-1
-garduation_rate: 27%
+graduation_rate: 27%
 enrollment_by_gender: 36% Male / 64% Female
 calendar_system: Quarter
 retention_rate: 58%
@@ -3017,7 +3017,7 @@ overview: This is the Northwest University (Washington) Volleyball scholarship a
 head_coach_name: Steve Bain
 assistant_coach_name: Rachael Carbary
 student_ratio: 10-1
-garduation_rate: 51%
+graduation_rate: 51%
 enrollment_by_gender: 34% Male / 66% Female
 calendar_system: Semester
 retention_rate: 82%
@@ -3104,7 +3104,7 @@ overview: This is the Olympic College Rangers (Washington) Volleyball scholarshi
 head_coach_name: Carissa Love
 assistant_coach_name: Lynzey Schoening
 student_ratio: 18-1
-garduation_rate: 28%
+graduation_rate: 28%
 enrollment_by_gender: 49% Male / 51% Female
 calendar_system: Quarter
 retention_rate: Not Reported
@@ -3187,7 +3187,7 @@ overview: This is the Pacific Lutheran University (Washington) Volleyball schola
 head_coach_name: Kevin Aoki
 assistant_coach_name: Darren Aoki
 student_ratio: 11-1
-garduation_rate: 68%
+graduation_rate: 68%
 enrollment_by_gender: 38% Male / 62% Female
 calendar_system: Four-one-four plan
 retention_rate: 83%
@@ -3291,7 +3291,7 @@ overview: This is the Pierce College At Puyallup (Washington) Volleyball scholar
 head_coach_name: Valerie Koch
 assistant_coach_name: Cami Medlock
 student_ratio: 14-1
-garduation_rate: 19%
+graduation_rate: 19%
 enrollment_by_gender: 39% Male / 61% Female
 calendar_system: Quarter
 retention_rate: 52%
@@ -3363,7 +3363,7 @@ overview: This is the Saint Martin's University (Washington) Volleyball scholars
 head_coach_name: Dan Behnke
 assistant_coach_name: Chon Clayton
 student_ratio: 11-1
-garduation_rate: 49%
+graduation_rate: 49%
 enrollment_by_gender: 51% Male / 49% Female
 calendar_system: Semester
 retention_rate: 76%
@@ -3445,7 +3445,7 @@ overview: This is the Seattle Pacific University (Washington) Volleyball scholar
 head_coach_name: Jason Rhine
 assistant_coach_name: Lindsey Calvin
 student_ratio: 15-1
-garduation_rate: 71%
+graduation_rate: 71%
 enrollment_by_gender: 32% Male / 68% Female
 calendar_system: Quarter
 retention_rate: 87%
@@ -3558,7 +3558,7 @@ overview: This is the Seattle University (Washington) Volleyball scholarship and
 head_coach_name: Michelle Cole
 assistant_coach_name: Mariko Coverdale
 student_ratio: 11-1
-garduation_rate: 79%
+graduation_rate: 79%
 enrollment_by_gender: 40% Male / 60% Female
 calendar_system: Quarter
 retention_rate: 84%
@@ -3683,7 +3683,7 @@ overview: This is the Shoreline Community College Dolphin (Washington) Volleybal
 head_coach_name: A'Laisia Redden
 assistant_coach_name: 
 student_ratio: 16-1
-garduation_rate: 32%
+graduation_rate: 32%
 enrollment_by_gender: 45% Male / 55% Female
 calendar_system: Quarter
 retention_rate: 66%
@@ -3773,7 +3773,7 @@ overview: This is the Skagit Valley College (Washington) Volleyball scholarship 
 head_coach_name: Joe Amaral
 assistant_coach_name: 
 student_ratio: 15-1
-garduation_rate: 21%
+graduation_rate: 21%
 enrollment_by_gender: 43% Male / 57% Female
 calendar_system: Quarter
 retention_rate: 60%
@@ -3861,7 +3861,7 @@ overview: This is the Spokane Community College Sasquatch (Washington) Volleybal
 head_coach_name: Taylor Stewart
 assistant_coach_name: Kaitlyn White
 student_ratio: 17-1
-garduation_rate: 24%
+graduation_rate: 24%
 enrollment_by_gender: 42% Male / 58% Female
 calendar_system: Quarter
 retention_rate: 58%
@@ -3975,7 +3975,7 @@ overview: This is the Spokane Falls Community College Sasquatch (Washington) Vol
 head_coach_name: Taylor Stewart
 assistant_coach_name: Kaitlyn White
 student_ratio: 18-1
-garduation_rate: 22%
+graduation_rate: 22%
 enrollment_by_gender: 44% Male / 56% Female
 calendar_system: Quarter
 retention_rate: 54%
@@ -4061,7 +4061,7 @@ overview: This is the Tacoma Community College Titans (Washington) Volleyball sc
 head_coach_name: Katyln Mataya
 assistant_coach_name: 
 student_ratio: 18-1
-garduation_rate: 25%
+graduation_rate: 25%
 enrollment_by_gender: 38% Male / 62% Female
 calendar_system: Quarter
 retention_rate: 61%
@@ -4142,7 +4142,7 @@ overview: This is the University Of Washington (Washington) Volleyball scholarsh
 head_coach_name: Leslie Gabriel
 assistant_coach_name: Philip Noyes
 student_ratio: 20-1
-garduation_rate: 84%
+graduation_rate: 84%
 enrollment_by_gender: 48% Male / 52% Female
 calendar_system: Quarter
 retention_rate: 94%
@@ -4391,7 +4391,7 @@ overview: This is the Walla Walla Community College Warriors (Washington) Volley
 head_coach_name: Brooke KAawa
 assistant_coach_name: 
 student_ratio: 16-1
-garduation_rate: 40%
+graduation_rate: 40%
 enrollment_by_gender: 59% Male / 41% Female
 calendar_system: Quarter
 retention_rate: 72%
@@ -4490,7 +4490,7 @@ overview: This is the Walla Walla University (Washington) Volleyball scholarship
 head_coach_name: Breayn Bussell
 assistant_coach_name: Nestor Osorio
 student_ratio: 13-1
-garduation_rate: 52%
+graduation_rate: 52%
 enrollment_by_gender: 50% Male / 50% Female
 calendar_system: Quarter
 retention_rate: 76%
@@ -4598,7 +4598,7 @@ overview: This is the Washington State University (Washington) Volleyball schola
 head_coach_name: Jen Greeny
 assistant_coach_name: Burdette Greeny
 student_ratio: 15-1
-garduation_rate: 64%
+graduation_rate: 64%
 enrollment_by_gender: 48% Male / 52% Female
 calendar_system: Semester
 retention_rate: 78%
@@ -4762,7 +4762,7 @@ overview: This is the Wenatchee Valley College Knights (Washington) Volleyball s
 head_coach_name: Maria Adams
 assistant_coach_name: 
 student_ratio: 15-1
-garduation_rate: 30%
+graduation_rate: 30%
 enrollment_by_gender: 42% Male / 58% Female
 calendar_system: Quarter
 retention_rate: 67%
@@ -4839,7 +4839,7 @@ overview: This is the Western Washington University (Washington) Volleyball scho
 head_coach_name: Diane Flick-Williams
 assistant_coach_name: James Suh
 student_ratio: 18-1
-garduation_rate: 71%
+graduation_rate: 71%
 enrollment_by_gender: 45% Male / 55% Female
 calendar_system: Quarter
 retention_rate: 82%
@@ -4995,7 +4995,7 @@ overview: This is the Whatcom Community College (Washington) Volleyball scholars
 head_coach_name: Cody Luthy
 assistant_coach_name: 
 student_ratio: 14-1
-garduation_rate: 33%
+graduation_rate: 33%
 enrollment_by_gender: 44% Male / 56% Female
 calendar_system: Quarter
 retention_rate: 68%
@@ -5071,7 +5071,7 @@ overview: This is the Whitman College (Washington) Volleyball scholarship and pr
 head_coach_name: Matt Helm
 assistant_coach_name: Cassie Thompson
 student_ratio: 9-1
-garduation_rate: 87%
+graduation_rate: 87%
 enrollment_by_gender: 42% Male / 58% Female
 calendar_system: Semester
 retention_rate: 93%
@@ -5175,7 +5175,7 @@ overview: This is the Whitworth University (Washington) Volleyball scholarship a
 head_coach_name: Kati Bodecker
 assistant_coach_name: Brenna Berkimer
 student_ratio: 11-1
-garduation_rate: 75%
+graduation_rate: 75%
 enrollment_by_gender: 38% Male / 62% Female
 calendar_system: Four-one-four plan
 retention_rate: 95%
@@ -5290,7 +5290,7 @@ overview: This is the Yakima Valley Community College (Washington) Volleyball sc
 head_coach_name: Darci Dekker
 assistant_coach_name: Marty McCallum
 student_ratio: 16-1
-garduation_rate: 22%
+graduation_rate: 22%
 enrollment_by_gender: 35% Male / 65% Female
 calendar_system: Quarter
 retention_rate: 60%

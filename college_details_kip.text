@@ -21,7 +21,7 @@ overview: This is the University Of Montevallo (Alabama) Volleyball scholarship 
 head_coach_name: Jason McCown
 assistant_coach_name: 
 student_ratio: 16-1
-garduation_rate: 45%
+graduation_rate: 45%
 enrollment_by_gender: 33% Male / 67% Female
 calendar_system: Semester
 retention_rate: 77%
@@ -104,7 +104,7 @@ overview: This is the Arizona Christian University (Arizona) Volleyball scholars
 head_coach_name: Micah Briscoe
 assistant_coach_name: Mark Cannon
 student_ratio: 16-1
-garduation_rate: 38%
+graduation_rate: 38%
 enrollment_by_gender: 58% Male / 42% Female
 calendar_system: Semester
 retention_rate: 55%
@@ -183,7 +183,7 @@ overview: This is the Grand Canyon University (Arizona) Volleyball scholarship a
 head_coach_name: Tim Nollan
 assistant_coach_name: Abby Saehler
 student_ratio: 17-1
-garduation_rate: 34%
+graduation_rate: 34%
 enrollment_by_gender: 27% Male / 73% Female
 calendar_system: Semester
 retention_rate: 67%
@@ -278,7 +278,7 @@ overview: This is the California State University, Dominguez Hills (California) 
 head_coach_name: Jennifer Adeva
 assistant_coach_name: Chris Webb
 student_ratio: 25-1
-garduation_rate: 35%
+graduation_rate: 35%
 enrollment_by_gender: 37% Male / 63% Female
 calendar_system: Semester
 retention_rate: 82%
@@ -379,7 +379,7 @@ overview: This is the Barry University (Florida) Volleyball scholarship and prog
 head_coach_name: Leonid Yelin
 assistant_coach_name: Christiana Oyawale
 student_ratio: 12-1
-garduation_rate: 33%
+graduation_rate: 33%
 enrollment_by_gender: 39% Male / 61% Female
 calendar_system: Semester
 retention_rate: 65%
@@ -485,7 +485,7 @@ overview: This is the Flagler College (Florida) Volleyball scholarship and progr
 head_coach_name: Skylar Lopas
 assistant_coach_name: Pete Sproules
 student_ratio: 16-1
-garduation_rate: 61%
+graduation_rate: 61%
 enrollment_by_gender: 39% Male / 61% Female
 calendar_system: Semester
 retention_rate: 72%
@@ -576,7 +576,7 @@ overview: This is the Florida Atlantic University (Florida) Volleyball scholarsh
 head_coach_name: Fernanda Nelson
 assistant_coach_name: Chuck Amshoff
 student_ratio: 23-1
-garduation_rate: 49%
+graduation_rate: 49%
 enrollment_by_gender: 44% Male / 56% Female
 calendar_system: Semester
 retention_rate: 78%
@@ -696,7 +696,7 @@ overview: This is the Florida Institute Of Technology (Florida) Volleyball schol
 head_coach_name: Ashlee Crowder
 assistant_coach_name: Ruben Lopez
 student_ratio: 8-1
-garduation_rate: 57%
+graduation_rate: 57%
 enrollment_by_gender: 71% Male / 29% Female
 calendar_system: Semester
 retention_rate: 79%
@@ -802,7 +802,7 @@ overview: This is the Jacksonville University (Florida) Volleyball scholarship a
 head_coach_name: Maggie Johnson
 assistant_coach_name: Jordan Armstrong
 student_ratio: 14-1
-garduation_rate: 41%
+graduation_rate: 41%
 enrollment_by_gender: 37% Male / 63% Female
 calendar_system: Semester
 retention_rate: 68%
@@ -918,7 +918,7 @@ overview: This is the Keiser University (Florida) Volleyball scholarship and pro
 head_coach_name: James Rogers
 assistant_coach_name: Andrew Sydow
 student_ratio: 13-1
-garduation_rate: Not Reported
+graduation_rate: Not Reported
 enrollment_by_gender: 0% Female
 calendar_system: Semester
 retention_rate: 71%
@@ -975,7 +975,7 @@ overview: This is the Keiser University (Florida) Volleyball scholarship and pro
 head_coach_name: James Rogers
 assistant_coach_name: Andrew Sydow
 student_ratio: 12-1
-garduation_rate: 68%
+graduation_rate: 68%
 enrollment_by_gender: 32% Male / 68% Female
 calendar_system: Semester
 retention_rate: 89%
@@ -1085,7 +1085,7 @@ overview: This is the Lynn University (Florida) Volleyball scholarship and progr
 head_coach_name: Adam Milewski
 assistant_coach_name: Travis Nichols
 student_ratio: 18-1
-garduation_rate: 44%
+graduation_rate: 44%
 enrollment_by_gender: 52% Male / 48% Female
 calendar_system: Semester
 retention_rate: 73%
@@ -1175,7 +1175,7 @@ overview: This is the Nova Southeastern University (Florida) Volleyball scholars
 head_coach_name: Kacie Ehinger
 assistant_coach_name: Matt Geer
 student_ratio: 16-1
-garduation_rate: 44%
+graduation_rate: 44%
 enrollment_by_gender: 30% Male / 70% Female
 calendar_system: Trimester
 retention_rate: 80%
@@ -1283,7 +1283,7 @@ overview: This is the Palm Beach Atlantic University (Florida) Volleyball schola
 head_coach_name: Doug Walters
 assistant_coach_name: Casey Curran
 student_ratio: 13-1
-garduation_rate: 42%
+graduation_rate: 42%
 enrollment_by_gender: 37% Male / 63% Female
 calendar_system: Semester
 retention_rate: 75%
@@ -1396,7 +1396,7 @@ overview: This is the University Of Central Florida (Florida) Volleyball scholar
 head_coach_name: Jenny Maurer
 assistant_coach_name: Brian Doyon
 student_ratio: 30-1
-garduation_rate: 70%
+graduation_rate: 70%
 enrollment_by_gender: 45% Male / 55% Female
 calendar_system: Semester
 retention_rate: 89%
@@ -1538,7 +1538,7 @@ overview: This is the University Of Miami (FL) (Florida) Volleyball scholarship 
 head_coach_name: Jose \Keno\ Gandara
 assistant_coach_name: Jillian Hadder
 student_ratio: 12-1
-garduation_rate: 82%
+graduation_rate: 82%
 enrollment_by_gender: 49% Male / 51% Female
 calendar_system: Semester
 retention_rate: 92%
@@ -1707,7 +1707,7 @@ overview: This is the Central College (IA) (Iowa) Volleyball scholarship and pro
 head_coach_name: Jeanne Czipri
 assistant_coach_name: Laura de Rosales
 student_ratio: 12-1
-garduation_rate: 67%
+graduation_rate: 67%
 enrollment_by_gender: 47% Male / 53% Female
 calendar_system: Semester
 retention_rate: 78%
@@ -1799,7 +1799,7 @@ overview: This is the Emporia State University (Kansas) Volleyball scholarship a
 head_coach_name: Laurel Durst
 assistant_coach_name: 
 student_ratio: 18-1
-garduation_rate: 42%
+graduation_rate: 42%
 enrollment_by_gender: 40% Male / 60% Female
 calendar_system: Semester
 retention_rate: 72%
@@ -1897,7 +1897,7 @@ overview: This is the Washington College (MD) (Maryland) Volleyball scholarship 
 head_coach_name: Jamie Leventry
 assistant_coach_name: Claire Scully
 student_ratio: 11-1
-garduation_rate: 75%
+graduation_rate: 75%
 enrollment_by_gender: 44% Male / 56% Female
 calendar_system: Semester
 retention_rate: 82%
@@ -1983,7 +1983,7 @@ overview: This is the Endicott College (Massachusetts) Volleyball scholarship an
 head_coach_name: Tim Byram
 assistant_coach_name: 
 student_ratio: 14-1
-garduation_rate: 71%
+graduation_rate: 71%
 enrollment_by_gender: 39% Male / 61% Female
 calendar_system: Semester
 retention_rate: 86%
@@ -2080,7 +2080,7 @@ overview: This is the University Of Nebraska At Kearney (Nebraska) Volleyball sc
 head_coach_name: Rick Squiers
 assistant_coach_name: Samantha Hammond
 student_ratio: 14-1
-garduation_rate: 56%
+graduation_rate: 56%
 enrollment_by_gender: 42% Male / 58% Female
 calendar_system: Semester
 retention_rate: 80%
@@ -2175,7 +2175,7 @@ overview: This is the Ithaca College (New York) Volleyball scholarship and progr
 head_coach_name: Johan Dulfer
 assistant_coach_name: 
 student_ratio: 11-1
-garduation_rate: 76%
+graduation_rate: 76%
 enrollment_by_gender: 42% Male / 58% Female
 calendar_system: Semester
 retention_rate: 86%
@@ -2319,7 +2319,7 @@ overview: This is the Union College (NY) (New York) Volleyball scholarship and p
 head_coach_name: Annie DeLoid
 assistant_coach_name: Benjamin Rosenthal
 student_ratio: 10-1
-garduation_rate: 88%
+graduation_rate: 88%
 enrollment_by_gender: 54% Male / 46% Female
 calendar_system: Trimester
 retention_rate: 93%
@@ -2417,7 +2417,7 @@ overview: This is the Cameron University (Oklahoma) Volleyball scholarship and p
 head_coach_name: Nathan Martell
 assistant_coach_name: Giovanna Kuntze
 student_ratio: 18-1
-garduation_rate: 22%
+graduation_rate: 22%
 enrollment_by_gender: 39% Male / 61% Female
 calendar_system: Semester
 retention_rate: 65%
@@ -2514,7 +2514,7 @@ overview: This is the Oklahoma Christian University (Oklahoma) Volleyball schola
 head_coach_name: Jason Skoch
 assistant_coach_name: Jason Butch
 student_ratio: 13-1
-garduation_rate: 49%
+graduation_rate: 49%
 enrollment_by_gender: 51% Male / 49% Female
 calendar_system: Semester
 retention_rate: 79%
@@ -2571,7 +2571,7 @@ overview: This is the Linfield University (Oregon) Volleyball scholarship and pr
 head_coach_name: Haley Domeck
 assistant_coach_name: Andrea Doerfler
 student_ratio: 11-1
-garduation_rate: 63%
+graduation_rate: 63%
 enrollment_by_gender: 40% Male / 60% Female
 calendar_system: Four-one-four plan
 retention_rate: 86%
@@ -2672,7 +2672,7 @@ overview: This is the Lehigh University (Pennsylvania) Volleyball scholarship an
 head_coach_name: Alexa Keckler
 assistant_coach_name: Sarah Gomish
 student_ratio: 10-1
-garduation_rate: 88%
+graduation_rate: 88%
 enrollment_by_gender: 56% Male / 44% Female
 calendar_system: Semester
 retention_rate: 95%
@@ -2795,7 +2795,7 @@ overview: This is the Coker University (South Carolina) Volleyball scholarship a
 head_coach_name: 
 assistant_coach_name: 
 student_ratio: 12-1
-garduation_rate: 52%
+graduation_rate: 52%
 enrollment_by_gender: 39% Male / 61% Female
 calendar_system: Semester
 retention_rate: 73%
@@ -2894,7 +2894,7 @@ overview: This is the Midwestern State University (Texas) Volleyball scholarship
 head_coach_name: Stephanie Radecki
 assistant_coach_name: Jennifer McCall
 student_ratio: 18-1
-garduation_rate: 44%
+graduation_rate: 44%
 enrollment_by_gender: 42% Male / 58% Female
 calendar_system: Semester
 retention_rate: 70%
@@ -2998,7 +2998,7 @@ overview: This is the Pacific Lutheran University (Washington) Volleyball schola
 head_coach_name: Kevin Aoki
 assistant_coach_name: Darren Aoki
 student_ratio: 11-1
-garduation_rate: 68%
+graduation_rate: 68%
 enrollment_by_gender: 38% Male / 62% Female
 calendar_system: Four-one-four plan
 retention_rate: 83%

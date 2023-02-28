@@ -124,7 +124,7 @@ type CollegeDetail struct {
 	AssistantCoach string `json:"assistant_coach_name"`
 
 	StudentRatio       string `json:"student_ratio"`
-	GraduationRate     string `json:"garduation_rate"`
+	GraduationRate     string `json:"graduation_rate"`
 	EnrollmentByGender string `json:"enrollment_by_gender"`
 	CalendarSystem     string `json:"calendar_system"`
 	RetentionRate      string `json:"retention_rate"`
