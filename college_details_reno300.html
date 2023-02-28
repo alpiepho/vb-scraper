@@ -12,6 +12,10 @@
 <div x-data="{ openDIII: true }">
 <div x-data="{ openNAIA: true }">
 <div x-data="{ openNJCAA: true }">
+<div x-data="{ openArizona: true }">
+<div x-data="{ openCalifornia: true }">
+<div x-data="{ openNevada: true }">
+<div x-data="{ openUtah: true }">
 <button class="home-button"><a href="index.html">home</a></button>
 <button class="expand-button" @click="openall = !openall" :class="{ 'active': openall }">expand all...</button>
 <button class="menu-button" @click="openDI = !openDI" :class="{ 'active': openDI }">NCAA DI...</button>
@@ -19,7 +23,11 @@
 <button class="menu-button" @click="openDIII = !openDIII" :class="{ 'active': openDIII }">NCAA DIII...</button>
 <button class="menu-button" @click="openNAIA = !openNAIA" :class="{ 'active': openNAIA }">NAIA...</button>
 <button class="menu-button" @click="openNJCAA = !openNJCAA" :class="{ 'active': openNJCAA }">NJCAA...</button>
-<div x-show="openNAIA">
+<button class="menu-button" @click="openArizona = !openArizona" :class="{ 'active': openArizona }">Arizona...</button>
+<button class="menu-button" @click="openCalifornia = !openCalifornia" :class="{ 'active': openCalifornia }">California...</button>
+<button class="menu-button" @click="openNevada = !openNevada" :class="{ 'active': openNevada }">Nevada...</button>
+<button class="menu-button" @click="openUtah = !openUtah" :class="{ 'active': openUtah }">Utah...</button>
+<div x-show="openNAIA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -108,7 +116,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -238,7 +246,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNAIA">
+<div x-show="openNAIA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -306,7 +314,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -400,7 +408,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNAIA">
+<div x-show="openNAIA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -487,7 +495,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -555,7 +563,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -660,7 +668,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -778,7 +786,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -954,7 +962,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNAIA">
+<div x-show="openNAIA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1022,7 +1030,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1133,7 +1141,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1239,7 +1247,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1326,7 +1334,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openArizona">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1427,7 +1435,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1528,7 +1536,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1649,7 +1657,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1734,7 +1742,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1851,7 +1859,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -1989,7 +1997,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDIII">
+<div x-show="openDIII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2091,7 +2099,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2214,7 +2222,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2365,7 +2373,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2469,7 +2477,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2580,7 +2588,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2707,7 +2715,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2829,7 +2837,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -2957,7 +2965,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3092,7 +3100,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3199,7 +3207,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openClub">
+<div x-show="openClub && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3267,7 +3275,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3335,7 +3343,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3482,7 +3490,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDIII">
+<div x-show="openDIII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3608,7 +3616,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDIII">
+<div x-show="openDIII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3716,7 +3724,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3810,7 +3818,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -3934,7 +3942,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -4069,7 +4077,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -4178,7 +4186,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -4312,7 +4320,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -4453,7 +4461,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -4587,7 +4595,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -4722,7 +4730,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -4825,7 +4833,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -4935,7 +4943,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5063,7 +5071,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5179,7 +5187,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNAIA">
+<div x-show="openNAIA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5282,7 +5290,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5350,7 +5358,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5418,7 +5426,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5515,7 +5523,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5637,7 +5645,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5755,7 +5763,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDIII">
+<div x-show="openDIII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -5856,7 +5864,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6006,7 +6014,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCAA">
+<div x-show="openCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6159,7 +6167,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6290,7 +6298,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6419,7 +6427,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6551,7 +6559,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDIII">
+<div x-show="openDIII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6661,7 +6669,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6747,7 +6755,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6815,7 +6823,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -6940,7 +6948,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -7055,7 +7063,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNAIA">
+<div x-show="openNAIA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -7138,7 +7146,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -7263,7 +7271,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -7395,7 +7403,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -7506,7 +7514,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -7657,7 +7665,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -7796,7 +7804,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -7929,7 +7937,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -8048,7 +8056,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNCCAA">
+<div x-show="openNCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -8116,7 +8124,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -8184,7 +8192,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -8280,7 +8288,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -8430,7 +8438,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -8602,7 +8610,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -8746,7 +8754,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -8902,7 +8910,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9043,7 +9051,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDIII">
+<div x-show="openDIII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9156,7 +9164,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDIII">
+<div x-show="openDIII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9270,7 +9278,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9380,7 +9388,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9558,7 +9566,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNAIA">
+<div x-show="openNAIA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9653,7 +9661,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9764,7 +9772,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9832,7 +9840,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openCCCAA">
+<div x-show="openCCCAA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -9939,7 +9947,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNAIA">
+<div x-show="openNAIA && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -10007,7 +10015,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDII">
+<div x-show="openDII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -10099,7 +10107,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDIII">
+<div x-show="openDIII && openCalifornia">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -10197,7 +10205,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openNJCAA">
+<div x-show="openNJCAA && openNevada">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -10370,7 +10378,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNevada">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -10507,7 +10515,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openNevada">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -10665,7 +10673,7 @@
 </div>
     </ul>
 </div>
-<div x-show="openDI">
+<div x-show="openDI && openUtah">
     <ul>
     <div class="school-title-bar">
     <div class="school-title-image">
@@ -10792,12 +10800,16 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Building Construction Technology</li>
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airline/Commercial/Professional Pilot and Flight Crew</li>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+</div> <!-- openArizona -->
+</div> <!-- openCalifornia -->
+</div> <!-- openNevada -->
+</div> <!-- openUtah -->
+</div> <!-- openNJCAA -->
+</div> <!-- openNAIA -->
+</div> <!-- openDIII -->
+</div> <!-- openDII -->
+</div> <!-- openDI -->
+</div> <!-- openall -->
     </ul>
     <br><br><br><br><br><br><br><br>
   </body>
