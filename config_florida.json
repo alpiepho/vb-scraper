@@ -1,5 +1,5 @@
 {
-    "open_chromedp" : true,
+    "open_chromedp" : false,
     "parse_map" : false,
     "parse_states": false,
     "stateslist" : [
@@ -64,7 +64,7 @@
     "import_colleges" : true,
     "import_colleges_file": "colleges_all.json",
 
-    "parse_college_pages": true,
+    "parse_college_pages": false,
     "collegelist" : [
         "# filter for college details from state/college list (more web, more time, specific):",
         "# list of specific colleges or All, start with # to disable that line",
@@ -85,7 +85,7 @@
     "parse_location_latitude_logitude": "",
     "parse_location_radius_miles": "",
 
-    "import_college_details": false,
+    "import_college_details": true,
     "import_college_details_file": "college_details_florida.json",
 
     "parse_lat_long" : false,

@@ -6,6 +6,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"math"
@@ -35,7 +36,9 @@ import (
 // const CONFIG_FILE = "config_kipSpokane.json" // ???
 // const CONFIG_FILE = "config_kipCamp.json"    // ???
 // const CONFIG_FILE = "config_16.json"
-const CONFIG_FILE = "config_florida.json"
+const CONFIG_FILE = "config_16.json"
+
+var global_configfile = ""
 
 type Configuration struct {
 	OpenChromedp  bool     `json:"open_chromedp"`
@@ -901,10 +904,15 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "  </head>\n"
 
 	msg2 += "  <body>\n"
-	title := CONFIG_FILE
+	title := global_configfile
 	title = strings.Replace(title, ".json", "", -1)
 	title = strings.Replace(title, "config_", "", -1)
 	msg2 += "  <h2>" + title + "</h2>\n"
+	title = strconv.Itoa(len(*details))
+	msg2 += "  <div class=\"run-count\">(school count: " + title + ")</div>\n"
+	currentTime := time.Now()
+	title = currentTime.Format("2006-01-02 3:4 pm")
+	msg2 += "  <div class=\"run-date\">(" + title + ")</div>\n"
 	msg2 += "    <ul>\n"
 	msg2 += "<div x-data=\"{ openall: false }\">\n"
 	msg2 += "<div x-data=\"{ openDI: true }\">\n"
@@ -1111,7 +1119,12 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 }
 
 func main() {
-	//headless := flag.Bool("headless", false, "a bool")
+	// headless := flag.Bool("headless", false, "a bool")
+	configfile := flag.String("configfile", CONFIG_FILE, "a string")
+
+	flag.Parse()
+	fmt.Println(*configfile)
+	global_configfile = *configfile
 
 	opts := append(chromedp.DefaultExecAllocatorOptions[:],
 		chromedp.DisableGPU,
@@ -1119,7 +1132,7 @@ func main() {
 	)
 
 	fmt.Println("open config...")
-	confFile, err := os.Open(CONFIG_FILE)
+	confFile, err := os.Open(global_configfile)
 	if err != nil {
 		panic(err)
 	}
