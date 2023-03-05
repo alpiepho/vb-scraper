@@ -2,6 +2,12 @@
 h2 {
   text-align: right;
 }
+.run-count {
+  text-align: right;
+}
+.run-date {
+  text-align: right;
+}
 ul {
   list-style: none;
 }
