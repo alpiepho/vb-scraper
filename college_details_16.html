@@ -5,8 +5,8 @@
   </head>
   <body>
   <h2>16</h2>
-  <div class="run-count">(school count: 30)</div>
-  <div class="run-date">(2023-03-05 4:1 pm)</div>
+  <div class="run-count">(school count: 31)</div>
+  <div class="run-date">(2023-03-08 8:3 pm)</div>
     <ul>
 <div x-data="{ openall: false }">
 <div x-data="{ openDI: true }">
@@ -15,6 +15,7 @@
 <div x-data="{ openNAIA: true }">
 <div x-data="{ openNJCAA: true }">
 <div x-data="{ openArizona: true }">
+<div x-data="{ openColorado: true }">
 <div x-data="{ openFlorida: true }">
 <div x-data="{ openGeorgia: true }">
 <div x-data="{ openKansas: true }">
@@ -30,6 +31,7 @@
 <button class="menu-button" @click="openDI = !openDI" :class="{ 'active': openDI }">NCAA DI...</button>
 <button class="menu-button" @click="openDII = !openDII" :class="{ 'active': openDII }">NCAA DII...</button>
 <button class="menu-button" @click="openArizona = !openArizona" :class="{ 'active': openArizona }">Arizona...</button>
+<button class="menu-button" @click="openColorado = !openColorado" :class="{ 'active': openColorado }">Colorado...</button>
 <button class="menu-button" @click="openFlorida = !openFlorida" :class="{ 'active': openFlorida }">Florida...</button>
 <button class="menu-button" @click="openGeorgia = !openGeorgia" :class="{ 'active': openGeorgia }">Georgia...</button>
 <button class="menu-button" @click="openKansas = !openKansas" :class="{ 'active': openKansas }">Kansas...</button>
@@ -227,7 +229,7 @@
 <li x-show="open | openall"><b>control_affilication:</b>  Private for-profit</li>
 <li x-show="open | openall"><b>overview:</b> Grand Canyon University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
 <li x-show="open | openall"><b>head_coach_name:</b>  Tim Nollan</li>
-<li x-show="open | openall"><b>assistant_coach_name:</b>  Abby Saehler</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  Jeffrey Liu</li>
 <li x-show="open | openall"><b>student_ratio:</b>  17-1</li>
 <li x-show="open | openall"><b>garduation_rate:</b>  34%</li>
 <li x-show="open | openall"><b>enrollment_by_gender:</b>  27% Male / 73% Female</li>
@@ -479,6 +481,135 @@
 </div>
     </ul>
 </div>
+<div x-show="openDII && openColorado">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/file/images/lacrosserecruits/2015/838_metropolitan_state_university_of_denver.png" alt="Metropolitan State University of Denver">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Metropolitan State University of Denver</div>
+    <div><b>state:</b>  Colorado</div>
+    <div><b>city:</b>  Denver</div>
+    <div><b>level:</b>  NCAA DII</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/colorado/metropolitan_state_university_of_denver" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/colorado" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Metropolitan+State+University+of+Denver" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Metropolitan+State+University+of+Denver+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Metropolitan+State+University+of+Denver+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Metropolitan+State+University+of+Denver+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Metropolitan+State+University+of+Denver+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Metropolitan_State_University_of_Denver" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">details...</button>
+<li x-show="open | openall"><b>conference:</b>  Rocky Mountain Athletic Conference (RMAC)</li>
+<li x-show="open | openall"><b>academic_selectivity:</b>  Less Selective</li>
+<li x-show="open | openall"><b>undergrad_enrollment:</b>  20186</li>
+<li x-show="open | openall"><b>control_affilication:</b>  Public</li>
+<li x-show="open | openall"><b>overview:</b> Metropolitan State University Of Denver does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Jenny Glenn</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  Amy Watanabe</li>
+<li x-show="open | openall"><b>student_ratio:</b>  18-1</li>
+<li x-show="open | openall"><b>graduation_rate:</b>  25%</li>
+<li x-show="open | openall"><b>enrollment_by_gender:</b>  47% Male / 53% Female</li>
+<li x-show="open | openall"><b>calendar_system:</b>  Semester</li>
+<li x-show="open | openall"><b>retention_rate:</b>  70%</li>
+<li x-show="open | openall"><b>on_campus_housing:</b>  No</li>
+<li x-show="open | openall"><b>acceptance_rate:</b>  65%</li>
+<li x-show="open | openall"><b>total_applicants:</b>  6,052</li>
+<li x-show="open | openall"><b>sat_students_submitting:</b>  3%</li>
+<li x-show="open | openall"><b>sat_reading_range:</b>  440-560</li>
+<li x-show="open | openall"><b>sat_math_range:</b>  440-550</li>
+<li x-show="open | openall"><b>sat_writing_range:</b>  Not Reported</li>
+<li x-show="open | openall"><b>act_students_submitting:</b>  89%</li>
+<li x-show="open | openall"><b>act_composite:</b>  18-23</li>
+<li x-show="open | openall"><b>act_english:</b>  16-23</li>
+<li x-show="open | openall"><b>act_math:</b>  17-23</li>
+<li x-show="open | openall"><b>act_writing:</b>  Not Reported</li>
+<li x-show="open | openall"><b>requirements_open_admission_policy:</b>  No</li>
+<li x-show="open | openall"><b>requirements_application_fee:</b>  $25</li>
+<li x-show="open | openall"><b>requirements_recomedations:</b>  Neither required nor recommended</li>
+<li x-show="open | openall"><b>requirements_secondary_school_record:</b>  Required</li>
+<li x-show="open | openall"><b>requirements_secondary_school_rank:</b>  Required</li>
+<li x-show="open | openall"><b>requirements_secondary_school_gpa:</b>  Required</li>
+<li x-show="open | openall"><b>cost_in_state_total:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_in_state_tuition:</b>  $4,691</li>
+<li x-show="open | openall"><b>cost_in_state_fee:</b>  $1,053</li>
+<li x-show="open | openall"><b>cost_in_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_out_state_total:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_out_state_tuition:</b>  $16,784</li>
+<li x-show="open | openall"><b>cost_out_state_fee:</b>  $1,053</li>
+<li x-show="open | openall"><b>cost_out_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_percent_undergrad_aid:</b>  68%</li>
+</div>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">majors...</button>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Foreign Languages and Literatures, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Linguistics</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Philosophy</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;English Language and Literature, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Rhetoric and Composition</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Design and Visual Communications, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Industrial and Product Design</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Drama and Dramatics/Theatre Arts, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Art/Art Studies, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Fine/Studio Arts, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Art History, Criticism and Conservation</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Business Administration and Management, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Accounting</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Finance, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Hospitality Administration/Management, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Management Information Systems, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Marketing/Marketing Management, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Communication Sciences and Disorders, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Health/Health Care Administration/Management</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Athletic Training/Trainer</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Alternative and Complementary Medicine and Medical Systems, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Registered Nursing/Registered Nurse</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;African-American/Black Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Hispanic-American, Puerto Rican, and Mexican-American/Chicano Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Women's Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Parks, Recreation and Leisure Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Health and Physical Education/Fitness, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Behavioral Sciences</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Nutrition Sciences</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Multi-/Interdisciplinary Studies, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Criminal Justice/Safety Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Human Services, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Work</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Environmental Science</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Land Use Planning and Management/Development</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Civil Engineering Technology/Technician</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Electrical, Electronic and Communications Engineering Technology/Technician</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mechanical Engineering/Mechanical Technology/Technician</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mathematics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer Science</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biology/Biological Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biochemistry</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Atmospheric Sciences and Meteorology, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Chemistry, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Journalism</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Public Relations, Advertising, and Applied Communication, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Developmental and Child Psychology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Special Education and Teaching, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Early Childhood Education and Teaching</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Anthropology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Economics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Geographic Information Science and Cartography</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Political Science and Government, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Sociology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Airline/Commercial/Professional Pilot and Flight Crew</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aviation/Airway Management and Operations</li>
+</div>
+    </ul>
+</div>
 <div x-show="openDII && openFlorida">
     <ul>
     <div class="school-title-bar">
@@ -507,8 +638,8 @@
 <li x-show="open | openall"><b>undergrad_enrollment:</b>  3586</li>
 <li x-show="open | openall"><b>control_affilication:</b>  Private not-for-profit (no religious affiliation)</li>
 <li x-show="open | openall"><b>overview:</b> Florida Institute Of Technology does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
-<li x-show="open | openall"><b>head_coach_name:</b>  Ashlee Crowder</li>
-<li x-show="open | openall"><b>assistant_coach_name:</b>  Ruben Lopez</li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Jordan Willis</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b> </li>
 <li x-show="open | openall"><b>student_ratio:</b>  8-1</li>
 <li x-show="open | openall"><b>garduation_rate:</b>  57%</li>
 <li x-show="open | openall"><b>enrollment_by_gender:</b>  71% Male / 29% Female</li>
@@ -2117,7 +2248,7 @@
 <li x-show="open | openall"><b>control_affilication:</b>  Private not-for-profit (religious affiliation)</li>
 <li x-show="open | openall"><b>overview:</b> Campbell University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
 <li x-show="open | openall"><b>head_coach_name:</b>  Greg Goral</li>
-<li x-show="open | openall"><b>assistant_coach_name:</b>  Ryan Mason</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  Kayla Stryffeler</li>
 <li x-show="open | openall"><b>student_ratio:</b>  16-1</li>
 <li x-show="open | openall"><b>garduation_rate:</b>  53%</li>
 <li x-show="open | openall"><b>enrollment_by_gender:</b>  48% Male / 52% Female</li>
@@ -2252,7 +2383,7 @@
 <li x-show="open | openall"><b>control_affilication:</b>  Private not-for-profit (religious affiliation)</li>
 <li x-show="open | openall"><b>overview:</b> Davidson College does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
 <li x-show="open | openall"><b>head_coach_name:</b>  Chris Willis</li>
-<li x-show="open | openall"><b>assistant_coach_name:</b>  Danielle (Dee) Davis</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  Caitlin Genovy</li>
 <li x-show="open | openall"><b>student_ratio:</b>  10-1</li>
 <li x-show="open | openall"><b>garduation_rate:</b>  93%</li>
 <li x-show="open | openall"><b>enrollment_by_gender:</b>  50% Male / 50% Female</li>
@@ -3012,8 +3143,8 @@
 <li x-show="open | openall"><b>undergrad_enrollment:</b>  3181</li>
 <li x-show="open | openall"><b>control_affilication:</b>  Private not-for-profit (religious affiliation)</li>
 <li x-show="open | openall"><b>overview:</b> Charleston Southern University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
-<li x-show="open | openall"><b>head_coach_name:</b>  David McFatrich</li>
-<li x-show="open | openall"><b>assistant_coach_name:</b>  Laura Grace Belote</li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Laura Grace Belote</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  David McFatrich</li>
 <li x-show="open | openall"><b>student_ratio:</b>  15-1</li>
 <li x-show="open | openall"><b>garduation_rate:</b>  39%</li>
 <li x-show="open | openall"><b>enrollment_by_gender:</b>  37% Male / 63% Female</li>
@@ -3241,7 +3372,7 @@
 <li x-show="open | openall"><b>undergrad_enrollment:</b>  1203</li>
 <li x-show="open | openall"><b>control_affilication:</b>  Private not-for-profit (no religious affiliation)</li>
 <li x-show="open | openall"><b>overview:</b> Coker University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
-<li x-show="open | openall"><b>head_coach_name:</b> </li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Stephanie Dragan</li>
 <li x-show="open | openall"><b>assistant_coach_name:</b> </li>
 <li x-show="open | openall"><b>student_ratio:</b>  12-1</li>
 <li x-show="open | openall"><b>garduation_rate:</b>  52%</li>
@@ -3759,6 +3890,7 @@
 <li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Aeronautics/Aviation/Aerospace Science and Technology, General</li>
 </div>
 </div> <!-- openArizona -->
+</div> <!-- openColorado -->
 </div> <!-- openFlorida -->
 </div> <!-- openGeorgia -->
 </div> <!-- openKansas -->
