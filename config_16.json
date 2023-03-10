@@ -78,10 +78,10 @@
         "University of Tampa",
         "Northern Arizona University",
         "Lynn University",
-        "Morgan State University",
+        "# Morgan State University",
         "Florida Institute of Technology",
         "Jacksonville University",
-        "stephen university",
+        "# stephen university",
         "# edger",
         "University at Buffalo",
         "Grand Canyon University",
@@ -103,6 +103,10 @@
         "University at Albany",
         "Lehigh University",
         "Metropolitan State University of Denver",
+        "University of Arizona",
+        "Colorado State University",
+        "Colorado School of Mines",
+        "South Dakota School of Mines \u0026 Technology",
         "# All"
     ],
     "levellist" : [
