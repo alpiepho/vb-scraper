@@ -5,8 +5,8 @@
   </head>
   <body>
   <h2>spokaneCoaches</h2>
-  <div class="run-count">(school count: 9)</div>
-  <div class="run-date">(2023-03-08 7:45 pm)</div>
+  <div class="run-count">(school count: 10)</div>
+  <div class="run-date">(2023-03-10 10:30 am)</div>
     <ul>
 <div x-data="{ openall: false }">
 <div x-data="{ openDI: true }">
@@ -18,6 +18,7 @@
 <div x-data="{ openMontana: true }">
 <div x-data="{ openNevada: true }">
 <div x-data="{ openOregon: true }">
+<div x-data="{ openUtah: true }">
 <div x-data="{ openWashington: true }">
 <button class="home-button"><a href="index.html">home</a></button>
 <button class="expand-button" @click="openall = !openall" :class="{ 'active': openall }">expand all...</button>
@@ -28,6 +29,7 @@
 <button class="menu-button" @click="openMontana = !openMontana" :class="{ 'active': openMontana }">Montana...</button>
 <button class="menu-button" @click="openNevada = !openNevada" :class="{ 'active': openNevada }">Nevada...</button>
 <button class="menu-button" @click="openOregon = !openOregon" :class="{ 'active': openOregon }">Oregon...</button>
+<button class="menu-button" @click="openUtah = !openUtah" :class="{ 'active': openUtah }">Utah...</button>
 <button class="menu-button" @click="openWashington = !openWashington" :class="{ 'active': openWashington }">Washington...</button>
 <div x-show="openDI && openColorado">
     <ul>
@@ -881,6 +883,112 @@
 </div>
     </ul>
 </div>
+<div x-show="openDI && openUtah">
+    <ul>
+    <div class="school-title-bar">
+    <div class="school-title-image">
+    <img src="https://cdn2-sr-application.sportsrecruits.com/files/images/college_profile/716_Dixie_State_University_of_Utah.png" alt="Utah Tech University">
+    </div>
+    <div class="school-title-details">
+    <div><b>name:</b>  Utah Tech University</div>
+    <div><b>state:</b>  Utah</div>
+    <div><b>city:</b>  St. George</div>
+    <div><b>level:</b>  NCAA DI</div>
+    </div>
+    </div>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah/utah_tech_university" target="_blank">college^</a></button>
+<button class="menu-button"><a href=" https://sportsrecruits.com/athletic-scholarships/womens-volleyball/utah" target="_blank">state^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Utah+Tech+University" target="_blank">google^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Utah+Tech+University+mascot" target="_blank">google mascot^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Utah+Tech+University+volleyball+roster" target="_blank">google roster^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Utah+Tech+University+volleyball+coaches" target="_blank">google coaches^</a></button>
+<button class="menu-button"><a href=" https://www.google.com/search?q=Utah+Tech+University+volleyball+schedule" target="_blank">google schedule^</a></button>
+<button class="menu-button"><a href=" https://en.wikipedia.org/wiki/Utah_Tech_University" target="_blank">wikipedia^</a></button>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">details...</button>
+<li x-show="open | openall"><b>conference:</b>  Western Athletic Conference (WAC)</li>
+<li x-show="open | openall"><b>academic_selectivity:</b>  Less Selective</li>
+<li x-show="open | openall"><b>undergrad_enrollment:</b>  8503</li>
+<li x-show="open | openall"><b>control_affilication:</b>  Public</li>
+<li x-show="open | openall"><b>overview:</b> Utah Tech University does offer athletic scholarships for Volleyball. Need-based and academic scholarships are available for student-athletes. Athletic scholarships are available for NCAA Division I, NCAA Division II, NAIA and NJCAA. On average, 34% of all student-athletes receive athletic scholarships.</li>
+<li x-show="open | openall"><b>head_coach_name:</b>  Camilla Hafoka</li>
+<li x-show="open | openall"><b>assistant_coach_name:</b>  Whitnee Tupe</li>
+<li x-show="open | openall"><b>student_ratio:</b>  19-1</li>
+<li x-show="open | openall"><b>graduation_rate:</b>  35%</li>
+<li x-show="open | openall"><b>enrollment_by_gender:</b>  47% Male / 53% Female</li>
+<li x-show="open | openall"><b>calendar_system:</b>  Semester</li>
+<li x-show="open | openall"><b>retention_rate:</b>  58%</li>
+<li x-show="open | openall"><b>on_campus_housing:</b>  Yes</li>
+<li x-show="open | openall"><b>acceptance_rate:</b>  Not Reported</li>
+<li x-show="open | openall"><b>total_applicants:</b>  Not Reported</li>
+<li x-show="open | openall"><b>sat_students_submitting:</b>  Not Reported</li>
+<li x-show="open | openall"><b>sat_reading_range:</b>  Not Reported</li>
+<li x-show="open | openall"><b>sat_math_range:</b>  Not Reported</li>
+<li x-show="open | openall"><b>sat_writing_range:</b>  Not Reported</li>
+<li x-show="open | openall"><b>act_students_submitting:</b>  Not Reported</li>
+<li x-show="open | openall"><b>act_composite:</b>  Not Reported</li>
+<li x-show="open | openall"><b>act_english:</b>  Not Reported</li>
+<li x-show="open | openall"><b>act_math:</b>  Not Reported</li>
+<li x-show="open | openall"><b>act_writing:</b>  Not Reported</li>
+<li x-show="open | openall"><b>requirements_open_admission_policy:</b>  Yes</li>
+<li x-show="open | openall"><b>requirements_application_fee:</b>  $35</li>
+<li x-show="open | openall"><b>requirements_recomedations:</b>  Not Reported</li>
+<li x-show="open | openall"><b>requirements_secondary_school_record:</b>  Not Reported</li>
+<li x-show="open | openall"><b>requirements_secondary_school_rank:</b>  Not Reported</li>
+<li x-show="open | openall"><b>requirements_secondary_school_gpa:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_in_state_total:</b>  $19,036</li>
+<li x-show="open | openall"><b>cost_in_state_tuition:</b>  $3,648</li>
+<li x-show="open | openall"><b>cost_in_state_fee:</b>  $643</li>
+<li x-show="open | openall"><b>cost_in_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_out_state_total:</b>  $28,052</li>
+<li x-show="open | openall"><b>cost_out_state_tuition:</b>  $11,664</li>
+<li x-show="open | openall"><b>cost_out_state_fee:</b>  $643</li>
+<li x-show="open | openall"><b>cost_out_state_on_campus_room:</b>  Not Reported</li>
+<li x-show="open | openall"><b>cost_percent_undergrad_aid:</b>  87%</li>
+</div>
+<div x-data="{ open: false }">
+<button class="menu-button" @click="open = !open">majors...</button>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Spanish Language and Literature</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Technical Theatre/Theatre Design and Technology</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Art/Art Studies, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;English Language and Literature, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Business Administration and Management, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Business Administration, Management and Operations, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Accounting</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Finance, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Dental Hygiene/Hygienist</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Physical Therapy Technician/Assistant</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Emergency Medical Technology/Technician (EMT Paramedic)</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Respiratory Care Therapy/Therapist</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Radiologic Technology/Science - Radiographer</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Clinical Laboratory Science/Medical Technology/Technologist</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Registered Nursing/Registered Nurse</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;General Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Multi-/Interdisciplinary Studies, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Criminal Justice/Safety Studies</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer and Information Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Computer Science</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biology/Biological Sciences, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Pre-Engineering</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mathematics, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Speech Communication and Rhetoric</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Psychology, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Elementary Education and Teaching</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Early Childhood Education and Teaching</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;English/Language Arts Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mathematics Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Music Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Science Teacher Education/General Science Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Social Science Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Biology Teacher Education</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Teacher Education and Professional Development, Specific Subject Areas, Other</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;History, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Mechanics and Repairers, General</li>
+<li x-show="open | openall">&nbsp;&nbsp;&nbsp;&nbsp;Automobile/Automotive Mechanics Technology/Technician</li>
+</div>
+    </ul>
+</div>
 <div x-show="openNAIA && openWashington">
     <ul>
     <div class="school-title-bar">
@@ -1154,6 +1262,7 @@
 </div> <!-- openMontana -->
 </div> <!-- openNevada -->
 </div> <!-- openOregon -->
+</div> <!-- openUtah -->
 </div> <!-- openWashington -->
 </div> <!-- openNJCAA -->
 </div> <!-- openNAIA -->
