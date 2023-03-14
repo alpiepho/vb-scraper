@@ -1128,7 +1128,7 @@ func main() {
 
 	opts := append(chromedp.DefaultExecAllocatorOptions[:],
 		chromedp.DisableGPU,
-		chromedp.Flag("headless", false),
+		chromedp.Flag("headless", true),
 	)
 
 	fmt.Println("open config...")

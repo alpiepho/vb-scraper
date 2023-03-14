@@ -68,7 +68,10 @@
     "collegelist" : [
         "# filter for college details from state/college list (more web, more time, specific):",
         "# list of specific colleges or All, start with # to disable that line",
+        "Colorado State University",
         "Eastern Oregon University",
+        "Evergreen State College",
+        "George Fox University",
         "Lewis \u0026 Clark College",
         "Linfield University",
         "Montana State University, Bozeman",
@@ -79,7 +82,7 @@
         "University of Nevada",
         "Utah Tech University",
         "Washington State University",
-        "TBD",
+        "#TBD",
         "#All"
     ],
     "levellist" : [
