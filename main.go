@@ -52,9 +52,10 @@ type Configuration struct {
 	ImportColleges     bool   `json:"import_colleges"`
 	ImportCollegesFile string `json:"import_colleges_file"`
 
-	ParseCollegePages bool     `json:"parse_college_pages"`
-	CollegeList       []string `json:"collegelist"`
-	LevelList         []string `json:"levellist"`
+	ParseCollegePages  bool     `json:"parse_college_pages"`
+	CollegeList        []string `json:"collegelist"`
+	CollegeCommentList []string `json:"collegecommentlist,omitempty"`
+	LevelList          []string `json:"levellist"`
 
 	ParseLocation                    bool   `json:"parse_location"`
 	ParseLocationName                string `json:"parse_location_name"`
@@ -866,6 +867,23 @@ func statesUsed(details *[]CollegeDetail) []string {
 	return unique(result)
 }
 
+func collegeIndex(name string) int {
+	index := 0
+	for _, college := range appConfig.CollegeList {
+		if strings.HasPrefix(college, "#") {
+			continue
+		}
+		if name == college {
+			// fmt.Println(name)
+			// fmt.Println(college)
+			// fmt.Println(index)
+			return index
+		}
+		index += 1
+	}
+	return -1
+}
+
 func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	if len(appConfig.ExportCollegeDetailsHtmlFile) == 0 {
 		return
@@ -958,6 +976,7 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	pendingState := ""
 	pendingCity := ""
 	pendingLevel := ""
+	pendingComment := ""
 	for _, line := range lines {
 		line = strings.TrimSpace(line)
 		if len(line) == 0 {
@@ -970,6 +989,13 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			value := strings.Replace(line, "name:", "", -1)
 			value = strings.TrimSpace(value)
 			pendingName = value
+
+			if len(appConfig.CollegeCommentList) > 0 {
+				originalIndex := collegeIndex(pendingName)
+				if originalIndex >= 0 {
+					pendingComment = appConfig.CollegeCommentList[originalIndex]
+				}
+			}
 
 			inDetails = false
 			// fmt.Println(line)
@@ -1019,6 +1045,7 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			msg2 += "    <div><b>state:</b>  " + pendingState + "</div>\n"
 			msg2 += "    <div><b>city:</b>  " + pendingCity + "</div>\n"
 			msg2 += "    <div><b>level:</b>  " + pendingLevel + "</div>\n"
+			msg2 += "    <div><b>comment:</b>  " + pendingComment + "</div>\n"
 			msg2 += "    </div>\n"
 			msg2 += "    </div>\n"
 
