@@ -25,7 +25,7 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 - [-] test import_colleges txt
 - [x] test import_colleges json
 
-- [ ] parse college details page
+- [x] parse college details page
     - [x] conference
     - [x] academic selectivity
     - [x] enrollment (remove comma)
@@ -40,11 +40,11 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
     - [x] Admissions..
     - [x] Cost...
     - [x] Major...
-- [ ] other stuff
+- [x] other stuff
     - [x] google link
     - [x] wikipedia link
     - [x] lat/long
-   - [x] volleyball link
+    - [x] volleyball link
 - [x] export details as text
 - [x] export details as html
 - [ ] export details as csv
@@ -54,20 +54,20 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 - [x] filter details based on
     - [x] state
     - [x] college name
-    - city
+    - [ ] city
     - [x] level
-    - conference
-    - academic_selectivity
-    - undergrad_enrollment
-    - cost in/out state
+    - [ ] conference
+    - [ ] academic_selectivity
+    - [ ] undergrad_enrollment
+    - [ ] cost in/out state
 - [ ] sort details based on
-    - state
-    - city
-    - level
-    - conference
-    - academic_selectivity
-    - undergrad_enrollment
-    - cost in/out state
+    - [ ] state
+    - [ ] city
+    - [ ] level
+    - [ ] conference
+    - [ ] academic_selectivity
+    - [ ] undergrad_enrollment
+    - [ ] cost in/out state
 
 - [x] google maps link from radius?
 
@@ -78,8 +78,8 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 
 - [x] alpine.js, expand all
 - [x] alpine.js, filters: level
-- [ ] alpine.js, filters: state
-- [ ] alpine.js, filters: other?
+- [x] alpine.js, filters: state
+- [-] alpine.js, filters: other?
 - [x] cleaner buttons
 - [x] labels as links (no url on page)
 - [x] no logo link
@@ -87,9 +87,13 @@ A web scraper application to gather a list of colleges from sportsrecruits.com, 
 - [x] fonts?
 - [-] mascot (link for mascot)
 - [ ] link to google map? (ex. https://www.google.com/maps/search/?api=1&query=Northern+Arizona+University)
-- [ ] tbd
  
 - [ ] fix lat bugs (automate around per state) (ex. https://www.google.com/search?q=latitude+Vassar+College)
+
+- [ ] use aplpine.js and local storage to created todo list of majors
+    - see https://stackoverflow.com/questions/70670336/how-to-integrate-alpinejs-persist-onto-a-toggle-using-localstoage
+    - https://codewithhugo.com/alpinejs-localstorage-sessionstorage/
+
 
 
 ## Golang version
