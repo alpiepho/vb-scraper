@@ -2,7 +2,7 @@
 # # go run main.go -configfile=config_all.json
 # go run main.go -configfile config_spokane300.json
 # go run main.go -configfile config_spokaneStates.json
-# go run main.go -configfile=config_spokaneCoaches.json
+go run main.go -configfile=config_spokaneCoaches.json
 # go run main.go -configfile=config_chicago300.json
 # go run main.go -configfile=config_chicago100.json
 go run main.go -configfile=config_chicagoCoaches.json
