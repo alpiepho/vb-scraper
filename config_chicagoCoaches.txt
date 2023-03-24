@@ -1,0 +1,36 @@
+NY
+Fordham Univ.
+NCAA I
+IL
+Illinois Coll.
+NCAA III
+LA
+Louisiana State University
+NCAA I
+CA
+Loyola Marymount Univ.
+NCAA I
+MI
+Michigan State Univ.
+NCAA I
+TX
+Southern Methodist Univ.
+NCAA I
+TX
+Texas Woman's Univ.
+NCAA II
+CA
+Univ. of California - Los Angeles
+NCAA I
+CO
+Univ. of Colorado at Boulder
+NCAA I
+IN
+Univ. of Notre Dame
+NCAA I
+VA
+Virginia Commonwealth University
+NCAA I
+NC
+Wake Forest Univ.
+NCAA I
