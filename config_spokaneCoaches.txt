@@ -7,6 +7,9 @@ NCAA I
 WA
 Big Bend Community College
 Other
+CA
+Biola Univ.
+NCAA II
 ID
 Boise State Univ.
 NCAA I
@@ -25,6 +28,9 @@ NCAA II
 CA
 California State Univ. - Sacramento
 NCAA I
+CA
+California State Univ. - Stanislaus
+NCAA II
 ME
 Colby Coll.
 NCAA III
@@ -91,6 +97,9 @@ NCAA I
 NC
 North Carolina State Univ. at Raleigh
 NCAA I
+IL
+North Central Coll.
+NCAA III
 ID
 North Idaho Coll.
 NJCAA I
