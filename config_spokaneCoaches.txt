@@ -1,3 +1,6 @@
+CA
+Academy of Art Univ.
+NCAA II
 NY
 Army
 NCAA I
@@ -6,6 +9,9 @@ Big Bend Community College
 Other
 ID
 Boise State Univ.
+NCAA I
+CA
+California Poly. - San Luis Obispo
 NCAA I
 CA
 California State Univ. - Fresno
@@ -34,6 +40,9 @@ NAIA
 IL
 Depaul Univ.
 NCAA I
+CA
+Dominican Univ. of California
+NCAA II
 OR
 Eastern Oregon Univ.
 NAIA
@@ -61,6 +70,9 @@ NCAA I
 TX
 Lamar Univ. - Beaumont
 NCAA I
+ID
+Lewis - Clark State Coll.
+NAIA
 OR
 Lewis & Clark Coll.
 NCAA III
@@ -118,6 +130,9 @@ NCAA I
 CA
 San Francisco State Univ.
 NCAA II
+CA
+San Jose State Univ.
+NCAA I
 WA
 Seattle Pacific Univ.
 NCAA II
@@ -130,6 +145,9 @@ Other
 MT
 The Univ. of Montana - Missoula
 NCAA I
+MT
+The Univ. of Montana - Western
+NAIA
 CO
 U.S. Air Force Academy
 NCAA I
