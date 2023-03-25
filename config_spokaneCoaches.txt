@@ -1,0 +1,249 @@
+CA
+Academy of Art Univ.
+NCAA II
+NY
+Army
+NCAA I
+WA
+Big Bend Community College
+Other
+ID
+Boise State Univ.
+NCAA I
+CA
+California Poly. - San Luis Obispo
+NCAA I
+CA
+California State Univ. - Fresno
+NCAA I
+CA
+California State Univ. - Long Beach
+NCAA I
+CA
+California State Univ. - Monterey Bay
+NCAA II
+CA
+California State Univ. - Sacramento
+NCAA I
+ME
+Colby Coll.
+NCAA III
+ID
+Coll. of Southern Idaho
+NJCAA I
+CO
+Colorado State Univ.
+NCAA I
+OR
+Corban Univ.
+NAIA
+IL
+Depaul Univ.
+NCAA I
+CA
+Dominican Univ. of California
+NCAA II
+OR
+Eastern Oregon Univ.
+NAIA
+WA
+Eastern Washington Univ.
+NCAA I
+WA
+Evergreen State Coll.
+NAIA
+OR
+George Fox Univ.
+NCAA III
+WA
+Gonzaga Univ.
+NCAA I
+AZ
+Grand Canyon Univ.
+NCAA I
+MN
+Hamline Univ.
+NCAA III
+ID
+Idaho State Univ.
+NCAA I
+TX
+Lamar Univ. - Beaumont
+NCAA I
+ID
+Lewis - Clark State Coll.
+NAIA
+OR
+Lewis & Clark Coll.
+NCAA III
+OR
+Linfield Univ.
+NCAA III
+CA
+Loyola Marymount Univ.
+NCAA I
+IL
+Loyola Univ. Chicago
+NCAA I
+MT
+Montana State Univ. - Bozeman
+NCAA I
+NC
+North Carolina State Univ. at Raleigh
+NCAA I
+ID
+North Idaho Coll.
+NJCAA I
+ID
+Northwest Nazarene Univ.
+NCAA II
+WA
+Northwest Univ.
+NAIA
+OR
+Oregon State Univ.
+NCAA I
+OR
+Pacific Univ.
+NCAA III
+CA
+Pepperdine Univ. - Indoor
+NCAA I
+CA
+Point Loma Nazarene Univ.
+NCAA II
+OR
+Portland State Univ.
+NCAA I
+IN
+Purdue Univ.
+NCAA I
+TX
+Rice Univ.
+NCAA I
+CA
+Saint Marys Coll. of California
+NCAA I
+CA
+San Diego State Univ.
+NCAA I
+CA
+San Francisco State Univ.
+NCAA II
+CA
+San Jose State Univ.
+NCAA I
+WA
+Seattle Pacific Univ.
+NCAA II
+WA
+Seattle Univ.
+NCAA I
+WA
+South Puget Sound C.C.
+Other
+MT
+The Univ. of Montana - Missoula
+NCAA I
+MT
+The Univ. of Montana - Western
+NAIA
+CO
+U.S. Air Force Academy
+NCAA I
+CA
+Univ. of California - Berkeley
+NCAA I
+CA
+Univ. of California - Davis
+NCAA I
+CA
+Univ. of California - Los Angeles
+NCAA I
+CO
+Univ. of Colorado at Boulder
+NCAA I
+OH
+Univ. of Dayton
+NCAA I
+ID
+Univ. of Idaho
+NCAA I
+IA
+Univ. of Iowa
+NCAA I
+CA
+Univ. of La Verne
+NCAA III
+FL
+Univ. of Miami
+NCAA I
+MO
+Univ. of Missouri - Columbia
+NCAA I
+NV
+Univ. of Nevada - Las Vegas
+NCAA I
+NV
+Univ. of Nevada - Reno
+NCAA I
+OK
+Univ. of Oklahoma - Norman
+NCAA I
+WA
+Univ. of Puget Sound
+NCAA III
+CA
+Univ. of San Diego
+NCAA I
+CA
+Univ. of San Francisco
+NCAA I
+CA
+Univ. of The Pacific
+NCAA I
+WA
+Univ. of Washington - Seattle Campus
+NCAA I
+WY
+Univ. of Wyoming
+NCAA I
+UT
+University of Utah
+NCAA I
+UT
+Utah State Univ.
+NCAA I
+UT
+Utah Tech University
+NCAA I
+UT
+Utah Valley University
+NCAA I
+WA
+Walla Walla C.C.
+NJCAA I
+WA
+Washington State Univ.
+NCAA I
+MO
+Washington University In St Louis
+NCAA III
+UT
+Weber State Univ.
+NCAA I
+OR
+Western Oregon Univ.
+NCAA II
+WA
+Western Washington Univ.
+NCAA II
+WA
+Whitman Coll.
+NCAA III
+OR
+Willamette Univ.
+NCAA III
+CT
+Yale Univ.
+NCAA I
