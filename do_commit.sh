@@ -9,6 +9,8 @@ git commit -m "update"
 git push
 git checkout main
 git stash pop
+git diff
+read -p "Press any key to resume ..."
 git add -A
 git commit -m "update"
 git push
