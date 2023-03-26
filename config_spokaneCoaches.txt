@@ -160,6 +160,9 @@ NAIA
 CO
 U.S. Air Force Academy
 NCAA I
+AZ
+Univ. of Arizona
+NCAA I
 CA
 Univ. of California - Berkeley
 NCAA I
