@@ -13,6 +13,9 @@ NCAA I
 MI
 Michigan State Univ.
 NCAA I
+MO
+Southeast Missouri State Univ.
+NCAA I
 TX
 Southern Methodist Univ.
 NCAA I
@@ -34,3 +37,6 @@ NCAA I
 NC
 Wake Forest Univ.
 NCAA I
+CT
+Wesleyan Univ.
+NCAA III
