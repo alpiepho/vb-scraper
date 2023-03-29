@@ -1,8 +1,20 @@
+CA
+California State Univ. - Fresno
+NCAA I
+NY
+Cornell University
+NCAA I
 NY
 Fordham Univ.
 NCAA I
 IL
 Illinois Coll.
+NCAA III
+IL
+Illinois State University
+NCAA I
+IA
+Loras Coll.
 NCAA III
 LA
 Louisiana State University
@@ -12,6 +24,12 @@ Loyola Marymount Univ.
 NCAA I
 MI
 Michigan State Univ.
+NCAA I
+MS
+Mississippi State Univ.
+NCAA I
+CA
+Santa Clara Univ.
 NCAA I
 MO
 Southeast Missouri State Univ.
@@ -27,6 +45,9 @@ Univ. of California - Los Angeles
 NCAA I
 CO
 Univ. of Colorado at Boulder
+NCAA I
+ND
+Univ. of North Dakota
 NCAA I
 IN
 Univ. of Notre Dame
