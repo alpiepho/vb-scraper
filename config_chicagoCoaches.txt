@@ -1,8 +1,14 @@
+KY
+Bellarmine Univ.
+NCAA I
 CA
 California State Univ. - Fresno
 NCAA I
 NY
 Cornell University
+NCAA I
+NC
+Duke Univ.
 NCAA I
 NY
 Fordham Univ.
@@ -22,6 +28,9 @@ NCAA I
 CA
 Loyola Marymount Univ.
 NCAA I
+MN
+Macalester Coll.
+NCAA III
 MI
 Michigan State Univ.
 NCAA I
@@ -34,8 +43,14 @@ NCAA I
 MO
 Southeast Missouri State Univ.
 NCAA I
+IL
+Southern Illinois Univ. - Carbondale
+NCAA I
 TX
 Southern Methodist Univ.
+NCAA I
+CA
+Stanford Univ.
 NCAA I
 TX
 Texas Woman's Univ.
@@ -45,6 +60,9 @@ Univ. of California - Los Angeles
 NCAA I
 CO
 Univ. of Colorado at Boulder
+NCAA I
+NC
+Univ. of North Carolina at Chapel Hill
 NCAA I
 ND
 Univ. of North Dakota
