@@ -5,7 +5,7 @@
 # go run main.go -configfile=config_spokaneCoaches.json
 # go run main.go -configfile=config_chicago300.json
 # go run main.go -configfile=config_chicago100.json
-go run main.go -configfile=config_chicagoCoaches.json
+# go run main.go -configfile=config_chicagoCoaches.json
 # go run main.go -configfile=config_reno300.json
 # go run main.go -configfile=config_arizona.json
 # go run main.go -configfile=config_colorado.json
@@ -17,3 +17,4 @@ go run main.go -configfile=config_chicagoCoaches.json
 # go run main.go -configfile=config_16.json
 # go run main.go -configfile=config_16_emails.json
 # go run main.go -configfile=config_kipCamp23.json
+go run main.go -configfile=config_aauCoaches.json

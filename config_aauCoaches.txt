@@ -1,0 +1,111 @@
+NC
+Appalachian State Univ.
+NCAA I
+MA
+Boston College
+NCAA I
+CA
+California State Univ. - Fresno
+NCAA I
+CT
+Eastern Connecticut State Univ.
+NCAA III
+KY
+Eastern Kentucky University
+NCAA I
+NC
+Elon Univ.
+NCAA I
+MA
+Emerson Coll.
+NCAA III
+FL
+Florida State University
+NCAA I
+FL
+Indian River State College
+NJCAA I
+NY
+Ithaca Coll.
+NCAA III
+MD
+Johns Hopkins University
+NCAA III
+NY
+Long Island Univ. - Brooklyn Campus
+NCAA I
+OH
+Lourdes Univ.
+NAIA
+WV
+Marshall Univ.
+NCAA I
+OH
+Miami Univ. - Oxford
+NCAA I
+MS
+Mississippi State Univ.
+NCAA I
+MO
+Missouri S&T
+NCAA II
+PA
+Moravian Univ.
+NCAA III
+MA
+Mount Holyoke Coll.
+NCAA III
+NC
+North Carolina Agricultural and Tech. St Univ
+NCAA I
+ME
+Saint Josephs Coll.
+NCAA III
+NY
+Skidmore Coll.
+NCAA III
+SC
+South Carolina State Univ.
+NCAA I
+MA
+Stonehill College
+NCAA I
+AL
+Univ. of Alabama
+NCAA I
+CA
+Univ. of California - Los Angeles
+NCAA I
+CO
+Univ. of Colorado at Boulder
+NCAA I
+NV
+Univ. of Nevada - Reno
+NCAA I
+FL
+Univ. of Tampa
+NCAA II
+KY
+Univ. of the Cumberlands
+NAIA
+TN
+University of Memphis
+NCAA I
+NH
+University of New Hampshire
+NCAA I
+FL
+University of North Florida
+NCAA I
+GA
+University of West Georgia
+NCAA II
+VA
+Virginia Commonwealth University
+NCAA I
+NC
+Wake Forest University
+NCAA I
+CO
+Western Colorado Univ.
+NCAA II
