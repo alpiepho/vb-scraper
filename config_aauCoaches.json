@@ -143,5 +143,7 @@
     "export_college_details_html_file": "college_details_aauCoaches.html",
 
     "dump_states" : false,
-    "dump_colleges" : false
+    "dump_colleges" : false,
+
+    "coach_list_link": "https://universityathlete.com/#/attending/23513"
 }

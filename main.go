@@ -80,6 +80,8 @@ type Configuration struct {
 	//DEBUG
 	DumpStates   bool `json:"dump_states"`
 	DumpColleges bool `json:"dump_colleges"`
+
+	CoachListLink string `json:"coach_list_link,omitempty"`
 }
 
 var appConfig Configuration
@@ -1138,6 +1140,11 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "</div> <!-- openall -->\n"
 
 	msg2 += "    </ul>\n"
+	msg2 += "    <br><br><br><br>\n"
+	msg2 += "<div><a href=\"" + MAP_URL + "\" target=\"_blank\">" + MAP_URL + "^</a></div>\n"
+	if appConfig.CoachListLink != "" {
+		msg2 += "<div><a href=\"" + appConfig.CoachListLink + "\" target=\"_blank\">" + appConfig.CoachListLink + "^</a></div>\n"
+	}
 	msg2 += "    <br><br><br><br><br><br><br><br>\n"
 	msg2 += "  </body>\n"
 	msg2 += "</html>\n"
