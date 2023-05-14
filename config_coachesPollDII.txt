@@ -1,0 +1,29 @@
+
+from https://www.avca.org/polls/dii-women/2022/12-05-2022.html
+
+1	West Texas A&M [47]	1175	33-4	9
+2	Concordia-St. Paul	1125	31-6	3
+3	MSU Denver	1014	30-2	1
+4	Wayne State (Neb.)	972	30-3	2
+5	St. Cloud State	913	28-6	7
+6	Cal State L.A.	873	25-7	19
+7	Minnesota Duluth	842	27-5	6
+8	Barry	801	28-6	17
+9	Tampa	772	29-4	5
+10	Alaska Anchorage	718	27-3	4
+11	Missouri-St. Louis	651	25-8	NR
+12	Southwest Minnesota State	582	23-6	10
+13	NW Missouri State	552	24-7	12
+14	Western Washington	535	21-6	8
+15	Nebraska-Kearney	517	28-6	13
+16	West Florida	426	28-6	11
+17	Wingate	394	32-3	25
+18	Washburn	357	24-8	15
+19	Regis	339	22-8	14
+20	Cal State San Bernardino	287	20-7	16
+21	Colorado Mesa	273	22-7	18
+22	Colorado School of Mines	221	22-8	22
+23	Cal Poly Pomona	200	24-6	20
+24	Chaminade	152	26-8	NR
+25	Quincy	135	28-3	21
+
