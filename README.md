@@ -124,7 +124,11 @@ or to gather all the output:
 - calc distance:
 - https://gist.github.com/hotdang-ca/6c1ee75c48e515aec5bc6db6e3265e49
 
-
+- https://www.ncsasports.org/best-colleges/best-division-2-volleyball-colleges
+- https://www.avca.org/polls/dii-women/index.html
+- https://www.avca.org/polls/dii-women/2022/12-05-2022.html
+- https://www.ncaa.com/brackets/volleyball-women/d2/2022
+- https://www.ncaa.com/rankings/volleyball-women/d2/regional-rankings
 
 ## APENDIX: pending kip2
 <pre>

@@ -1269,6 +1269,19 @@ func main() {
 			parseForCollegePages(&ctx, &details, &college)
 		}
 	}
+	// sort based on appConfig.CollegeList
+	if !slices.Contains(appConfig.CollegeList, "All") {
+		var details2 []CollegeDetail
+		for _, name := range appConfig.CollegeList {
+			for _, detail := range details {
+				if detail.Name == name {
+					details2 = append(details2, detail)
+				}
+
+			}
+		}
+		details = details2
+	}
 
 	if appConfig.ImportCollegeDetails {
 		fmt.Println("import college details...")
