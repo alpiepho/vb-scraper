@@ -7,12 +7,21 @@ NCAA I
 CA
 California State Univ. - Fresno
 NCAA I
+VT
+Castleton Univ.
+NCAA III
+SC
+Coll. of Charleston
+NCAA I
 CT
 Eastern Connecticut State Univ.
 NCAA III
 KY
 Eastern Kentucky University
 NCAA I
+PA
+Eastern University
+NCAA III
 NC
 Elon Univ.
 NCAA I
@@ -22,6 +31,9 @@ NCAA III
 FL
 Florida State University
 NCAA I
+VA
+Hollins University
+NCAA III
 FL
 Indian River State College
 NJCAA I
@@ -33,6 +45,9 @@ Johns Hopkins University
 NCAA III
 NY
 Long Island Univ. - Brooklyn Campus
+NCAA I
+LA
+Louisiana State University
 NCAA I
 OH
 Lourdes Univ.
@@ -52,9 +67,15 @@ NCAA II
 PA
 Moravian Univ.
 NCAA III
+MD
+Morgan State Univ.
+NCAA I
 MA
 Mount Holyoke Coll.
 NCAA III
+NM
+New Mexico State Univ.
+NCAA I
 NC
 North Carolina Agricultural and Tech. St Univ
 NCAA I
@@ -67,8 +88,14 @@ NCAA III
 SC
 South Carolina State Univ.
 NCAA I
+NY
+State University of New York at Morrisville
+NCAA III
 MA
 Stonehill College
+NCAA I
+TX
+Texas Christian University
 NCAA I
 AL
 Univ. of Alabama
@@ -79,15 +106,24 @@ NCAA I
 CO
 Univ. of Colorado at Boulder
 NCAA I
+MA
+Univ. of Massachusetts - Boston
+NCAA III
 NV
 Univ. of Nevada - Reno
 NCAA I
+CT
+Univ. of New Haven
+NCAA II
 FL
 Univ. of Tampa
 NCAA II
 KY
 Univ. of the Cumberlands
 NAIA
+VA
+University of Mary Washington
+NCAA III
 TN
 University of Memphis
 NCAA I
@@ -96,6 +132,9 @@ University of New Hampshire
 NCAA I
 FL
 University of North Florida
+NCAA I
+FL
+University of South Florida
 NCAA I
 GA
 University of West Georgia
@@ -109,3 +148,6 @@ NCAA I
 CO
 Western Colorado Univ.
 NCAA II
+SC
+Winthrop Univ.
+NCAA 
