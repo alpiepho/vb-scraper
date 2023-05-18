@@ -17,6 +17,6 @@
 # go run main.go -configfile=config_16.json
 # go run main.go -configfile=config_16_emails.json
 # go run main.go -configfile=config_kipCamp23.json
-# go run main.go -configfile=config_aauCoaches.json
-go run main.go -configfile=config_kplist051223.json
+go run main.go -configfile=config_aauCoaches.json
+# go run main.go -configfile=config_kplist051223.json
 # go run main.go -configfile=config_coachesPollDII.json
