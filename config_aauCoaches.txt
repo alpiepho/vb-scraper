@@ -1,8 +1,17 @@
 NC
 Appalachian State Univ.
 NCAA I
+IL
+Aurora University
+NCAA III
+MA
+Babson Coll.
+NCAA III
 MA
 Boston College
+NCAA I
+IN
+Butler Univ.
 NCAA I
 CA
 California State Univ. - Fresno
@@ -43,6 +52,9 @@ NCAA III
 MD
 Johns Hopkins University
 NCAA III
+KY
+Lindsey Wilson Coll.
+NAIA
 NY
 Long Island Univ. - Brooklyn Campus
 NCAA I
@@ -52,6 +64,9 @@ NCAA I
 OH
 Lourdes Univ.
 NAIA
+FL
+Lynn Univ.
+NCAA II
 WV
 Marshall Univ.
 NCAA I
@@ -106,6 +121,9 @@ NCAA I
 CO
 Univ. of Colorado at Boulder
 NCAA I
+CT
+Univ. of Connecticut
+NCAA I
 MA
 Univ. of Massachusetts - Boston
 NCAA III
@@ -145,9 +163,15 @@ NCAA I
 NC
 Wake Forest University
 NCAA I
+NY
+Wells College
+NCAA III
 CO
 Western Colorado Univ.
 NCAA II
 SC
 Winthrop Univ.
-NCAA 
+NCAA I
+CT
+Yale Univ.
+NCAA I
