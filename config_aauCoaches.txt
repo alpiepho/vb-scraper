@@ -1,0 +1,177 @@
+NC
+Appalachian State Univ.
+NCAA I
+IL
+Aurora University
+NCAA III
+MA
+Babson Coll.
+NCAA III
+MA
+Boston College
+NCAA I
+IN
+Butler Univ.
+NCAA I
+CA
+California State Univ. - Fresno
+NCAA I
+VT
+Castleton Univ.
+NCAA III
+SC
+Coll. of Charleston
+NCAA I
+CT
+Eastern Connecticut State Univ.
+NCAA III
+KY
+Eastern Kentucky University
+NCAA I
+PA
+Eastern University
+NCAA III
+NC
+Elon Univ.
+NCAA I
+MA
+Emerson Coll.
+NCAA III
+FL
+Florida State University
+NCAA I
+VA
+Hollins University
+NCAA III
+FL
+Indian River State College
+NJCAA I
+NY
+Ithaca Coll.
+NCAA III
+MD
+Johns Hopkins University
+NCAA III
+KY
+Lindsey Wilson Coll.
+NAIA
+NY
+Long Island Univ. - Brooklyn Campus
+NCAA I
+LA
+Louisiana State University
+NCAA I
+OH
+Lourdes Univ.
+NAIA
+FL
+Lynn Univ.
+NCAA II
+WV
+Marshall Univ.
+NCAA I
+OH
+Miami Univ. - Oxford
+NCAA I
+MS
+Mississippi State Univ.
+NCAA I
+MO
+Missouri S&T
+NCAA II
+PA
+Moravian Univ.
+NCAA III
+MD
+Morgan State Univ.
+NCAA I
+MA
+Mount Holyoke Coll.
+NCAA III
+NM
+New Mexico State Univ.
+NCAA I
+NC
+North Carolina Agricultural and Tech. St Univ
+NCAA I
+ME
+Saint Josephs Coll.
+NCAA III
+NY
+Skidmore Coll.
+NCAA III
+SC
+South Carolina State Univ.
+NCAA I
+NY
+State University of New York at Morrisville
+NCAA III
+MA
+Stonehill College
+NCAA I
+TX
+Texas Christian University
+NCAA I
+AL
+Univ. of Alabama
+NCAA I
+CA
+Univ. of California - Los Angeles
+NCAA I
+CO
+Univ. of Colorado at Boulder
+NCAA I
+CT
+Univ. of Connecticut
+NCAA I
+MA
+Univ. of Massachusetts - Boston
+NCAA III
+NV
+Univ. of Nevada - Reno
+NCAA I
+CT
+Univ. of New Haven
+NCAA II
+FL
+Univ. of Tampa
+NCAA II
+KY
+Univ. of the Cumberlands
+NAIA
+VA
+University of Mary Washington
+NCAA III
+TN
+University of Memphis
+NCAA I
+NH
+University of New Hampshire
+NCAA I
+FL
+University of North Florida
+NCAA I
+FL
+University of South Florida
+NCAA I
+GA
+University of West Georgia
+NCAA II
+VA
+Virginia Commonwealth University
+NCAA I
+NC
+Wake Forest University
+NCAA I
+NY
+Wells College
+NCAA III
+CO
+Western Colorado Univ.
+NCAA II
+SC
+Winthrop Univ.
+NCAA I
+CT
+Yale Univ.
+NCAA I
