@@ -1,3 +1,6 @@
+CO
+Adams State Univ.
+NCAA II
 NC
 Appalachian State Univ.
 NCAA I
@@ -19,8 +22,14 @@ NCAA I
 VT
 Castleton Univ.
 NCAA III
+OR
+Clackamas C.C.
+NJCAA I
 SC
 Coll. of Charleston
+NCAA I
+NE
+Creighton University
 NCAA I
 CT
 Eastern Connecticut State Univ.
@@ -31,6 +40,9 @@ NCAA I
 PA
 Eastern University
 NCAA III
+FL
+Edward Waters Coll.
+NAIA
 NC
 Elon Univ.
 NCAA I
@@ -38,8 +50,14 @@ MA
 Emerson Coll.
 NCAA III
 FL
+Flagler Coll.
+NCAA II
+FL
 Florida State University
 NCAA I
+PA
+Franklin and Marshall Coll.
+NCAA III
 VA
 Hollins University
 NCAA III
@@ -58,6 +76,9 @@ NAIA
 NY
 Long Island Univ. - Brooklyn Campus
 NCAA I
+IA
+Loras Coll.
+NCAA III
 LA
 Louisiana State University
 NCAA I
@@ -79,6 +100,9 @@ NCAA I
 MO
 Missouri S&T
 NCAA II
+CT
+Mitchell Coll.
+NCAA III
 PA
 Moravian Univ.
 NCAA III
@@ -87,6 +111,9 @@ Morgan State Univ.
 NCAA I
 MA
 Mount Holyoke Coll.
+NCAA III
+PA
+Neumann University
 NCAA III
 NM
 New Mexico State Univ.
@@ -103,6 +130,9 @@ NCAA III
 SC
 South Carolina State Univ.
 NCAA I
+SD
+South Dakota School of Mines and Technology
+NCAA II
 NY
 State University of New York at Morrisville
 NCAA III
@@ -114,6 +144,9 @@ Texas Christian University
 NCAA I
 AL
 Univ. of Alabama
+NCAA I
+CA
+Univ. of California - Davis
 NCAA I
 CA
 Univ. of California - Los Angeles
@@ -133,6 +166,9 @@ NCAA I
 CT
 Univ. of New Haven
 NCAA II
+SC
+Univ. of South Carolina Upstate
+NCAA I
 FL
 Univ. of Tampa
 NCAA II
@@ -163,6 +199,9 @@ NCAA I
 NC
 Wake Forest University
 NCAA I
+MD
+Washington Coll.
+NCAA III
 NY
 Wells College
 NCAA III
