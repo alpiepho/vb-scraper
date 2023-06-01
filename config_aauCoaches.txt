@@ -1,15 +1,24 @@
 CO
 Adams State Univ.
 NCAA II
+WI
+Alverno College
+NCAA III
 NC
 Appalachian State Univ.
 NCAA I
 IL
 Aurora University
 NCAA III
+VA
+Averett University
+NCAA III
 MA
 Babson Coll.
 NCAA III
+NY
+Binghamton University
+NCAA I
 MA
 Boston College
 NCAA I
@@ -17,7 +26,13 @@ IN
 Butler Univ.
 NCAA I
 CA
+California Poly. - San Luis Obispo
+NCAA I
+CA
 California State Univ. - Fresno
+NCAA I
+NY
+Canisius Coll.
 NCAA I
 VT
 Castleton Univ.
@@ -58,6 +73,15 @@ NCAA I
 PA
 Franklin and Marshall Coll.
 NCAA III
+NC
+Gardner - Webb Univ.
+NCAA I
+GA
+Georgia Southern Univ.
+NCAA I
+NC
+Greensboro College
+NCAA III
 VA
 Hollins University
 NCAA III
@@ -70,6 +94,15 @@ NCAA III
 MD
 Johns Hopkins University
 NCAA III
+TN
+King Univ.
+NCAA II
+PA
+Lehigh University
+NCAA I
+TN
+Lincoln Memorial Univ.
+NCAA II
 KY
 Lindsey Wilson Coll.
 NAIA
@@ -88,11 +121,17 @@ NAIA
 FL
 Lynn Univ.
 NCAA II
+WI
+Marquette Univ.
+NCAA I
 WV
 Marshall Univ.
 NCAA I
 OH
 Miami Univ. - Oxford
+NCAA I
+MI
+Michigan State Univ.
 NCAA I
 MS
 Mississippi State Univ.
@@ -106,6 +145,9 @@ NCAA III
 PA
 Moravian Univ.
 NCAA III
+KY
+Morehead State Univ.
+NCAA I
 MD
 Morgan State Univ.
 NCAA I
@@ -121,6 +163,12 @@ NCAA I
 NC
 North Carolina Agricultural and Tech. St Univ
 NCAA I
+NC
+North Carolina State University at Raleigh
+NCAA I
+FL
+Nova S.E. Univ.
+NCAA II
 ME
 Saint Josephs Coll.
 NCAA III
@@ -133,17 +181,35 @@ NCAA I
 SD
 South Dakota School of Mines and Technology
 NCAA II
+CT
+Southern Connecticut State Univ.
+NCAA II
+AL
+Spring Hill Coll.
+NCAA II
 NY
 State University of New York at Morrisville
+NCAA III
+NJ
+Stevens Institute of Technology
 NCAA III
 MA
 Stonehill College
 NCAA I
+PA
+Swarthmore Coll.
+NCAA III
 TX
 Texas Christian University
 NCAA I
 AL
 Univ. of Alabama
+NCAA I
+AL
+Univ. of Alabama at Birmingham
+NCAA I
+AR
+Univ. of Arkansas
 NCAA I
 CA
 Univ. of California - Davis
@@ -151,15 +217,30 @@ NCAA I
 CA
 Univ. of California - Los Angeles
 NCAA I
+CA
+Univ. of California - Santa Barbara
+NCAA I
 CO
 Univ. of Colorado at Boulder
 NCAA I
 CT
 Univ. of Connecticut
 NCAA I
+GA
+Univ. of Georgia
+NCAA I
+LA
+Univ. of Louisiana at Monroe
+NCAA I
 MA
 Univ. of Massachusetts - Boston
 NCAA III
+MA
+Univ. of Massachusetts - Dartmouth
+NCAA III
+MO
+Univ. of Missouri - Columbia
+NCAA I
 NV
 Univ. of Nevada - Reno
 NCAA I
@@ -175,6 +256,9 @@ NCAA II
 KY
 Univ. of the Cumberlands
 NAIA
+WI
+Univ. of Wisconsin - Parkside
+NCAA II
 VA
 University of Mary Washington
 NCAA III
@@ -190,9 +274,15 @@ NCAA I
 FL
 University of South Florida
 NCAA I
+VA
+University of Virginia
+NCAA I
 GA
 University of West Georgia
 NCAA II
+TN
+Vanderbilt Univ.
+NCAA I
 VA
 Virginia Commonwealth University
 NCAA I
