@@ -991,6 +991,8 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			value := strings.Replace(line, "name:", "", -1)
 			value = strings.TrimSpace(value)
 			pendingName = value
+			// HACK for name with &
+			pendingName = strings.ReplaceAll(pendingName, "\\u0026", "&")
 
 			if len(appConfig.CollegeCommentList) > 0 {
 				originalIndex := collegeIndex(pendingName)
@@ -1060,13 +1062,34 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 			label := parts[0]
 			rest := strings.Join(parts[1:], ":")
 			if strings.Contains(line, "_link:") {
+				// skip some of the links, too cluttered
+				if strings.Contains(line, "state") {
+					continue
+				}
+				if strings.Contains(line, "coaches") {
+					continue
+				}
+				if strings.Contains(line, "schedule") {
+					continue
+				}
+				if strings.Contains(label, "college") {
+					// HACK: change college label
+					label = "SR-college"
+				}
+				if strings.Contains(line, "google_link") {
+					// HACK: force link for vitrual tour
+					label2 := "virtual-tour"
+					rest2 := rest + "+virtual+tour"
+					// msg2 += "<li><button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button></li>\n"
+					msg2 += "<button class=\"menu-button\"><a href=\"" + rest2 + "\" target=\"_blank\">" + label2 + "^</a></button>\n"
+				}
+
 				// <a href="aaa" target="_blank">aaa</a>
 				label2 := label
 				label2 = strings.Replace(label2, "_link", "", -1)
 				label2 = strings.Replace(label2, "_", " ", -1)
 				// msg2 += "<li><button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button></li>\n"
 				msg2 += "<button class=\"menu-button\"><a href=\"" + rest + "\" target=\"_blank\">" + label2 + "^</a></button>\n"
-
 			} else if strings.Contains(line, ":") {
 				if strings.Contains(line, "overview:") {
 					// replace line breaks with <br>
