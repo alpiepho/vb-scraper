@@ -1,6 +1,9 @@
 CO
 Adams State Univ.
 NCAA II
+PA
+Allegheny College
+NCAA III
 WI
 Alverno College
 NCAA III
@@ -15,6 +18,9 @@ Averett University
 NCAA III
 MA
 Babson Coll.
+NCAA III
+NY
+Bard Coll.
 NCAA III
 NY
 Binghamton University
@@ -43,6 +49,9 @@ NJCAA I
 SC
 Coll. of Charleston
 NCAA I
+CT
+Connecticut Coll.
+NCAA III
 NE
 Creighton University
 NCAA I
@@ -64,6 +73,9 @@ NCAA I
 MA
 Emerson Coll.
 NCAA III
+MA
+Endicott Coll.
+NCAA III
 FL
 Flagler Coll.
 NCAA II
@@ -73,6 +85,12 @@ NCAA I
 PA
 Franklin and Marshall Coll.
 NCAA III
+SC
+Furman Univ.
+NCAA I
+KS
+Garden City C.C.
+NJCAA I
 NC
 Gardner - Webb Univ.
 NCAA I
@@ -97,6 +115,9 @@ NCAA III
 TN
 King Univ.
 NCAA II
+WI
+Lakeland University
+NCAA III
 PA
 Lehigh University
 NCAA I
@@ -121,12 +142,18 @@ NAIA
 FL
 Lynn Univ.
 NCAA II
+NY
+Marist Coll.
+NCAA I
 WI
 Marquette Univ.
 NCAA I
 WV
 Marshall Univ.
 NCAA I
+MA
+Massachusetts Coll. of Liberal Arts
+NCAA III
 OH
 Miami Univ. - Oxford
 NCAA I
@@ -166,12 +193,21 @@ NCAA I
 NC
 North Carolina State University at Raleigh
 NCAA I
+IL
+North Park Univ.
+NCAA III
 FL
 Nova S.E. Univ.
 NCAA II
+PA
+Saint Francis University
+NCAA I
 ME
 Saint Josephs Coll.
 NCAA III
+CA
+Santa Clara Univ.
+NCAA I
 NY
 Skidmore Coll.
 NCAA III
@@ -187,8 +223,14 @@ NCAA II
 AL
 Spring Hill Coll.
 NCAA II
+MD
+St. Mary's College of Maryland
+NCAA III
 NY
 State University of New York at Morrisville
+NCAA III
+NY
+State University of New York at Oswego
 NCAA III
 NJ
 Stevens Institute of Technology
@@ -201,6 +243,12 @@ Swarthmore Coll.
 NCAA III
 TX
 Texas Christian University
+NCAA I
+MA
+Tufts Univ.
+NCAA III
+OH
+Univ. of Akron
 NCAA I
 AL
 Univ. of Alabama
@@ -280,6 +328,9 @@ NCAA I
 GA
 University of West Georgia
 NCAA II
+WI
+University of Wisconsin - Eau Claire
+NCAA III
 TN
 Vanderbilt Univ.
 NCAA I
@@ -292,6 +343,9 @@ NCAA I
 MD
 Washington Coll.
 NCAA III
+WA
+Washington State Univ.
+NCAA I
 NY
 Wells College
 NCAA III
