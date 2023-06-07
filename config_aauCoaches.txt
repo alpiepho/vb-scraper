@@ -97,6 +97,9 @@ NCAA I
 GA
 Georgia Southern Univ.
 NCAA I
+IA
+Graceland Univ.
+NAIA
 NC
 Greensboro College
 NCAA III
