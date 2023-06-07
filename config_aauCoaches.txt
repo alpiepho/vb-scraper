@@ -40,6 +40,9 @@ NCAA I
 NY
 Canisius Coll.
 NCAA I
+WI
+Carroll Univ.
+NCAA III
 VT
 Castleton Univ.
 NCAA III
@@ -123,6 +126,9 @@ Lakeland University
 NCAA III
 PA
 Lehigh University
+NCAA I
+VA
+Liberty University
 NCAA I
 TN
 Lincoln Memorial Univ.
@@ -212,6 +218,9 @@ CA
 Santa Clara Univ.
 NCAA I
 NY
+Siena Coll.
+NCAA I
+NY
 Skidmore Coll.
 NCAA III
 SC
@@ -249,6 +258,9 @@ Texas Christian University
 NCAA I
 MA
 Tufts Univ.
+NCAA III
+NY
+Union Coll. (NY)
 NCAA III
 OH
 Univ. of Akron
@@ -325,6 +337,9 @@ NCAA I
 FL
 University of South Florida
 NCAA I
+TN
+University of The South
+NCAA III
 VA
 University of Virginia
 NCAA I
