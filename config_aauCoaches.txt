@@ -7,6 +7,9 @@ NCAA III
 WI
 Alverno College
 NCAA III
+MA
+Amherst Coll.
+NCAA III
 NC
 Appalachian State Univ.
 NCAA I
@@ -50,6 +53,9 @@ OR
 Clackamas C.C.
 NJCAA I
 SC
+Coker Coll.
+NCAA II
+SC
 Coll. of Charleston
 NCAA I
 CT
@@ -58,6 +64,9 @@ NCAA III
 NE
 Creighton University
 NCAA I
+NY
+Daemen Coll.
+NCAA II
 CT
 Eastern Connecticut State Univ.
 NCAA III
@@ -67,6 +76,9 @@ NCAA I
 PA
 Eastern University
 NCAA III
+WA
+Eastern Washington Univ.
+NCAA I
 FL
 Edward Waters Coll.
 NAIA
@@ -75,6 +87,9 @@ Elon Univ.
 NCAA I
 MA
 Emerson Coll.
+NCAA III
+MA
+Emmanuel Coll. - Boston
 NCAA III
 MA
 Endicott Coll.
@@ -178,6 +193,9 @@ NCAA II
 CT
 Mitchell Coll.
 NCAA III
+IL
+Monmouth Coll.
+NCAA III
 PA
 Moravian Univ.
 NCAA III
@@ -256,6 +274,9 @@ NCAA III
 TX
 Texas Christian University
 NCAA I
+GA
+Truett McConnell Univ.
+NAIA
 MA
 Tufts Univ.
 NCAA III
@@ -294,6 +315,9 @@ Univ. of Georgia
 NCAA I
 LA
 Univ. of Louisiana at Monroe
+NCAA I
+MD
+Univ. of Maryland - Coll. Park
 NCAA I
 MA
 Univ. of Massachusetts - Boston
@@ -355,6 +379,9 @@ NCAA I
 VA
 Virginia Commonwealth University
 NCAA I
+VA
+Virginia Tech
+NCAA I
 NC
 Wake Forest University
 NCAA I
@@ -370,6 +397,9 @@ NCAA III
 CO
 Western Colorado Univ.
 NCAA II
+MI
+Western Michigan Univ.
+NCAA I
 SC
 Winthrop Univ.
 NCAA I
