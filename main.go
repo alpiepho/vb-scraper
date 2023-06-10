@@ -939,6 +939,7 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	msg2 += "<div x-data=\"{ openDII: true }\">\n"
 	msg2 += "<div x-data=\"{ openDIII: true }\">\n"
 	msg2 += "<div x-data=\"{ openNAIA: true }\">\n"
+	msg2 += "<div x-data=\"{ openNWAC: true }\">\n"
 	msg2 += "<div x-data=\"{ openNJCAA: true }\">\n"
 
 	states := statesUsed(details)
@@ -961,6 +962,9 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	}
 	if anyLevel("NAIA", details) {
 		msg2 += "<button class=\"menu-button\" @click=\"openNAIA = !openNAIA\" :class=\"{ 'active': openNAIA }\">NAIA...</button>\n"
+	}
+	if anyLevel("NWAC", details) {
+		msg2 += "<button class=\"menu-button\" @click=\"openNWAC = !openNWAC\" :class=\"{ 'active': openNWAC }\">NWAC...</button>\n"
 	}
 	if anyLevel("NJCAA", details) {
 		msg2 += "<button class=\"menu-button\" @click=\"openNJCAA = !openNJCAA\" :class=\"{ 'active': openNJCAA }\">NJCAA...</button>\n"
@@ -1156,6 +1160,7 @@ func exportCollegeDetailsHtml(details *[]CollegeDetail) {
 	}
 
 	msg2 += "</div> <!-- openNJCAA -->\n"
+	msg2 += "</div> <!-- openNWAC -->\n"
 	msg2 += "</div> <!-- openNAIA -->\n"
 	msg2 += "</div> <!-- openDIII -->\n"
 	msg2 += "</div> <!-- openDII -->\n"
