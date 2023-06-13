@@ -55,6 +55,9 @@ NJCAA I
 SC
 Coker Coll.
 NCAA II
+KS
+Colby C.C.
+NJCAA I
 SC
 Coll. of Charleston
 NCAA I
@@ -67,6 +70,12 @@ NCAA I
 NY
 Daemen Coll.
 NCAA II
+NJ
+Drew Univ.
+NCAA III
+IN
+Earlham Coll.
+NCAA III
 CT
 Eastern Connecticut State Univ.
 NCAA III
@@ -82,12 +91,24 @@ NCAA I
 FL
 Edward Waters Coll.
 NAIA
+IL
+Elmhurst Coll.
+NCAA III
+NY
+Elmira Coll.
+NCAA III
 NC
 Elon Univ.
 NCAA I
+FL
+Embry Riddle Aeronautical Univ. - Daytona Beach
+NCAA II
 MA
 Emerson Coll.
 NCAA III
+GA
+Emmanuel Coll.
+NCAA II
 MA
 Emmanuel Coll. - Boston
 NCAA III
@@ -114,6 +135,9 @@ Gardner - Webb Univ.
 NCAA I
 GA
 Georgia Southern Univ.
+NCAA I
+GA
+Georgia Tech.
 NCAA I
 IA
 Graceland Univ.
@@ -208,6 +232,9 @@ NCAA I
 MA
 Mount Holyoke Coll.
 NCAA III
+MD
+Navy (Naval Academy)
+NCAA I
 PA
 Neumann University
 NCAA III
@@ -231,6 +258,9 @@ Saint Francis University
 NCAA I
 ME
 Saint Josephs Coll.
+NCAA III
+RI
+Salve Regina Univ.
 NCAA III
 CA
 Santa Clara Univ.
@@ -273,6 +303,9 @@ Swarthmore Coll.
 NCAA III
 TX
 Texas Christian University
+NCAA I
+MD
+Towson University
 NCAA I
 GA
 Truett McConnell Univ.
