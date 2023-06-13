@@ -16,3 +16,4 @@ go run main.go -configfile=config_aauCoaches.json
 # go run main.go -configfile=config_2023FinalsDII_32.json
 # go run main.go -configfile=config_2023FinalsDII_16.json
 # go run main.go -configfile=config_2023FinalsDII_8.json
+go run main.go -configfile=config_klist.json

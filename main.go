@@ -1319,7 +1319,7 @@ func main() {
 	// add seperate step for lat/long after import details
 	if appConfig.ParseLatitudeLogitude {
 		fmt.Println("parse college detail latitiude longitude...")
-		for i, _ := range details {
+		for i := range details {
 			parseForDetailLatitudeLogitude(&ctx, &details, i)
 		}
 	}
