@@ -1,2 +1,8 @@
 result*.txt
+<<<<<<< Updated upstream
+=======
+.vscode
+junk*.*
+
+>>>>>>> Stashed changes
 

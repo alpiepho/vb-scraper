@@ -1,6 +1,9 @@
 CO
 Adams State Univ.
 NCAA II
+KY
+Alice Lloyd Coll.
+NAIA
 PA
 Allegheny College
 NCAA III
@@ -31,6 +34,9 @@ NCAA I
 MA
 Boston College
 NCAA I
+PA
+Bryn Mawr Coll.
+NCAA III
 IN
 Butler Univ.
 NCAA I
@@ -61,6 +67,9 @@ NJCAA I
 SC
 Coll. of Charleston
 NCAA I
+CO
+Colorado College
+NCAA III
 CT
 Connecticut Coll.
 NCAA III
@@ -70,9 +79,15 @@ NCAA I
 NY
 Daemen Coll.
 NCAA II
+NH
+Dartmouth Coll.
+NCAA I
 NJ
 Drew Univ.
 NCAA III
+NC
+Duke University
+NCAA I
 IN
 Earlham Coll.
 NCAA III
@@ -119,6 +134,9 @@ FL
 Flagler Coll.
 NCAA II
 FL
+Florida Atlantic Univ. - Boca Raton
+NCAA I
+FL
 Florida State University
 NCAA I
 PA
@@ -139,6 +157,9 @@ NCAA I
 GA
 Georgia Tech.
 NCAA I
+MD
+Goucher Coll.
+NCAA III
 IA
 Graceland Univ.
 NAIA
@@ -175,6 +196,9 @@ NCAA II
 KY
 Lindsey Wilson Coll.
 NAIA
+PA
+Lock Haven Univ. of Pennsylvania
+NCAA II
 NY
 Long Island Univ. - Brooklyn Campus
 NCAA I
@@ -247,6 +271,9 @@ NCAA I
 NC
 North Carolina State University at Raleigh
 NCAA I
+NC
+North Carolina Wesleyan College
+NCAA III
 IL
 North Park Univ.
 NCAA III
@@ -263,7 +290,13 @@ RI
 Salve Regina Univ.
 NCAA III
 CA
+San Jose State Univ.
+NCAA I
+CA
 Santa Clara Univ.
+NCAA I
+NJ
+Seton Hall Univ.
 NCAA I
 NY
 Siena Coll.
@@ -343,8 +376,14 @@ NCAA I
 CT
 Univ. of Connecticut
 NCAA I
+FL
+Univ. of Florida
+NCAA I
 GA
 Univ. of Georgia
+NCAA I
+IA
+Univ. of Iowa
 NCAA I
 LA
 Univ. of Louisiana at Monroe
@@ -358,6 +397,9 @@ NCAA III
 MA
 Univ. of Massachusetts - Dartmouth
 NCAA III
+MI
+Univ. of Michigan - Ann Arbor
+NCAA I
 MO
 Univ. of Missouri - Columbia
 NCAA I
@@ -418,6 +460,9 @@ NCAA I
 NC
 Wake Forest University
 NCAA I
+VA
+Washington and Lee University
+NCAA III
 MD
 Washington Coll.
 NCAA III
@@ -436,6 +481,12 @@ NCAA I
 SC
 Winthrop Univ.
 NCAA I
+WI
+Wisconsin Lutheran College
+NCAA III
+MA
+Worcester Polytechnic Institute
+NCAA III
 CT
 Yale Univ.
 NCAA I
