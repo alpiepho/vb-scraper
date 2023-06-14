@@ -9,7 +9,8 @@ import (
 	"flag"
 	"fmt"
 	"io/ioutil"
-	"math"
+
+	// "math"
 	"math/rand"
 	"net/url"
 	"os"
@@ -425,91 +426,91 @@ func importColleges(colleges *[]College) {
 	fmt.Println(len(*colleges))
 }
 
-func stateIndex(name string) int {
-	for i, state := range STATE_NAMES {
-		if name == state {
-			return i
-		}
-	}
-	return 100
-}
+// func stateIndex(name string) int {
+// 	for i, state := range STATE_NAMES {
+// 		if name == state {
+// 			return i
+// 		}
+// 	}
+// 	return 100
+// }
 
-func distance(lat1 float64, lng1 float64, lat2 float64, lng2 float64) float64 {
-	radlat1 := float64(math.Pi * lat1 / 180)
-	radlat2 := float64(math.Pi * lat2 / 180)
-	theta := float64(lng1 - lng2)
-	radtheta := float64(math.Pi * theta / 180)
-	dist := math.Sin(radlat1)*math.Sin(radlat2) + math.Cos(radlat1)*math.Cos(radlat2)*math.Cos(radtheta)
-	if dist > 1 {
-		dist = 1
-	}
-	dist = math.Acos(dist)
-	dist = dist * 180 / math.Pi
-	dist = dist * 60 * 1.1515
-	return dist
-}
+// func distance(lat1 float64, lng1 float64, lat2 float64, lng2 float64) float64 {
+// 	radlat1 := float64(math.Pi * lat1 / 180)
+// 	radlat2 := float64(math.Pi * lat2 / 180)
+// 	theta := float64(lng1 - lng2)
+// 	radtheta := float64(math.Pi * theta / 180)
+// 	dist := math.Sin(radlat1)*math.Sin(radlat2) + math.Cos(radlat1)*math.Cos(radlat2)*math.Cos(radtheta)
+// 	if dist > 1 {
+// 		dist = 1
+// 	}
+// 	dist = math.Acos(dist)
+// 	dist = dist * 180 / math.Pi
+// 	dist = dist * 60 * 1.1515
+// 	return dist
+// }
 
-func checkCollegeLat(colleges *[]College) {
-	// gather average of lat, long per state
-	var avgLats [52]float64
-	var avgLngs [52]float64
-	var avgCnts [52]int
-	for i := 0; i < 52; i++ {
-		avgLats[i] = 0.0
-		avgLngs[i] = 0.0
-		avgCnts[i] = 0
-	}
-	for _, college := range *colleges {
-		index := stateIndex(college.State)
-		parts := strings.Split(college.LatitudeLongitude, ",")
-		latStr := strings.TrimSpace(parts[0])
-		lngStr := strings.TrimSpace(parts[1])
-		lat, _ := strconv.ParseFloat(latStr, 64)
-		lng, _ := strconv.ParseFloat(lngStr, 64)
-		// WARNING: assume US where lat > 0 and lng < 0
-		if lat > 0 && lng < 0 {
-			avgLats[index] += lat
-			avgLngs[index] += lng
-			avgCnts[index] += 1
-		}
-		// DEBUG
-		// if college.State == "Alabama" {
-		// 	fmt.Printf("%-40s: %s, %s; %f  %f  %d\n", college.Name, latStr, lngStr, avgLats[index], avgLngs[index], avgCnts[index])
-		// }
-	}
-	for i := 0; i < 52; i++ {
-		if avgCnts[i] > 0 {
-			avgLats[i] = avgLats[i] / float64(avgCnts[i])
-			avgLngs[i] = avgLngs[i] / float64(avgCnts[i])
-		}
-	}
+// func checkCollegeLat(colleges *[]College) {
+// 	// gather average of lat, long per state
+// 	var avgLats [52]float64
+// 	var avgLngs [52]float64
+// 	var avgCnts [52]int
+// 	for i := 0; i < 52; i++ {
+// 		avgLats[i] = 0.0
+// 		avgLngs[i] = 0.0
+// 		avgCnts[i] = 0
+// 	}
+// 	for _, college := range *colleges {
+// 		index := stateIndex(college.State)
+// 		parts := strings.Split(college.LatitudeLongitude, ",")
+// 		latStr := strings.TrimSpace(parts[0])
+// 		lngStr := strings.TrimSpace(parts[1])
+// 		lat, _ := strconv.ParseFloat(latStr, 64)
+// 		lng, _ := strconv.ParseFloat(lngStr, 64)
+// 		// WARNING: assume US where lat > 0 and lng < 0
+// 		if lat > 0 && lng < 0 {
+// 			avgLats[index] += lat
+// 			avgLngs[index] += lng
+// 			avgCnts[index] += 1
+// 		}
+// 		// DEBUG
+// 		// if college.State == "Alabama" {
+// 		// 	fmt.Printf("%-40s: %s, %s; %f  %f  %d\n", college.Name, latStr, lngStr, avgLats[index], avgLngs[index], avgCnts[index])
+// 		// }
+// 	}
+// 	for i := 0; i < 52; i++ {
+// 		if avgCnts[i] > 0 {
+// 			avgLats[i] = avgLats[i] / float64(avgCnts[i])
+// 			avgLngs[i] = avgLngs[i] / float64(avgCnts[i])
+// 		}
+// 	}
 
-	// look for outliers compared to averages
-	// print error and google search (ex. https://www.google.com/search?q=latitude+Vassar+College)
-	for _, college := range *colleges {
-		index := stateIndex(college.State)
-		parts := strings.Split(college.LatitudeLongitude, ",")
-		latStr := strings.TrimSpace(parts[0])
-		lngStr := strings.TrimSpace(parts[1])
-		lat, _ := strconv.ParseFloat(latStr, 64)
-		lng, _ := strconv.ParseFloat(lngStr, 64)
-		distMiles := distance(lat, lng, avgLats[index], avgLngs[index])
-		// WARNING: assume US where lat > 0 and lng < 0
-		if distMiles > 500 || lat < 0 || lng > 0 {
-			// DEBUG
-			// if college.State != "Alabama" {
-			// 	continue
-			// }
-			fmt.Printf("bad lat/lng:\n")
-			fmt.Printf("  name      : %s\n", college.Name)
-			fmt.Printf("  current   : %f, %f\n", lat, lng)
-			fmt.Printf("  state avg : %f, %f\n", avgLats[index], avgLngs[index])
-			fmt.Printf("  distance  : %f\n", distMiles)
-			url := "https://www.google.com/search?q=latitude+" + strings.Replace(college.Name, " ", "+", -1)
-			fmt.Printf("  google lat: %s\n", url)
-		}
-	}
-}
+// 	// look for outliers compared to averages
+// 	// print error and google search (ex. https://www.google.com/search?q=latitude+Vassar+College)
+// 	for _, college := range *colleges {
+// 		index := stateIndex(college.State)
+// 		parts := strings.Split(college.LatitudeLongitude, ",")
+// 		latStr := strings.TrimSpace(parts[0])
+// 		lngStr := strings.TrimSpace(parts[1])
+// 		lat, _ := strconv.ParseFloat(latStr, 64)
+// 		lng, _ := strconv.ParseFloat(lngStr, 64)
+// 		distMiles := distance(lat, lng, avgLats[index], avgLngs[index])
+// 		// WARNING: assume US where lat > 0 and lng < 0
+// 		if distMiles > 500 || lat < 0 || lng > 0 {
+// 			// DEBUG
+// 			// if college.State != "Alabama" {
+// 			// 	continue
+// 			// }
+// 			fmt.Printf("bad lat/lng:\n")
+// 			fmt.Printf("  name      : %s\n", college.Name)
+// 			fmt.Printf("  current   : %f, %f\n", lat, lng)
+// 			fmt.Printf("  state avg : %f, %f\n", avgLats[index], avgLngs[index])
+// 			fmt.Printf("  distance  : %f\n", distMiles)
+// 			url := "https://www.google.com/search?q=latitude+" + strings.Replace(college.Name, " ", "+", -1)
+// 			fmt.Printf("  google lat: %s\n", url)
+// 		}
+// 	}
+// }
 
 func testCollegeSkip(name string) bool {
 	if slices.Contains(appConfig.CollegeList, "All") {
@@ -537,27 +538,27 @@ func testLevelSkip(name string) bool {
 	return true
 }
 
-func testLocationSkip(latlong string) bool {
-	if appConfig.ParseLocation && len(latlong) > 0 {
-		centerParts := strings.Split(appConfig.ParseLocationLatitudeLogitude, ",")
-		centerLatStr := strings.TrimSpace(centerParts[0])
-		centerLngStr := strings.TrimSpace(centerParts[1])
-		centerLat, _ := strconv.ParseFloat(centerLatStr, 64)
-		centerLng, _ := strconv.ParseFloat(centerLngStr, 64)
-		radiusMiles, _ := strconv.ParseFloat(appConfig.ParseLocationLatitudeRadiusMiles, 64)
+// func testLocationSkip(latlong string) bool {
+// 	if appConfig.ParseLocation && len(latlong) > 0 {
+// 		centerParts := strings.Split(appConfig.ParseLocationLatitudeLogitude, ",")
+// 		centerLatStr := strings.TrimSpace(centerParts[0])
+// 		centerLngStr := strings.TrimSpace(centerParts[1])
+// 		centerLat, _ := strconv.ParseFloat(centerLatStr, 64)
+// 		centerLng, _ := strconv.ParseFloat(centerLngStr, 64)
+// 		radiusMiles, _ := strconv.ParseFloat(appConfig.ParseLocationLatitudeRadiusMiles, 64)
 
-		givenParts := strings.Split(latlong, ",")
-		givenLatStr := strings.TrimSpace(givenParts[0])
-		givenLngStr := strings.TrimSpace(givenParts[1])
-		givenLat, _ := strconv.ParseFloat(givenLatStr, 64)
-		givenLng, _ := strconv.ParseFloat(givenLngStr, 64)
-		distMiles := distance(centerLat, centerLng, givenLat, givenLng)
-		fmt.Println(latlong)
-		fmt.Println(distMiles)
-		return distMiles > radiusMiles
-	}
-	return false
-}
+// 		givenParts := strings.Split(latlong, ",")
+// 		givenLatStr := strings.TrimSpace(givenParts[0])
+// 		givenLngStr := strings.TrimSpace(givenParts[1])
+// 		givenLat, _ := strconv.ParseFloat(givenLatStr, 64)
+// 		givenLng, _ := strconv.ParseFloat(givenLngStr, 64)
+// 		distMiles := distance(centerLat, centerLng, givenLat, givenLng)
+// 		fmt.Println(latlong)
+// 		fmt.Println(distMiles)
+// 		return distMiles > radiusMiles
+// 	}
+// 	return false
+// }
 
 func parseForCollegePages(ctx *context.Context, details *[]CollegeDetail, college *College) {
 	var err error
@@ -1261,7 +1262,7 @@ func main() {
 	if appConfig.ImportColleges {
 		fmt.Println("import colleges...")
 		importColleges(&colleges)
-		checkCollegeLat(&colleges)
+		// checkCollegeLat(&colleges)
 	}
 	// add seperate step for lat/long after import details
 	if appConfig.ParseLatitudeLogitude {
@@ -1290,9 +1291,9 @@ func main() {
 			if testLevelSkip(college.Level) {
 				continue
 			}
-			if testLocationSkip(college.LatitudeLongitude) {
-				continue
-			}
+			// if testLocationSkip(college.LatitudeLongitude) {
+			// 	continue
+			// }
 			fmt.Println("details: " + college.Name + "...")
 			parseForCollegePages(&ctx, &details, &college)
 		}
