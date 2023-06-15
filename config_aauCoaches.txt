@@ -16,6 +16,9 @@ NCAA III
 NC
 Appalachian State Univ.
 NCAA I
+AR
+Arkansas State Univ.
+NCAA I
 MA
 Assumption Coll.
 NCAA II
@@ -199,9 +202,21 @@ NCAA III
 VA
 Hollins University
 NCAA III
+PA
+Holy Family University
+NCAA II
+IL
+Illinois Coll.
+NCAA III
 FL
 Indian River State College
 NJCAA I
+IN
+Indiana Univ. - Bloomington
+NCAA I
+IA
+Iowa State University
+NCAA I
 NY
 Ithaca Coll.
 NCAA III
@@ -316,12 +331,21 @@ NCAA III
 FL
 Nova S.E. Univ.
 NCAA II
+PA
+Pennsylvania State Univ.
+NCAA I
 CA
 Point Loma Nazarene Univ.
 NCAA II
+SC
+Presbyterian Coll.
+NCAA I
 IL
 Roosevelt Univ.
 NAIA
+NJ
+Rowan Univ.
+NCAA III
 IA
 Saint Ambrose Univ.
 NAIA
@@ -370,6 +394,9 @@ NCAA II
 MA
 Springfield Coll.
 NCAA III
+FL
+St. Johns River State Coll.
+NJCAA II
 MD
 St. Mary's College of Maryland
 NCAA III
@@ -397,12 +424,21 @@ NCAA III
 TX
 Texas Christian University
 NCAA I
+TX
+Texas Tech University
+NCAA I
+SC
+The Citadel
+NCAA I
 TN
 The Univ. of Tennessee
 NCAA I
 MD
 Towson University
 NCAA I
+CT
+Trinity Coll.
+NCAA III
 GA
 Truett McConnell Univ.
 NAIA
@@ -466,6 +502,12 @@ NCAA I
 MO
 Univ. of Missouri - Columbia
 NCAA I
+NE
+Univ. of Nebraska at Lincoln
+NCAA I
+NV
+Univ. of Nevada - Las Vegas
+NCAA I
 NV
 Univ. of Nevada - Reno
 NCAA I
@@ -475,17 +517,32 @@ NCAA II
 SC
 Univ. of South Carolina Upstate
 NCAA I
+MN
+Univ. of St Thomas
+NCAA I
 FL
 Univ. of Tampa
 NCAA II
 KY
 Univ. of the Cumberlands
 NAIA
+WA
+Univ. of Washington - Seattle Campus
+NCAA I
+AL
+Univ. of West Alabama
+NCAA II
 WI
 Univ. of Wisconsin - Parkside
 NCAA II
+NY
+University at Albany
+NCAA I
 FL
 University of Central Florida
+NCAA I
+TX
+University of Houston
 NCAA I
 VA
 University of Mary Washington
@@ -493,14 +550,23 @@ NCAA III
 TN
 University of Memphis
 NCAA I
+FL
+University of Miami
+NCAA I
 NH
 University of New Hampshire
 NCAA I
 FL
 University of North Florida
 NCAA I
+IN
+University of Notre Dame
+NCAA I
 FL
 University of South Florida
+NCAA I
+TX
+University of Texas at Austin
 NCAA I
 TN
 University of The South
