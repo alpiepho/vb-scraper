@@ -16,9 +16,15 @@ NCAA III
 NC
 Appalachian State Univ.
 NCAA I
+MA
+Assumption Coll.
+NCAA II
 IL
 Aurora University
 NCAA III
+TN
+Austin Peay State University
+NCAA I
 VA
 Averett University
 NCAA III
@@ -28,11 +34,17 @@ NCAA III
 NY
 Bard Coll.
 NCAA III
+WV
+Bethany College
+NCAA III
 NY
 Binghamton University
 NCAA I
 MA
 Boston College
+NCAA I
+IL
+Bradley Univ.
 NCAA I
 PA
 Bryn Mawr Coll.
@@ -49,6 +61,9 @@ NCAA I
 NY
 Canisius Coll.
 NCAA I
+PA
+Carnegie Mellon University
+NCAA III
 WI
 Carroll Univ.
 NCAA III
@@ -58,6 +73,9 @@ NCAA III
 OR
 Clackamas C.C.
 NJCAA I
+NY
+Clarkson Univ.
+NCAA III
 SC
 Coker Coll.
 NCAA II
@@ -78,6 +96,9 @@ Creighton University
 NCAA I
 NY
 Daemen Coll.
+NCAA II
+TX
+Dallas Baptist Univ.
 NCAA II
 NH
 Dartmouth Coll.
@@ -137,6 +158,12 @@ FL
 Florida Atlantic Univ. - Boca Raton
 NCAA I
 FL
+Florida Institute of Technology - Melbourne
+NCAA II
+FL
+Florida International Univ.
+NCAA I
+FL
 Florida State University
 NCAA I
 PA
@@ -163,6 +190,9 @@ NCAA III
 IA
 Graceland Univ.
 NAIA
+AZ
+Grand Canyon Univ.
+NCAA I
 NC
 Greensboro College
 NCAA III
@@ -214,6 +244,9 @@ NAIA
 FL
 Lynn Univ.
 NCAA II
+MN
+Macalester Coll.
+NCAA III
 NY
 Marist Coll.
 NCAA I
@@ -226,6 +259,9 @@ NCAA I
 MA
 Massachusetts Coll. of Liberal Arts
 NCAA III
+IL
+McKendree Univ.
+NCAA II
 OH
 Miami Univ. - Oxford
 NCAA I
@@ -280,6 +316,15 @@ NCAA III
 FL
 Nova S.E. Univ.
 NCAA II
+CA
+Point Loma Nazarene Univ.
+NCAA II
+IL
+Roosevelt Univ.
+NAIA
+IA
+Saint Ambrose Univ.
+NAIA
 PA
 Saint Francis University
 NCAA I
@@ -295,6 +340,9 @@ NCAA I
 CA
 Santa Clara Univ.
 NCAA I
+NY
+Sarah Lawrence College
+NCAA III
 NJ
 Seton Hall Univ.
 NCAA I
@@ -313,12 +361,21 @@ NCAA II
 CT
 Southern Connecticut State Univ.
 NCAA II
+TX
+Southern Methodist University
+NCAA I
 AL
 Spring Hill Coll.
 NCAA II
+MA
+Springfield Coll.
+NCAA III
 MD
 St. Mary's College of Maryland
 NCAA III
+CA
+Stanton University
+Other
 NY
 State University of New York at Morrisville
 NCAA III
@@ -331,11 +388,17 @@ NCAA III
 MA
 Stonehill College
 NCAA I
+NY
+Stony Brook University
+NCAA I
 PA
 Swarthmore Coll.
 NCAA III
 TX
 Texas Christian University
+NCAA I
+TN
+The Univ. of Tennessee
 NCAA I
 MD
 Towson University
@@ -421,6 +484,9 @@ NAIA
 WI
 Univ. of Wisconsin - Parkside
 NCAA II
+FL
+University of Central Florida
+NCAA I
 VA
 University of Mary Washington
 NCAA III
@@ -478,6 +544,9 @@ NCAA II
 MI
 Western Michigan Univ.
 NCAA I
+MA
+Wheaton Coll.
+NCAA III
 SC
 Winthrop Univ.
 NCAA I
