@@ -229,6 +229,9 @@ NCAA II
 WI
 Lakeland University
 NCAA III
+TX
+Lamar Univ. - Beaumont
+NCAA I
 PA
 Lehigh University
 NCAA I
@@ -340,6 +343,9 @@ NCAA II
 SC
 Presbyterian Coll.
 NCAA I
+IL
+Quincy Univ.
+NCAA II
 IL
 Roosevelt Univ.
 NAIA
@@ -515,6 +521,9 @@ CT
 Univ. of New Haven
 NCAA II
 SC
+Univ. of South Carolina at Sumter
+NJCAA I
+SC
 Univ. of South Carolina Upstate
 NCAA I
 MN
@@ -601,8 +610,14 @@ NCAA III
 WA
 Washington State Univ.
 NCAA I
+FL
+Webber International Univ.
+NAIA
 NY
 Wells College
+NCAA III
+CT
+Wesleyan Univ.
 NCAA III
 CO
 Western Colorado Univ.
