@@ -37,6 +37,12 @@ NCAA III
 NY
 Bard Coll.
 NCAA III
+TX
+Baylor University
+NCAA I
+KY
+Bellarmine University
+NCAA I
 WV
 Bethany College
 NCAA III
@@ -60,6 +66,9 @@ California Poly. - San Luis Obispo
 NCAA I
 CA
 California State Univ. - Fresno
+NCAA I
+NC
+Campbell Univ. Inc
 NCAA I
 NY
 Canisius Coll.
@@ -91,6 +100,9 @@ NCAA I
 CO
 Colorado College
 NCAA III
+NY
+Columbia Univ. In The City of New York
+NCAA I
 CT
 Connecticut Coll.
 NCAA III
@@ -115,12 +127,18 @@ NCAA I
 IN
 Earlham Coll.
 NCAA III
+NC
+East Carolina University
+NCAA I
 CT
 Eastern Connecticut State Univ.
 NCAA III
 KY
 Eastern Kentucky University
 NCAA I
+MA
+Eastern Nazarene Coll.
+NCAA III
 PA
 Eastern University
 NCAA III
@@ -167,6 +185,9 @@ FL
 Florida International Univ.
 NCAA I
 FL
+Florida Southern Coll.
+NCAA II
+FL
 Florida State University
 NCAA I
 PA
@@ -199,12 +220,18 @@ NCAA I
 NC
 Greensboro College
 NCAA III
+MI
+Hillsdale Coll.
+NCAA II
 VA
 Hollins University
 NCAA III
 PA
 Holy Family University
 NCAA II
+DC
+Howard Univ.
+NCAA I
 IL
 Illinois Coll.
 NCAA III
@@ -214,6 +241,9 @@ NJCAA I
 IN
 Indiana Univ. - Bloomington
 NCAA I
+PA
+Indiana Univ. of Pennsylvania
+NCAA II
 IA
 Iowa State University
 NCAA I
@@ -238,6 +268,9 @@ NCAA I
 VA
 Liberty University
 NCAA I
+SC
+Limestone Univ.
+NCAA II
 TN
 Lincoln Memorial Univ.
 NCAA II
@@ -265,6 +298,9 @@ NCAA II
 MN
 Macalester Coll.
 NCAA III
+IN
+Marian Univ.
+NAIA
 NY
 Marist Coll.
 NCAA I
@@ -298,6 +334,9 @@ NCAA III
 IL
 Monmouth Coll.
 NCAA III
+MT
+Montana State Univ. - Bozeman
+NCAA I
 PA
 Moravian Univ.
 NCAA III
@@ -346,6 +385,9 @@ NCAA I
 IL
 Quincy Univ.
 NCAA II
+NJ
+Rider Univ.
+NCAA I
 IL
 Roosevelt Univ.
 NAIA
@@ -400,6 +442,9 @@ NCAA II
 MA
 Springfield Coll.
 NCAA III
+NY
+St Lawrence Univ.
+NCAA III
 FL
 St. Johns River State Coll.
 NJCAA II
@@ -415,6 +460,9 @@ NCAA III
 NY
 State University of New York at Oswego
 NCAA III
+FL
+Stetson University
+NCAA I
 NJ
 Stevens Institute of Technology
 NCAA III
@@ -423,6 +471,9 @@ Stonehill College
 NCAA I
 NY
 Stony Brook University
+NCAA I
+NY
+SUNY at Buffalo
 NCAA I
 PA
 Swarthmore Coll.
@@ -454,6 +505,9 @@ NCAA III
 NY
 Union Coll. (NY)
 NCAA III
+NY
+United States Merchant Marine Academy
+NCAA III
 OH
 Univ. of Akron
 NCAA I
@@ -462,6 +516,9 @@ Univ. of Alabama
 NCAA I
 AL
 Univ. of Alabama at Birmingham
+NCAA I
+AZ
+Univ. of Arizona
 NCAA I
 AR
 Univ. of Arkansas
@@ -486,6 +543,9 @@ Univ. of Florida
 NCAA I
 GA
 Univ. of Georgia
+NCAA I
+ID
+Univ. of Idaho
 NCAA I
 IA
 Univ. of Iowa
@@ -521,6 +581,9 @@ CT
 Univ. of New Haven
 NCAA II
 SC
+Univ. of South Carolina at Columbia
+NCAA I
+SC
 Univ. of South Carolina at Sumter
 NJCAA I
 SC
@@ -547,8 +610,14 @@ NCAA II
 NY
 University at Albany
 NCAA I
+AR
+University of Central Arkansas
+NCAA I
 FL
 University of Central Florida
+NCAA I
+OH
+University of Dayton
 NCAA I
 TX
 University of Houston
