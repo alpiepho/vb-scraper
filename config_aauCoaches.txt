@@ -22,6 +22,9 @@ NCAA I
 MA
 Assumption Coll.
 NCAA II
+AL
+Auburn Univ.
+NCAA I
 IL
 Aurora University
 NCAA III
@@ -146,6 +149,9 @@ WA
 Eastern Washington Univ.
 NCAA I
 FL
+Eckerd College
+NCAA II
+FL
 Edward Waters Coll.
 NAIA
 IL
@@ -202,6 +208,9 @@ NJCAA I
 NC
 Gardner - Webb Univ.
 NCAA I
+DC
+Georgetown University
+NCAA I
 GA
 Georgia Southern Univ.
 NCAA I
@@ -253,6 +262,9 @@ NCAA III
 MD
 Johns Hopkins University
 NCAA III
+GA
+Kennesaw State University
+NCAA I
 TN
 King Univ.
 NCAA II
@@ -375,6 +387,9 @@ Nova S.E. Univ.
 NCAA II
 PA
 Pennsylvania State Univ.
+NCAA I
+CA
+Pepperdine Univ. - Indoor
 NCAA I
 CA
 Point Loma Nazarene Univ.
@@ -580,6 +595,9 @@ NCAA I
 CT
 Univ. of New Haven
 NCAA II
+NC
+Univ. of North Carolina at Charlotte
+NCAA I
 SC
 Univ. of South Carolina at Columbia
 NCAA I
@@ -604,6 +622,9 @@ NCAA I
 AL
 Univ. of West Alabama
 NCAA II
+WI
+Univ. of Wisconsin - Madison
+NCAA I
 WI
 Univ. of Wisconsin - Parkside
 NCAA II
