@@ -178,6 +178,9 @@ NCAA III
 MA
 Endicott Coll.
 NCAA III
+SC
+Erskine Coll. and Seminary
+NCAA II
 FL
 Flagler Coll.
 NCAA II
@@ -289,6 +292,9 @@ NCAA II
 KY
 Lindsey Wilson Coll.
 NAIA
+TN
+Lipscomb University
+NCAA I
 PA
 Lock Haven Univ. of Pennsylvania
 NCAA II
@@ -382,9 +388,15 @@ NCAA III
 IL
 North Park Univ.
 NCAA III
+IL
+Northern Illinois Univ.
+NCAA I
 FL
 Nova S.E. Univ.
 NCAA II
+OR
+Oregon State Univ.
+NCAA I
 PA
 Pennsylvania State Univ.
 NCAA I
@@ -409,6 +421,9 @@ NAIA
 NJ
 Rowan Univ.
 NCAA III
+NJ
+Rutgers Univ. - New Brunswick
+NCAA I
 IA
 Saint Ambrose Univ.
 NAIA
@@ -466,6 +481,9 @@ NJCAA II
 MD
 St. Mary's College of Maryland
 NCAA III
+CA
+Stanford Univ.
+NCAA I
 CA
 Stanton University
 Other
@@ -553,6 +571,9 @@ NCAA I
 CT
 Univ. of Connecticut
 NCAA I
+DE
+Univ. of Delaware
+NCAA I
 FL
 Univ. of Florida
 NCAA I
@@ -616,6 +637,9 @@ NCAA II
 KY
 Univ. of the Cumberlands
 NAIA
+CA
+Univ. of The Pacific
+NCAA I
 WA
 Univ. of Washington - Seattle Campus
 NCAA I
@@ -655,11 +679,17 @@ NCAA I
 NH
 University of New Hampshire
 NCAA I
+NC
+University of North Carolina at Chapel Hill
+NCAA I
 FL
 University of North Florida
 NCAA I
 IN
 University of Notre Dame
+NCAA I
+OK
+University of Oklahoma - Norman
 NCAA I
 FL
 University of South Florida
