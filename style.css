@@ -15,7 +15,7 @@ li {
   font-size: 18px;
 }
 img {
-  width: 300px;
+  width: 150px;
   padding-top: 50px;
 }
 button {
@@ -69,7 +69,7 @@ a:active {
 }
 .school-title-details {
   padding-left: 50px;
-  padding-top: 150px;
+  padding-top: 70px;
   font-size: 18px;
 }
 @media only screen and (max-device-width: 480px) {
@@ -81,7 +81,7 @@ a:active {
     }
     .school-title-details {
       padding-left: 50px;
-      padding-top: 150px;
+      padding-top: 70px;
       font-size: 40px;
     }
 }
