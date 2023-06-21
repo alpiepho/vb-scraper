@@ -26,6 +26,9 @@ AL
 Auburn Univ.
 NCAA I
 IL
+Augustana Coll.
+NCAA III
+IL
 Aurora University
 NCAA III
 TN
@@ -61,6 +64,9 @@ NCAA I
 MA
 Boston College
 NCAA I
+ME
+Bowdoin Coll.
+NCAA III
 IL
 Bradley Univ.
 NCAA I
@@ -97,12 +103,21 @@ NCAA III
 PA
 Cedar Crest Coll.
 NCAA III
+MI
+Central Michigan Univ.
+NCAA I
+KY
+Centre College of Kentucky
+NCAA III
 OR
 Clackamas C.C.
 NJCAA I
 NY
 Clarkson Univ.
 NCAA III
+SC
+Coastal Carolina University
+NCAA I
 SC
 Coker Coll.
 NCAA II
@@ -118,6 +133,9 @@ NCAA I
 CO
 Colorado College
 NCAA III
+CO
+Colorado State Univ.
+NCAA I
 NY
 Columbia Univ. In The City of New York
 NCAA I
@@ -128,6 +146,9 @@ NE
 Creighton University
 NCAA I
 NY
+D'youville Coll.
+NCAA II
+NY
 Daemen Coll.
 NCAA II
 TX
@@ -136,6 +157,9 @@ NCAA II
 NH
 Dartmouth Coll.
 NCAA I
+PA
+Desales Univ.
+NCAA III
 CA
 Dominican Univ. of California
 NCAA II
@@ -150,6 +174,9 @@ Earlham Coll.
 NCAA III
 NC
 East Carolina University
+NCAA I
+TN
+East Tennessee State Univ.
 NCAA I
 CT
 Eastern Connecticut State Univ.
@@ -253,6 +280,9 @@ NCAA I
 NC
 Greensboro College
 NCAA III
+AR
+Hendrix College
+NCAA III
 MI
 Hillsdale Coll.
 NCAA II
@@ -298,6 +328,9 @@ NCAA I
 TN
 King Univ.
 NCAA II
+PA
+Lafayette Coll.
+NCAA I
 WI
 Lakeland University
 NCAA III
@@ -340,6 +373,9 @@ NAIA
 CA
 Loyola Marymount Univ.
 NCAA I
+IL
+Loyola University Chicago
+NCAA I
 FL
 Lynn Univ.
 NCAA II
@@ -364,6 +400,9 @@ NCAA III
 IL
 McKendree Univ.
 NCAA II
+NC
+Methodist University
+NCAA III
 OH
 Miami Univ. - Oxford
 NCAA I
@@ -400,6 +439,9 @@ NCAA I
 MA
 Mount Holyoke Coll.
 NCAA III
+PA
+Muhlenberg Coll.
+NCAA III
 MD
 Navy (Naval Academy)
 NCAA I
@@ -427,6 +469,9 @@ NCAA III
 IL
 Northern Illinois Univ.
 NCAA I
+MI
+Northern Michigan Univ.
+NCAA II
 FL
 Nova S.E. Univ.
 NCAA II
@@ -435,6 +480,9 @@ Ohio Northern University
 NCAA III
 OH
 Ohio State Univ.
+NCAA I
+VA
+Old Dominion Univ.
 NCAA I
 OR
 Oregon State Univ.
@@ -455,6 +503,9 @@ IL
 Quincy Univ.
 NCAA II
 TX
+Ranger Coll.
+NJCAA I
+TX
 Rice Univ.
 NCAA I
 NJ
@@ -469,6 +520,9 @@ NCAA III
 NJ
 Rutgers Univ. - New Brunswick
 NCAA I
+CT
+Sacred Heart Univ.
+NCAA I
 IA
 Saint Ambrose Univ.
 NAIA
@@ -481,6 +535,9 @@ NCAA III
 RI
 Salve Regina Univ.
 NCAA III
+TX
+Sam Houston State Univ.
+NCAA I
 AL
 Samford University
 NCAA I
@@ -595,12 +652,18 @@ NAIA
 MA
 Tufts Univ.
 NCAA III
+LA
+Tulane University
+NCAA I
 NY
 Union Coll. (NY)
 NCAA III
 NY
 United States Merchant Marine Academy
 NCAA III
+AL
+United States Sports Acad.
+NAIA
 OH
 Univ. of Akron
 NCAA I
@@ -670,6 +733,9 @@ NCAA I
 MO
 Univ. of Missouri - Columbia
 NCAA I
+AL
+Univ. of Montevallo
+NCAA II
 NE
 Univ. of Nebraska at Lincoln
 NCAA I
@@ -684,6 +750,9 @@ Univ. of New Haven
 NCAA II
 NC
 Univ. of North Carolina at Charlotte
+NCAA I
+NC
+Univ. of North Carolina at Greensboro
 NCAA I
 SC
 Univ. of South Carolina at Aiken
@@ -768,6 +837,9 @@ University of Notre Dame
 NCAA I
 OK
 University of Oklahoma - Norman
+NCAA I
+PA
+University of Pittsburgh
 NCAA I
 RI
 University of Rhode Island
