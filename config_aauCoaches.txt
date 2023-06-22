@@ -10,14 +10,32 @@ NCAA III
 WI
 Alverno College
 NCAA III
+DC
+American University
+NCAA I
 MA
 Amherst Coll.
 NCAA III
+SC
+Anderson University
+NCAA II
+TX
+Angelo State Univ.
+NCAA II
 NC
 Appalachian State Univ.
 NCAA I
+PA
+Arcadia Univ.
+NCAA III
+AZ
+Arizona State Univ.
+NCAA I
 AR
 Arkansas State Univ.
+NCAA I
+NY
+Army
 NCAA I
 MA
 Assumption Coll.
@@ -67,8 +85,14 @@ NCAA I
 ME
 Bowdoin Coll.
 NCAA III
+OH
+Bowling Green State Univ.
+NCAA I
 IL
 Bradley Univ.
+NCAA I
+RI
+Brown Univ.
 NCAA I
 PA
 Bryn Mawr Coll.
@@ -99,6 +123,12 @@ Carroll Univ.
 NCAA III
 VT
 Castleton Univ.
+NCAA III
+NC
+Catawba Coll.
+NCAA II
+DC
+Catholic Univ. of America
 NCAA III
 PA
 Cedar Crest Coll.
@@ -260,6 +290,9 @@ VA
 George Mason University
 NCAA I
 DC
+George Washington University
+NCAA I
+DC
 Georgetown University
 NCAA I
 GA
@@ -280,9 +313,15 @@ NCAA I
 NC
 Greensboro College
 NCAA III
+MA
+Harvard Univ.
+NCAA I
 AR
 Hendrix College
 NCAA III
+NC
+High Point Univ.
+NCAA I
 MI
 Hillsdale Coll.
 NCAA II
@@ -295,15 +334,24 @@ NCAA II
 DC
 Howard Univ.
 NCAA I
+AL
+Huntingdon Coll.
+NCAA III
 IL
 Illinois Coll.
 NCAA III
 IL
 Illinois Institute of Technology
 NCAA III
+IL
+Illinois State University
+NCAA I
 FL
 Indian River State College
 NJCAA I
+IN
+Indiana State Univ.
+NCAA I
 IN
 Indiana Univ. - Bloomington
 NCAA I
@@ -316,12 +364,18 @@ NCAA I
 NY
 Ithaca Coll.
 NCAA III
+AL
+Jacksonville State University
+NCAA I
 MD
 Johns Hopkins University
 NCAA III
 PA
 Juniata Coll.
 NCAA III
+KS
+Kansas State University
+NCAA I
 GA
 Kennesaw State University
 NCAA I
@@ -415,6 +469,9 @@ NCAA I
 MO
 Missouri S&T
 NCAA II
+MO
+Missouri State University
+NCAA I
 CT
 Mitchell Coll.
 NCAA III
@@ -450,6 +507,9 @@ Neumann University
 NCAA III
 NM
 New Mexico State Univ.
+NCAA I
+NY
+Niagara Univ.
 NCAA I
 NC
 North Carolina Agricultural and Tech. St Univ
@@ -490,6 +550,9 @@ NCAA I
 PA
 Pennsylvania State Univ.
 NCAA I
+FL
+Pensacola State College
+NJCAA I
 CA
 Pepperdine Univ. - Indoor
 NCAA I
@@ -499,9 +562,15 @@ NCAA II
 SC
 Presbyterian Coll.
 NCAA I
+IN
+Purdue University Fort Wayne
+NCAA I
 IL
 Quincy Univ.
 NCAA II
+VA
+Randolph - Macon College
+NCAA III
 TX
 Ranger Coll.
 NJCAA I
@@ -511,6 +580,12 @@ NCAA I
 NJ
 Rider Univ.
 NCAA I
+PA
+Robert Morris University
+NCAA I
+FL
+Rollins Coll.
+NCAA II
 IL
 Roosevelt Univ.
 NAIA
@@ -559,17 +634,29 @@ NCAA I
 NY
 Skidmore Coll.
 NCAA III
+MA
+Smith Coll.
+NCAA III
 SC
 South Carolina State Univ.
 NCAA I
 SD
 South Dakota School of Mines and Technology
 NCAA II
+LA
+Southeastern Louisiana Univ.
+NCAA I
 CT
 Southern Connecticut State Univ.
 NCAA II
+IL
+Southern Illinois Univ. - Edwardsville
+NCAA I
 TX
 Southern Methodist University
+NCAA I
+UT
+Southern Utah Univ.
 NCAA I
 AL
 Spring Hill Coll.
@@ -622,6 +709,12 @@ NCAA III
 TX
 Tarleton State Univ.
 NCAA II
+PA
+Temple University
+NCAA I
+TX
+Texas A & M International Univ.
+NCAA II
 TX
 Texas Christian University
 NCAA I
@@ -658,6 +751,9 @@ NCAA I
 NY
 Union Coll. (NY)
 NCAA III
+TN
+Union Univ.
+NCAA II
 NY
 United States Merchant Marine Academy
 NCAA III
@@ -678,6 +774,9 @@ Univ. of Arizona
 NCAA I
 AR
 Univ. of Arkansas
+NCAA I
+CA
+Univ. of California - Berkeley
 NCAA I
 CA
 Univ. of California - Davis
@@ -727,6 +826,9 @@ NCAA III
 MI
 Univ. of Michigan - Ann Arbor
 NCAA I
+MN
+Univ. of Minnesota - Twin Cities
+NCAA I
 MS
 Univ. of Mississippi
 NCAA I
@@ -749,10 +851,19 @@ CT
 Univ. of New Haven
 NCAA II
 NC
+Univ. of North Carolina at Asheville
+NCAA I
+NC
 Univ. of North Carolina at Charlotte
 NCAA I
 NC
 Univ. of North Carolina at Greensboro
+NCAA I
+CT
+Univ. of Saint Joseph
+NCAA III
+AL
+Univ. of South Alabama
 NCAA I
 SC
 Univ. of South Carolina at Aiken
@@ -862,6 +973,12 @@ NCAA II
 WI
 University of Wisconsin - Eau Claire
 NCAA III
+WI
+University of Wisconsin - Stout
+NCAA III
+PA
+Ursinus Coll.
+NCAA III
 UT
 Utah State Univ.
 NCAA I
@@ -916,6 +1033,9 @@ NCAA I
 MA
 Wheaton Coll.
 NCAA III
+KS
+Wichita State University
+NCAA I
 PA
 Widener Univ. - Main Campus
 NCAA III
@@ -934,6 +1054,9 @@ NCAA III
 MA
 Worcester Polytechnic Institute
 NCAA III
+LA
+Xavier Univ. of Louisiana
+NAIA
 CT
 Yale Univ.
 NCAA I
