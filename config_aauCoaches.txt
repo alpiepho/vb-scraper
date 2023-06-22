@@ -76,9 +76,15 @@ NCAA I
 WV
 Bethany College
 NCAA III
+FL
+Bethune Cookman Univ.
+NCAA I
 NY
 Binghamton University
 NCAA I
+WV
+Bluefield State Coll.
+NCAA II
 MA
 Boston College
 NCAA I
@@ -301,6 +307,9 @@ NCAA I
 GA
 Georgia Tech.
 NCAA I
+NJ
+Georgian Court Univ.
+NCAA II
 MD
 Goucher Coll.
 NCAA III
@@ -535,6 +544,9 @@ NCAA II
 FL
 Nova S.E. Univ.
 NCAA II
+MI
+Oakland Univ.
+NCAA I
 OH
 Ohio Northern University
 NCAA III
@@ -664,6 +676,9 @@ NCAA II
 MA
 Springfield Coll.
 NCAA III
+NC
+St Andrews Univ.
+NAIA
 NY
 St Lawrence Univ.
 NCAA III
@@ -739,6 +754,9 @@ NCAA III
 CT
 Trinity Coll.
 NCAA III
+AL
+Troy University
+NCAA I
 GA
 Truett McConnell Univ.
 NAIA
@@ -921,6 +939,9 @@ University of Dayton
 NCAA I
 TX
 University of Houston
+NCAA I
+KY
+University of Louisville
 NCAA I
 VA
 University of Mary Washington
