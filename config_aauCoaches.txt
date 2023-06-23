@@ -103,6 +103,9 @@ NCAA I
 PA
 Bryn Mawr Coll.
 NCAA III
+PA
+Bucknell Univ.
+NCAA I
 IN
 Butler Univ.
 NCAA I
@@ -193,6 +196,9 @@ NCAA II
 NH
 Dartmouth Coll.
 NCAA I
+NC
+Davidson College
+NCAA I
 PA
 Desales Univ.
 NCAA III
@@ -204,6 +210,9 @@ Drew Univ.
 NCAA III
 NC
 Duke University
+NCAA I
+PA
+Duquesne University
 NCAA I
 IN
 Earlham Coll.
@@ -267,6 +276,9 @@ Flagler Coll.
 NCAA II
 FL
 Florida Atlantic Univ. - Boca Raton
+NCAA I
+FL
+Florida Gulf Coast University
 NCAA I
 FL
 Florida Institute of Technology - Melbourne
@@ -364,6 +376,9 @@ NCAA I
 IN
 Indiana Univ. - Bloomington
 NCAA I
+IN
+Indiana Univ. - Purdue Univ. - Indianapolis
+NCAA I
 PA
 Indiana Univ. of Pennsylvania
 NCAA II
@@ -375,6 +390,12 @@ Ithaca Coll.
 NCAA III
 AL
 Jacksonville State University
+NCAA I
+FL
+Jacksonville University
+NCAA I
+VA
+James Madison Univ.
 NCAA I
 MD
 Johns Hopkins University
@@ -390,6 +411,9 @@ Kennesaw State University
 NCAA I
 TN
 King Univ.
+NCAA II
+PA
+Kutztown Univ. of Pennsylvania
 NCAA II
 PA
 Lafayette Coll.
@@ -518,6 +542,9 @@ NM
 New Mexico State Univ.
 NCAA I
 NY
+New York University
+NCAA III
+NY
 Niagara Univ.
 NCAA I
 NC
@@ -574,8 +601,14 @@ NCAA II
 SC
 Presbyterian Coll.
 NCAA I
+IL
+Principia College
+NCAA III
 IN
 Purdue University Fort Wayne
+NCAA I
+NC
+Queens University of Charlotte
 NCAA I
 IL
 Quincy Univ.
@@ -680,6 +713,9 @@ NC
 St Andrews Univ.
 NAIA
 NY
+St John's Univ. - New York
+NCAA I
+NY
 St Lawrence Univ.
 NCAA III
 FL
@@ -721,6 +757,9 @@ NCAA III
 PA
 Swarthmore Coll.
 NCAA III
+NY
+Syracuse University
+NCAA I
 TX
 Tarleton State Univ.
 NCAA II
@@ -732,6 +771,9 @@ Texas A & M International Univ.
 NCAA II
 TX
 Texas Christian University
+NCAA I
+TX
+Texas State Univ.
 NCAA I
 TX
 Texas Tech University
@@ -869,6 +911,9 @@ CT
 Univ. of New Haven
 NCAA II
 NC
+Univ. of North Carolina - Wilmington
+NCAA I
+NC
 Univ. of North Carolina at Asheville
 NCAA I
 NC
@@ -898,6 +943,9 @@ NCAA I
 CA
 Univ. of Southern California
 NCAA I
+IN
+Univ. of Southern Indiana
+NCAA II
 MS
 Univ. of Southern Mississippi
 NCAA I
@@ -1080,4 +1128,7 @@ Xavier Univ. of Louisiana
 NAIA
 CT
 Yale Univ.
+NCAA I
+OH
+Youngstown State University
 NCAA I
