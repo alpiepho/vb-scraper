@@ -61,6 +61,9 @@ NCAA III
 MA
 Babson Coll.
 NCAA III
+IN
+Ball State Univ.
+NCAA I
 NY
 Bard Coll.
 NCAA III
@@ -73,6 +76,9 @@ NCAA III
 KY
 Bellarmine University
 NCAA I
+TN
+Belmont Univ.
+NCAA I
 WV
 Bethany College
 NCAA III
@@ -82,6 +88,9 @@ NCAA I
 NY
 Binghamton University
 NCAA I
+CA
+Biola Univ.
+NCAA II
 WV
 Bluefield State Coll.
 NCAA II
@@ -97,6 +106,9 @@ NCAA I
 IL
 Bradley Univ.
 NCAA I
+UT
+Brigham Young Univ.
+NCAA I
 RI
 Brown Univ.
 NCAA I
@@ -108,6 +120,9 @@ Bucknell Univ.
 NCAA I
 IN
 Butler Univ.
+NCAA I
+CA
+California Baptist Univ.
 NCAA I
 CA
 California Poly. - San Luis Obispo
@@ -181,6 +196,12 @@ NCAA I
 CT
 Connecticut Coll.
 NCAA III
+SC
+Converse Coll.
+NCAA II
+NY
+Cornell University
+NCAA I
 NE
 Creighton University
 NCAA I
@@ -198,6 +219,9 @@ Dartmouth Coll.
 NCAA I
 NC
 Davidson College
+NCAA I
+IL
+Depaul Univ.
 NCAA I
 PA
 Desales Univ.
@@ -228,6 +252,9 @@ Eastern Connecticut State Univ.
 NCAA III
 KY
 Eastern Kentucky University
+NCAA I
+MI
+Eastern Michigan Univ.
 NCAA I
 MA
 Eastern Nazarene Coll.
@@ -265,15 +292,27 @@ NCAA II
 MA
 Emmanuel Coll. - Boston
 NCAA III
+GA
+Emory University
+NCAA III
 MA
 Endicott Coll.
 NCAA III
 SC
 Erskine Coll. and Seminary
 NCAA II
+CT
+Fairfield Univ.
+NCAA I
+TN
+Fisk Univ.
+NAIA
 FL
 Flagler Coll.
 NCAA II
+FL
+Florida A&M Univ.
+NCAA I
 FL
 Florida Atlantic Univ. - Boca Raton
 NCAA I
@@ -295,6 +334,9 @@ NCAA I
 PA
 Franklin and Marshall Coll.
 NCAA III
+NH
+Franklin Pierce Univ.
+NCAA II
 SC
 Furman Univ.
 NCAA I
@@ -315,6 +357,9 @@ Georgetown University
 NCAA I
 GA
 Georgia Southern Univ.
+NCAA I
+GA
+Georgia State Univ.
 NCAA I
 GA
 Georgia Tech.
@@ -463,11 +508,17 @@ NCAA I
 IL
 Loyola University Chicago
 NCAA I
+MD
+Loyola University Maryland
+NCAA I
 FL
 Lynn Univ.
 NCAA II
 MN
 Macalester Coll.
+NCAA III
+NY
+Manhattanville College
 NCAA III
 IN
 Marian Univ.
@@ -556,6 +607,9 @@ NCAA I
 NC
 North Carolina Wesleyan College
 NCAA III
+IL
+North Central Coll.
+NCAA III
 ND
 North Dakota State Univ.
 NCAA I
@@ -565,9 +619,15 @@ NCAA III
 IL
 Northern Illinois Univ.
 NCAA I
+KY
+Northern Kentucky Univ.
+NCAA I
 MI
 Northern Michigan Univ.
 NCAA II
+IL
+Northwestern Univ.
+NCAA I
 FL
 Nova S.E. Univ.
 NCAA II
@@ -580,12 +640,18 @@ NCAA III
 OH
 Ohio State Univ.
 NCAA I
+OH
+Ohio Univ.
+NCAA I
 VA
 Old Dominion Univ.
 NCAA I
 OR
 Oregon State Univ.
 NCAA I
+FL
+Palm Beach Atlantic University - West Palm Beach
+NCAA II
 PA
 Pennsylvania State Univ.
 NCAA I
@@ -604,6 +670,9 @@ NCAA I
 IL
 Principia College
 NCAA III
+IN
+Purdue Univ.
+NCAA I
 IN
 Purdue University Fort Wayne
 NCAA I
@@ -652,6 +721,9 @@ NCAA I
 ME
 Saint Josephs Coll.
 NCAA III
+MO
+Saint Louis University
+NCAA I
 RI
 Salve Regina Univ.
 NCAA III
@@ -660,6 +732,9 @@ Sam Houston State Univ.
 NCAA I
 AL
 Samford University
+NCAA I
+CA
+San Diego State Univ.
 NCAA I
 CA
 San Jose State Univ.
@@ -688,6 +763,9 @@ NCAA I
 SD
 South Dakota School of Mines and Technology
 NCAA II
+SD
+South Dakota State Univ.
+NCAA I
 LA
 Southeastern Louisiana Univ.
 NCAA I
@@ -736,6 +814,9 @@ NCAA III
 NY
 State University of New York at Oswego
 NCAA III
+TX
+Stephen F Austin State Univ.
+NCAA I
 FL
 Stetson University
 NCAA I
@@ -808,6 +889,9 @@ NCAA III
 LA
 Tulane University
 NCAA I
+CO
+U.S. Air Force Academy
+NCAA I
 NY
 Union Coll. (NY)
 NCAA III
@@ -877,6 +961,9 @@ NCAA I
 MD
 Univ. of Maryland - Coll. Park
 NCAA I
+MD
+Univ. of Maryland - Eastern Shore
+NCAA I
 MA
 Univ. of Massachusetts - Boston
 NCAA III
@@ -922,9 +1009,24 @@ NCAA I
 NC
 Univ. of North Carolina at Greensboro
 NCAA I
+ND
+Univ. of North Dakota
+NCAA I
+CO
+Univ. of Northern Colorado
+NCAA I
+IA
+Univ. of Northern Iowa
+NCAA I
+PA
+Univ. of Pennsylvania
+NCAA I
 CT
 Univ. of Saint Joseph
 NCAA III
+CA
+Univ. of San Diego
+NCAA I
 AL
 Univ. of South Alabama
 NCAA I
@@ -939,6 +1041,9 @@ Univ. of South Carolina at Sumter
 NJCAA I
 SC
 Univ. of South Carolina Upstate
+NCAA I
+SD
+Univ. of South Dakota
 NCAA I
 CA
 Univ. of Southern California
@@ -955,9 +1060,15 @@ NCAA I
 FL
 Univ. of Tampa
 NCAA II
+TN
+Univ. of Tennessee - Southern
+NAIA
 KY
 Univ. of the Cumberlands
 NAIA
+TX
+Univ. of The Incarnate Word
+NCAA I
 CA
 Univ. of The Pacific
 NCAA I
@@ -973,6 +1084,9 @@ NCAA I
 WI
 Univ. of Wisconsin - Parkside
 NCAA II
+WY
+Univ. of Wyoming
+NCAA I
 NY
 University at Albany
 NCAA I
@@ -988,12 +1102,18 @@ NCAA I
 TX
 University of Houston
 NCAA I
+KS
+University of Kansas
+NCAA I
 KY
 University of Louisville
 NCAA I
 VA
 University of Mary Washington
 NCAA III
+MD
+University of Maryland - Baltimore County
+NCAA I
 TN
 University of Memphis
 NCAA I
@@ -1033,6 +1153,9 @@ NCAA I
 TN
 University of The South
 NCAA III
+UT
+University of Utah
+NCAA I
 VA
 University of Virginia
 NCAA I
@@ -1043,6 +1166,9 @@ WI
 University of Wisconsin - Eau Claire
 NCAA III
 WI
+University of Wisconsin - River Falls
+NCAA III
+WI
 University of Wisconsin - Stout
 NCAA III
 PA
@@ -1051,6 +1177,12 @@ NCAA III
 UT
 Utah State Univ.
 NCAA I
+UT
+Utah Valley University
+NCAA I
+GA
+Valdosta State Univ.
+NCAA II
 TN
 Vanderbilt Univ.
 NCAA I
@@ -1108,6 +1240,9 @@ NCAA I
 PA
 Widener Univ. - Main Campus
 NCAA III
+VA
+William and Mary
+NCAA I
 NJ
 William Paterson Univ. of New Jersey
 NCAA III
@@ -1120,6 +1255,9 @@ NCAA I
 WI
 Wisconsin Lutheran College
 NCAA III
+SC
+Wofford Coll.
+NCAA I
 MA
 Worcester Polytechnic Institute
 NCAA III
