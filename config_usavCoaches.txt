@@ -1,0 +1,891 @@
+WI
+Alverno College
+NCAA III
+MA
+Amherst Coll.
+NCAA III
+NC
+Appalachian State Univ.
+NCAA I
+AZ
+Arizona State Univ.
+NCAA I
+AR
+Arkansas State Univ.
+NCAA I
+NY
+Army
+NCAA I
+AL
+Auburn Univ.
+NCAA I
+IL
+Aurora University
+NCAA III
+MA
+Babson Coll.
+NCAA III
+OH
+Baldwin - Wallace University
+NCAA III
+IN
+Ball State Univ.
+NCAA I
+TX
+Baylor University
+NCAA I
+KY
+Bellarmine University
+NCAA I
+MN
+Bemidji State Univ.
+NCAA II
+MA
+Bentley University
+NCAA II
+NY
+Binghamton University
+NCAA I
+CA
+Biola Univ.
+NCAA II
+SD
+Black Hills State Univ.
+NCAA II
+MA
+Boston College
+NCAA I
+ME
+Bowdoin Coll.
+NCAA III
+UT
+Brigham Young Univ.
+NCAA I
+IN
+Butler Univ.
+NCAA I
+CA
+California Baptist Univ.
+NCAA I
+CA
+California Poly. - San Luis Obispo
+NCAA I
+CA
+California State Univ. - Bakersfield
+NCAA I
+CA
+California State Univ. - Fresno
+NCAA I
+CA
+California State Univ. - Long Beach
+NCAA I
+CA
+California State Univ. - Monterey Bay
+NCAA II
+CA
+California State Univ. - Sacramento
+NCAA I
+PA
+California Univ. of Pennsylvania
+NCAA II
+NC
+Campbell Univ. Inc
+NCAA I
+PA
+Carnegie Mellon University
+NCAA III
+WI
+Carroll Univ.
+NCAA III
+HI
+Chaminade Univ. of Honolulu
+NCAA II
+SC
+Clemson University
+NCAA I
+SC
+Coastal Carolina University
+NCAA I
+SC
+Coker Coll.
+NCAA II
+ME
+Colby Coll.
+NCAA III
+NY
+Colgate Univ.
+NCAA I
+CO
+Colorado Christian Univ.
+NCAA II
+CO
+Colorado College
+NCAA III
+CO
+Colorado School of Mines
+NCAA II
+CO
+Colorado State Univ.
+NCAA I
+NY
+Columbia Univ. In The City of New York
+NCAA I
+WI
+Concordia University - Wisconsin
+NCAA III
+IL
+Concordia University Chicago
+NCAA III
+CT
+Connecticut Coll.
+NCAA III
+NY
+Cornell University
+NCAA I
+NE
+Creighton University
+NCAA I
+TN
+Cumberland Univ.
+NAIA
+NY
+Daemen Coll.
+NCAA II
+NH
+Dartmouth Coll.
+NCAA I
+NC
+Davidson College
+NCAA I
+IL
+Depaul Univ.
+NCAA I
+CA
+Dominican Univ. of California
+NCAA II
+NC
+Duke University
+NCAA I
+IN
+Earlham Coll.
+NCAA III
+NC
+East Carolina University
+NCAA I
+TN
+East Tennessee State Univ.
+NCAA I
+KY
+Eastern Kentucky University
+NCAA I
+WY
+Eastern Wyoming Coll.
+NJCAA I
+NC
+Elon Univ.
+NCAA I
+MA
+Emerson Coll.
+NCAA III
+GA
+Emory University
+NCAA III
+FL
+Florida Institute of Technology - Melbourne
+NCAA II
+FL
+Florida International Univ.
+NCAA I
+FL
+Florida State University
+NCAA I
+SC
+Furman Univ.
+NCAA I
+VA
+George Mason University
+NCAA I
+DC
+Georgetown University
+NCAA I
+GA
+Georgia Southern Univ.
+NCAA I
+GA
+Georgia Tech.
+NCAA I
+IA
+Graceland Univ.
+NAIA
+AZ
+Grand Canyon Univ.
+NCAA I
+IA
+Grinnell Coll.
+NCAA III
+NY
+Hamilton College
+NCAA III
+MA
+Harvard Univ.
+NCAA I
+AR
+Hendrix College
+NCAA III
+MI
+Hope Coll.
+NCAA III
+DC
+Howard Univ.
+NCAA I
+ID
+Idaho State Univ.
+NCAA I
+IL
+Illinois Wesleyan Univ.
+NCAA III
+IN
+Indiana Institute of Technology
+NAIA
+IN
+Indiana Univ. - Bloomington
+NCAA I
+PA
+Indiana Univ. of Pennsylvania
+NCAA II
+NY
+Iona Univ.
+NCAA I
+IA
+Iowa State University
+NCAA I
+FL
+Jacksonville University
+NCAA I
+PA
+Juniata Coll.
+NCAA III
+KS
+Kansas State University
+NCAA I
+GA
+Kennesaw State University
+NCAA I
+OH
+Kent State Univ.
+NCAA I
+WI
+Lakeland University
+NCAA III
+TX
+Lamar Univ. - Beaumont
+NCAA I
+PA
+Lehigh University
+NCAA I
+ID
+Lewis - Clark State Coll.
+NAIA
+OR
+Lewis & Clark College
+NCAA III
+VA
+Liberty University
+NCAA I
+TN
+Lipscomb University
+NCAA I
+NY
+Long Island Univ. - Brooklyn Campus
+NCAA I
+IA
+Loras Coll.
+NCAA III
+LA
+Louisiana State University
+NCAA I
+LA
+Louisiana Tech Univ.
+NCAA I
+OH
+Lourdes Univ.
+NAIA
+CA
+Loyola Marymount Univ.
+NCAA I
+IL
+Loyola University Chicago
+NCAA I
+MN
+Macalester Coll.
+NCAA III
+IN
+Marian Univ.
+NAIA
+NY
+Marist Coll.
+NCAA I
+WI
+Marquette Univ.
+NCAA I
+WV
+Marshall Univ.
+NCAA I
+LA
+Mcneese State Univ.
+NCAA I
+OH
+Miami Univ. - Oxford
+NCAA I
+MI
+Michigan State Univ.
+NCAA I
+MI
+Michigan Technological Univ.
+NCAA II
+TN
+Middle Tennessee State Univ.
+NCAA I
+MS
+Mississippi State Univ.
+NCAA I
+MO
+Missouri S&T
+NCAA II
+MO
+Missouri State University
+NCAA I
+IL
+Monmouth Coll.
+NCAA III
+MT
+Montana State Univ. - Bozeman
+NCAA I
+MD
+Morgan State Univ.
+NCAA I
+KY
+Murray State Univ.
+NCAA I
+MD
+Navy (Naval Academy)
+NCAA I
+NM
+New Mexico State Univ.
+NCAA I
+NC
+North Carolina State University at Raleigh
+NCAA I
+ND
+North Dakota State Univ.
+NCAA I
+IL
+North Park Univ.
+NCAA III
+MA
+Northeastern Univ.
+NCAA I
+KY
+Northern Kentucky Univ.
+NCAA I
+MI
+Northern Michigan Univ.
+NCAA II
+ID
+Northwest Nazarene Univ.
+NCAA II
+WA
+Northwest Univ.
+NAIA
+LA
+Northwestern State Univ. of Louisiana
+NCAA I
+IL
+Northwestern Univ.
+NCAA I
+OH
+Ohio State Univ.
+NCAA I
+OH
+Ohio Univ.
+NCAA I
+VA
+Old Dominion Univ.
+NCAA I
+OR
+Oregon State Univ.
+NCAA I
+FL
+Palm Beach Atlantic University - West Palm Beach
+NCAA II
+PA
+Pennsylvania State Univ.
+NCAA I
+CA
+Pepperdine Univ. - Indoor
+NCAA I
+CA
+Point Loma Nazarene Univ.
+NCAA II
+CA
+Pomona-Pitzer Colleges
+NCAA III
+OR
+Portland State Univ.
+NCAA I
+NJ
+Princeton Univ.
+NCAA I
+RI
+Providence Coll.
+NCAA I
+IN
+Purdue University Fort Wayne
+NCAA I
+IL
+Quincy Univ.
+NCAA II
+TN
+Rhodes College
+NCAA III
+TX
+Rice Univ.
+NCAA I
+PA
+Robert Morris University
+NCAA I
+NJ
+Rutgers Univ. - New Brunswick
+NCAA I
+MO
+Saint Louis University
+NCAA I
+TX
+Sam Houston State Univ.
+NCAA I
+AL
+Samford University
+NCAA I
+CA
+San Diego State Univ.
+NCAA I
+CA
+San Francisco State Univ.
+NCAA II
+CA
+San Jose State Univ.
+NCAA I
+CA
+Santa Clara Univ.
+NCAA I
+WA
+Seattle Pacific Univ.
+NCAA II
+NJ
+Seton Hall Univ.
+NCAA I
+NY
+Siena Coll.
+NCAA I
+NY
+Skidmore Coll.
+NCAA III
+SD
+South Dakota School of Mines and Technology
+NCAA II
+MO
+Southeast Missouri State Univ.
+NCAA I
+CA
+Stanford Univ.
+NCAA I
+MA
+Stonehill College
+NCAA I
+NY
+Stony Brook University
+NCAA I
+NY
+SUNY at Buffalo
+NCAA I
+PA
+Swarthmore Coll.
+NCAA III
+NY
+Syracuse University
+NCAA I
+TX
+Texas A & M Univ.
+NCAA I
+TX
+Texas A & M Univ. - Commerce
+NCAA II
+TX
+Texas A & M Univ. - Corpus Christi
+NCAA I
+TX
+Texas Christian University
+NCAA I
+TX
+Texas State Univ.
+NCAA I
+TX
+Texas Tech University
+NCAA I
+MT
+The Univ. of Montana - Missoula
+NCAA I
+TN
+The Univ. of Tennessee
+NCAA I
+TX
+The Univ. of Texas at El Paso
+NCAA I
+TX
+The Univ. of Texas at San Antonio
+NCAA I
+TX
+The Univ. of Texas at Tyler
+NCAA II
+FL
+The Univ. of West Florida
+NCAA II
+MD
+Towson University
+NCAA I
+TN
+Trevecca Nazarene Univ.
+NCAA II
+AL
+Troy University
+NCAA I
+MA
+Tufts Univ.
+NCAA III
+LA
+Tulane University
+NCAA I
+CO
+U.S. Air Force Academy
+NCAA I
+NY
+United States Merchant Marine Academy
+NCAA III
+OH
+Univ. of Akron
+NCAA I
+AL
+Univ. of Alabama
+NCAA I
+AL
+Univ. of Alabama at Birmingham
+NCAA I
+AK
+Univ. of Alaska Anchorage
+NCAA II
+AZ
+Univ. of Arizona
+NCAA I
+AR
+Univ. of Arkansas
+NCAA I
+CA
+Univ. of California - Berkeley
+NCAA I
+CA
+Univ. of California - Davis
+NCAA I
+CA
+Univ. of California - Irvine
+NCAA I
+CA
+Univ. of California - Los Angeles
+NCAA I
+CA
+Univ. of California - Riverside
+NCAA I
+CA
+Univ. of California - San Diego
+NCAA I
+CA
+Univ. of California - Santa Barbara
+NCAA I
+CO
+Univ. of Colorado at Boulder
+NCAA I
+CO
+Univ. of Colorado at Colorado Springs
+NCAA II
+CT
+Univ. of Connecticut
+NCAA I
+DE
+Univ. of Delaware
+NCAA I
+CO
+Univ. of Denver
+NCAA I
+FL
+Univ. of Florida
+NCAA I
+GA
+Univ. of Georgia
+NCAA I
+HI
+Univ. of Hawaii at Hilo
+NCAA II
+HI
+Univ. of Hawaii at Manoa
+NCAA I
+ID
+Univ. of Idaho
+NCAA I
+IL
+Univ. of Illinois at Urbana - Champaign
+NCAA I
+IA
+Univ. of Iowa
+NCAA I
+KY
+Univ. of Kentucky
+NCAA I
+LA
+Univ. of Louisiana
+NCAA I
+MD
+Univ. of Maryland - Coll. Park
+NCAA I
+MA
+Univ. of Massachusetts - Boston
+NCAA III
+MI
+Univ. of Michigan - Ann Arbor
+NCAA I
+MN
+Univ. of Minnesota - Twin Cities
+NCAA I
+MS
+Univ. of Mississippi
+NCAA I
+MO
+Univ. of Missouri - Columbia
+NCAA I
+NE
+Univ. of Nebraska at Lincoln
+NCAA I
+NV
+Univ. of Nevada - Las Vegas
+NCAA I
+NV
+Univ. of Nevada - Reno
+NCAA I
+ME
+Univ. of New England
+NCAA III
+CT
+Univ. of New Haven
+NCAA II
+NM
+Univ. of New Mexico
+NCAA I
+LA
+Univ. of New Orleans
+NCAA I
+NC
+Univ. of North Carolina at Charlotte
+NCAA I
+NC
+Univ. of North Carolina at Greensboro
+NCAA I
+ND
+Univ. of North Dakota
+NCAA I
+CO
+Univ. of Northern Colorado
+NCAA I
+IA
+Univ. of Northern Iowa
+NCAA I
+OR
+Univ. of Oregon
+NCAA I
+CA
+Univ. of San Diego
+NCAA I
+CA
+Univ. of San Francisco
+NCAA I
+SC
+Univ. of South Carolina at Columbia
+NCAA I
+SD
+Univ. of South Dakota
+NCAA I
+CA
+Univ. of Southern California
+NCAA I
+MS
+Univ. of Southern Mississippi
+NCAA I
+MN
+Univ. of St Thomas
+NCAA I
+TX
+Univ. of The Incarnate Word
+NCAA I
+CA
+Univ. of The Pacific
+NCAA I
+OH
+Univ. of Toledo
+NCAA I
+WA
+Univ. of Washington - Seattle Campus
+NCAA I
+WI
+Univ. of Wisconsin - Madison
+NCAA I
+WI
+Univ. of Wisconsin - Milwaukee
+NCAA I
+NY
+University at Albany
+NCAA I
+AR
+University of Central Arkansas
+NCAA I
+FL
+University of Central Florida
+NCAA I
+IL
+University of Chicago
+NCAA III
+OH
+University of Dayton
+NCAA I
+TX
+University of Houston
+NCAA I
+KS
+University of Kansas
+NCAA I
+KY
+University of Louisville
+NCAA I
+VA
+University of Mary Washington
+NCAA III
+MD
+University of Maryland - Baltimore County
+NCAA I
+TN
+University of Memphis
+NCAA I
+FL
+University of Miami
+NCAA I
+NH
+University of New Hampshire
+NCAA I
+NC
+University of North Carolina at Chapel Hill
+NCAA I
+FL
+University of North Florida
+NCAA I
+IN
+University of Notre Dame
+NCAA I
+OK
+University of Oklahoma - Norman
+NCAA I
+PA
+University of Pittsburgh
+NCAA I
+WA
+University of Puget Sound
+NCAA III
+NY
+University of Rochester
+NCAA III
+FL
+University of South Florida
+NCAA I
+TX
+University of Texas at Austin
+NCAA I
+TN
+University of The South
+NCAA III
+OK
+University of Tulsa
+NCAA I
+UT
+University of Utah
+NCAA I
+VA
+University of Virginia
+NCAA I
+GA
+University of West Georgia
+NCAA II
+WI
+University of Wisconsin - Eau Claire
+NCAA III
+WI
+University of Wisconsin - Stevens Point
+NCAA III
+UT
+Utah State Univ.
+NCAA I
+UT
+Utah Valley University
+NCAA I
+TN
+Vanderbilt Univ.
+NCAA I
+PA
+Villanova Univ.
+NCAA I
+VA
+Virginia Commonwealth University
+NCAA I
+VA
+Virginia Tech
+NCAA I
+NC
+Wake Forest University
+NCAA I
+WA
+Washington State Univ.
+NCAA I
+CT
+Wesleyan Univ.
+NCAA III
+TX
+West Texas A & M Univ.
+NCAA II
+WV
+West Virginia University
+NCAA I
+NC
+Western Carolina Univ.
+NCAA I
+IL
+Western Illinois Univ.
+NCAA I
+KY
+Western Kentucky Univ.
+NCAA I
+SC
+Winthrop Univ.
+NCAA I
+WI
+Wisconsin Lutheran College
+NCAA III
+LA
+Xavier Univ. of Louisiana
+NAIA
+CT
+Yale Univ.
+NCAA I
