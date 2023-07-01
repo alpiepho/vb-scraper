@@ -4,6 +4,9 @@ NCAA III
 MA
 Amherst Coll.
 NCAA III
+TX
+Angelo State Univ.
+NCAA II
 NC
 Appalachian State Univ.
 NCAA I
@@ -31,6 +34,9 @@ NCAA III
 IN
 Ball State Univ.
 NCAA I
+NY
+Bard Coll.
+NCAA III
 TX
 Baylor University
 NCAA I
@@ -58,6 +64,9 @@ NCAA I
 ME
 Bowdoin Coll.
 NCAA III
+IL
+Bradley Univ.
+NCAA I
 UT
 Brigham Young Univ.
 NCAA I
@@ -83,6 +92,9 @@ CA
 California State Univ. - Monterey Bay
 NCAA II
 CA
+California State Univ. - Northridge
+NCAA I
+CA
 California State Univ. - Sacramento
 NCAA I
 PA
@@ -97,6 +109,9 @@ NCAA III
 WI
 Carroll Univ.
 NCAA III
+MI
+Central Michigan Univ.
+NCAA I
 HI
 Chaminade Univ. of Honolulu
 NCAA II
@@ -181,6 +196,9 @@ NCAA I
 WY
 Eastern Wyoming Coll.
 NJCAA I
+IL
+Elmhurst Coll.
+NCAA III
 NC
 Elon Univ.
 NCAA I
@@ -220,6 +238,9 @@ NAIA
 AZ
 Grand Canyon Univ.
 NCAA I
+MI
+Grand Valley State Univ.
+NCAA II
 IA
 Grinnell Coll.
 NCAA III
@@ -229,6 +250,9 @@ NCAA III
 MA
 Harvard Univ.
 NCAA I
+PA
+Haverford Coll.
+NCAA III
 AR
 Hendrix College
 NCAA III
@@ -240,6 +264,9 @@ Howard Univ.
 NCAA I
 ID
 Idaho State Univ.
+NCAA I
+IL
+Illinois State University
 NCAA I
 IL
 Illinois Wesleyan Univ.
@@ -259,6 +286,9 @@ NCAA I
 IA
 Iowa State University
 NCAA I
+AL
+Jacksonville State University
+NCAA I
 FL
 Jacksonville University
 NCAA I
@@ -273,6 +303,9 @@ Kennesaw State University
 NCAA I
 OH
 Kent State Univ.
+NCAA I
+PA
+Lafayette Coll.
 NCAA I
 WI
 Lakeland University
@@ -355,6 +388,9 @@ NCAA II
 MO
 Missouri State University
 NCAA I
+CT
+Mitchell Coll.
+NCAA III
 IL
 Monmouth Coll.
 NCAA III
@@ -481,6 +517,9 @@ NCAA I
 WA
 Seattle Pacific Univ.
 NCAA II
+WA
+Seattle Univ.
+NCAA I
 NJ
 Seton Hall Univ.
 NCAA I
@@ -532,6 +571,9 @@ NCAA I
 TX
 Texas Tech University
 NCAA I
+TX
+Texas Woman's Univ.
+NCAA II
 MT
 The Univ. of Montana - Missoula
 NCAA I
@@ -568,6 +610,9 @@ NCAA I
 CO
 U.S. Air Force Academy
 NCAA I
+CT
+United States Coast Guard Acad.
+NCAA III
 NY
 United States Merchant Marine Academy
 NCAA III
@@ -639,6 +684,9 @@ Univ. of Hawaii at Manoa
 NCAA I
 ID
 Univ. of Idaho
+NCAA I
+IL
+Univ. of Illinois at Chicago
 NCAA I
 IL
 Univ. of Illinois at Urbana - Champaign
@@ -876,6 +924,12 @@ Western Illinois Univ.
 NCAA I
 KY
 Western Kentucky Univ.
+NCAA I
+KS
+Wichita State University
+NCAA I
+VA
+William and Mary
 NCAA I
 SC
 Winthrop Univ.

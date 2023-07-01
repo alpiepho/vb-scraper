@@ -170,6 +170,9 @@ NY
 Clarkson Univ.
 NCAA III
 SC
+Clemson University
+NCAA I
+SC
 Coastal Carolina University
 NCAA I
 SC
@@ -403,6 +406,12 @@ NCAA I
 AL
 Huntingdon Coll.
 NCAA III
+ME
+Husson University
+NCAA III
+ID
+Idaho State Univ.
+NCAA I
 IL
 Illinois Coll.
 NCAA III
@@ -427,6 +436,9 @@ NCAA I
 PA
 Indiana Univ. of Pennsylvania
 NCAA II
+NY
+Iona Univ.
+NCAA I
 IA
 Iowa State University
 NCAA I
@@ -791,9 +803,6 @@ NC
 St Andrews Univ.
 NAIA
 NY
-St John's Univ. - New York
-NCAA I
-NY
 St Lawrence Univ.
 NCAA III
 FL
@@ -1095,6 +1104,9 @@ University of Central Arkansas
 NCAA I
 FL
 University of Central Florida
+NCAA I
+OH
+University of Cincinnati
 NCAA I
 OH
 University of Dayton
