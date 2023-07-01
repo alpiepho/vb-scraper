@@ -137,6 +137,9 @@ CO
 Colorado College
 NCAA III
 CO
+Colorado Mesa Univ.
+NCAA II
+CO
 Colorado School of Mines
 NCAA II
 CO
@@ -189,6 +192,9 @@ East Carolina University
 NCAA I
 TN
 East Tennessee State Univ.
+NCAA I
+IL
+Eastern Illinois University
 NCAA I
 KY
 Eastern Kentucky University
@@ -313,6 +319,9 @@ NCAA III
 TX
 Lamar Univ. - Beaumont
 NCAA I
+WI
+Lawrence Univ.
+NCAA III
 PA
 Lehigh University
 NCAA I
@@ -439,6 +448,9 @@ NCAA I
 IL
 Northwestern Univ.
 NCAA I
+MI
+Oakland Univ.
+NCAA I
 OH
 Ohio State Univ.
 NCAA I
@@ -535,6 +547,9 @@ NCAA II
 MO
 Southeast Missouri State Univ.
 NCAA I
+AL
+Spring Hill Coll.
+NCAA II
 CA
 Stanford Univ.
 NCAA I
@@ -553,6 +568,9 @@ NCAA III
 NY
 Syracuse University
 NCAA I
+TX
+Tarleton State Univ.
+NCAA II
 TX
 Texas A & M Univ.
 NCAA I
@@ -579,6 +597,9 @@ The Univ. of Montana - Missoula
 NCAA I
 TN
 The Univ. of Tennessee
+NCAA I
+TX
+The Univ. of Texas at Arlington
 NCAA I
 TX
 The Univ. of Texas at El Paso
@@ -757,6 +778,12 @@ NCAA I
 OR
 Univ. of Oregon
 NCAA I
+PA
+Univ. of Pennsylvania
+NCAA I
+OR
+Univ. of Portland
+NCAA I
 CA
 Univ. of San Diego
 NCAA I
@@ -796,6 +823,9 @@ NCAA I
 WI
 Univ. of Wisconsin - Milwaukee
 NCAA I
+WY
+Univ. of Wyoming
+NCAA I
 NY
 University at Albany
 NCAA I
@@ -808,6 +838,9 @@ NCAA I
 IL
 University of Chicago
 NCAA III
+OH
+University of Cincinnati
+NCAA I
 OH
 University of Dayton
 NCAA I
