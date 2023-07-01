@@ -9,7 +9,8 @@
 # go run main.go -configfile=config_colorado.json
 # go run main.go -configfile=config_florida.json
 # go run main.go -configfile=config_texas.json
-go run main.go -configfile=config_aauCoaches.json
+# go run main.go -configfile=config_aauCoaches.json
+go run main.go -configfile=config_usavCoaches.json
 # go run main.go -configfile=config_kplist051223.json
 # go run main.go -configfile=config_coachesPollDII.json
 # go run main.go -configfile=config_2023FinalsDII_64.json
