@@ -43,6 +43,9 @@ NCAA I
 KY
 Bellarmine University
 NCAA I
+TN
+Belmont Univ.
+NCAA I
 MN
 Bemidji State Univ.
 NCAA II
@@ -129,6 +132,9 @@ Colby Coll.
 NCAA III
 NY
 Colgate Univ.
+NCAA I
+SC
+Coll. of Charleston
 NCAA I
 CO
 Colorado Christian Univ.
@@ -352,6 +358,9 @@ NCAA I
 MN
 Macalester Coll.
 NCAA III
+NY
+Manhattan Coll.
+NCAA I
 IN
 Marian Univ.
 NAIA
@@ -554,6 +563,15 @@ NY
 Syracuse University
 NCAA I
 TX
+<<<<<<< Updated upstream
+=======
+Tarleton State Univ.
+NCAA II
+TN
+Tennessee Technological Univ.
+NCAA I
+TX
+>>>>>>> Stashed changes
 Texas A & M Univ.
 NCAA I
 TX
@@ -579,6 +597,9 @@ The Univ. of Montana - Missoula
 NCAA I
 TN
 The Univ. of Tennessee
+NCAA I
+TN
+The Univ. of Tennessee - Chattanooga
 NCAA I
 TX
 The Univ. of Texas at El Paso
@@ -655,6 +676,9 @@ NCAA I
 CA
 Univ. of California - Santa Barbara
 NCAA I
+CA
+Univ. of California - Santa Cruz
+NCAA III
 CO
 Univ. of Colorado at Boulder
 NCAA I
@@ -925,6 +949,9 @@ NCAA I
 KY
 Western Kentucky Univ.
 NCAA I
+MI
+Western Michigan Univ.
+NCAA I
 KS
 Wichita State University
 NCAA I
@@ -937,9 +964,15 @@ NCAA I
 WI
 Wisconsin Lutheran College
 NCAA III
+OH
+Wright State Univ.
+NCAA I
 LA
 Xavier Univ. of Louisiana
 NAIA
 CT
 Yale Univ.
+NCAA I
+OH
+Youngstown State University
 NCAA I
