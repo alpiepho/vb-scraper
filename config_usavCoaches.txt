@@ -271,6 +271,9 @@ NCAA III
 MI
 Hope Coll.
 NCAA III
+TX
+Houston Christian Univ.
+NCAA I
 DC
 Howard Univ.
 NCAA I
@@ -385,6 +388,9 @@ NCAA I
 LA
 Mcneese State Univ.
 NCAA I
+KS
+Mcpherson Coll.
+NAIA
 OH
 Miami Univ. - Oxford
 NCAA I
