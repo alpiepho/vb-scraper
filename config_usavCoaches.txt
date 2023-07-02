@@ -73,6 +73,9 @@ NCAA I
 UT
 Brigham Young Univ.
 NCAA I
+RI
+Brown Univ.
+NCAA I
 IN
 Butler Univ.
 NCAA I
@@ -262,6 +265,12 @@ NCAA III
 AR
 Hendrix College
 NCAA III
+NC
+High Point Univ.
+NCAA I
+NY
+Hobart William Smith Colls.
+NCAA III
 MI
 Hope Coll.
 NCAA III
@@ -275,6 +284,9 @@ ID
 Idaho State Univ.
 NCAA I
 IL
+Illinois Institute of Technology
+NCAA III
+IL
 Illinois State University
 NCAA I
 IL
@@ -285,6 +297,9 @@ Indiana Institute of Technology
 NAIA
 IN
 Indiana Univ. - Bloomington
+NCAA I
+IN
+Indiana Univ. - Purdue Univ. - Indianapolis
 NCAA I
 PA
 Indiana Univ. of Pennsylvania
@@ -300,6 +315,9 @@ Jacksonville State University
 NCAA I
 FL
 Jacksonville University
+NCAA I
+VA
+James Madison Univ.
 NCAA I
 PA
 Juniata Coll.
@@ -322,6 +340,15 @@ NCAA III
 TX
 Lamar Univ. - Beaumont
 NCAA I
+<<<<<<< Updated upstream
+=======
+WI
+Lawrence Univ.
+NCAA III
+NY
+Le Moyne Coll.
+NCAA I
+>>>>>>> Stashed changes
 PA
 Lehigh University
 NCAA I
@@ -333,6 +360,12 @@ Lewis & Clark College
 NCAA III
 VA
 Liberty University
+NCAA I
+SC
+Limestone Univ.
+NCAA II
+MO
+Lindenwood Univ.
 NCAA I
 TN
 Lipscomb University
@@ -382,6 +415,9 @@ NCAA I
 KS
 Mcpherson Coll.
 NAIA
+CO
+Metro State University of Denver
+NCAA II
 OH
 Miami Univ. - Oxford
 NCAA I
@@ -454,6 +490,15 @@ NCAA I
 IL
 Northwestern Univ.
 NCAA I
+<<<<<<< Updated upstream
+=======
+MI
+Oakland Univ.
+NCAA I
+GA
+Oglethorpe University
+NCAA III
+>>>>>>> Stashed changes
 OH
 Ohio State Univ.
 NCAA I
@@ -493,6 +538,9 @@ NCAA I
 IN
 Purdue University Fort Wayne
 NCAA I
+NC
+Queens University of Charlotte
+NCAA I
 IL
 Quincy Univ.
 NCAA II
@@ -507,6 +555,9 @@ Robert Morris University
 NCAA I
 NJ
 Rutgers Univ. - New Brunswick
+NCAA I
+CT
+Sacred Heart Univ.
 NCAA I
 MO
 Saint Louis University
@@ -573,6 +624,9 @@ TX
 =======
 Tarleton State Univ.
 NCAA II
+PA
+Temple University
+NCAA I
 TN
 Tennessee Technological Univ.
 NCAA I
@@ -793,6 +847,9 @@ NCAA I
 CA
 Univ. of San Francisco
 NCAA I
+AL
+Univ. of South Alabama
+NCAA I
 SC
 Univ. of South Carolina at Columbia
 NCAA I
@@ -922,6 +979,9 @@ NCAA I
 TN
 Vanderbilt Univ.
 NCAA I
+NY
+Vassar Coll.
+NCAA III
 PA
 Villanova Univ.
 NCAA I
