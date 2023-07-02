@@ -247,4 +247,11 @@ Nova
 Flagler
 </pre>
 
+## APENDIX - Trick for comparing
 
+```
+cat college_details_usavCoaches.html  | grep ">name:<" > junk2.txt
+cat config_usavCoaches.json| grep "\"," > junk1.txt
+# edit
+meld junk1.txt junk2.txt
+```
